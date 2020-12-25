@@ -1,4 +1,5 @@
 using Refit;
+using System.Threading.Tasks;
 using AutoTask.Psa.Api.Data;
 
 namespace AutoTask.Psa.Api.Interfaces
@@ -21,7 +22,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of TicketRmaCreditModel</returns>
 		[Post("/V1.0/TicketRmaCredits/query")]
-		System.Threading.Tasks.Task<TicketRmaCreditModel> TicketRmaCreditsQuery([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<TicketRmaCreditModel> TicketRmaCreditsQuery([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -34,7 +35,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Post("/V1.0/TicketRmaCredits/query/count")]
-		System.Threading.Tasks.Task<QueryCountResultModel> TicketRmaCreditsQueryCount([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<QueryCountResultModel> TicketRmaCreditsQueryCount([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -46,7 +47,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of EntityInformationResultModel</returns>
 		[Get("/V1.0/TicketRmaCredits/entityInformation")]
-		System.Threading.Tasks.Task<EntityInformationResultModel> TicketRmaCreditsQueryEntityInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<EntityInformationResultModel> TicketRmaCreditsQueryEntityInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -58,7 +59,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of FieldInformationResultModel</returns>
 		[Get("/V1.0/TicketRmaCredits/entityInformation/fields")]
-		System.Threading.Tasks.Task<FieldInformationResultModel> TicketRmaCreditsQueryFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<FieldInformationResultModel> TicketRmaCreditsQueryFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -71,7 +72,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of TicketRmaCreditModel</returns>
 		[Get("/V1.0/TicketRmaCredits/{id}")]
-		System.Threading.Tasks.Task<TicketRmaCreditModel> TicketRmaCreditsQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<TicketRmaCreditModel> TicketRmaCreditsQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -83,7 +84,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 		[Get("/V1.0/TicketRmaCredits/entityInformation/userDefinedFields")]
-		System.Threading.Tasks.Task<UserDefinedFieldInformationResultModel> TicketRmaCreditsQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldInformationResultModel> TicketRmaCreditsQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -96,7 +97,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of TicketRmaCreditModel</returns>
 		[Get("/V1.0/TicketRmaCredits/query")]
-		System.Threading.Tasks.Task<TicketRmaCreditModel> TicketRmaCreditsUrlParameterQuery([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<TicketRmaCreditModel> TicketRmaCreditsUrlParameterQuery([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -109,7 +110,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/TicketRmaCredits/query/count")]
-		System.Threading.Tasks.Task<QueryCountResultModel> TicketRmaCreditsUrlParameterQueryCount([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<QueryCountResultModel> TicketRmaCreditsUrlParameterQueryCount([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 		#endregion Asynchronous Operations
 	}
 }

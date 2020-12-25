@@ -1,4 +1,5 @@
 using Refit;
+using System.Threading.Tasks;
 using AutoTask.Psa.Api.Data;
 
 namespace AutoTask.Psa.Api.Interfaces
@@ -21,7 +22,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PriceListMaterialCodeModel</returns>
 		[Patch("/V1.0/PriceListMaterialCodes")]
-		System.Threading.Tasks.Task<PriceListMaterialCodeModel> PriceListMaterialCodesPatchEntity([Header("UserAgent")] string userAgent, [Body] PriceListMaterialCodeModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PriceListMaterialCodeModel> PriceListMaterialCodesPatchEntity([Header("UserAgent")] string userAgent, [Body] PriceListMaterialCodeModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -34,7 +35,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PriceListMaterialCodeModel</returns>
 		[Post("/V1.0/PriceListMaterialCodes/query")]
-		System.Threading.Tasks.Task<PriceListMaterialCodeModel> PriceListMaterialCodesQuery([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PriceListMaterialCodeModel> PriceListMaterialCodesQuery([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -47,7 +48,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Post("/V1.0/PriceListMaterialCodes/query/count")]
-		System.Threading.Tasks.Task<QueryCountResultModel> PriceListMaterialCodesQueryCount([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<QueryCountResultModel> PriceListMaterialCodesQueryCount([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -59,7 +60,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of EntityInformationResultModel</returns>
 		[Get("/V1.0/PriceListMaterialCodes/entityInformation")]
-		System.Threading.Tasks.Task<EntityInformationResultModel> PriceListMaterialCodesQueryEntityInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<EntityInformationResultModel> PriceListMaterialCodesQueryEntityInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -71,7 +72,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of FieldInformationResultModel</returns>
 		[Get("/V1.0/PriceListMaterialCodes/entityInformation/fields")]
-		System.Threading.Tasks.Task<FieldInformationResultModel> PriceListMaterialCodesQueryFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<FieldInformationResultModel> PriceListMaterialCodesQueryFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -84,7 +85,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PriceListMaterialCodeModel</returns>
 		[Get("/V1.0/PriceListMaterialCodes/{id}")]
-		System.Threading.Tasks.Task<PriceListMaterialCodeModel> PriceListMaterialCodesQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PriceListMaterialCodeModel> PriceListMaterialCodesQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -96,7 +97,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 		[Get("/V1.0/PriceListMaterialCodes/entityInformation/userDefinedFields")]
-		System.Threading.Tasks.Task<UserDefinedFieldInformationResultModel> PriceListMaterialCodesQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldInformationResultModel> PriceListMaterialCodesQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -109,7 +110,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PriceListMaterialCodeModel</returns>
 		[Put("/V1.0/PriceListMaterialCodes")]
-		System.Threading.Tasks.Task<PriceListMaterialCodeModel> PriceListMaterialCodesUpdateEntity([Header("UserAgent")] string userAgent, [Body] PriceListMaterialCodeModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PriceListMaterialCodeModel> PriceListMaterialCodesUpdateEntity([Header("UserAgent")] string userAgent, [Body] PriceListMaterialCodeModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -122,7 +123,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PriceListMaterialCodeModel</returns>
 		[Get("/V1.0/PriceListMaterialCodes/query")]
-		System.Threading.Tasks.Task<PriceListMaterialCodeModel> PriceListMaterialCodesUrlParameterQuery([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PriceListMaterialCodeModel> PriceListMaterialCodesUrlParameterQuery([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -135,7 +136,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/PriceListMaterialCodes/query/count")]
-		System.Threading.Tasks.Task<QueryCountResultModel> PriceListMaterialCodesUrlParameterQueryCount([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<QueryCountResultModel> PriceListMaterialCodesUrlParameterQueryCount([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 		#endregion Asynchronous Operations
 	}
 }

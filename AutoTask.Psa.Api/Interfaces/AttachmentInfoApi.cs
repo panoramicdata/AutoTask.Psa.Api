@@ -1,4 +1,5 @@
 using Refit;
+using System.Threading.Tasks;
 using AutoTask.Psa.Api.Data;
 
 namespace AutoTask.Psa.Api.Interfaces
@@ -21,7 +22,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of AttachmentInfoModel</returns>
 		[Post("/V1.0/AttachmentInfo/query")]
-		System.Threading.Tasks.Task<AttachmentInfoModel> AttachmentInfoQuery([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<AttachmentInfoModel> AttachmentInfoQuery([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -34,7 +35,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Post("/V1.0/AttachmentInfo/query/count")]
-		System.Threading.Tasks.Task<QueryCountResultModel> AttachmentInfoQueryCount([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<QueryCountResultModel> AttachmentInfoQueryCount([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -46,7 +47,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of EntityInformationResultModel</returns>
 		[Get("/V1.0/AttachmentInfo/entityInformation")]
-		System.Threading.Tasks.Task<EntityInformationResultModel> AttachmentInfoQueryEntityInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<EntityInformationResultModel> AttachmentInfoQueryEntityInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -58,7 +59,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of FieldInformationResultModel</returns>
 		[Get("/V1.0/AttachmentInfo/entityInformation/fields")]
-		System.Threading.Tasks.Task<FieldInformationResultModel> AttachmentInfoQueryFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<FieldInformationResultModel> AttachmentInfoQueryFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -71,7 +72,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of AttachmentInfoModel</returns>
 		[Get("/V1.0/AttachmentInfo/{id}")]
-		System.Threading.Tasks.Task<AttachmentInfoModel> AttachmentInfoQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<AttachmentInfoModel> AttachmentInfoQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -83,7 +84,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 		[Get("/V1.0/AttachmentInfo/entityInformation/userDefinedFields")]
-		System.Threading.Tasks.Task<UserDefinedFieldInformationResultModel> AttachmentInfoQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldInformationResultModel> AttachmentInfoQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -96,7 +97,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of AttachmentInfoModel</returns>
 		[Get("/V1.0/AttachmentInfo/query")]
-		System.Threading.Tasks.Task<AttachmentInfoModel> AttachmentInfoUrlParameterQuery([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<AttachmentInfoModel> AttachmentInfoUrlParameterQuery([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -109,7 +110,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/AttachmentInfo/query/count")]
-		System.Threading.Tasks.Task<QueryCountResultModel> AttachmentInfoUrlParameterQueryCount([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<QueryCountResultModel> AttachmentInfoUrlParameterQueryCount([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 		#endregion Asynchronous Operations
 	}
 }

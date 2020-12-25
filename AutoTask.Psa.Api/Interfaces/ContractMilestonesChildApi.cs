@@ -1,4 +1,5 @@
 using Refit;
+using System.Threading.Tasks;
 using AutoTask.Psa.Api.Data;
 
 namespace AutoTask.Psa.Api.Interfaces
@@ -22,7 +23,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractMilestoneModel</returns>
 		[Post("/V1.0/Contracts/{parentId}/Milestones")]
-		System.Threading.Tasks.Task<ContractMilestoneModel> ContractMilestonesChildCreateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContractMilestoneModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContractMilestoneModel> ContractMilestonesChildCreateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContractMilestoneModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -36,7 +37,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractMilestoneModel</returns>
 		[Patch("/V1.0/Contracts/{parentId}/Milestones")]
-		System.Threading.Tasks.Task<ContractMilestoneModel> ContractMilestonesChildPatchEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContractMilestoneModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContractMilestoneModel> ContractMilestonesChildPatchEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContractMilestoneModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -49,7 +50,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractMilestoneModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/Milestones")]
-		System.Threading.Tasks.Task<ContractMilestoneModel> ContractMilestonesChildQuery([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContractMilestoneModel> ContractMilestonesChildQuery([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -62,7 +63,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of EntityInformationResultModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/Milestones/entityInformation")]
-		System.Threading.Tasks.Task<EntityInformationResultModel> ContractMilestonesChildQueryEntityInformation([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<EntityInformationResultModel> ContractMilestonesChildQueryEntityInformation([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -75,7 +76,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of FieldInformationResultModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/Milestones/entityInformation/fields")]
-		System.Threading.Tasks.Task<FieldInformationResultModel> ContractMilestonesChildQueryFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<FieldInformationResultModel> ContractMilestonesChildQueryFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -89,7 +90,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractMilestoneModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/Milestones/{id}")]
-		System.Threading.Tasks.Task<ContractMilestoneModel> ContractMilestonesChildQueryItem([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContractMilestoneModel> ContractMilestonesChildQueryItem([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -102,7 +103,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/Milestones/entityInformation/userDefinedFields")]
-		System.Threading.Tasks.Task<UserDefinedFieldInformationResultModel> ContractMilestonesChildQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldInformationResultModel> ContractMilestonesChildQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -116,7 +117,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractMilestoneModel</returns>
 		[Put("/V1.0/Contracts/{parentId}/Milestones")]
-		System.Threading.Tasks.Task<ContractMilestoneModel> ContractMilestonesChildUpdateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContractMilestoneModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContractMilestoneModel> ContractMilestonesChildUpdateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContractMilestoneModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 		#endregion Asynchronous Operations
 	}
 }

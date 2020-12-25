@@ -1,4 +1,5 @@
 using Refit;
+using System.Threading.Tasks;
 using AutoTask.Psa.Api.Data;
 
 namespace AutoTask.Psa.Api.Interfaces
@@ -21,7 +22,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PriceListServiceBundleModel</returns>
 		[Patch("/V1.0/PriceListServiceBundles")]
-		System.Threading.Tasks.Task<PriceListServiceBundleModel> PriceListServiceBundlesPatchEntity([Header("UserAgent")] string userAgent, [Body] PriceListServiceBundleModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PriceListServiceBundleModel> PriceListServiceBundlesPatchEntity([Header("UserAgent")] string userAgent, [Body] PriceListServiceBundleModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -34,7 +35,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PriceListServiceBundleModel</returns>
 		[Post("/V1.0/PriceListServiceBundles/query")]
-		System.Threading.Tasks.Task<PriceListServiceBundleModel> PriceListServiceBundlesQuery([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PriceListServiceBundleModel> PriceListServiceBundlesQuery([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -47,7 +48,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Post("/V1.0/PriceListServiceBundles/query/count")]
-		System.Threading.Tasks.Task<QueryCountResultModel> PriceListServiceBundlesQueryCount([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<QueryCountResultModel> PriceListServiceBundlesQueryCount([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -59,7 +60,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of EntityInformationResultModel</returns>
 		[Get("/V1.0/PriceListServiceBundles/entityInformation")]
-		System.Threading.Tasks.Task<EntityInformationResultModel> PriceListServiceBundlesQueryEntityInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<EntityInformationResultModel> PriceListServiceBundlesQueryEntityInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -71,7 +72,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of FieldInformationResultModel</returns>
 		[Get("/V1.0/PriceListServiceBundles/entityInformation/fields")]
-		System.Threading.Tasks.Task<FieldInformationResultModel> PriceListServiceBundlesQueryFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<FieldInformationResultModel> PriceListServiceBundlesQueryFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -84,7 +85,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PriceListServiceBundleModel</returns>
 		[Get("/V1.0/PriceListServiceBundles/{id}")]
-		System.Threading.Tasks.Task<PriceListServiceBundleModel> PriceListServiceBundlesQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PriceListServiceBundleModel> PriceListServiceBundlesQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -96,7 +97,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 		[Get("/V1.0/PriceListServiceBundles/entityInformation/userDefinedFields")]
-		System.Threading.Tasks.Task<UserDefinedFieldInformationResultModel> PriceListServiceBundlesQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldInformationResultModel> PriceListServiceBundlesQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -109,7 +110,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PriceListServiceBundleModel</returns>
 		[Put("/V1.0/PriceListServiceBundles")]
-		System.Threading.Tasks.Task<PriceListServiceBundleModel> PriceListServiceBundlesUpdateEntity([Header("UserAgent")] string userAgent, [Body] PriceListServiceBundleModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PriceListServiceBundleModel> PriceListServiceBundlesUpdateEntity([Header("UserAgent")] string userAgent, [Body] PriceListServiceBundleModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -122,7 +123,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PriceListServiceBundleModel</returns>
 		[Get("/V1.0/PriceListServiceBundles/query")]
-		System.Threading.Tasks.Task<PriceListServiceBundleModel> PriceListServiceBundlesUrlParameterQuery([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PriceListServiceBundleModel> PriceListServiceBundlesUrlParameterQuery([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -135,7 +136,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/PriceListServiceBundles/query/count")]
-		System.Threading.Tasks.Task<QueryCountResultModel> PriceListServiceBundlesUrlParameterQueryCount([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<QueryCountResultModel> PriceListServiceBundlesUrlParameterQueryCount([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 		#endregion Asynchronous Operations
 	}
 }

@@ -1,4 +1,5 @@
 using Refit;
+using System.Threading.Tasks;
 using AutoTask.Psa.Api.Data;
 
 namespace AutoTask.Psa.Api.Interfaces
@@ -22,7 +23,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PurchaseOrderItemModel</returns>
 		[Post("/V1.0/PurchaseOrders/{parentId}/Items")]
-		System.Threading.Tasks.Task<PurchaseOrderItemModel> PurchaseOrderItemsChildCreateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] PurchaseOrderItemModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PurchaseOrderItemModel> PurchaseOrderItemsChildCreateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] PurchaseOrderItemModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -36,7 +37,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PurchaseOrderItemModel</returns>
 		[Patch("/V1.0/PurchaseOrders/{parentId}/Items")]
-		System.Threading.Tasks.Task<PurchaseOrderItemModel> PurchaseOrderItemsChildPatchEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] PurchaseOrderItemModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PurchaseOrderItemModel> PurchaseOrderItemsChildPatchEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] PurchaseOrderItemModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -49,7 +50,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PurchaseOrderItemModel</returns>
 		[Get("/V1.0/PurchaseOrders/{parentId}/Items")]
-		System.Threading.Tasks.Task<PurchaseOrderItemModel> PurchaseOrderItemsChildQuery([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PurchaseOrderItemModel> PurchaseOrderItemsChildQuery([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -62,7 +63,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of EntityInformationResultModel</returns>
 		[Get("/V1.0/PurchaseOrders/{parentId}/Items/entityInformation")]
-		System.Threading.Tasks.Task<EntityInformationResultModel> PurchaseOrderItemsChildQueryEntityInformation([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<EntityInformationResultModel> PurchaseOrderItemsChildQueryEntityInformation([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -75,7 +76,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of FieldInformationResultModel</returns>
 		[Get("/V1.0/PurchaseOrders/{parentId}/Items/entityInformation/fields")]
-		System.Threading.Tasks.Task<FieldInformationResultModel> PurchaseOrderItemsChildQueryFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<FieldInformationResultModel> PurchaseOrderItemsChildQueryFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -89,7 +90,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PurchaseOrderItemModel</returns>
 		[Get("/V1.0/PurchaseOrders/{parentId}/Items/{id}")]
-		System.Threading.Tasks.Task<PurchaseOrderItemModel> PurchaseOrderItemsChildQueryItem([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PurchaseOrderItemModel> PurchaseOrderItemsChildQueryItem([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -102,7 +103,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 		[Get("/V1.0/PurchaseOrders/{parentId}/Items/entityInformation/userDefinedFields")]
-		System.Threading.Tasks.Task<UserDefinedFieldInformationResultModel> PurchaseOrderItemsChildQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldInformationResultModel> PurchaseOrderItemsChildQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -116,7 +117,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of PurchaseOrderItemModel</returns>
 		[Put("/V1.0/PurchaseOrders/{parentId}/Items")]
-		System.Threading.Tasks.Task<PurchaseOrderItemModel> PurchaseOrderItemsChildUpdateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] PurchaseOrderItemModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<PurchaseOrderItemModel> PurchaseOrderItemsChildUpdateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] PurchaseOrderItemModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 		#endregion Asynchronous Operations
 	}
 }

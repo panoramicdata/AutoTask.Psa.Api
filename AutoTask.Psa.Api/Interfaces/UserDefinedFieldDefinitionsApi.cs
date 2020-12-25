@@ -1,4 +1,5 @@
 using Refit;
+using System.Threading.Tasks;
 using AutoTask.Psa.Api.Data;
 
 namespace AutoTask.Psa.Api.Interfaces
@@ -21,7 +22,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldDefinitionModel</returns>
 		[Post("/V1.0/UserDefinedFieldDefinitions")]
-		System.Threading.Tasks.Task<UserDefinedFieldDefinitionModel> UserDefinedFieldDefinitionsCreateEntity([Header("UserAgent")] string userAgent, [Body] UserDefinedFieldDefinitionModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldDefinitionModel> UserDefinedFieldDefinitionsCreateEntity([Header("UserAgent")] string userAgent, [Body] UserDefinedFieldDefinitionModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -34,7 +35,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldDefinitionModel</returns>
 		[Patch("/V1.0/UserDefinedFieldDefinitions")]
-		System.Threading.Tasks.Task<UserDefinedFieldDefinitionModel> UserDefinedFieldDefinitionsPatchEntity([Header("UserAgent")] string userAgent, [Body] UserDefinedFieldDefinitionModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldDefinitionModel> UserDefinedFieldDefinitionsPatchEntity([Header("UserAgent")] string userAgent, [Body] UserDefinedFieldDefinitionModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -47,7 +48,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldDefinitionModel</returns>
 		[Post("/V1.0/UserDefinedFieldDefinitions/query")]
-		System.Threading.Tasks.Task<UserDefinedFieldDefinitionModel> UserDefinedFieldDefinitionsQuery([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldDefinitionModel> UserDefinedFieldDefinitionsQuery([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -60,7 +61,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Post("/V1.0/UserDefinedFieldDefinitions/query/count")]
-		System.Threading.Tasks.Task<QueryCountResultModel> UserDefinedFieldDefinitionsQueryCount([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<QueryCountResultModel> UserDefinedFieldDefinitionsQueryCount([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -72,7 +73,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of EntityInformationResultModel</returns>
 		[Get("/V1.0/UserDefinedFieldDefinitions/entityInformation")]
-		System.Threading.Tasks.Task<EntityInformationResultModel> UserDefinedFieldDefinitionsQueryEntityInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<EntityInformationResultModel> UserDefinedFieldDefinitionsQueryEntityInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -84,7 +85,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of FieldInformationResultModel</returns>
 		[Get("/V1.0/UserDefinedFieldDefinitions/entityInformation/fields")]
-		System.Threading.Tasks.Task<FieldInformationResultModel> UserDefinedFieldDefinitionsQueryFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<FieldInformationResultModel> UserDefinedFieldDefinitionsQueryFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -97,7 +98,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldDefinitionModel</returns>
 		[Get("/V1.0/UserDefinedFieldDefinitions/{id}")]
-		System.Threading.Tasks.Task<UserDefinedFieldDefinitionModel> UserDefinedFieldDefinitionsQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldDefinitionModel> UserDefinedFieldDefinitionsQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -109,7 +110,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 		[Get("/V1.0/UserDefinedFieldDefinitions/entityInformation/userDefinedFields")]
-		System.Threading.Tasks.Task<UserDefinedFieldInformationResultModel> UserDefinedFieldDefinitionsQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldInformationResultModel> UserDefinedFieldDefinitionsQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -122,7 +123,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldDefinitionModel</returns>
 		[Put("/V1.0/UserDefinedFieldDefinitions")]
-		System.Threading.Tasks.Task<UserDefinedFieldDefinitionModel> UserDefinedFieldDefinitionsUpdateEntity([Header("UserAgent")] string userAgent, [Body] UserDefinedFieldDefinitionModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldDefinitionModel> UserDefinedFieldDefinitionsUpdateEntity([Header("UserAgent")] string userAgent, [Body] UserDefinedFieldDefinitionModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -135,7 +136,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldDefinitionModel</returns>
 		[Get("/V1.0/UserDefinedFieldDefinitions/query")]
-		System.Threading.Tasks.Task<UserDefinedFieldDefinitionModel> UserDefinedFieldDefinitionsUrlParameterQuery([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldDefinitionModel> UserDefinedFieldDefinitionsUrlParameterQuery([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -148,7 +149,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/UserDefinedFieldDefinitions/query/count")]
-		System.Threading.Tasks.Task<QueryCountResultModel> UserDefinedFieldDefinitionsUrlParameterQueryCount([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<QueryCountResultModel> UserDefinedFieldDefinitionsUrlParameterQueryCount([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 		#endregion Asynchronous Operations
 	}
 }

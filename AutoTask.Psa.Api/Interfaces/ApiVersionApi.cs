@@ -1,5 +1,7 @@
 using Refit;
+using System.Threading.Tasks;
 using AutoTask.Psa.Api.Data;
+using System.Threading.Tasks;
 
 namespace AutoTask.Psa.Api.Interfaces
 {
@@ -20,7 +22,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ApiVersionResultModel</returns>
 		[Get("/VersionInformation")]
-		System.Threading.Tasks.Task<ApiVersionResultModel> ApiVersionApiVersionInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ApiVersionResultModel> ApiVersionApiVersionInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 		#endregion Asynchronous Operations
 	}
 }

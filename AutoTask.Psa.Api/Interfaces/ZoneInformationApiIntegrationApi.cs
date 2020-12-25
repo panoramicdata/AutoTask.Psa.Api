@@ -1,4 +1,5 @@
 using Refit;
+using System.Threading.Tasks;
 using AutoTask.Psa.Api.Data;
 
 namespace AutoTask.Psa.Api.Interfaces
@@ -21,7 +22,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ZoneInformationResultModel</returns>
 		[Get("/V1.0/ZoneInformation")]
-		System.Threading.Tasks.Task<ZoneInformationResultModel> ZoneInformationApiIntegrationQueryZoneInformation([Header("UserAgent")] string userAgent, [AliasAs("user")] string user, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ZoneInformationResultModel> ZoneInformationApiIntegrationQueryZoneInformation([Header("UserAgent")] string userAgent, [AliasAs("user")] string user, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 		#endregion Asynchronous Operations
 	}
 }

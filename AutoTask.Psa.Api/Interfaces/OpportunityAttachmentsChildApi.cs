@@ -1,4 +1,5 @@
 using Refit;
+using System.Threading.Tasks;
 using AutoTask.Psa.Api.Data;
 
 namespace AutoTask.Psa.Api.Interfaces
@@ -22,7 +23,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of OpportunityAttachmentModel</returns>
 		[Post("/V1.0/Opportunities/{parentId}/Attachments")]
-		System.Threading.Tasks.Task<OpportunityAttachmentModel> OpportunityAttachmentsChildCreateEntity([Header("UserAgent")] string userAgent, [Body] OpportunityAttachmentModel restModelInput, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<OpportunityAttachmentModel> OpportunityAttachmentsChildCreateEntity([Header("UserAgent")] string userAgent, [Body] OpportunityAttachmentModel restModelInput, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -36,7 +37,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of OperationResultModel</returns>
 		[Delete("/V1.0/Opportunities/{parentId}/Attachments/{id}")]
-		System.Threading.Tasks.Task<OperationResultModel> OpportunityAttachmentsChildDeleteEntity([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<OperationResultModel> OpportunityAttachmentsChildDeleteEntity([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -49,7 +50,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of OpportunityAttachmentModel</returns>
 		[Get("/V1.0/Opportunities/{parentId}/Attachments")]
-		System.Threading.Tasks.Task<OpportunityAttachmentModel> OpportunityAttachmentsChildQuery([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<OpportunityAttachmentModel> OpportunityAttachmentsChildQuery([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -63,7 +64,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of OpportunityAttachmentModel</returns>
 		[Get("/V1.0/Opportunities/{parentId}/Attachments/{id}")]
-		System.Threading.Tasks.Task<OpportunityAttachmentModel> OpportunityAttachmentsChildQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<OpportunityAttachmentModel> OpportunityAttachmentsChildQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 		#endregion Asynchronous Operations
 	}
 }

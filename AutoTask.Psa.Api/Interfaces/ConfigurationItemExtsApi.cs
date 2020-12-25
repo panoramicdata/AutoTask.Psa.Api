@@ -1,4 +1,5 @@
 using Refit;
+using System.Threading.Tasks;
 using AutoTask.Psa.Api.Data;
 
 namespace AutoTask.Psa.Api.Interfaces
@@ -21,7 +22,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ConfigurationItemExtModel</returns>
 		[Post("/V1.0/ConfigurationItemExts")]
-		System.Threading.Tasks.Task<ConfigurationItemExtModel> ConfigurationItemExtsCreateEntity([Header("UserAgent")] string userAgent, [Body] ConfigurationItemExtModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ConfigurationItemExtModel> ConfigurationItemExtsCreateEntity([Header("UserAgent")] string userAgent, [Body] ConfigurationItemExtModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -34,7 +35,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ConfigurationItemExtModel</returns>
 		[Patch("/V1.0/ConfigurationItemExts")]
-		System.Threading.Tasks.Task<ConfigurationItemExtModel> ConfigurationItemExtsPatchEntity([Header("UserAgent")] string userAgent, [Body] ConfigurationItemExtModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ConfigurationItemExtModel> ConfigurationItemExtsPatchEntity([Header("UserAgent")] string userAgent, [Body] ConfigurationItemExtModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -46,7 +47,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of EntityInformationResultModel</returns>
 		[Get("/V1.0/ConfigurationItemExts/entityInformation")]
-		System.Threading.Tasks.Task<EntityInformationResultModel> ConfigurationItemExtsQueryEntityInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<EntityInformationResultModel> ConfigurationItemExtsQueryEntityInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -58,7 +59,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of FieldInformationResultModel</returns>
 		[Get("/V1.0/ConfigurationItemExts/entityInformation/fields")]
-		System.Threading.Tasks.Task<FieldInformationResultModel> ConfigurationItemExtsQueryFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<FieldInformationResultModel> ConfigurationItemExtsQueryFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -70,7 +71,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 		[Get("/V1.0/ConfigurationItemExts/entityInformation/userDefinedFields")]
-		System.Threading.Tasks.Task<UserDefinedFieldInformationResultModel> ConfigurationItemExtsQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldInformationResultModel> ConfigurationItemExtsQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -83,7 +84,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ConfigurationItemExtModel</returns>
 		[Put("/V1.0/ConfigurationItemExts")]
-		System.Threading.Tasks.Task<ConfigurationItemExtModel> ConfigurationItemExtsUpdateEntity([Header("UserAgent")] string userAgent, [Body] ConfigurationItemExtModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ConfigurationItemExtModel> ConfigurationItemExtsUpdateEntity([Header("UserAgent")] string userAgent, [Body] ConfigurationItemExtModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 		#endregion Asynchronous Operations
 	}
 }

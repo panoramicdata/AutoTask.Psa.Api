@@ -1,4 +1,5 @@
 using Refit;
+using System.Threading.Tasks;
 using AutoTask.Psa.Api.Data;
 
 namespace AutoTask.Psa.Api.Interfaces
@@ -22,7 +23,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of TicketAttachmentModel</returns>
 		[Post("/V1.0/Tickets/{parentId}/Attachments")]
-		System.Threading.Tasks.Task<TicketAttachmentModel> TicketAttachmentsChildCreateEntity([Header("UserAgent")] string userAgent, [Body] TicketAttachmentModel restModelInput, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<TicketAttachmentModel> TicketAttachmentsChildCreateEntity([Header("UserAgent")] string userAgent, [Body] TicketAttachmentModel restModelInput, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -36,7 +37,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of OperationResultModel</returns>
 		[Delete("/V1.0/Tickets/{parentId}/Attachments/{id}")]
-		System.Threading.Tasks.Task<OperationResultModel> TicketAttachmentsChildDeleteEntity([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<OperationResultModel> TicketAttachmentsChildDeleteEntity([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -49,7 +50,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of TicketAttachmentModel</returns>
 		[Get("/V1.0/Tickets/{parentId}/Attachments")]
-		System.Threading.Tasks.Task<TicketAttachmentModel> TicketAttachmentsChildQuery([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<TicketAttachmentModel> TicketAttachmentsChildQuery([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
@@ -63,7 +64,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of TicketAttachmentModel</returns>
 		[Get("/V1.0/Tickets/{parentId}/Attachments/{id}")]
-		System.Threading.Tasks.Task<TicketAttachmentModel> TicketAttachmentsChildQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<TicketAttachmentModel> TicketAttachmentsChildQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 		#endregion Asynchronous Operations
 	}
 }
