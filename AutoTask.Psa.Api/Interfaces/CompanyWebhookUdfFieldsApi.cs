@@ -9,108 +9,73 @@ namespace AutoTask.Psa.Api.Interfaces
 	/// </summary>
 	public interface ICompanyWebhookUdfFieldsApi
 	{
-		#region Asynchronous Operations
-
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="queryModel"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of CompanyWebhookUdfFieldModel</returns>
 		[Post("/V1.0/CompanyWebhookUdfFields/query")]
-		Task<CompanyWebhookUdfFieldModel> CompanyWebhookUdfFieldsQuery([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<CompanyWebhookUdfFieldModel> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="queryModel"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Post("/V1.0/CompanyWebhookUdfFields/query/count")]
-		Task<QueryCountResultModel> CompanyWebhookUdfFieldsQueryCount([Header("UserAgent")] string userAgent, [Body] QueryModel queryModel, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of EntityInformationResultModel</returns>
 		[Get("/V1.0/CompanyWebhookUdfFields/entityInformation")]
-		Task<EntityInformationResultModel> CompanyWebhookUdfFieldsQueryEntityInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<EntityInformationResultModel> GetEntityInfoAsync(string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of FieldInformationResultModel</returns>
 		[Get("/V1.0/CompanyWebhookUdfFields/entityInformation/fields")]
-		Task<FieldInformationResultModel> CompanyWebhookUdfFieldsQueryFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<FieldInformationResultModel> GetFieldInfoAsync(string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="id"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of CompanyWebhookUdfFieldModel</returns>
 		[Get("/V1.0/CompanyWebhookUdfFields/{id}")]
-		Task<CompanyWebhookUdfFieldModel> CompanyWebhookUdfFieldsQueryItem([Header("UserAgent")] string userAgent, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<CompanyWebhookUdfFieldModel> GetAsync([AliasAs("id")] long id);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 		[Get("/V1.0/CompanyWebhookUdfFields/entityInformation/userDefinedFields")]
-		Task<UserDefinedFieldInformationResultModel> CompanyWebhookUdfFieldsQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="search"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of CompanyWebhookUdfFieldModel</returns>
 		[Get("/V1.0/CompanyWebhookUdfFields/query")]
-		Task<CompanyWebhookUdfFieldModel> CompanyWebhookUdfFieldsUrlParameterQuery([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<CompanyWebhookUdfFieldModel> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="search"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/CompanyWebhookUdfFields/query/count")]
-		Task<QueryCountResultModel> CompanyWebhookUdfFieldsUrlParameterQueryCount([Header("UserAgent")] string userAgent, [AliasAs("search")] string search, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
-		#endregion Asynchronous Operations
+		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
 	}
 }

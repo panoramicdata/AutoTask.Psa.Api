@@ -9,21 +9,14 @@ namespace AutoTask.Psa.Api.Interfaces
 	/// </summary>
 	public interface IContactWebhookUdfFieldsChildApi
 	{
-		#region Asynchronous Operations
-
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="restModelInput"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContactWebhookUdfFieldModel</returns>
 		[Post("/V1.0/ContactWebhooks/{parentId}/UdfFields")]
-		Task<ContactWebhookUdfFieldModel> ContactWebhookUdfFieldsChildCreateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContactWebhookUdfFieldModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContactWebhookUdfFieldModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] ContactWebhookUdfFieldModel entity);
 
 		/// <summary>
 		///
@@ -31,66 +24,45 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
 		/// <param name="id"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of OperationResultModel</returns>
 		[Delete("/V1.0/ContactWebhooks/{parentId}/UdfFields/{id}")]
-		Task<OperationResultModel> ContactWebhookUdfFieldsChildDeleteEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<OperationResultModel> DeleteAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="restModelInput"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContactWebhookUdfFieldModel</returns>
 		[Patch("/V1.0/ContactWebhooks/{parentId}/UdfFields")]
-		Task<ContactWebhookUdfFieldModel> ContactWebhookUdfFieldsChildPatchEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContactWebhookUdfFieldModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContactWebhookUdfFieldModel> PatchAsync([AliasAs("parentId")] long? parentId, [Body] ContactWebhookUdfFieldModel entity);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContactWebhookUdfFieldModel</returns>
 		[Get("/V1.0/ContactWebhooks/{parentId}/UdfFields")]
-		Task<ContactWebhookUdfFieldModel> ContactWebhookUdfFieldsChildQuery([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContactWebhookUdfFieldModel> QueryAsync([AliasAs("parentId")] long? parentId);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of EntityInformationResultModel</returns>
 		[Get("/V1.0/ContactWebhooks/{parentId}/UdfFields/entityInformation")]
-		Task<EntityInformationResultModel> ContactWebhookUdfFieldsChildQueryEntityInformation([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of FieldInformationResultModel</returns>
 		[Get("/V1.0/ContactWebhooks/{parentId}/UdfFields/entityInformation/fields")]
-		Task<FieldInformationResultModel> ContactWebhookUdfFieldsChildQueryFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId);
 
 		/// <summary>
 		///
@@ -98,40 +70,26 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
 		/// <param name="id"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContactWebhookUdfFieldModel</returns>
 		[Get("/V1.0/ContactWebhooks/{parentId}/UdfFields/{id}")]
-		Task<ContactWebhookUdfFieldModel> ContactWebhookUdfFieldsChildQueryItem([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContactWebhookUdfFieldModel> GetAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 		[Get("/V1.0/ContactWebhooks/{parentId}/UdfFields/entityInformation/userDefinedFields")]
-		Task<UserDefinedFieldInformationResultModel> ContactWebhookUdfFieldsChildQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="restModelInput"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContactWebhookUdfFieldModel</returns>
 		[Put("/V1.0/ContactWebhooks/{parentId}/UdfFields")]
-		Task<ContactWebhookUdfFieldModel> ContactWebhookUdfFieldsChildUpdateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContactWebhookUdfFieldModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
-		#endregion Asynchronous Operations
+		Task<ContactWebhookUdfFieldModel> UpdateAsync([AliasAs("parentId")] long? parentId, [Body] ContactWebhookUdfFieldModel entity);
 	}
 }

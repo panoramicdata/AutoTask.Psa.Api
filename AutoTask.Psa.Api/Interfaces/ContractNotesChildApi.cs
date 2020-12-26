@@ -9,74 +9,50 @@ namespace AutoTask.Psa.Api.Interfaces
 	/// </summary>
 	public interface IContractNotesChildApi
 	{
-		#region Asynchronous Operations
-
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="restModelInput"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractNoteModel</returns>
 		[Post("/V1.0/Contracts/{parentId}/Notes")]
-		Task<ContractNoteModel> ContractNotesChildCreateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContractNoteModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContractNoteModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] ContractNoteModel entity);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="restModelInput"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractNoteModel</returns>
 		[Patch("/V1.0/Contracts/{parentId}/Notes")]
-		Task<ContractNoteModel> ContractNotesChildPatchEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContractNoteModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContractNoteModel> PatchAsync([AliasAs("parentId")] long? parentId, [Body] ContractNoteModel entity);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractNoteModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/Notes")]
-		Task<ContractNoteModel> ContractNotesChildQuery([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContractNoteModel> QueryAsync([AliasAs("parentId")] long? parentId);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of EntityInformationResultModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/Notes/entityInformation")]
-		Task<EntityInformationResultModel> ContractNotesChildQueryEntityInformation([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of FieldInformationResultModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/Notes/entityInformation/fields")]
-		Task<FieldInformationResultModel> ContractNotesChildQueryFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId);
 
 		/// <summary>
 		///
@@ -84,40 +60,26 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
 		/// <param name="id"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractNoteModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/Notes/{id}")]
-		Task<ContractNoteModel> ContractNotesChildQueryItem([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContractNoteModel> GetAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/Notes/entityInformation/userDefinedFields")]
-		Task<UserDefinedFieldInformationResultModel> ContractNotesChildQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="restModelInput"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractNoteModel</returns>
 		[Put("/V1.0/Contracts/{parentId}/Notes")]
-		Task<ContractNoteModel> ContractNotesChildUpdateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContractNoteModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
-		#endregion Asynchronous Operations
+		Task<ContractNoteModel> UpdateAsync([AliasAs("parentId")] long? parentId, [Body] ContractNoteModel entity);
 	}
 }

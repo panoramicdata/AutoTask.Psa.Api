@@ -10,19 +10,12 @@ namespace AutoTask.Psa.Api.Interfaces
 	/// </summary>
 	public interface IApiVersionApi
 	{
-		#region Asynchronous Operations
-
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ApiVersionResultModel</returns>
 		[Get("/VersionInformation")]
-		Task<ApiVersionResultModel> ApiVersionApiVersionInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
-		#endregion Asynchronous Operations
+		Task<ApiVersionResultModel> ApiVersionApiVersionInformation(string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 	}
 }

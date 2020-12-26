@@ -9,19 +9,12 @@ namespace AutoTask.Psa.Api.Interfaces
 	/// </summary>
 	public interface IMetadataApiIntegrationApi
 	{
-		#region Asynchronous Operations
-
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of GlobalEntityInformationResultModel</returns>
 		[Get("/V1.0/EntityInformation")]
-		Task<GlobalEntityInformationResultModel> MetadataApiIntegrationQueryEntityInformation([Header("UserAgent")] string userAgent, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
-		#endregion Asynchronous Operations
+		Task<GlobalEntityInformationResultModel> GetEntityInfoAsync(string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
 	}
 }

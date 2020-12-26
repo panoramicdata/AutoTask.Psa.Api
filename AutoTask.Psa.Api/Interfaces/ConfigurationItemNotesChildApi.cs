@@ -9,74 +9,50 @@ namespace AutoTask.Psa.Api.Interfaces
 	/// </summary>
 	public interface IConfigurationItemNotesChildApi
 	{
-		#region Asynchronous Operations
-
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="restModelInput"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ConfigurationItemNoteModel</returns>
 		[Post("/V1.0/ConfigurationItems/{parentId}/Notes")]
-		Task<ConfigurationItemNoteModel> ConfigurationItemNotesChildCreateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ConfigurationItemNoteModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ConfigurationItemNoteModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] ConfigurationItemNoteModel entity);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="restModelInput"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ConfigurationItemNoteModel</returns>
 		[Patch("/V1.0/ConfigurationItems/{parentId}/Notes")]
-		Task<ConfigurationItemNoteModel> ConfigurationItemNotesChildPatchEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ConfigurationItemNoteModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ConfigurationItemNoteModel> PatchAsync([AliasAs("parentId")] long? parentId, [Body] ConfigurationItemNoteModel entity);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ConfigurationItemNoteModel</returns>
 		[Get("/V1.0/ConfigurationItems/{parentId}/Notes")]
-		Task<ConfigurationItemNoteModel> ConfigurationItemNotesChildQuery([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ConfigurationItemNoteModel> QueryAsync([AliasAs("parentId")] long? parentId);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of EntityInformationResultModel</returns>
 		[Get("/V1.0/ConfigurationItems/{parentId}/Notes/entityInformation")]
-		Task<EntityInformationResultModel> ConfigurationItemNotesChildQueryEntityInformation([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of FieldInformationResultModel</returns>
 		[Get("/V1.0/ConfigurationItems/{parentId}/Notes/entityInformation/fields")]
-		Task<FieldInformationResultModel> ConfigurationItemNotesChildQueryFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId);
 
 		/// <summary>
 		///
@@ -84,40 +60,26 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
 		/// <param name="id"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ConfigurationItemNoteModel</returns>
 		[Get("/V1.0/ConfigurationItems/{parentId}/Notes/{id}")]
-		Task<ConfigurationItemNoteModel> ConfigurationItemNotesChildQueryItem([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ConfigurationItemNoteModel> GetAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 		[Get("/V1.0/ConfigurationItems/{parentId}/Notes/entityInformation/userDefinedFields")]
-		Task<UserDefinedFieldInformationResultModel> ConfigurationItemNotesChildQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="restModelInput"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ConfigurationItemNoteModel</returns>
 		[Put("/V1.0/ConfigurationItems/{parentId}/Notes")]
-		Task<ConfigurationItemNoteModel> ConfigurationItemNotesChildUpdateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ConfigurationItemNoteModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
-		#endregion Asynchronous Operations
+		Task<ConfigurationItemNoteModel> UpdateAsync([AliasAs("parentId")] long? parentId, [Body] ConfigurationItemNoteModel entity);
 	}
 }

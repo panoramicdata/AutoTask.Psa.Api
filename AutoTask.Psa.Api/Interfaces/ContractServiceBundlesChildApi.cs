@@ -9,74 +9,50 @@ namespace AutoTask.Psa.Api.Interfaces
 	/// </summary>
 	public interface IContractServiceBundlesChildApi
 	{
-		#region Asynchronous Operations
-
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="restModelInput"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractServiceBundleModel</returns>
 		[Post("/V1.0/Contracts/{parentId}/ServiceBundles")]
-		Task<ContractServiceBundleModel> ContractServiceBundlesChildCreateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContractServiceBundleModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContractServiceBundleModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] ContractServiceBundleModel entity);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="restModelInput"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractServiceBundleModel</returns>
 		[Patch("/V1.0/Contracts/{parentId}/ServiceBundles")]
-		Task<ContractServiceBundleModel> ContractServiceBundlesChildPatchEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContractServiceBundleModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContractServiceBundleModel> PatchAsync([AliasAs("parentId")] long? parentId, [Body] ContractServiceBundleModel entity);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractServiceBundleModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/ServiceBundles")]
-		Task<ContractServiceBundleModel> ContractServiceBundlesChildQuery([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContractServiceBundleModel> QueryAsync([AliasAs("parentId")] long? parentId);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of EntityInformationResultModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/ServiceBundles/entityInformation")]
-		Task<EntityInformationResultModel> ContractServiceBundlesChildQueryEntityInformation([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of FieldInformationResultModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/ServiceBundles/entityInformation/fields")]
-		Task<FieldInformationResultModel> ContractServiceBundlesChildQueryFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId);
 
 		/// <summary>
 		///
@@ -84,40 +60,26 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
 		/// <param name="id"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractServiceBundleModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/ServiceBundles/{id}")]
-		Task<ContractServiceBundleModel> ContractServiceBundlesChildQueryItem([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ContractServiceBundleModel> GetAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 		[Get("/V1.0/Contracts/{parentId}/ServiceBundles/entityInformation/userDefinedFields")]
-		Task<UserDefinedFieldInformationResultModel> ContractServiceBundlesChildQueryUserDefinedFieldDefinitions([Header("UserAgent")] string userAgent, [AliasAs("parentId")] string parentId, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId);
 
 		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="parentId"></param>
-		/// <param name="restModelInput"></param>
-		/// <param name="ApiIntegrationCode">API Integration Code</param>
-		/// <param name="UserName">User Name</param>
-		/// <param name="Secret">Secret</param>
-		/// <param name="ImpersonationResourceId">Impersonation Resource Key (optional)</param>
 		/// <returns>Task of ContractServiceBundleModel</returns>
 		[Put("/V1.0/Contracts/{parentId}/ServiceBundles")]
-		Task<ContractServiceBundleModel> ContractServiceBundlesChildUpdateEntity([Header("UserAgent")] string userAgent, [AliasAs("parentId")] long? parentId, [Body] ContractServiceBundleModel restModelInput, string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
-		#endregion Asynchronous Operations
+		Task<ContractServiceBundleModel> UpdateAsync([AliasAs("parentId")] long? parentId, [Body] ContractServiceBundleModel entity);
 	}
 }

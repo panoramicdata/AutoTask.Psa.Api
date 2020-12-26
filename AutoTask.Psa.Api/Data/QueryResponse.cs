@@ -7,7 +7,7 @@ namespace AutoTask.Psa.Api.Data
 	/// Response
 	/// </summary>
 	[DataContract]
-	public class Response<T>
+	public class QueryResponse<T>
 	{
 		/// <summary>
 		/// The items
