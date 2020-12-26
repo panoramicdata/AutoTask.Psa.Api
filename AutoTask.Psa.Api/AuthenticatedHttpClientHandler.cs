@@ -10,7 +10,7 @@ namespace AutoTask.Psa.Api
 	{
 		private readonly AutoTaskClientOptions _options;
 
-		private ILogger _logger;
+		private readonly ILogger _logger;
 
 		public AuthenticatedHttpClientHandler(
 			AutoTaskClientOptions options,
@@ -55,7 +55,7 @@ namespace AutoTask.Psa.Api
 				.SendAsync(request, cancellationToken)
 				.ConfigureAwait(false);
 
-			_logger.LogDebug($"{guid}:{response.StatusCode}:{(await response.Content.ReadAsStringAsync().ConfigureAwait(false))}");
+			_logger.LogDebug($"{guid}:{response.StatusCode}:{await response.Content.ReadAsStringAsync().ConfigureAwait(false)}");
 
 			return response;
 		}

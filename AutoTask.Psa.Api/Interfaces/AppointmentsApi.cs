@@ -11,7 +11,7 @@ namespace AutoTask.Psa.Api.Interfaces
 	public interface IAppointmentsApi
 	{
 		/// <summary>
-		/// 
+		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="entity"></param>
