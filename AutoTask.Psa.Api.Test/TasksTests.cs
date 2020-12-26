@@ -35,7 +35,7 @@ namespace AutoTask.Psa.Api.Test
 			};
 			var response = await AutoTaskClient
 				.Tasks
-				.TasksQuery(queryModel)
+				.QueryAsync(queryModel)
 				.ConfigureAwait(false);
 
 			response.Should().NotBeNull(because: "a valid request should return a response object");
