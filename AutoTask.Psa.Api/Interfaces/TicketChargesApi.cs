@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of TicketChargeModel</returns>
 		[Get("/V1.0/TicketCharges/query")]
-		Task<TicketChargeModel> QueryAsync([AliasAs("search")] string search);
+		Task<TicketChargeModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -76,6 +76,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/TicketCharges/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

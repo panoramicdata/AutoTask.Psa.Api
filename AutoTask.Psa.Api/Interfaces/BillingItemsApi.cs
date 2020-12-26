@@ -83,7 +83,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of BillingItemModel</returns>
 		[Get("/V1.0/BillingItems/query")]
-		Task<BillingItemModel> QueryAsync([AliasAs("search")] string search);
+		Task<BillingItemModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -92,6 +92,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/BillingItems/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

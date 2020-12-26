@@ -91,7 +91,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QuoteLocationModel</returns>
 		[Get("/V1.0/QuoteLocations/query")]
-		Task<QuoteLocationModel> QueryAsync([AliasAs("search")] string search);
+		Task<QuoteLocationModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -100,6 +100,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/QuoteLocations/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

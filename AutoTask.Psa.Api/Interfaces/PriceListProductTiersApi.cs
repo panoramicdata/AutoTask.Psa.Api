@@ -83,7 +83,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of PriceListProductTierModel</returns>
 		[Get("/V1.0/PriceListProductTiers/query")]
-		Task<PriceListProductTierModel> QueryAsync([AliasAs("search")] string search);
+		Task<PriceListProductTierModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -92,6 +92,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/PriceListProductTiers/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

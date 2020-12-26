@@ -84,7 +84,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ComanagedAssociationModel</returns>
 		[Get("/V1.0/ComanagedAssociations/query")]
-		Task<ComanagedAssociationModel> QueryAsync([AliasAs("search")] string search);
+		Task<ComanagedAssociationModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -93,6 +93,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/ComanagedAssociations/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

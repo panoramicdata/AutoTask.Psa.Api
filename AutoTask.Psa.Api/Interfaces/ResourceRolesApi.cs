@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ResourceRoleModel</returns>
 		[Get("/V1.0/ResourceRoles/query")]
-		Task<ResourceRoleModel> QueryAsync([AliasAs("search")] string search);
+		Task<ResourceRoleModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -76,6 +76,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/ResourceRoles/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

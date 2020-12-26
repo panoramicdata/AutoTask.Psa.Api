@@ -91,7 +91,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of TaxModel</returns>
 		[Get("/V1.0/Taxes/query")]
-		Task<TaxModel> QueryAsync([AliasAs("search")] string search);
+		Task<TaxModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -100,6 +100,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/Taxes/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

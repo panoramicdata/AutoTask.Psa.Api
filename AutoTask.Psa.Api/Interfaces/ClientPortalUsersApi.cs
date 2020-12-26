@@ -91,7 +91,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ClientPortalUserModel</returns>
 		[Get("/V1.0/ClientPortalUsers/query")]
-		Task<ClientPortalUserModel> QueryAsync([AliasAs("search")] string search);
+		Task<ClientPortalUserModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -100,6 +100,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/ClientPortalUsers/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

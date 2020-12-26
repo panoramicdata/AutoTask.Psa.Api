@@ -83,7 +83,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of PriceListServiceBundleModel</returns>
 		[Get("/V1.0/PriceListServiceBundles/query")]
-		Task<PriceListServiceBundleModel> QueryAsync([AliasAs("search")] string search);
+		Task<PriceListServiceBundleModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -92,6 +92,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/PriceListServiceBundles/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

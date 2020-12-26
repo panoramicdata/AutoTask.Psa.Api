@@ -1,7 +1,6 @@
 using Refit;
 using System.Threading.Tasks;
 using AutoTask.Psa.Api.Data;
-using System.Threading.Tasks;
 
 namespace AutoTask.Psa.Api.Interfaces
 {

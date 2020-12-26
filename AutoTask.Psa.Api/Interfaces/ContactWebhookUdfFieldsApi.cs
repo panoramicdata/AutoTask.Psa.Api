@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ContactWebhookUdfFieldModel</returns>
 		[Get("/V1.0/ContactWebhookUdfFields/query")]
-		Task<ContactWebhookUdfFieldModel> QueryAsync([AliasAs("search")] string search);
+		Task<ContactWebhookUdfFieldModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -76,6 +76,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/ContactWebhookUdfFields/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

@@ -100,7 +100,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ChecklistLibraryModel</returns>
 		[Get("/V1.0/ChecklistLibraries/query")]
-		Task<ChecklistLibraryModel> QueryAsync([AliasAs("search")] string search);
+		Task<ChecklistLibraryModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -109,6 +109,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/ChecklistLibraries/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

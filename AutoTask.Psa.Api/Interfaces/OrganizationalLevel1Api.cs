@@ -91,7 +91,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of OrganizationalLevel1Model</returns>
 		[Get("/V1.0/OrganizationalLevel1s/query")]
-		Task<OrganizationalLevel1Model> QueryAsync([AliasAs("search")] string search);
+		Task<OrganizationalLevel1Model> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -100,6 +100,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/OrganizationalLevel1s/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

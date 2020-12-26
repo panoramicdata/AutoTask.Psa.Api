@@ -59,7 +59,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of CompanyAttachmentModel</returns>
 		[Get("/V1.0/CompanyAttachments/query")]
-		Task<CompanyAttachmentModel> QueryAsync([AliasAs("search")] string search);
+		Task<CompanyAttachmentModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -68,6 +68,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/CompanyAttachments/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

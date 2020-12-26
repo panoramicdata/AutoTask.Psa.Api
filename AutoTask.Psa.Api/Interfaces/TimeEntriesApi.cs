@@ -100,7 +100,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of TimeEntryModel</returns>
 		[Get("/V1.0/TimeEntries/query")]
-		Task<TimeEntryModel> QueryAsync([AliasAs("search")] string search);
+		Task<TimeEntryModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -109,6 +109,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/TimeEntries/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

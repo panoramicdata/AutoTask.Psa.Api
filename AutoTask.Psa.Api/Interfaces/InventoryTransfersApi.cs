@@ -75,7 +75,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of InventoryTransferModel</returns>
 		[Get("/V1.0/InventoryTransfers/query")]
-		Task<InventoryTransferModel> QueryAsync([AliasAs("search")] string search);
+		Task<InventoryTransferModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -84,6 +84,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/InventoryTransfers/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

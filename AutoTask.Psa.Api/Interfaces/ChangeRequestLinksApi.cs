@@ -84,7 +84,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ChangeRequestLinkModel</returns>
 		[Get("/V1.0/ChangeRequestLinks/query")]
-		Task<ChangeRequestLinkModel> QueryAsync([AliasAs("search")] string search);
+		Task<ChangeRequestLinkModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -93,6 +93,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/ChangeRequestLinks/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

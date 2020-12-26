@@ -104,7 +104,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of AppointmentModel</returns>
 		[Get("/V1.0/Appointments/query")]
-		Task<AppointmentModel> QueryAsync([AliasAs("search")] string search);
+		Task<AppointmentModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -113,6 +113,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/Appointments/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }

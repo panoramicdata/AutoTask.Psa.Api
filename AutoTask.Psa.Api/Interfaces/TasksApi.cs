@@ -1,7 +1,6 @@
 using Refit;
 using System.Threading.Tasks;
 using AutoTask.Psa.Api.Data;
-using System.Collections.Generic;
 
 namespace AutoTask.Psa.Api.Interfaces
 {
@@ -68,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of TaskModel</returns>
 		[Get("/V1.0/Tasks/query")]
-		Task<TaskModel> QueryAsync([AliasAs("search")] string search);
+		Task<TaskModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
@@ -77,6 +76,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/Tasks/query/count")]
-		Task<QueryCountResultModel> CountAsync([AliasAs("search")] string search);
+		Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
 	}
 }
