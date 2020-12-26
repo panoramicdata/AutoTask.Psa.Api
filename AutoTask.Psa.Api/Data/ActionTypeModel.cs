@@ -25,7 +25,7 @@ namespace AutoTask.Psa.Api.Data
 		/// <param name="UserDefinedFields">UserDefinedFields.</param>
 		public ActionTypeModel(
 			 long? Id = default,
-			 string Name = default,
+			 string? Name = default,
 			 bool? IsActive = default,
 			 bool? IsSystemActionType = default,
 			 int? View = default,
@@ -44,31 +44,37 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
 		public long? Id { get; set; }
+
 		/// <summary>
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string? Name { get; set; }
+
 		/// <summary>
 		/// Gets or Sets IsActive
 		/// </summary>
 		[DataMember(Name = "IsActive", EmitDefaultValue = false)]
 		public bool? IsActive { get; set; }
+
 		/// <summary>
 		/// Gets or Sets IsSystemActionType
 		/// </summary>
 		[DataMember(Name = "IsSystemActionType", EmitDefaultValue = false)]
 		public bool? IsSystemActionType { get; set; }
+
 		/// <summary>
 		/// Gets or Sets View
 		/// </summary>
 		[DataMember(Name = "View", EmitDefaultValue = false)]
 		public int? View { get; set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
 		public List<UserDefinedField> UserDefinedFields { get; set; }
+
 		/// <summary>
 		/// Returns the string presentation of the object
 		/// </summary>
