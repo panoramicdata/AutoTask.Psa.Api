@@ -11,43 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class AttachmentInfoModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="AttachmentInfoModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="AttachDate">AttachDate.</param>
-		/// <param name="AttachedByContactID">AttachedByContactID.</param>
-		/// <param name="AttachedByResourceID">AttachedByResourceID.</param>
-		/// <param name="AttachmentType">AttachmentType.</param>
-		/// <param name="ContentType">ContentType.</param>
-		/// <param name="FileSize">FileSize.</param>
-		/// <param name="FullPath">FullPath.</param>
-		/// <param name="ImpersonatorCreatorResourceID">ImpersonatorCreatorResourceID.</param>
-		/// <param name="OpportunityID">OpportunityID.</param>
-		/// <param name="ParentID">ParentID.</param>
-		/// <param name="ParentType">ParentType.</param>
-		/// <param name="Publish">Publish.</param>
-		/// <param name="Title">Title.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public AttachmentInfoModel(long? Id = default, DateTime? AttachDate = default, long? AttachedByContactID = default, long? AttachedByResourceID = default, string AttachmentType = default, string ContentType = default, double? FileSize = default, string FullPath = default, int? ImpersonatorCreatorResourceID = default, long? OpportunityID = default, long? ParentID = default, int? ParentType = default, int? Publish = default, string Title = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.AttachDate = AttachDate;
-			this.AttachedByContactID = AttachedByContactID;
-			this.AttachedByResourceID = AttachedByResourceID;
-			this.AttachmentType = AttachmentType;
-			this.ContentType = ContentType;
-			this.FileSize = FileSize;
-			this.FullPath = FullPath;
-			this.ImpersonatorCreatorResourceID = ImpersonatorCreatorResourceID;
-			this.OpportunityID = OpportunityID;
-			this.ParentID = ParentID;
-			this.ParentType = ParentType;
-			this.Publish = Publish;
-			this.Title = Title;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -136,6 +99,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public long? SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

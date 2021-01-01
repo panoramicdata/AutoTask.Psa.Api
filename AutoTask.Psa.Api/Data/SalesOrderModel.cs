@@ -11,65 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class SalesOrderModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="SalesOrderModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="AdditionalBillToAddressInformation">AdditionalBillToAddressInformation.</param>
-		/// <param name="AdditionalShipToAddressInformation">AdditionalShipToAddressInformation.</param>
-		/// <param name="BillingAddress1">BillingAddress1.</param>
-		/// <param name="BillingAddress2">BillingAddress2.</param>
-		/// <param name="BillToCity">BillToCity.</param>
-		/// <param name="BillToCountryID">BillToCountryID.</param>
-		/// <param name="BillToPostalCode">BillToPostalCode.</param>
-		/// <param name="BillToState">BillToState.</param>
-		/// <param name="CompanyID">CompanyID.</param>
-		/// <param name="ContactID">ContactID.</param>
-		/// <param name="ImpersonatorCreatorResourceID">ImpersonatorCreatorResourceID.</param>
-		/// <param name="OpportunityID">OpportunityID.</param>
-		/// <param name="OrganizationalLevelAssociationID">OrganizationalLevelAssociationID.</param>
-		/// <param name="OwnerResourceID">OwnerResourceID.</param>
-		/// <param name="PromisedFulfillmentDate">PromisedFulfillmentDate.</param>
-		/// <param name="SalesOrderDate">SalesOrderDate.</param>
-		/// <param name="ShipToAddress1">ShipToAddress1.</param>
-		/// <param name="ShipToAddress2">ShipToAddress2.</param>
-		/// <param name="ShipToCity">ShipToCity.</param>
-		/// <param name="ShipToCountryID">ShipToCountryID.</param>
-		/// <param name="ShipToPostalCode">ShipToPostalCode.</param>
-		/// <param name="ShipToState">ShipToState.</param>
-		/// <param name="Status">Status.</param>
-		/// <param name="Title">Title.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public SalesOrderModel(long? Id = default, string AdditionalBillToAddressInformation = default, string AdditionalShipToAddressInformation = default, string BillingAddress1 = default, string BillingAddress2 = default, string BillToCity = default, int? BillToCountryID = default, string BillToPostalCode = default, string BillToState = default, int? CompanyID = default, int? ContactID = default, int? ImpersonatorCreatorResourceID = default, int? OpportunityID = default, int? OrganizationalLevelAssociationID = default, int? OwnerResourceID = default, DateTime? PromisedFulfillmentDate = default, DateTime? SalesOrderDate = default, string ShipToAddress1 = default, string ShipToAddress2 = default, string ShipToCity = default, int? ShipToCountryID = default, string ShipToPostalCode = default, string ShipToState = default, int? Status = default, string Title = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.AdditionalBillToAddressInformation = AdditionalBillToAddressInformation;
-			this.AdditionalShipToAddressInformation = AdditionalShipToAddressInformation;
-			this.BillingAddress1 = BillingAddress1;
-			this.BillingAddress2 = BillingAddress2;
-			this.BillToCity = BillToCity;
-			this.BillToCountryID = BillToCountryID;
-			this.BillToPostalCode = BillToPostalCode;
-			this.BillToState = BillToState;
-			this.CompanyID = CompanyID;
-			this.ContactID = ContactID;
-			this.ImpersonatorCreatorResourceID = ImpersonatorCreatorResourceID;
-			this.OpportunityID = OpportunityID;
-			this.OrganizationalLevelAssociationID = OrganizationalLevelAssociationID;
-			this.OwnerResourceID = OwnerResourceID;
-			this.PromisedFulfillmentDate = PromisedFulfillmentDate;
-			this.SalesOrderDate = SalesOrderDate;
-			this.ShipToAddress1 = ShipToAddress1;
-			this.ShipToAddress2 = ShipToAddress2;
-			this.ShipToCity = ShipToCity;
-			this.ShipToCountryID = ShipToCountryID;
-			this.ShipToPostalCode = ShipToPostalCode;
-			this.ShipToState = ShipToState;
-			this.Status = Status;
-			this.Title = Title;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -224,6 +165,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncSalesOrderInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

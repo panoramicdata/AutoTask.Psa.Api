@@ -49,7 +49,7 @@ namespace AutoTask.Psa.Api
 
 			// Get a GUID to uniquely identify the request
 			var guid = Guid.NewGuid();
-			_logger.LogDebug($"{guid}:{request.Method}:{request.RequestUri}\nHeaders:{request.Headers}\nBody:{await request.Content.ReadAsStringAsync().ConfigureAwait(false)}");
+			_logger.LogDebug($"{guid}:{request.Method}:{request.RequestUri}\nHeaders:{request.Headers}\nBody:{(request.Content is null ? null : await request.Content.ReadAsStringAsync().ConfigureAwait(false))}");
 
 			var response = await base
 				.SendAsync(request, cancellationToken)

@@ -10,39 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class InternalLocationModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="InternalLocationModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="AdditionalAddressInfo">AdditionalAddressInfo.</param>
-		/// <param name="Address1">Address1.</param>
-		/// <param name="Address2">Address2.</param>
-		/// <param name="City">City.</param>
-		/// <param name="Country">Country.</param>
-		/// <param name="HolidaySetId">HolidaySetId.</param>
-		/// <param name="IsDefault">IsDefault.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="PostalCode">PostalCode.</param>
-		/// <param name="State">State.</param>
-		/// <param name="TimeZone">TimeZone.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public InternalLocationModel(long? Id = default, string AdditionalAddressInfo = default, string Address1 = default, string Address2 = default, string City = default, string Country = default, long? HolidaySetId = default, bool? IsDefault = default, string Name = default, string PostalCode = default, string State = default, string TimeZone = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.AdditionalAddressInfo = AdditionalAddressInfo;
-			this.Address1 = Address1;
-			this.Address2 = Address2;
-			this.City = City;
-			this.Country = Country;
-			this.HolidaySetId = HolidaySetId;
-			this.IsDefault = IsDefault;
-			this.Name = Name;
-			this.PostalCode = PostalCode;
-			this.State = State;
-			this.TimeZone = TimeZone;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

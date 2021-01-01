@@ -10,21 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractExclusionRoleModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractExclusionRoleModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="RoleID">RoleID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractExclusionRoleModel(long? Id = default, long? ContractID = default, long? RoleID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ContractID = ContractID;
-			this.RoleID = RoleID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -47,6 +32,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractExclusionRoleInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

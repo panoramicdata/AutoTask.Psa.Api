@@ -11,47 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ServiceBundleModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ServiceBundleModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="BillingCodeID">BillingCodeID.</param>
-		/// <param name="CreateDate">CreateDate.</param>
-		/// <param name="CreatorResourceID">CreatorResourceID.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="InvoiceDescription">InvoiceDescription.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="LastModifiedDate">LastModifiedDate.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="PercentageDiscount">PercentageDiscount.</param>
-		/// <param name="PeriodType">PeriodType.</param>
-		/// <param name="ServiceLevelAgreementID">ServiceLevelAgreementID.</param>
-		/// <param name="UnitCost">UnitCost.</param>
-		/// <param name="UnitDiscount">UnitDiscount.</param>
-		/// <param name="UnitPrice">UnitPrice.</param>
-		/// <param name="UpdateResourceID">UpdateResourceID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ServiceBundleModel(long? Id = default, int? BillingCodeID = default, DateTime? CreateDate = default, int? CreatorResourceID = default, string Description = default, string InvoiceDescription = default, bool? IsActive = default, DateTime? LastModifiedDate = default, string Name = default, double? PercentageDiscount = default, int? PeriodType = default, long? ServiceLevelAgreementID = default, double? UnitCost = default, double? UnitDiscount = default, double? UnitPrice = default, int? UpdateResourceID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.BillingCodeID = BillingCodeID;
-			this.CreateDate = CreateDate;
-			this.CreatorResourceID = CreatorResourceID;
-			this.Description = Description;
-			this.InvoiceDescription = InvoiceDescription;
-			this.IsActive = IsActive;
-			this.LastModifiedDate = LastModifiedDate;
-			this.Name = Name;
-			this.PercentageDiscount = PercentageDiscount;
-			this.PeriodType = PeriodType;
-			this.ServiceLevelAgreementID = ServiceLevelAgreementID;
-			this.UnitCost = UnitCost;
-			this.UnitDiscount = UnitDiscount;
-			this.UnitPrice = UnitPrice;
-			this.UpdateResourceID = UpdateResourceID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

@@ -10,23 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class TicketSecondaryResourceModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="TicketSecondaryResourceModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ResourceID">ResourceID.</param>
-		/// <param name="RoleID">RoleID.</param>
-		/// <param name="TicketID">TicketID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public TicketSecondaryResourceModel(long? Id = default, long? ResourceID = default, long? RoleID = default, long? TicketID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ResourceID = ResourceID;
-			this.RoleID = RoleID;
-			this.TicketID = TicketID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -55,6 +38,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncTicketSecondaryResourceInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

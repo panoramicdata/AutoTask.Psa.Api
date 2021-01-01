@@ -10,25 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class PriceListRoleModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="PriceListRoleModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CurrencyID">CurrencyID.</param>
-		/// <param name="HourlyRate">HourlyRate.</param>
-		/// <param name="RoleID">RoleID.</param>
-		/// <param name="UsesInternalCurrencyPrice">UsesInternalCurrencyPrice.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public PriceListRoleModel(long? Id = default, int? CurrencyID = default, double? HourlyRate = default, int? RoleID = default, bool? UsesInternalCurrencyPrice = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CurrencyID = CurrencyID;
-			this.HourlyRate = HourlyRate;
-			this.RoleID = RoleID;
-			this.UsesInternalCurrencyPrice = UsesInternalCurrencyPrice;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

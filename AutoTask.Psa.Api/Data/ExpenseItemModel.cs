@@ -11,71 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ExpenseItemModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ExpenseItemModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CompanyID">CompanyID.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="Destination">Destination.</param>
-		/// <param name="EntertainmentLocation">EntertainmentLocation.</param>
-		/// <param name="ExpenseCategory">ExpenseCategory.</param>
-		/// <param name="ExpenseCurrencyExpenseAmount">ExpenseCurrencyExpenseAmount.</param>
-		/// <param name="ExpenseCurrencyID">ExpenseCurrencyID.</param>
-		/// <param name="ExpenseDate">ExpenseDate.</param>
-		/// <param name="ExpenseReportID">ExpenseReportID.</param>
-		/// <param name="GLCode">GLCode.</param>
-		/// <param name="HaveReceipt">HaveReceipt.</param>
-		/// <param name="InternalCurrencyExpenseAmount">InternalCurrencyExpenseAmount.</param>
-		/// <param name="InternalCurrencyReimbursementAmount">InternalCurrencyReimbursementAmount.</param>
-		/// <param name="IsBillableToCompany">IsBillableToCompany.</param>
-		/// <param name="IsReimbursable">IsReimbursable.</param>
-		/// <param name="IsRejected">IsRejected.</param>
-		/// <param name="Miles">Miles.</param>
-		/// <param name="OdometerEnd">OdometerEnd.</param>
-		/// <param name="OdometerStart">OdometerStart.</param>
-		/// <param name="Origin">Origin.</param>
-		/// <param name="PaymentType">PaymentType.</param>
-		/// <param name="ProjectID">ProjectID.</param>
-		/// <param name="PurchaseOrderNumber">PurchaseOrderNumber.</param>
-		/// <param name="ReimbursementCurrencyReimbursementAmount">ReimbursementCurrencyReimbursementAmount.</param>
-		/// <param name="TaskID">TaskID.</param>
-		/// <param name="TicketID">TicketID.</param>
-		/// <param name="WorkType">WorkType.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ExpenseItemModel(long? Id = default, int? CompanyID = default, string Description = default, string Destination = default, string EntertainmentLocation = default, int? ExpenseCategory = default, double? ExpenseCurrencyExpenseAmount = default, int? ExpenseCurrencyID = default, DateTime? ExpenseDate = default, int? ExpenseReportID = default, string GLCode = default, bool? HaveReceipt = default, double? InternalCurrencyExpenseAmount = default, double? InternalCurrencyReimbursementAmount = default, bool? IsBillableToCompany = default, bool? IsReimbursable = default, bool? IsRejected = default, double? Miles = default, double? OdometerEnd = default, double? OdometerStart = default, string Origin = default, int? PaymentType = default, int? ProjectID = default, string PurchaseOrderNumber = default, double? ReimbursementCurrencyReimbursementAmount = default, int? TaskID = default, int? TicketID = default, int? WorkType = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CompanyID = CompanyID;
-			this.Description = Description;
-			this.Destination = Destination;
-			this.EntertainmentLocation = EntertainmentLocation;
-			this.ExpenseCategory = ExpenseCategory;
-			this.ExpenseCurrencyExpenseAmount = ExpenseCurrencyExpenseAmount;
-			this.ExpenseCurrencyID = ExpenseCurrencyID;
-			this.ExpenseDate = ExpenseDate;
-			this.ExpenseReportID = ExpenseReportID;
-			this.GLCode = GLCode;
-			this.HaveReceipt = HaveReceipt;
-			this.InternalCurrencyExpenseAmount = InternalCurrencyExpenseAmount;
-			this.InternalCurrencyReimbursementAmount = InternalCurrencyReimbursementAmount;
-			this.IsBillableToCompany = IsBillableToCompany;
-			this.IsReimbursable = IsReimbursable;
-			this.IsRejected = IsRejected;
-			this.Miles = Miles;
-			this.OdometerEnd = OdometerEnd;
-			this.OdometerStart = OdometerStart;
-			this.Origin = Origin;
-			this.PaymentType = PaymentType;
-			this.ProjectID = ProjectID;
-			this.PurchaseOrderNumber = PurchaseOrderNumber;
-			this.ReimbursementCurrencyReimbursementAmount = ReimbursementCurrencyReimbursementAmount;
-			this.TaskID = TaskID;
-			this.TicketID = TicketID;
-			this.WorkType = WorkType;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -248,6 +183,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncExpenseItemInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

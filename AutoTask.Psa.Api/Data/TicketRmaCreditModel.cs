@@ -10,25 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class TicketRmaCreditModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="TicketRmaCreditModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CreditAmount">CreditAmount.</param>
-		/// <param name="CreditDetails">CreditDetails.</param>
-		/// <param name="InternalCurrencyCreditAmount">InternalCurrencyCreditAmount.</param>
-		/// <param name="TicketID">TicketID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public TicketRmaCreditModel(long? Id = default, double? CreditAmount = default, string CreditDetails = default, double? InternalCurrencyCreditAmount = default, int? TicketID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CreditAmount = CreditAmount;
-			this.CreditDetails = CreditDetails;
-			this.InternalCurrencyCreditAmount = InternalCurrencyCreditAmount;
-			this.TicketID = TicketID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -63,6 +44,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncTicketRmaCreditInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

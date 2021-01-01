@@ -11,25 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ConfigurationItemBillingProductAssociationModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ConfigurationItemBillingProductAssociationModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="BillingProductID">BillingProductID.</param>
-		/// <param name="ConfigurationItemID">ConfigurationItemID.</param>
-		/// <param name="EffectiveDate">EffectiveDate.</param>
-		/// <param name="ExpirationDate">ExpirationDate.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ConfigurationItemBillingProductAssociationModel(long? Id = default, int? BillingProductID = default, int? ConfigurationItemID = default, DateTime? EffectiveDate = default, DateTime? ExpirationDate = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.BillingProductID = BillingProductID;
-			this.ConfigurationItemID = ConfigurationItemID;
-			this.EffectiveDate = EffectiveDate;
-			this.ExpirationDate = ExpirationDate;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -64,6 +45,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncInstalledProductBillingProductAssociationInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

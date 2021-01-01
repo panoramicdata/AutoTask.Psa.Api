@@ -538,7 +538,7 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Initializes a new instance of the <see cref="ExpressionFuncContractRateInt64" /> class.
 		/// </summary>
-		[JsonConstructorAttribute]
+		[JsonConstructor]
 		public ExpressionFuncContractRateInt64()
 		{
 		}
@@ -548,31 +548,37 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "Type", EmitDefaultValue = false)]
 		public string Type { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets Parameters
 		/// </summary>
 		[DataMember(Name = "Parameters", EmitDefaultValue = false)]
 		public List<ParameterExpression> Parameters { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
 		public string Name { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets Body
 		/// </summary>
 		[DataMember(Name = "Body", EmitDefaultValue = false)]
 		public Expression Body { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets ReturnType
 		/// </summary>
 		[DataMember(Name = "ReturnType", EmitDefaultValue = false)]
 		public string ReturnType { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets TailCall
 		/// </summary>
 		[DataMember(Name = "TailCall", EmitDefaultValue = false)]
 		public bool? TailCall { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets CanReduce
 		/// </summary>

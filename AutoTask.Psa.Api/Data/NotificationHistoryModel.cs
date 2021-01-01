@@ -11,55 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class NotificationHistoryModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="NotificationHistoryModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CompanyID">CompanyID.</param>
-		/// <param name="EntityNumber">EntityNumber.</param>
-		/// <param name="EntityTitle">EntityTitle.</param>
-		/// <param name="InitiatingContactID">InitiatingContactID.</param>
-		/// <param name="InitiatingResourceID">InitiatingResourceID.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="IsDeleted">IsDeleted.</param>
-		/// <param name="IsTemplateJob">IsTemplateJob.</param>
-		/// <param name="NotificationHistoryTypeID">NotificationHistoryTypeID.</param>
-		/// <param name="NotificationSentTime">NotificationSentTime.</param>
-		/// <param name="OpportunityID">OpportunityID.</param>
-		/// <param name="ProjectID">ProjectID.</param>
-		/// <param name="QuoteID">QuoteID.</param>
-		/// <param name="RecipientDisplayName">RecipientDisplayName.</param>
-		/// <param name="RecipientEmailAddress">RecipientEmailAddress.</param>
-		/// <param name="TaskID">TaskID.</param>
-		/// <param name="TemplateName">TemplateName.</param>
-		/// <param name="TicketID">TicketID.</param>
-		/// <param name="TimeEntryID">TimeEntryID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public NotificationHistoryModel(long? Id = default, long? CompanyID = default, string EntityNumber = default, string EntityTitle = default, long? InitiatingContactID = default, long? InitiatingResourceID = default, bool? IsActive = default, bool? IsDeleted = default, bool? IsTemplateJob = default, int? NotificationHistoryTypeID = default, DateTime? NotificationSentTime = default, long? OpportunityID = default, long? ProjectID = default, long? QuoteID = default, string RecipientDisplayName = default, string RecipientEmailAddress = default, long? TaskID = default, string TemplateName = default, long? TicketID = default, long? TimeEntryID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CompanyID = CompanyID;
-			this.EntityNumber = EntityNumber;
-			this.EntityTitle = EntityTitle;
-			this.InitiatingContactID = InitiatingContactID;
-			this.InitiatingResourceID = InitiatingResourceID;
-			this.IsActive = IsActive;
-			this.IsDeleted = IsDeleted;
-			this.IsTemplateJob = IsTemplateJob;
-			this.NotificationHistoryTypeID = NotificationHistoryTypeID;
-			this.NotificationSentTime = NotificationSentTime;
-			this.OpportunityID = OpportunityID;
-			this.ProjectID = ProjectID;
-			this.QuoteID = QuoteID;
-			this.RecipientDisplayName = RecipientDisplayName;
-			this.RecipientEmailAddress = RecipientEmailAddress;
-			this.TaskID = TaskID;
-			this.TemplateName = TemplateName;
-			this.TicketID = TicketID;
-			this.TimeEntryID = TimeEntryID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

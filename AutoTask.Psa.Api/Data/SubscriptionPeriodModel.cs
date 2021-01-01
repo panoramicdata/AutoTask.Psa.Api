@@ -11,29 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class SubscriptionPeriodModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="SubscriptionPeriodModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="PeriodCost">PeriodCost.</param>
-		/// <param name="PeriodDate">PeriodDate.</param>
-		/// <param name="PeriodPrice">PeriodPrice.</param>
-		/// <param name="PostedDate">PostedDate.</param>
-		/// <param name="PurchaseOrderNumber">PurchaseOrderNumber.</param>
-		/// <param name="SubscriptionID">SubscriptionID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public SubscriptionPeriodModel(long? Id = default, double? PeriodCost = default, DateTime? PeriodDate = default, double? PeriodPrice = default, DateTime? PostedDate = default, string PurchaseOrderNumber = default, int? SubscriptionID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.PeriodCost = PeriodCost;
-			this.PeriodDate = PeriodDate;
-			this.PeriodPrice = PeriodPrice;
-			this.PostedDate = PostedDate;
-			this.PurchaseOrderNumber = PurchaseOrderNumber;
-			this.SubscriptionID = SubscriptionID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -80,6 +57,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public long? SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

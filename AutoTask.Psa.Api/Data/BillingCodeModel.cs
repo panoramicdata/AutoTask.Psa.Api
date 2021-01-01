@@ -10,45 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class BillingCodeModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="BillingCodeModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="AfterHoursWorkType">AfterHoursWorkType.</param>
-		/// <param name="BillingCodeType">BillingCodeType.</param>
-		/// <param name="Department">Department.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="ExternalNumber">ExternalNumber.</param>
-		/// <param name="GeneralLedgerAccount">GeneralLedgerAccount.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="IsExcludedFromNewContracts">IsExcludedFromNewContracts.</param>
-		/// <param name="MarkupRate">MarkupRate.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="TaxCategoryID">TaxCategoryID.</param>
-		/// <param name="UnitCost">UnitCost.</param>
-		/// <param name="UnitPrice">UnitPrice.</param>
-		/// <param name="UseType">UseType.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public BillingCodeModel(long? Id = default, int? AfterHoursWorkType = default, int? BillingCodeType = default, int? Department = default, string Description = default, string ExternalNumber = default, int? GeneralLedgerAccount = default, bool? IsActive = default, bool? IsExcludedFromNewContracts = default, double? MarkupRate = default, string Name = default, int? TaxCategoryID = default, double? UnitCost = default, double? UnitPrice = default, int? UseType = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.AfterHoursWorkType = AfterHoursWorkType;
-			this.BillingCodeType = BillingCodeType;
-			this.Department = Department;
-			this.Description = Description;
-			this.ExternalNumber = ExternalNumber;
-			this.GeneralLedgerAccount = GeneralLedgerAccount;
-			this.IsActive = IsActive;
-			this.IsExcludedFromNewContracts = IsExcludedFromNewContracts;
-			this.MarkupRate = MarkupRate;
-			this.Name = Name;
-			this.TaxCategoryID = TaxCategoryID;
-			this.UnitCost = UnitCost;
-			this.UnitPrice = UnitPrice;
-			this.UseType = UseType;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

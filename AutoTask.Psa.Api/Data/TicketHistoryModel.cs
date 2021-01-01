@@ -11,27 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class TicketHistoryModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="TicketHistoryModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="Action">Action.</param>
-		/// <param name="Date">Date.</param>
-		/// <param name="Detail">Detail.</param>
-		/// <param name="ResourceID">ResourceID.</param>
-		/// <param name="TicketID">TicketID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public TicketHistoryModel(long? Id = default, string Action = default, DateTime? Date = default, string Detail = default, int? ResourceID = default, int? TicketID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.Action = Action;
-			this.Date = Date;
-			this.Detail = Detail;
-			this.ResourceID = ResourceID;
-			this.TicketID = TicketID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -72,6 +51,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public long? SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

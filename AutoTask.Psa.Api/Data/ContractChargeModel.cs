@@ -11,71 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractChargeModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractChargeModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="BillableAmount">BillableAmount.</param>
-		/// <param name="BillingCodeID">BillingCodeID.</param>
-		/// <param name="ChargeType">ChargeType.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="ContractServiceBundleID">ContractServiceBundleID.</param>
-		/// <param name="ContractServiceID">ContractServiceID.</param>
-		/// <param name="CreateDate">CreateDate.</param>
-		/// <param name="CreatorResourceID">CreatorResourceID.</param>
-		/// <param name="DatePurchased">DatePurchased.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="ExtendedCost">ExtendedCost.</param>
-		/// <param name="InternalCurrencyBillableAmount">InternalCurrencyBillableAmount.</param>
-		/// <param name="InternalCurrencyUnitPrice">InternalCurrencyUnitPrice.</param>
-		/// <param name="InternalPurchaseOrderNumber">InternalPurchaseOrderNumber.</param>
-		/// <param name="IsBillableToCompany">IsBillableToCompany.</param>
-		/// <param name="IsBilled">IsBilled.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="Notes">Notes.</param>
-		/// <param name="OrganizationalLevelAssociationID">OrganizationalLevelAssociationID.</param>
-		/// <param name="ProductID">ProductID.</param>
-		/// <param name="PurchaseOrderNumber">PurchaseOrderNumber.</param>
-		/// <param name="Status">Status.</param>
-		/// <param name="StatusLastModifiedBy">StatusLastModifiedBy.</param>
-		/// <param name="StatusLastModifiedDate">StatusLastModifiedDate.</param>
-		/// <param name="UnitCost">UnitCost.</param>
-		/// <param name="UnitPrice">UnitPrice.</param>
-		/// <param name="UnitQuantity">UnitQuantity.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractChargeModel(long? Id = default, double? BillableAmount = default, long? BillingCodeID = default, int? ChargeType = default, long? ContractID = default, long? ContractServiceBundleID = default, long? ContractServiceID = default, DateTime? CreateDate = default, long? CreatorResourceID = default, DateTime? DatePurchased = default, string Description = default, double? ExtendedCost = default, double? InternalCurrencyBillableAmount = default, double? InternalCurrencyUnitPrice = default, string InternalPurchaseOrderNumber = default, bool? IsBillableToCompany = default, bool? IsBilled = default, string Name = default, string Notes = default, int? OrganizationalLevelAssociationID = default, long? ProductID = default, string PurchaseOrderNumber = default, long? Status = default, long? StatusLastModifiedBy = default, DateTime? StatusLastModifiedDate = default, double? UnitCost = default, double? UnitPrice = default, double? UnitQuantity = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.BillableAmount = BillableAmount;
-			this.BillingCodeID = BillingCodeID;
-			this.ChargeType = ChargeType;
-			this.ContractID = ContractID;
-			this.ContractServiceBundleID = ContractServiceBundleID;
-			this.ContractServiceID = ContractServiceID;
-			this.CreateDate = CreateDate;
-			this.CreatorResourceID = CreatorResourceID;
-			this.DatePurchased = DatePurchased;
-			this.Description = Description;
-			this.ExtendedCost = ExtendedCost;
-			this.InternalCurrencyBillableAmount = InternalCurrencyBillableAmount;
-			this.InternalCurrencyUnitPrice = InternalCurrencyUnitPrice;
-			this.InternalPurchaseOrderNumber = InternalPurchaseOrderNumber;
-			this.IsBillableToCompany = IsBillableToCompany;
-			this.IsBilled = IsBilled;
-			this.Name = Name;
-			this.Notes = Notes;
-			this.OrganizationalLevelAssociationID = OrganizationalLevelAssociationID;
-			this.ProductID = ProductID;
-			this.PurchaseOrderNumber = PurchaseOrderNumber;
-			this.Status = Status;
-			this.StatusLastModifiedBy = StatusLastModifiedBy;
-			this.StatusLastModifiedDate = StatusLastModifiedDate;
-			this.UnitCost = UnitCost;
-			this.UnitPrice = UnitPrice;
-			this.UnitQuantity = UnitQuantity;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -248,6 +183,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractCostInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

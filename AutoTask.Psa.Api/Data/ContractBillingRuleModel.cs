@@ -11,47 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractBillingRuleModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractBillingRuleModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="CreateChargesAsBillable">CreateChargesAsBillable.</param>
-		/// <param name="DailyProratedCost">DailyProratedCost.</param>
-		/// <param name="DailyProratedPrice">DailyProratedPrice.</param>
-		/// <param name="DetermineUnits">DetermineUnits.</param>
-		/// <param name="EndDate">EndDate.</param>
-		/// <param name="ExecutionMethod">ExecutionMethod.</param>
-		/// <param name="IncludeItemsInChargeDescription">IncludeItemsInChargeDescription.</param>
-		/// <param name="InvoiceDescription">InvoiceDescription.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="IsDailyProrationEnabled">IsDailyProrationEnabled.</param>
-		/// <param name="MaximumUnits">MaximumUnits.</param>
-		/// <param name="MinimumUnits">MinimumUnits.</param>
-		/// <param name="ProductID">ProductID.</param>
-		/// <param name="StartDate">StartDate.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractBillingRuleModel(long? Id = default, int? ContractID = default, bool? CreateChargesAsBillable = default, double? DailyProratedCost = default, double? DailyProratedPrice = default, int? DetermineUnits = default, DateTime? EndDate = default, int? ExecutionMethod = default, bool? IncludeItemsInChargeDescription = default, string InvoiceDescription = default, bool? IsActive = default, bool? IsDailyProrationEnabled = default, int? MaximumUnits = default, int? MinimumUnits = default, int? ProductID = default, DateTime? StartDate = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ContractID = ContractID;
-			this.CreateChargesAsBillable = CreateChargesAsBillable;
-			this.DailyProratedCost = DailyProratedCost;
-			this.DailyProratedPrice = DailyProratedPrice;
-			this.DetermineUnits = DetermineUnits;
-			this.EndDate = EndDate;
-			this.ExecutionMethod = ExecutionMethod;
-			this.IncludeItemsInChargeDescription = IncludeItemsInChargeDescription;
-			this.InvoiceDescription = InvoiceDescription;
-			this.IsActive = IsActive;
-			this.IsDailyProrationEnabled = IsDailyProrationEnabled;
-			this.MaximumUnits = MaximumUnits;
-			this.MinimumUnits = MinimumUnits;
-			this.ProductID = ProductID;
-			this.StartDate = StartDate;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -152,6 +111,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractBillingRuleInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

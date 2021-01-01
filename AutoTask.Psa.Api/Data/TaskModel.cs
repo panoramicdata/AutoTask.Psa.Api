@@ -11,85 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class TaskModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="TaskModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="AssignedResourceID">AssignedResourceID.</param>
-		/// <param name="AssignedResourceRoleID">AssignedResourceRoleID.</param>
-		/// <param name="BillingCodeID">BillingCodeID.</param>
-		/// <param name="CanClientPortalUserCompleteTask">CanClientPortalUserCompleteTask.</param>
-		/// <param name="CompanyLocationID">CompanyLocationID.</param>
-		/// <param name="CompletedByResourceID">CompletedByResourceID.</param>
-		/// <param name="CompletedByType">CompletedByType.</param>
-		/// <param name="CompletedDateTime">CompletedDateTime.</param>
-		/// <param name="CreateDateTime">CreateDateTime.</param>
-		/// <param name="CreatorResourceID">CreatorResourceID.</param>
-		/// <param name="CreatorType">CreatorType.</param>
-		/// <param name="DepartmentID">DepartmentID.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="EndDateTime">EndDateTime.</param>
-		/// <param name="EstimatedHours">EstimatedHours.</param>
-		/// <param name="ExternalID">ExternalID.</param>
-		/// <param name="HoursToBeScheduled">HoursToBeScheduled.</param>
-		/// <param name="IsTaskBillable">IsTaskBillable.</param>
-		/// <param name="IsVisibleInClientPortal">IsVisibleInClientPortal.</param>
-		/// <param name="LastActivityDateTime">LastActivityDateTime.</param>
-		/// <param name="LastActivityPersonType">LastActivityPersonType.</param>
-		/// <param name="LastActivityResourceID">LastActivityResourceID.</param>
-		/// <param name="PhaseID">PhaseID.</param>
-		/// <param name="Priority">Priority.</param>
-		/// <param name="PriorityLabel">PriorityLabel.</param>
-		/// <param name="ProjectID">ProjectID.</param>
-		/// <param name="PurchaseOrderNumber">PurchaseOrderNumber.</param>
-		/// <param name="RemainingHours">RemainingHours.</param>
-		/// <param name="StartDateTime">StartDateTime.</param>
-		/// <param name="Status">Status.</param>
-		/// <param name="TaskCategoryID">TaskCategoryID.</param>
-		/// <param name="TaskNumber">TaskNumber.</param>
-		/// <param name="TaskType">TaskType.</param>
-		/// <param name="Title">Title.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public TaskModel(long? Id = default, int? AssignedResourceID = default, int? AssignedResourceRoleID = default, int? BillingCodeID = default, bool? CanClientPortalUserCompleteTask = default, int? CompanyLocationID = default, int? CompletedByResourceID = default, int? CompletedByType = default, DateTime? CompletedDateTime = default, DateTime? CreateDateTime = default, int? CreatorResourceID = default, int? CreatorType = default, int? DepartmentID = default, string Description = default, DateTime? EndDateTime = default, double? EstimatedHours = default, string ExternalID = default, double? HoursToBeScheduled = default, bool? IsTaskBillable = default, bool? IsVisibleInClientPortal = default, DateTime? LastActivityDateTime = default, int? LastActivityPersonType = default, int? LastActivityResourceID = default, int? PhaseID = default, int? Priority = default, int? PriorityLabel = default, int? ProjectID = default, string PurchaseOrderNumber = default, double? RemainingHours = default, DateTime? StartDateTime = default, int? Status = default, int? TaskCategoryID = default, string TaskNumber = default, int? TaskType = default, string Title = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.AssignedResourceID = AssignedResourceID;
-			this.AssignedResourceRoleID = AssignedResourceRoleID;
-			this.BillingCodeID = BillingCodeID;
-			this.CanClientPortalUserCompleteTask = CanClientPortalUserCompleteTask;
-			this.CompanyLocationID = CompanyLocationID;
-			this.CompletedByResourceID = CompletedByResourceID;
-			this.CompletedByType = CompletedByType;
-			this.CompletedDateTime = CompletedDateTime;
-			this.CreateDateTime = CreateDateTime;
-			this.CreatorResourceID = CreatorResourceID;
-			this.CreatorType = CreatorType;
-			this.DepartmentID = DepartmentID;
-			this.Description = Description;
-			this.EndDateTime = EndDateTime;
-			this.EstimatedHours = EstimatedHours;
-			this.ExternalID = ExternalID;
-			this.HoursToBeScheduled = HoursToBeScheduled;
-			this.IsTaskBillable = IsTaskBillable;
-			this.IsVisibleInClientPortal = IsVisibleInClientPortal;
-			this.LastActivityDateTime = LastActivityDateTime;
-			this.LastActivityPersonType = LastActivityPersonType;
-			this.LastActivityResourceID = LastActivityResourceID;
-			this.PhaseID = PhaseID;
-			this.Priority = Priority;
-			this.PriorityLabel = PriorityLabel;
-			this.ProjectID = ProjectID;
-			this.PurchaseOrderNumber = PurchaseOrderNumber;
-			this.RemainingHours = RemainingHours;
-			this.StartDateTime = StartDateTime;
-			this.Status = Status;
-			this.TaskCategoryID = TaskCategoryID;
-			this.TaskNumber = TaskNumber;
-			this.TaskType = TaskType;
-			this.Title = Title;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -304,6 +225,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncTaskInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

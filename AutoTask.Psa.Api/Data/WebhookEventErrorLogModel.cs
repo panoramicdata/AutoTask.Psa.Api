@@ -11,29 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class WebhookEventErrorLogModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="WebhookEventErrorLogModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="AccountWebhookID">AccountWebhookID.</param>
-		/// <param name="ContactWebhookID">ContactWebhookID.</param>
-		/// <param name="CreateDateTime">CreateDateTime.</param>
-		/// <param name="ErrorMessage">ErrorMessage.</param>
-		/// <param name="Payload">Payload.</param>
-		/// <param name="SequenceNumber">SequenceNumber.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public WebhookEventErrorLogModel(long? Id = default, int? AccountWebhookID = default, int? ContactWebhookID = default, DateTime? CreateDateTime = default, string ErrorMessage = default, string Payload = default, int? SequenceNumber = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.AccountWebhookID = AccountWebhookID;
-			this.ContactWebhookID = ContactWebhookID;
-			this.CreateDateTime = CreateDateTime;
-			this.ErrorMessage = ErrorMessage;
-			this.Payload = Payload;
-			this.SequenceNumber = SequenceNumber;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

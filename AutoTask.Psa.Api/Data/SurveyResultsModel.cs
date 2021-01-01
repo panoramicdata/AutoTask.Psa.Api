@@ -11,37 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class SurveyResultsModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="SurveyResultsModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CompanyID">CompanyID.</param>
-		/// <param name="CompanyRating">CompanyRating.</param>
-		/// <param name="CompleteDate">CompleteDate.</param>
-		/// <param name="ContactID">ContactID.</param>
-		/// <param name="ContactRating">ContactRating.</param>
-		/// <param name="ResourceRating">ResourceRating.</param>
-		/// <param name="SendDate">SendDate.</param>
-		/// <param name="SurveyID">SurveyID.</param>
-		/// <param name="SurveyRating">SurveyRating.</param>
-		/// <param name="TicketID">TicketID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public SurveyResultsModel(long? Id = default, int? CompanyID = default, double? CompanyRating = default, DateTime? CompleteDate = default, int? ContactID = default, double? ContactRating = default, double? ResourceRating = default, DateTime? SendDate = default, int? SurveyID = default, double? SurveyRating = default, int? TicketID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CompanyID = CompanyID;
-			this.CompanyRating = CompanyRating;
-			this.CompleteDate = CompleteDate;
-			this.ContactID = ContactID;
-			this.ContactRating = ContactRating;
-			this.ResourceRating = ResourceRating;
-			this.SendDate = SendDate;
-			this.SurveyID = SurveyID;
-			this.SurveyRating = SurveyRating;
-			this.TicketID = TicketID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

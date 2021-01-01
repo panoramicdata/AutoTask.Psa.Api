@@ -10,33 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ClientPortalUserModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ClientPortalUserModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ContactID">ContactID.</param>
-		/// <param name="DateFormat">DateFormat.</param>
-		/// <param name="IsClientPortalActive">IsClientPortalActive.</param>
-		/// <param name="NumberFormat">NumberFormat.</param>
-		/// <param name="Password">Password.</param>
-		/// <param name="SecurityLevel">SecurityLevel.</param>
-		/// <param name="TimeFormat">TimeFormat.</param>
-		/// <param name="UserName">UserName.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ClientPortalUserModel(long? Id = default, int? ContactID = default, int? DateFormat = default, bool? IsClientPortalActive = default, int? NumberFormat = default, string Password = default, int? SecurityLevel = default, int? TimeFormat = default, string UserName = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ContactID = ContactID;
-			this.DateFormat = DateFormat;
-			this.IsClientPortalActive = IsClientPortalActive;
-			this.NumberFormat = NumberFormat;
-			this.Password = Password;
-			this.SecurityLevel = SecurityLevel;
-			this.TimeFormat = TimeFormat;
-			this.UserName = UserName;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

@@ -10,25 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ResourceSkillModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ResourceSkillModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ResourceID">ResourceID.</param>
-		/// <param name="SkillDescription">SkillDescription.</param>
-		/// <param name="SkillID">SkillID.</param>
-		/// <param name="SkillLevel">SkillLevel.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ResourceSkillModel(long? Id = default, long? ResourceID = default, string SkillDescription = default, long? SkillID = default, long? SkillLevel = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ResourceID = ResourceID;
-			this.SkillDescription = SkillDescription;
-			this.SkillID = SkillID;
-			this.SkillLevel = SkillLevel;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -63,6 +44,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncResourceSkillInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

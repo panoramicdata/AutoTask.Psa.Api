@@ -10,21 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class TicketChecklistLibraryModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="TicketChecklistLibraryModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ChecklistLibraryID">ChecklistLibraryID.</param>
-		/// <param name="TicketID">TicketID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public TicketChecklistLibraryModel(long? Id = default, int? ChecklistLibraryID = default, int? TicketID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ChecklistLibraryID = ChecklistLibraryID;
-			this.TicketID = TicketID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -47,6 +32,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncTicketChecklistLibraryInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

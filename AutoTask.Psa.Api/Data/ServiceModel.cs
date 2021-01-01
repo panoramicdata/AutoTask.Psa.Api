@@ -11,47 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ServiceModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ServiceModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="BillingCodeID">BillingCodeID.</param>
-		/// <param name="CreateDate">CreateDate.</param>
-		/// <param name="CreatorResourceID">CreatorResourceID.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="InvoiceDescription">InvoiceDescription.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="LastModifiedDate">LastModifiedDate.</param>
-		/// <param name="MarkupRate">MarkupRate.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="PeriodType">PeriodType.</param>
-		/// <param name="ServiceLevelAgreementID">ServiceLevelAgreementID.</param>
-		/// <param name="UnitCost">UnitCost.</param>
-		/// <param name="UnitPrice">UnitPrice.</param>
-		/// <param name="UpdateResourceID">UpdateResourceID.</param>
-		/// <param name="VendorCompanyID">VendorCompanyID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ServiceModel(long? Id = default, int? BillingCodeID = default, DateTime? CreateDate = default, int? CreatorResourceID = default, string Description = default, string InvoiceDescription = default, bool? IsActive = default, DateTime? LastModifiedDate = default, double? MarkupRate = default, string Name = default, int? PeriodType = default, long? ServiceLevelAgreementID = default, double? UnitCost = default, double? UnitPrice = default, int? UpdateResourceID = default, int? VendorCompanyID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.BillingCodeID = BillingCodeID;
-			this.CreateDate = CreateDate;
-			this.CreatorResourceID = CreatorResourceID;
-			this.Description = Description;
-			this.InvoiceDescription = InvoiceDescription;
-			this.IsActive = IsActive;
-			this.LastModifiedDate = LastModifiedDate;
-			this.MarkupRate = MarkupRate;
-			this.Name = Name;
-			this.PeriodType = PeriodType;
-			this.ServiceLevelAgreementID = ServiceLevelAgreementID;
-			this.UnitCost = UnitCost;
-			this.UnitPrice = UnitPrice;
-			this.UpdateResourceID = UpdateResourceID;
-			this.VendorCompanyID = VendorCompanyID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

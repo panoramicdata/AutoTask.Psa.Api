@@ -10,21 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ServiceCallTaskResourceModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ServiceCallTaskResourceModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ResourceID">ResourceID.</param>
-		/// <param name="ServiceCallTaskID">ServiceCallTaskID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ServiceCallTaskResourceModel(long? Id = default, int? ResourceID = default, int? ServiceCallTaskID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ResourceID = ResourceID;
-			this.ServiceCallTaskID = ServiceCallTaskID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -47,6 +32,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncServiceCallTaskResourceInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

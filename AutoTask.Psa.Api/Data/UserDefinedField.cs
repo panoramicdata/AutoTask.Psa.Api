@@ -9,17 +9,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class UserDefinedField
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="UserDefinedField" /> class.
-		/// </summary>
-		/// <param name="Name">Name.</param>
-		/// <param name="Value">Value.</param>
-		public UserDefinedField(string Name = default, string Value = default)
-		{
-			this.Name = Name;
-			this.Value = Value;
-		}
-
-		/// <summary>
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]

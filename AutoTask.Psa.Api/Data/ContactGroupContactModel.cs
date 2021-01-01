@@ -10,21 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContactGroupContactModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContactGroupContactModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ContactId">ContactId.</param>
-		/// <param name="ContactGroupId">ContactGroupId.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContactGroupContactModel(long? Id = default, int? ContactId = default, int? ContactGroupId = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ContactId = ContactId;
-			this.ContactGroupId = ContactGroupId;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -47,6 +32,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContactGroupContactInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

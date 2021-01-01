@@ -8,13 +8,5 @@ namespace AutoTask.Psa.Api.Data
 	/// </summary>
 	[DataContract]
 	public partial class OperationActionResult
-	{
-		/// <summary>
-		/// Initializes a new instance of the <see cref="OperationActionResult" /> class.
-		/// </summary>
-		[JsonConstructorAttribute]
-		public OperationActionResult()
-		{
-		}
-	}
+	{	}
 }

@@ -10,23 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class CompanyAlertModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="CompanyAlertModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="AlertText">AlertText.</param>
-		/// <param name="AlertTypeID">AlertTypeID.</param>
-		/// <param name="CompanyID">CompanyID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public CompanyAlertModel(long? Id = default, string AlertText = default, int? AlertTypeID = default, int? CompanyID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.AlertText = AlertText;
-			this.AlertTypeID = AlertTypeID;
-			this.CompanyID = CompanyID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -55,6 +38,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncAccountAlertInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

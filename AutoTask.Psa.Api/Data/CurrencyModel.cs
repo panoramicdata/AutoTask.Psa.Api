@@ -11,37 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class CurrencyModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="CurrencyModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CurrencyNegativeFormat">CurrencyNegativeFormat.</param>
-		/// <param name="CurrencyPositiveFormat">CurrencyPositiveFormat.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="DisplaySymbol">DisplaySymbol.</param>
-		/// <param name="ExchangeRate">ExchangeRate.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="IsInternalCurrency">IsInternalCurrency.</param>
-		/// <param name="LastModifiedDateTime">LastModifiedDateTime.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="UpdateResourceId">UpdateResourceId.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public CurrencyModel(long? Id = default, string CurrencyNegativeFormat = default, string CurrencyPositiveFormat = default, string Description = default, int? DisplaySymbol = default, double? ExchangeRate = default, bool? IsActive = default, bool? IsInternalCurrency = default, DateTime? LastModifiedDateTime = default, string Name = default, int? UpdateResourceId = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CurrencyNegativeFormat = CurrencyNegativeFormat;
-			this.CurrencyPositiveFormat = CurrencyPositiveFormat;
-			this.Description = Description;
-			this.DisplaySymbol = DisplaySymbol;
-			this.ExchangeRate = ExchangeRate;
-			this.IsActive = IsActive;
-			this.IsInternalCurrency = IsInternalCurrency;
-			this.LastModifiedDateTime = LastModifiedDateTime;
-			this.Name = Name;
-			this.UpdateResourceId = UpdateResourceId;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

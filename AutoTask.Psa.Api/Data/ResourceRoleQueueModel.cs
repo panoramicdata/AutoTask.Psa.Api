@@ -10,21 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ResourceRoleQueueModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ResourceRoleQueueModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="QueueID">QueueID.</param>
-		/// <param name="ResourceID">ResourceID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ResourceRoleQueueModel(long? Id = default, int? QueueID = default, int? ResourceID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.QueueID = QueueID;
-			this.ResourceID = ResourceID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -47,6 +32,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncResourceRoleQueueInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

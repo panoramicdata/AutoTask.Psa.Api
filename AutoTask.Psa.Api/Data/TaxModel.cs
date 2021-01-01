@@ -10,27 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class TaxModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="TaxModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="IsCompounded">IsCompounded.</param>
-		/// <param name="TaxCategoryID">TaxCategoryID.</param>
-		/// <param name="TaxName">TaxName.</param>
-		/// <param name="TaxRate">TaxRate.</param>
-		/// <param name="TaxRegionID">TaxRegionID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public TaxModel(long? Id = default, bool? IsCompounded = default, int? TaxCategoryID = default, string TaxName = default, double? TaxRate = default, int? TaxRegionID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.IsCompounded = IsCompounded;
-			this.TaxCategoryID = TaxCategoryID;
-			this.TaxName = TaxName;
-			this.TaxRate = TaxRate;
-			this.TaxRegionID = TaxRegionID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

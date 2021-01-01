@@ -11,23 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class HolidayModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="HolidayModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="HolidayDate">HolidayDate.</param>
-		/// <param name="HolidayName">HolidayName.</param>
-		/// <param name="HolidaySetID">HolidaySetID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public HolidayModel(long? Id = default, DateTime? HolidayDate = default, string HolidayName = default, int? HolidaySetID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.HolidayDate = HolidayDate;
-			this.HolidayName = HolidayName;
-			this.HolidaySetID = HolidaySetID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -56,6 +39,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncHolidayInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

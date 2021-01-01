@@ -10,27 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class PriceListWorkTypeModifierModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="PriceListWorkTypeModifierModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CurrencyID">CurrencyID.</param>
-		/// <param name="ModifierType">ModifierType.</param>
-		/// <param name="ModifierValue">ModifierValue.</param>
-		/// <param name="UsesInternalCurrencyPrice">UsesInternalCurrencyPrice.</param>
-		/// <param name="WorkTypeModifierID">WorkTypeModifierID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public PriceListWorkTypeModifierModel(long? Id = default, int? CurrencyID = default, int? ModifierType = default, double? ModifierValue = default, bool? UsesInternalCurrencyPrice = default, int? WorkTypeModifierID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CurrencyID = CurrencyID;
-			this.ModifierType = ModifierType;
-			this.ModifierValue = ModifierValue;
-			this.UsesInternalCurrencyPrice = UsesInternalCurrencyPrice;
-			this.WorkTypeModifierID = WorkTypeModifierID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

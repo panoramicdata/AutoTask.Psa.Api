@@ -10,27 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class InventoryLocationModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="InventoryLocationModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ImpersonatorCreatorResourceID">ImpersonatorCreatorResourceID.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="IsDefault">IsDefault.</param>
-		/// <param name="LocationName">LocationName.</param>
-		/// <param name="ResourceID">ResourceID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public InventoryLocationModel(long? Id = default, int? ImpersonatorCreatorResourceID = default, bool? IsActive = default, bool? IsDefault = default, string LocationName = default, int? ResourceID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ImpersonatorCreatorResourceID = ImpersonatorCreatorResourceID;
-			this.IsActive = IsActive;
-			this.IsDefault = IsDefault;
-			this.LocationName = LocationName;
-			this.ResourceID = ResourceID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

@@ -10,21 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class OrganizationalResourceModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="OrganizationalResourceModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="OrganizationalLevelAssociationID">OrganizationalLevelAssociationID.</param>
-		/// <param name="ResourceID">ResourceID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public OrganizationalResourceModel(long? Id = default, int? OrganizationalLevelAssociationID = default, int? ResourceID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.OrganizationalLevelAssociationID = OrganizationalLevelAssociationID;
-			this.ResourceID = ResourceID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -47,6 +32,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public long? SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

@@ -11,39 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ProjectNoteModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ProjectNoteModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CreateDateTime">CreateDateTime.</param>
-		/// <param name="CreatorResourceID">CreatorResourceID.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="ImpersonatorCreatorResourceID">ImpersonatorCreatorResourceID.</param>
-		/// <param name="ImpersonatorUpdaterResourceID">ImpersonatorUpdaterResourceID.</param>
-		/// <param name="IsAnnouncement">IsAnnouncement.</param>
-		/// <param name="LastActivityDate">LastActivityDate.</param>
-		/// <param name="NoteType">NoteType.</param>
-		/// <param name="ProjectID">ProjectID.</param>
-		/// <param name="Publish">Publish.</param>
-		/// <param name="Title">Title.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ProjectNoteModel(long? Id = default, DateTime? CreateDateTime = default, int? CreatorResourceID = default, string Description = default, int? ImpersonatorCreatorResourceID = default, int? ImpersonatorUpdaterResourceID = default, bool? IsAnnouncement = default, DateTime? LastActivityDate = default, int? NoteType = default, int? ProjectID = default, int? Publish = default, string Title = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CreateDateTime = CreateDateTime;
-			this.CreatorResourceID = CreatorResourceID;
-			this.Description = Description;
-			this.ImpersonatorCreatorResourceID = ImpersonatorCreatorResourceID;
-			this.ImpersonatorUpdaterResourceID = ImpersonatorUpdaterResourceID;
-			this.IsAnnouncement = IsAnnouncement;
-			this.LastActivityDate = LastActivityDate;
-			this.NoteType = NoteType;
-			this.ProjectID = ProjectID;
-			this.Publish = Publish;
-			this.Title = Title;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -120,6 +87,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncProjectNoteInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

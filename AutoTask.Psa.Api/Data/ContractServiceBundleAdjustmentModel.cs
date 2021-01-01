@@ -11,33 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractServiceBundleAdjustmentModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractServiceBundleAdjustmentModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="AdjustedUnitPrice">AdjustedUnitPrice.</param>
-		/// <param name="AllowRepeatServiceBundle">AllowRepeatServiceBundle.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="ContractServiceBundleID">ContractServiceBundleID.</param>
-		/// <param name="EffectiveDate">EffectiveDate.</param>
-		/// <param name="QuoteItemID">QuoteItemID.</param>
-		/// <param name="ServiceBundleID">ServiceBundleID.</param>
-		/// <param name="UnitChange">UnitChange.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractServiceBundleAdjustmentModel(long? Id = default, double? AdjustedUnitPrice = default, bool? AllowRepeatServiceBundle = default, int? ContractID = default, int? ContractServiceBundleID = default, DateTime? EffectiveDate = default, int? QuoteItemID = default, int? ServiceBundleID = default, int? UnitChange = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.AdjustedUnitPrice = AdjustedUnitPrice;
-			this.AllowRepeatServiceBundle = AllowRepeatServiceBundle;
-			this.ContractID = ContractID;
-			this.ContractServiceBundleID = ContractServiceBundleID;
-			this.EffectiveDate = EffectiveDate;
-			this.QuoteItemID = QuoteItemID;
-			this.ServiceBundleID = ServiceBundleID;
-			this.UnitChange = UnitChange;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -96,6 +69,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractServiceBundleAdjustmentInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

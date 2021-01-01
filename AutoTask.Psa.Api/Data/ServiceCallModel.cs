@@ -11,47 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ServiceCallModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ServiceCallModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CancelationNoticeHours">CancelationNoticeHours.</param>
-		/// <param name="CanceledByResourceID">CanceledByResourceID.</param>
-		/// <param name="CanceledDateTime">CanceledDateTime.</param>
-		/// <param name="CompanyID">CompanyID.</param>
-		/// <param name="CompanyLocationID">CompanyLocationID.</param>
-		/// <param name="CreateDateTime">CreateDateTime.</param>
-		/// <param name="CreatorResourceID">CreatorResourceID.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="Duration">Duration.</param>
-		/// <param name="EndDateTime">EndDateTime.</param>
-		/// <param name="ImpersonatorCreatorResourceID">ImpersonatorCreatorResourceID.</param>
-		/// <param name="IsComplete">IsComplete.</param>
-		/// <param name="LastModifiedDateTime">LastModifiedDateTime.</param>
-		/// <param name="StartDateTime">StartDateTime.</param>
-		/// <param name="Status">Status.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ServiceCallModel(long? Id = default, double? CancelationNoticeHours = default, int? CanceledByResourceID = default, DateTime? CanceledDateTime = default, int? CompanyID = default, int? CompanyLocationID = default, DateTime? CreateDateTime = default, int? CreatorResourceID = default, string Description = default, double? Duration = default, DateTime? EndDateTime = default, int? ImpersonatorCreatorResourceID = default, int? IsComplete = default, DateTime? LastModifiedDateTime = default, DateTime? StartDateTime = default, int? Status = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CancelationNoticeHours = CancelationNoticeHours;
-			this.CanceledByResourceID = CanceledByResourceID;
-			this.CanceledDateTime = CanceledDateTime;
-			this.CompanyID = CompanyID;
-			this.CompanyLocationID = CompanyLocationID;
-			this.CreateDateTime = CreateDateTime;
-			this.CreatorResourceID = CreatorResourceID;
-			this.Description = Description;
-			this.Duration = Duration;
-			this.EndDateTime = EndDateTime;
-			this.ImpersonatorCreatorResourceID = ImpersonatorCreatorResourceID;
-			this.IsComplete = IsComplete;
-			this.LastModifiedDateTime = LastModifiedDateTime;
-			this.StartDateTime = StartDateTime;
-			this.Status = Status;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

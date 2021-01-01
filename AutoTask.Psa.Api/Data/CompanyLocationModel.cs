@@ -10,55 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class CompanyLocationModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="CompanyLocationModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="Address1">Address1.</param>
-		/// <param name="Address2">Address2.</param>
-		/// <param name="AlternatePhone1">AlternatePhone1.</param>
-		/// <param name="AlternatePhone2">AlternatePhone2.</param>
-		/// <param name="City">City.</param>
-		/// <param name="CompanyID">CompanyID.</param>
-		/// <param name="CountryID">CountryID.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="Fax">Fax.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="IsPrimary">IsPrimary.</param>
-		/// <param name="IsTaxExempt">IsTaxExempt.</param>
-		/// <param name="OverrideAccountTaxSettings">OverrideAccountTaxSettings.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="Phone">Phone.</param>
-		/// <param name="PostalCode">PostalCode.</param>
-		/// <param name="RoundtripDistance">RoundtripDistance.</param>
-		/// <param name="State">State.</param>
-		/// <param name="TaxRegionID">TaxRegionID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public CompanyLocationModel(long? Id = default, string Address1 = default, string Address2 = default, string AlternatePhone1 = default, string AlternatePhone2 = default, string City = default, int? CompanyID = default, int? CountryID = default, string Description = default, string Fax = default, bool? IsActive = default, bool? IsPrimary = default, bool? IsTaxExempt = default, bool? OverrideAccountTaxSettings = default, string Name = default, string Phone = default, string PostalCode = default, double? RoundtripDistance = default, string State = default, int? TaxRegionID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.Address1 = Address1;
-			this.Address2 = Address2;
-			this.AlternatePhone1 = AlternatePhone1;
-			this.AlternatePhone2 = AlternatePhone2;
-			this.City = City;
-			this.CompanyID = CompanyID;
-			this.CountryID = CountryID;
-			this.Description = Description;
-			this.Fax = Fax;
-			this.IsActive = IsActive;
-			this.IsPrimary = IsPrimary;
-			this.IsTaxExempt = IsTaxExempt;
-			this.OverrideAccountTaxSettings = OverrideAccountTaxSettings;
-			this.Name = Name;
-			this.Phone = Phone;
-			this.PostalCode = PostalCode;
-			this.RoundtripDistance = RoundtripDistance;
-			this.State = State;
-			this.TaxRegionID = TaxRegionID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -183,6 +134,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncAccountPhysicalLocationInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

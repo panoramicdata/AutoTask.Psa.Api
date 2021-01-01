@@ -10,49 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class TicketCategoryFieldDefaultsModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="TicketCategoryFieldDefaultsModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="EstimatedHours">EstimatedHours.</param>
-		/// <param name="IssueTypeID">IssueTypeID.</param>
-		/// <param name="OrganizationalLevelAssociationID">OrganizationalLevelAssociationID.</param>
-		/// <param name="Priority">Priority.</param>
-		/// <param name="PurchaseOrderNumber">PurchaseOrderNumber.</param>
-		/// <param name="QueueID">QueueID.</param>
-		/// <param name="Resolution">Resolution.</param>
-		/// <param name="ServiceLevelAgreementID">ServiceLevelAgreementID.</param>
-		/// <param name="SourceID">SourceID.</param>
-		/// <param name="Status">Status.</param>
-		/// <param name="SubIssueTypeID">SubIssueTypeID.</param>
-		/// <param name="TicketCategoryID">TicketCategoryID.</param>
-		/// <param name="TicketTypeID">TicketTypeID.</param>
-		/// <param name="Title">Title.</param>
-		/// <param name="WorkTypeID">WorkTypeID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public TicketCategoryFieldDefaultsModel(long? Id = default, string Description = default, double? EstimatedHours = default, int? IssueTypeID = default, int? OrganizationalLevelAssociationID = default, int? Priority = default, string PurchaseOrderNumber = default, int? QueueID = default, string Resolution = default, int? ServiceLevelAgreementID = default, int? SourceID = default, int? Status = default, int? SubIssueTypeID = default, int? TicketCategoryID = default, int? TicketTypeID = default, string Title = default, int? WorkTypeID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.Description = Description;
-			this.EstimatedHours = EstimatedHours;
-			this.IssueTypeID = IssueTypeID;
-			this.OrganizationalLevelAssociationID = OrganizationalLevelAssociationID;
-			this.Priority = Priority;
-			this.PurchaseOrderNumber = PurchaseOrderNumber;
-			this.QueueID = QueueID;
-			this.Resolution = Resolution;
-			this.ServiceLevelAgreementID = ServiceLevelAgreementID;
-			this.SourceID = SourceID;
-			this.Status = Status;
-			this.SubIssueTypeID = SubIssueTypeID;
-			this.TicketCategoryID = TicketCategoryID;
-			this.TicketTypeID = TicketTypeID;
-			this.Title = Title;
-			this.WorkTypeID = WorkTypeID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -159,6 +116,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public long? SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

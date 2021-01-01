@@ -10,21 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class WorkTypeModifierModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="WorkTypeModifierModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ModifierType">ModifierType.</param>
-		/// <param name="ModifierValue">ModifierValue.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public WorkTypeModifierModel(long? Id = default, int? ModifierType = default, double? ModifierValue = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ModifierType = ModifierType;
-			this.ModifierValue = ModifierValue;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

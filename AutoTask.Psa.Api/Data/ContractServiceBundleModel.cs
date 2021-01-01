@@ -10,35 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractServiceBundleModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractServiceBundleModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="AdjustedPrice">AdjustedPrice.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="InternalCurrencyAdjustedPrice">InternalCurrencyAdjustedPrice.</param>
-		/// <param name="InternalCurrencyUnitPrice">InternalCurrencyUnitPrice.</param>
-		/// <param name="InternalDescription">InternalDescription.</param>
-		/// <param name="InvoiceDescription">InvoiceDescription.</param>
-		/// <param name="QuoteItemID">QuoteItemID.</param>
-		/// <param name="ServiceBundleID">ServiceBundleID.</param>
-		/// <param name="UnitPrice">UnitPrice.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractServiceBundleModel(long? Id = default, double? AdjustedPrice = default, int? ContractID = default, double? InternalCurrencyAdjustedPrice = default, double? InternalCurrencyUnitPrice = default, string InternalDescription = default, string InvoiceDescription = default, long? QuoteItemID = default, int? ServiceBundleID = default, double? UnitPrice = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.AdjustedPrice = AdjustedPrice;
-			this.ContractID = ContractID;
-			this.InternalCurrencyAdjustedPrice = InternalCurrencyAdjustedPrice;
-			this.InternalCurrencyUnitPrice = InternalCurrencyUnitPrice;
-			this.InternalDescription = InternalDescription;
-			this.InvoiceDescription = InvoiceDescription;
-			this.QuoteItemID = QuoteItemID;
-			this.ServiceBundleID = ServiceBundleID;
-			this.UnitPrice = UnitPrice;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -103,6 +74,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractServiceBundleInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

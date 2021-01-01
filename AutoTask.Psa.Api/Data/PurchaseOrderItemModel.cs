@@ -11,43 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class PurchaseOrderItemModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="PurchaseOrderItemModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ChargeID">ChargeID.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="EstimatedArrivalDate">EstimatedArrivalDate.</param>
-		/// <param name="InternalCurrencyUnitCost">InternalCurrencyUnitCost.</param>
-		/// <param name="InventoryLocationID">InventoryLocationID.</param>
-		/// <param name="Memo">Memo.</param>
-		/// <param name="OrderID">OrderID.</param>
-		/// <param name="ProductID">ProductID.</param>
-		/// <param name="ProjectID">ProjectID.</param>
-		/// <param name="Quantity">Quantity.</param>
-		/// <param name="SalesOrderID">SalesOrderID.</param>
-		/// <param name="TicketID">TicketID.</param>
-		/// <param name="UnitCost">UnitCost.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public PurchaseOrderItemModel(long? Id = default, int? ChargeID = default, long? ContractID = default, DateTime? EstimatedArrivalDate = default, double? InternalCurrencyUnitCost = default, int? InventoryLocationID = default, string Memo = default, int? OrderID = default, int? ProductID = default, long? ProjectID = default, int? Quantity = default, long? SalesOrderID = default, long? TicketID = default, double? UnitCost = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ChargeID = ChargeID;
-			this.ContractID = ContractID;
-			this.EstimatedArrivalDate = EstimatedArrivalDate;
-			this.InternalCurrencyUnitCost = InternalCurrencyUnitCost;
-			this.InventoryLocationID = InventoryLocationID;
-			this.Memo = Memo;
-			this.OrderID = OrderID;
-			this.ProductID = ProductID;
-			this.ProjectID = ProjectID;
-			this.Quantity = Quantity;
-			this.SalesOrderID = SalesOrderID;
-			this.TicketID = TicketID;
-			this.UnitCost = UnitCost;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -136,6 +99,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncPurchaseOrderItemInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

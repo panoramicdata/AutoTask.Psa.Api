@@ -10,21 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractExclusionSetExcludedWorkTypeModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractExclusionSetExcludedWorkTypeModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ContractExclusionSetID">ContractExclusionSetID.</param>
-		/// <param name="ExcludedWorkTypeID">ExcludedWorkTypeID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractExclusionSetExcludedWorkTypeModel(long? Id = default, int? ContractExclusionSetID = default, int? ExcludedWorkTypeID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ContractExclusionSetID = ContractExclusionSetID;
-			this.ExcludedWorkTypeID = ExcludedWorkTypeID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -47,6 +32,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractExclusionSetExcludedWorkTypeInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

@@ -10,23 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class SurveyModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="SurveyModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="DisplayName">DisplayName.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public SurveyModel(long? Id = default, string Description = default, string DisplayName = default, string Name = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.Description = Description;
-			this.DisplayName = DisplayName;
-			this.Name = Name;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

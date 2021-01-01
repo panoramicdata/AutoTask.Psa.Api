@@ -10,21 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class HolidaySetModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="HolidaySetModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="HolidaySetDescription">HolidaySetDescription.</param>
-		/// <param name="HolidaySetName">HolidaySetName.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public HolidaySetModel(long? Id = default, string HolidaySetDescription = default, string HolidaySetName = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.HolidaySetDescription = HolidaySetDescription;
-			this.HolidaySetName = HolidaySetName;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

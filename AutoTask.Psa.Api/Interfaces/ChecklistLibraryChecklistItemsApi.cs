@@ -12,7 +12,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <summary>
 		///
 		/// </summary>
-		/// <exception cref="AutoTask.Psa.Api.Exceptions.ApiException">Thrown when fails to make API call</exception>
+		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ChecklistLibraryChecklistItemModel</returns>
 		[Post("/V1.0/ChecklistLibraryChecklistItems/query")]
@@ -21,7 +21,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <summary>
 		///
 		/// </summary>
-		/// <exception cref="AutoTask.Psa.Api.Exceptions.ApiException">Thrown when fails to make API call</exception>
+		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="queryModel"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Post("/V1.0/ChecklistLibraryChecklistItems/query/count")]
@@ -30,7 +30,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <summary>
 		///
 		/// </summary>
-		/// <exception cref="AutoTask.Psa.Api.Exceptions.ApiException">Thrown when fails to make API call</exception>
+		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <returns>Task of EntityInformationResultModel</returns>
 		[Get("/V1.0/ChecklistLibraryChecklistItems/entityInformation")]
 		Task<EntityInformationResultModel> GetEntityInfoAsync(string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
@@ -38,7 +38,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <summary>
 		///
 		/// </summary>
-		/// <exception cref="AutoTask.Psa.Api.Exceptions.ApiException">Thrown when fails to make API call</exception>
+		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <returns>Task of FieldInformationResultModel</returns>
 		[Get("/V1.0/ChecklistLibraryChecklistItems/entityInformation/fields")]
 		Task<FieldInformationResultModel> GetFieldInfoAsync(string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
@@ -46,7 +46,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <summary>
 		///
 		/// </summary>
-		/// <exception cref="AutoTask.Psa.Api.Exceptions.ApiException">Thrown when fails to make API call</exception>
+		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="id"></param>
 		/// <returns>Task of ChecklistLibraryChecklistItemModel</returns>
 		[Get("/V1.0/ChecklistLibraryChecklistItems/{id}")]
@@ -55,7 +55,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <summary>
 		///
 		/// </summary>
-		/// <exception cref="AutoTask.Psa.Api.Exceptions.ApiException">Thrown when fails to make API call</exception>
+		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 		[Get("/V1.0/ChecklistLibraryChecklistItems/entityInformation/userDefinedFields")]
 		Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
@@ -63,7 +63,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <summary>
 		///
 		/// </summary>
-		/// <exception cref="AutoTask.Psa.Api.Exceptions.ApiException">Thrown when fails to make API call</exception>
+		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="search"></param>
 		/// <returns>Task of ChecklistLibraryChecklistItemModel</returns>
 		[Get("/V1.0/ChecklistLibraryChecklistItems/query")]
@@ -72,7 +72,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <summary>
 		///
 		/// </summary>
-		/// <exception cref="AutoTask.Psa.Api.Exceptions.ApiException">Thrown when fails to make API call</exception>
+		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="search"></param>
 		/// <returns>Task of QueryCountResultModel</returns>
 		[Get("/V1.0/ChecklistLibraryChecklistItems/query/count")]

@@ -10,23 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ConfigurationItemCategoryUdfAssociationModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ConfigurationItemCategoryUdfAssociationModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ConfigurationItemCategoryID">ConfigurationItemCategoryID.</param>
-		/// <param name="IsRequired">IsRequired.</param>
-		/// <param name="UserDefinedFieldDefinitionID">UserDefinedFieldDefinitionID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ConfigurationItemCategoryUdfAssociationModel(long? Id = default, int? ConfigurationItemCategoryID = default, bool? IsRequired = default, int? UserDefinedFieldDefinitionID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ConfigurationItemCategoryID = ConfigurationItemCategoryID;
-			this.IsRequired = IsRequired;
-			this.UserDefinedFieldDefinitionID = UserDefinedFieldDefinitionID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -55,6 +38,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncInstalledProductCategoryUdfAssociationInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

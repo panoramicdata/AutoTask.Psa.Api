@@ -10,23 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class AdditionalInvoiceFieldValueModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="AdditionalInvoiceFieldValueModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="AdditionalInvoiceFieldID">AdditionalInvoiceFieldID.</param>
-		/// <param name="FieldValue">FieldValue.</param>
-		/// <param name="InvoiceBatchID">InvoiceBatchID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public AdditionalInvoiceFieldValueModel(long? Id = default, long? AdditionalInvoiceFieldID = default, string FieldValue = default, long? InvoiceBatchID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.AdditionalInvoiceFieldID = AdditionalInvoiceFieldID;
-			this.FieldValue = FieldValue;
-			this.InvoiceBatchID = InvoiceBatchID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

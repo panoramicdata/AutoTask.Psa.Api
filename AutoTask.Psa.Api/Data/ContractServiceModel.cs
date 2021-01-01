@@ -10,35 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractServiceModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractServiceModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="InternalCurrencyAdjustedPrice">InternalCurrencyAdjustedPrice.</param>
-		/// <param name="InternalCurrencyUnitPrice">InternalCurrencyUnitPrice.</param>
-		/// <param name="InternalDescription">InternalDescription.</param>
-		/// <param name="InvoiceDescription">InvoiceDescription.</param>
-		/// <param name="QuoteItemID">QuoteItemID.</param>
-		/// <param name="ServiceID">ServiceID.</param>
-		/// <param name="UnitCost">UnitCost.</param>
-		/// <param name="UnitPrice">UnitPrice.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractServiceModel(long? Id = default, int? ContractID = default, double? InternalCurrencyAdjustedPrice = default, double? InternalCurrencyUnitPrice = default, string InternalDescription = default, string InvoiceDescription = default, long? QuoteItemID = default, int? ServiceID = default, double? UnitCost = default, double? UnitPrice = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ContractID = ContractID;
-			this.InternalCurrencyAdjustedPrice = InternalCurrencyAdjustedPrice;
-			this.InternalCurrencyUnitPrice = InternalCurrencyUnitPrice;
-			this.InternalDescription = InternalDescription;
-			this.InvoiceDescription = InvoiceDescription;
-			this.QuoteItemID = QuoteItemID;
-			this.ServiceID = ServiceID;
-			this.UnitCost = UnitCost;
-			this.UnitPrice = UnitPrice;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -103,6 +74,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractServiceInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

@@ -9,27 +9,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class PickListValue
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="PickListValue" /> class.
-		/// </summary>
-		/// <param name="Value">Value.</param>
-		/// <param name="Label">Label.</param>
-		/// <param name="IsDefaultValue">IsDefaultValue.</param>
-		/// <param name="SortOrder">SortOrder.</param>
-		/// <param name="ParentValue">ParentValue.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="IsSystem">IsSystem.</param>
-		public PickListValue(string Value = default, string Label = default, bool? IsDefaultValue = default, int? SortOrder = default, string ParentValue = default, bool? IsActive = default, bool? IsSystem = default)
-		{
-			this.Value = Value;
-			this.Label = Label;
-			this.IsDefaultValue = IsDefaultValue;
-			this.SortOrder = SortOrder;
-			this.ParentValue = ParentValue;
-			this.IsActive = IsActive;
-			this.IsSystem = IsSystem;
-		}
-
-		/// <summary>
 		/// Gets or Sets Value
 		/// </summary>
 		[DataMember(Name = "Value", EmitDefaultValue = false)]

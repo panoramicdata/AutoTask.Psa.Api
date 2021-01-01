@@ -10,23 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class CompanyTeamModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="CompanyTeamModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CompanyID">CompanyID.</param>
-		/// <param name="IsAssociatedAsComanaged">IsAssociatedAsComanaged.</param>
-		/// <param name="ResourceID">ResourceID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public CompanyTeamModel(long? Id = default, long? CompanyID = default, bool? IsAssociatedAsComanaged = default, long? ResourceID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CompanyID = CompanyID;
-			this.IsAssociatedAsComanaged = IsAssociatedAsComanaged;
-			this.ResourceID = ResourceID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -55,6 +38,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncAccountTeamInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

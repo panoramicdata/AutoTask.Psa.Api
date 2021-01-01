@@ -11,35 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ConfigurationItemNoteModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ConfigurationItemNoteModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ConfigurationItemID">ConfigurationItemID.</param>
-		/// <param name="CreateDateTime">CreateDateTime.</param>
-		/// <param name="CreatorResourceID">CreatorResourceID.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="ImpersonatorCreatorResourceID">ImpersonatorCreatorResourceID.</param>
-		/// <param name="ImpersonatorUpdaterResourceID">ImpersonatorUpdaterResourceID.</param>
-		/// <param name="LastActivityDate">LastActivityDate.</param>
-		/// <param name="NoteType">NoteType.</param>
-		/// <param name="Title">Title.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ConfigurationItemNoteModel(long? Id = default, int? ConfigurationItemID = default, DateTime? CreateDateTime = default, int? CreatorResourceID = default, string Description = default, int? ImpersonatorCreatorResourceID = default, int? ImpersonatorUpdaterResourceID = default, DateTime? LastActivityDate = default, int? NoteType = default, string Title = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ConfigurationItemID = ConfigurationItemID;
-			this.CreateDateTime = CreateDateTime;
-			this.CreatorResourceID = CreatorResourceID;
-			this.Description = Description;
-			this.ImpersonatorCreatorResourceID = ImpersonatorCreatorResourceID;
-			this.ImpersonatorUpdaterResourceID = ImpersonatorUpdaterResourceID;
-			this.LastActivityDate = LastActivityDate;
-			this.NoteType = NoteType;
-			this.Title = Title;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -104,6 +75,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncInstalledProductNoteInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

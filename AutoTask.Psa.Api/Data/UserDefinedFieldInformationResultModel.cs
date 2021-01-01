@@ -10,15 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class UserDefinedFieldInformationResultModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="UserDefinedFieldInformationResultModel" /> class.
-		/// </summary>
-		/// <param name="Fields">Fields.</param>
-		public UserDefinedFieldInformationResultModel(List<Field> Fields = default)
-		{
-			this.Fields = Fields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Fields
 		/// </summary>
 		[DataMember(Name = "Fields", EmitDefaultValue = false)]

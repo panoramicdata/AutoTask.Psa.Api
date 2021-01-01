@@ -11,35 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractServiceAdjustmentModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractServiceAdjustmentModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="AdjustedUnitCost">AdjustedUnitCost.</param>
-		/// <param name="AdjustedUnitPrice">AdjustedUnitPrice.</param>
-		/// <param name="AllowRepeatService">AllowRepeatService.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="ContractServiceID">ContractServiceID.</param>
-		/// <param name="EffectiveDate">EffectiveDate.</param>
-		/// <param name="QuoteItemID">QuoteItemID.</param>
-		/// <param name="ServiceID">ServiceID.</param>
-		/// <param name="UnitChange">UnitChange.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractServiceAdjustmentModel(long? Id = default, double? AdjustedUnitCost = default, double? AdjustedUnitPrice = default, bool? AllowRepeatService = default, int? ContractID = default, int? ContractServiceID = default, DateTime? EffectiveDate = default, int? QuoteItemID = default, int? ServiceID = default, int? UnitChange = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.AdjustedUnitCost = AdjustedUnitCost;
-			this.AdjustedUnitPrice = AdjustedUnitPrice;
-			this.AllowRepeatService = AllowRepeatService;
-			this.ContractID = ContractID;
-			this.ContractServiceID = ContractServiceID;
-			this.EffectiveDate = EffectiveDate;
-			this.QuoteItemID = QuoteItemID;
-			this.ServiceID = ServiceID;
-			this.UnitChange = UnitChange;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -104,6 +75,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractServiceAdjustmentInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

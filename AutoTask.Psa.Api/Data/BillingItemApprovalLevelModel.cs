@@ -11,25 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class BillingItemApprovalLevelModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="BillingItemApprovalLevelModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ApprovalDateTime">ApprovalDateTime.</param>
-		/// <param name="ApprovalLevel">ApprovalLevel.</param>
-		/// <param name="ApprovalResourceID">ApprovalResourceID.</param>
-		/// <param name="TimeEntryID">TimeEntryID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public BillingItemApprovalLevelModel(long? Id = default, DateTime? ApprovalDateTime = default, int? ApprovalLevel = default, int? ApprovalResourceID = default, int? TimeEntryID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ApprovalDateTime = ApprovalDateTime;
-			this.ApprovalLevel = ApprovalLevel;
-			this.ApprovalResourceID = ApprovalResourceID;
-			this.TimeEntryID = TimeEntryID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

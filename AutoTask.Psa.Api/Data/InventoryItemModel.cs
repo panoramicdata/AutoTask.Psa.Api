@@ -10,41 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class InventoryItemModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="InventoryItemModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="BackOrderQuantity">BackOrderQuantity.</param>
-		/// <param name="Bin">Bin.</param>
-		/// <param name="ImpersonatorCreatorResourceID">ImpersonatorCreatorResourceID.</param>
-		/// <param name="InventoryLocationID">InventoryLocationID.</param>
-		/// <param name="ProductID">ProductID.</param>
-		/// <param name="QuantityMaximum">QuantityMaximum.</param>
-		/// <param name="QuantityMinimum">QuantityMinimum.</param>
-		/// <param name="QuantityOnHand">QuantityOnHand.</param>
-		/// <param name="QuantityOnOrder">QuantityOnOrder.</param>
-		/// <param name="QuantityPicked">QuantityPicked.</param>
-		/// <param name="QuantityReserved">QuantityReserved.</param>
-		/// <param name="ReferenceNumber">ReferenceNumber.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public InventoryItemModel(long? Id = default, int? BackOrderQuantity = default, string Bin = default, int? ImpersonatorCreatorResourceID = default, int? InventoryLocationID = default, int? ProductID = default, int? QuantityMaximum = default, int? QuantityMinimum = default, int? QuantityOnHand = default, int? QuantityOnOrder = default, int? QuantityPicked = default, int? QuantityReserved = default, string ReferenceNumber = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.BackOrderQuantity = BackOrderQuantity;
-			this.Bin = Bin;
-			this.ImpersonatorCreatorResourceID = ImpersonatorCreatorResourceID;
-			this.InventoryLocationID = InventoryLocationID;
-			this.ProductID = ProductID;
-			this.QuantityMaximum = QuantityMaximum;
-			this.QuantityMinimum = QuantityMinimum;
-			this.QuantityOnHand = QuantityOnHand;
-			this.QuantityOnOrder = QuantityOnOrder;
-			this.QuantityPicked = QuantityPicked;
-			this.QuantityReserved = QuantityReserved;
-			this.ReferenceNumber = ReferenceNumber;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

@@ -10,27 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class QuoteLocationModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="QuoteLocationModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="Address1">Address1.</param>
-		/// <param name="Address2">Address2.</param>
-		/// <param name="City">City.</param>
-		/// <param name="PostalCode">PostalCode.</param>
-		/// <param name="State">State.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public QuoteLocationModel(long? Id = default, string Address1 = default, string Address2 = default, string City = default, string PostalCode = default, string State = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.Address1 = Address1;
-			this.Address2 = Address2;
-			this.City = City;
-			this.PostalCode = PostalCode;
-			this.State = State;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

@@ -10,23 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class TaskPredecessorModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="TaskPredecessorModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="LagDays">LagDays.</param>
-		/// <param name="PredecessorTaskID">PredecessorTaskID.</param>
-		/// <param name="SuccessorTaskID">SuccessorTaskID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public TaskPredecessorModel(long? Id = default, int? LagDays = default, int? PredecessorTaskID = default, int? SuccessorTaskID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.LagDays = LagDays;
-			this.PredecessorTaskID = PredecessorTaskID;
-			this.SuccessorTaskID = SuccessorTaskID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -55,6 +38,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncTaskPredecessorInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

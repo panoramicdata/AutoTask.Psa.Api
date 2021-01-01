@@ -10,41 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ServiceLevelAgreementResultsModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ServiceLevelAgreementResultsModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="FirstResponseElapsedHours">FirstResponseElapsedHours.</param>
-		/// <param name="FirstResponseInitiatingResourceID">FirstResponseInitiatingResourceID.</param>
-		/// <param name="FirstResponseResourceID">FirstResponseResourceID.</param>
-		/// <param name="IsFirstResponseMet">IsFirstResponseMet.</param>
-		/// <param name="IsResolutionMet">IsResolutionMet.</param>
-		/// <param name="IsResolutionPlanMet">IsResolutionPlanMet.</param>
-		/// <param name="ResolutionElapsedHours">ResolutionElapsedHours.</param>
-		/// <param name="ResolutionPlanElapsedHours">ResolutionPlanElapsedHours.</param>
-		/// <param name="ResolutionPlanResourceID">ResolutionPlanResourceID.</param>
-		/// <param name="ResolutionResourceID">ResolutionResourceID.</param>
-		/// <param name="ServiceLevelAgreementName">ServiceLevelAgreementName.</param>
-		/// <param name="TicketID">TicketID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ServiceLevelAgreementResultsModel(long? Id = default, double? FirstResponseElapsedHours = default, int? FirstResponseInitiatingResourceID = default, int? FirstResponseResourceID = default, bool? IsFirstResponseMet = default, bool? IsResolutionMet = default, bool? IsResolutionPlanMet = default, double? ResolutionElapsedHours = default, double? ResolutionPlanElapsedHours = default, int? ResolutionPlanResourceID = default, int? ResolutionResourceID = default, string ServiceLevelAgreementName = default, int? TicketID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.FirstResponseElapsedHours = FirstResponseElapsedHours;
-			this.FirstResponseInitiatingResourceID = FirstResponseInitiatingResourceID;
-			this.FirstResponseResourceID = FirstResponseResourceID;
-			this.IsFirstResponseMet = IsFirstResponseMet;
-			this.IsResolutionMet = IsResolutionMet;
-			this.IsResolutionPlanMet = IsResolutionPlanMet;
-			this.ResolutionElapsedHours = ResolutionElapsedHours;
-			this.ResolutionPlanElapsedHours = ResolutionPlanElapsedHours;
-			this.ResolutionPlanResourceID = ResolutionPlanResourceID;
-			this.ResolutionResourceID = ResolutionResourceID;
-			this.ServiceLevelAgreementName = ServiceLevelAgreementName;
-			this.TicketID = TicketID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -127,6 +92,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public long? SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

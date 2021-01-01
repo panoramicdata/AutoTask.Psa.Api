@@ -10,21 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ChangeRequestLinkModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ChangeRequestLinkModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ChangeRequestTicketID">ChangeRequestTicketID.</param>
-		/// <param name="ProblemOrIncidentTicketID">ProblemOrIncidentTicketID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ChangeRequestLinkModel(long? Id = default, int? ChangeRequestTicketID = default, int? ProblemOrIncidentTicketID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ChangeRequestTicketID = ChangeRequestTicketID;
-			this.ProblemOrIncidentTicketID = ProblemOrIncidentTicketID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

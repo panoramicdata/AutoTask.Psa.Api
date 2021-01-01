@@ -10,67 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ProductModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ProductModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="BillingType">BillingType.</param>
-		/// <param name="ChargeBillingCodeID">ChargeBillingCodeID.</param>
-		/// <param name="DefaultVendorID">DefaultVendorID.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="DoesNotRequireProcurement">DoesNotRequireProcurement.</param>
-		/// <param name="ExternalProductID">ExternalProductID.</param>
-		/// <param name="ImpersonatorCreatorResourceID">ImpersonatorCreatorResourceID.</param>
-		/// <param name="InternalProductID">InternalProductID.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="IsEligibleForRma">IsEligibleForRma.</param>
-		/// <param name="IsSerialized">IsSerialized.</param>
-		/// <param name="Link">Link.</param>
-		/// <param name="ManufacturerName">ManufacturerName.</param>
-		/// <param name="ManufacturerProductName">ManufacturerProductName.</param>
-		/// <param name="MarkupRate">MarkupRate.</param>
-		/// <param name="MSRP">MSRP.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="PeriodType">PeriodType.</param>
-		/// <param name="PriceCostMethod">PriceCostMethod.</param>
-		/// <param name="ProductBillingCodeID">ProductBillingCodeID.</param>
-		/// <param name="ProductCategory">ProductCategory.</param>
-		/// <param name="SKU">SKU.</param>
-		/// <param name="UnitCost">UnitCost.</param>
-		/// <param name="UnitPrice">UnitPrice.</param>
-		/// <param name="VendorProductNumber">VendorProductNumber.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ProductModel(long? Id = default, int? BillingType = default, int? ChargeBillingCodeID = default, int? DefaultVendorID = default, string Description = default, bool? DoesNotRequireProcurement = default, string ExternalProductID = default, int? ImpersonatorCreatorResourceID = default, string InternalProductID = default, bool? IsActive = default, bool? IsEligibleForRma = default, bool? IsSerialized = default, string Link = default, string ManufacturerName = default, string ManufacturerProductName = default, double? MarkupRate = default, double? MSRP = default, string Name = default, int? PeriodType = default, int? PriceCostMethod = default, int? ProductBillingCodeID = default, int? ProductCategory = default, string SKU = default, double? UnitCost = default, double? UnitPrice = default, string VendorProductNumber = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.BillingType = BillingType;
-			this.ChargeBillingCodeID = ChargeBillingCodeID;
-			this.DefaultVendorID = DefaultVendorID;
-			this.Description = Description;
-			this.DoesNotRequireProcurement = DoesNotRequireProcurement;
-			this.ExternalProductID = ExternalProductID;
-			this.ImpersonatorCreatorResourceID = ImpersonatorCreatorResourceID;
-			this.InternalProductID = InternalProductID;
-			this.IsActive = IsActive;
-			this.IsEligibleForRma = IsEligibleForRma;
-			this.IsSerialized = IsSerialized;
-			this.Link = Link;
-			this.ManufacturerName = ManufacturerName;
-			this.ManufacturerProductName = ManufacturerProductName;
-			this.MarkupRate = MarkupRate;
-			this.MSRP = MSRP;
-			this.Name = Name;
-			this.PeriodType = PeriodType;
-			this.PriceCostMethod = PriceCostMethod;
-			this.ProductBillingCodeID = ProductBillingCodeID;
-			this.ProductCategory = ProductCategory;
-			this.SKU = SKU;
-			this.UnitCost = UnitCost;
-			this.UnitPrice = UnitPrice;
-			this.VendorProductNumber = VendorProductNumber;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

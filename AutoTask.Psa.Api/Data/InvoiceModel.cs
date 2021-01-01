@@ -11,61 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class InvoiceModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="InvoiceModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="BatchID">BatchID.</param>
-		/// <param name="Comments">Comments.</param>
-		/// <param name="CompanyID">CompanyID.</param>
-		/// <param name="CreateDateTime">CreateDateTime.</param>
-		/// <param name="CreatorResourceID">CreatorResourceID.</param>
-		/// <param name="DueDate">DueDate.</param>
-		/// <param name="FromDate">FromDate.</param>
-		/// <param name="InvoiceDateTime">InvoiceDateTime.</param>
-		/// <param name="InvoiceEditorTemplateID">InvoiceEditorTemplateID.</param>
-		/// <param name="InvoiceNumber">InvoiceNumber.</param>
-		/// <param name="InvoiceTotal">InvoiceTotal.</param>
-		/// <param name="IsVoided">IsVoided.</param>
-		/// <param name="OrderNumber">OrderNumber.</param>
-		/// <param name="PaidDate">PaidDate.</param>
-		/// <param name="PaymentTerm">PaymentTerm.</param>
-		/// <param name="TaxGroup">TaxGroup.</param>
-		/// <param name="TaxRegionName">TaxRegionName.</param>
-		/// <param name="ToDate">ToDate.</param>
-		/// <param name="TotalTaxValue">TotalTaxValue.</param>
-		/// <param name="VoidedByResourceID">VoidedByResourceID.</param>
-		/// <param name="VoidedDate">VoidedDate.</param>
-		/// <param name="WebServiceDate">WebServiceDate.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public InvoiceModel(long? Id = default, int? BatchID = default, string Comments = default, int? CompanyID = default, DateTime? CreateDateTime = default, int? CreatorResourceID = default, DateTime? DueDate = default, DateTime? FromDate = default, DateTime? InvoiceDateTime = default, int? InvoiceEditorTemplateID = default, string InvoiceNumber = default, double? InvoiceTotal = default, bool? IsVoided = default, string OrderNumber = default, DateTime? PaidDate = default, int? PaymentTerm = default, int? TaxGroup = default, string TaxRegionName = default, DateTime? ToDate = default, double? TotalTaxValue = default, int? VoidedByResourceID = default, DateTime? VoidedDate = default, DateTime? WebServiceDate = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.BatchID = BatchID;
-			this.Comments = Comments;
-			this.CompanyID = CompanyID;
-			this.CreateDateTime = CreateDateTime;
-			this.CreatorResourceID = CreatorResourceID;
-			this.DueDate = DueDate;
-			this.FromDate = FromDate;
-			this.InvoiceDateTime = InvoiceDateTime;
-			this.InvoiceEditorTemplateID = InvoiceEditorTemplateID;
-			this.InvoiceNumber = InvoiceNumber;
-			this.InvoiceTotal = InvoiceTotal;
-			this.IsVoided = IsVoided;
-			this.OrderNumber = OrderNumber;
-			this.PaidDate = PaidDate;
-			this.PaymentTerm = PaymentTerm;
-			this.TaxGroup = TaxGroup;
-			this.TaxRegionName = TaxRegionName;
-			this.ToDate = ToDate;
-			this.TotalTaxValue = TotalTaxValue;
-			this.VoidedByResourceID = VoidedByResourceID;
-			this.VoidedDate = VoidedDate;
-			this.WebServiceDate = WebServiceDate;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

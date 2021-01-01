@@ -10,21 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ComanagedAssociationModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ComanagedAssociationModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CompanyID">CompanyID.</param>
-		/// <param name="ResourceID">ResourceID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ComanagedAssociationModel(long? Id = default, int? CompanyID = default, int? ResourceID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CompanyID = CompanyID;
-			this.ResourceID = ResourceID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

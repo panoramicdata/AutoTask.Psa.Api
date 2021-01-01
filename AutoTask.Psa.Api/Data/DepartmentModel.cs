@@ -10,25 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class DepartmentModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="DepartmentModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="Number">Number.</param>
-		/// <param name="PrimaryLocationID">PrimaryLocationID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public DepartmentModel(long? Id = default, string Description = default, string Name = default, string Number = default, int? PrimaryLocationID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.Description = Description;
-			this.Name = Name;
-			this.Number = Number;
-			this.PrimaryLocationID = PrimaryLocationID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

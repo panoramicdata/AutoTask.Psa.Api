@@ -29,7 +29,7 @@ namespace AutoTask.Psa.Api
 		{
 			ActionTypes = RestService.For<IActionTypesApi>(client);
 			AdditionalInvoiceFieldValues = RestService.For<IAdditionalInvoiceFieldValuesApi>(client);
-			ApiVersion = RestService.For<IApiVersionApi>(client);
+			ApiVersions = RestService.For<IApiVersions>(client);
 			Appointments = RestService.For<IAppointmentsApi>(client);
 			AttachmentInfo = RestService.For<IAttachmentInfoApi>(client);
 			BillingCodes = RestService.For<IBillingCodesApi>(client);
@@ -285,7 +285,7 @@ namespace AutoTask.Psa.Api
 		public IAdditionalInvoiceFieldValuesApi AdditionalInvoiceFieldValues { get; }
 
 		/// <inheritdoc />
-		public IApiVersionApi ApiVersion { get; }
+		public IApiVersions ApiVersions { get; }
 
 		/// <inheritdoc />
 		public IAppointmentsApi Appointments { get; }

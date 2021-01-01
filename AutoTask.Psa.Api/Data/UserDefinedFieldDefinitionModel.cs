@@ -11,53 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class UserDefinedFieldDefinitionModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="UserDefinedFieldDefinitionModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CreateDate">CreateDate.</param>
-		/// <param name="CrmToProjectUdfId">CrmToProjectUdfId.</param>
-		/// <param name="DataType">DataType.</param>
-		/// <param name="DefaultValue">DefaultValue.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="DisplayFormat">DisplayFormat.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="IsEncrypted">IsEncrypted.</param>
-		/// <param name="IsFieldMapping">IsFieldMapping.</param>
-		/// <param name="IsPrivate">IsPrivate.</param>
-		/// <param name="IsProtected">IsProtected.</param>
-		/// <param name="IsRequired">IsRequired.</param>
-		/// <param name="IsVisibleToClientPortal">IsVisibleToClientPortal.</param>
-		/// <param name="MergeVariableName">MergeVariableName.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="NumberOfDecimalPlaces">NumberOfDecimalPlaces.</param>
-		/// <param name="SortOrder">SortOrder.</param>
-		/// <param name="UdfType">UdfType.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public UserDefinedFieldDefinitionModel(long? Id = default, DateTime? CreateDate = default, long? CrmToProjectUdfId = default, int? DataType = default, Object DefaultValue = default, string Description = default, int? DisplayFormat = default, bool? IsActive = default, bool? IsEncrypted = default, bool? IsFieldMapping = default, bool? IsPrivate = default, bool? IsProtected = default, bool? IsRequired = default, bool? IsVisibleToClientPortal = default, string MergeVariableName = default, string Name = default, int? NumberOfDecimalPlaces = default, int? SortOrder = default, int? UdfType = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CreateDate = CreateDate;
-			this.CrmToProjectUdfId = CrmToProjectUdfId;
-			this.DataType = DataType;
-			this.DefaultValue = DefaultValue;
-			this.Description = Description;
-			this.DisplayFormat = DisplayFormat;
-			this.IsActive = IsActive;
-			this.IsEncrypted = IsEncrypted;
-			this.IsFieldMapping = IsFieldMapping;
-			this.IsPrivate = IsPrivate;
-			this.IsProtected = IsProtected;
-			this.IsRequired = IsRequired;
-			this.IsVisibleToClientPortal = IsVisibleToClientPortal;
-			this.MergeVariableName = MergeVariableName;
-			this.Name = Name;
-			this.NumberOfDecimalPlaces = NumberOfDecimalPlaces;
-			this.SortOrder = SortOrder;
-			this.UdfType = UdfType;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

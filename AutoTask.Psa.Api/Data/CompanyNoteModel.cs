@@ -11,45 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class CompanyNoteModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="CompanyNoteModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ActionType">ActionType.</param>
-		/// <param name="AssignedResourceID">AssignedResourceID.</param>
-		/// <param name="CompanyID">CompanyID.</param>
-		/// <param name="CompletedDateTime">CompletedDateTime.</param>
-		/// <param name="ContactID">ContactID.</param>
-		/// <param name="CreateDateTime">CreateDateTime.</param>
-		/// <param name="EndDateTime">EndDateTime.</param>
-		/// <param name="ImpersonatorCreatorResourceID">ImpersonatorCreatorResourceID.</param>
-		/// <param name="ImpersonatorUpdaterResourceID">ImpersonatorUpdaterResourceID.</param>
-		/// <param name="LastModifiedDate">LastModifiedDate.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="Note">Note.</param>
-		/// <param name="OpportunityID">OpportunityID.</param>
-		/// <param name="StartDateTime">StartDateTime.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public CompanyNoteModel(long? Id = default, int? ActionType = default, int? AssignedResourceID = default, int? CompanyID = default, DateTime? CompletedDateTime = default, int? ContactID = default, DateTime? CreateDateTime = default, DateTime? EndDateTime = default, int? ImpersonatorCreatorResourceID = default, int? ImpersonatorUpdaterResourceID = default, DateTime? LastModifiedDate = default, string Name = default, string Note = default, int? OpportunityID = default, DateTime? StartDateTime = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ActionType = ActionType;
-			this.AssignedResourceID = AssignedResourceID;
-			this.CompanyID = CompanyID;
-			this.CompletedDateTime = CompletedDateTime;
-			this.ContactID = ContactID;
-			this.CreateDateTime = CreateDateTime;
-			this.EndDateTime = EndDateTime;
-			this.ImpersonatorCreatorResourceID = ImpersonatorCreatorResourceID;
-			this.ImpersonatorUpdaterResourceID = ImpersonatorUpdaterResourceID;
-			this.LastModifiedDate = LastModifiedDate;
-			this.Name = Name;
-			this.Note = Note;
-			this.OpportunityID = OpportunityID;
-			this.StartDateTime = StartDateTime;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -144,6 +105,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncAccountNoteInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

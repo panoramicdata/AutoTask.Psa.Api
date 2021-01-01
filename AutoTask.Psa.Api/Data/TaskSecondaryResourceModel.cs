@@ -10,23 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class TaskSecondaryResourceModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="TaskSecondaryResourceModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ResourceID">ResourceID.</param>
-		/// <param name="RoleID">RoleID.</param>
-		/// <param name="TaskID">TaskID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public TaskSecondaryResourceModel(long? Id = default, int? ResourceID = default, int? RoleID = default, int? TaskID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ResourceID = ResourceID;
-			this.RoleID = RoleID;
-			this.TaskID = TaskID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -55,6 +38,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncTaskSecondaryResourceInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

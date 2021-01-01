@@ -10,67 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class InvoiceTemplateModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="InvoiceTemplateModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CoveredByBlockRetainerContractLabel">CoveredByBlockRetainerContractLabel.</param>
-		/// <param name="CoveredByRecurringServiceFixedPricePerTicketContractLabel">CoveredByRecurringServiceFixedPricePerTicketContractLabel.</param>
-		/// <param name="CurrencyNegativeFormat">CurrencyNegativeFormat.</param>
-		/// <param name="CurrencyPositiveFormat">CurrencyPositiveFormat.</param>
-		/// <param name="DateFormat">DateFormat.</param>
-		/// <param name="DisplayFixedPriceContractLabor">DisplayFixedPriceContractLabor.</param>
-		/// <param name="DisplayRecurringServiceContractLabor">DisplayRecurringServiceContractLabor.</param>
-		/// <param name="DisplaySeparateLineItemForEachTax">DisplaySeparateLineItemForEachTax.</param>
-		/// <param name="DisplayTaxCategory">DisplayTaxCategory.</param>
-		/// <param name="DisplayTaxCategorySuperscripts">DisplayTaxCategorySuperscripts.</param>
-		/// <param name="DisplayZeroAmountRecurringServicesAndBundles">DisplayZeroAmountRecurringServicesAndBundles.</param>
-		/// <param name="GroupBy">GroupBy.</param>
-		/// <param name="ItemizeItemsInEachGroup">ItemizeItemsInEachGroup.</param>
-		/// <param name="ItemizeServicesAndBundles">ItemizeServicesAndBundles.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="NonBillableLaborLabel">NonBillableLaborLabel.</param>
-		/// <param name="NumberFormat">NumberFormat.</param>
-		/// <param name="PageLayout">PageLayout.</param>
-		/// <param name="PageNumberFormat">PageNumberFormat.</param>
-		/// <param name="PaymentTerms">PaymentTerms.</param>
-		/// <param name="RateCostExpression">RateCostExpression.</param>
-		/// <param name="ShowGridHeader">ShowGridHeader.</param>
-		/// <param name="ShowVerticalGridLines">ShowVerticalGridLines.</param>
-		/// <param name="SortBy">SortBy.</param>
-		/// <param name="TimeFormat">TimeFormat.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public InvoiceTemplateModel(long? Id = default, string CoveredByBlockRetainerContractLabel = default, string CoveredByRecurringServiceFixedPricePerTicketContractLabel = default, string CurrencyNegativeFormat = default, string CurrencyPositiveFormat = default, int? DateFormat = default, bool? DisplayFixedPriceContractLabor = default, bool? DisplayRecurringServiceContractLabor = default, bool? DisplaySeparateLineItemForEachTax = default, bool? DisplayTaxCategory = default, bool? DisplayTaxCategorySuperscripts = default, bool? DisplayZeroAmountRecurringServicesAndBundles = default, int? GroupBy = default, int? ItemizeItemsInEachGroup = default, bool? ItemizeServicesAndBundles = default, string Name = default, string NonBillableLaborLabel = default, int? NumberFormat = default, int? PageLayout = default, int? PageNumberFormat = default, int? PaymentTerms = default, string RateCostExpression = default, bool? ShowGridHeader = default, bool? ShowVerticalGridLines = default, int? SortBy = default, int? TimeFormat = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CoveredByBlockRetainerContractLabel = CoveredByBlockRetainerContractLabel;
-			this.CoveredByRecurringServiceFixedPricePerTicketContractLabel = CoveredByRecurringServiceFixedPricePerTicketContractLabel;
-			this.CurrencyNegativeFormat = CurrencyNegativeFormat;
-			this.CurrencyPositiveFormat = CurrencyPositiveFormat;
-			this.DateFormat = DateFormat;
-			this.DisplayFixedPriceContractLabor = DisplayFixedPriceContractLabor;
-			this.DisplayRecurringServiceContractLabor = DisplayRecurringServiceContractLabor;
-			this.DisplaySeparateLineItemForEachTax = DisplaySeparateLineItemForEachTax;
-			this.DisplayTaxCategory = DisplayTaxCategory;
-			this.DisplayTaxCategorySuperscripts = DisplayTaxCategorySuperscripts;
-			this.DisplayZeroAmountRecurringServicesAndBundles = DisplayZeroAmountRecurringServicesAndBundles;
-			this.GroupBy = GroupBy;
-			this.ItemizeItemsInEachGroup = ItemizeItemsInEachGroup;
-			this.ItemizeServicesAndBundles = ItemizeServicesAndBundles;
-			this.Name = Name;
-			this.NonBillableLaborLabel = NonBillableLaborLabel;
-			this.NumberFormat = NumberFormat;
-			this.PageLayout = PageLayout;
-			this.PageNumberFormat = PageNumberFormat;
-			this.PaymentTerms = PaymentTerms;
-			this.RateCostExpression = RateCostExpression;
-			this.ShowGridHeader = ShowGridHeader;
-			this.ShowVerticalGridLines = ShowVerticalGridLines;
-			this.SortBy = SortBy;
-			this.TimeFormat = TimeFormat;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

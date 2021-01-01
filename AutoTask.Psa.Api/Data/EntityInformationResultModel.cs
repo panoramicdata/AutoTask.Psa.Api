@@ -10,14 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class EntityInformationResultModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="EntityInformationResultModel" /> class.
-		/// </summary>
-		[JsonConstructorAttribute]
-		public EntityInformationResultModel()
-		{
-		}
-
-		/// <summary>
 		/// Gets or Sets Info
 		/// </summary>
 		[DataMember(Name = "Info", EmitDefaultValue = false)]

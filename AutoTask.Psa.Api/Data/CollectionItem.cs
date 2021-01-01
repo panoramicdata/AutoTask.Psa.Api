@@ -9,17 +9,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class CollectionItem
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="CollectionItem" /> class.
-		/// </summary>
-		/// <param name="IntegerValue">IntegerValue.</param>
-		/// <param name="StringValue">StringValue.</param>
-		public CollectionItem(int? IntegerValue = default, string StringValue = default)
-		{
-			this.IntegerValue = IntegerValue;
-			this.StringValue = StringValue;
-		}
-
-		/// <summary>
 		/// Gets or Sets IntegerValue
 		/// </summary>
 		[DataMember(Name = "IntegerValue", EmitDefaultValue = false)]

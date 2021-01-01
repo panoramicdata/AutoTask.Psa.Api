@@ -11,41 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractBlockModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractBlockModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="DatePurchased">DatePurchased.</param>
-		/// <param name="EndDate">EndDate.</param>
-		/// <param name="HourlyRate">HourlyRate.</param>
-		/// <param name="Hours">Hours.</param>
-		/// <param name="HoursApproved">HoursApproved.</param>
-		/// <param name="InvoiceNumber">InvoiceNumber.</param>
-		/// <param name="IsPaid">IsPaid.</param>
-		/// <param name="PaymentNumber">PaymentNumber.</param>
-		/// <param name="PaymentType">PaymentType.</param>
-		/// <param name="StartDate">StartDate.</param>
-		/// <param name="Status">Status.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractBlockModel(long? Id = default, int? ContractID = default, DateTime? DatePurchased = default, DateTime? EndDate = default, double? HourlyRate = default, double? Hours = default, double? HoursApproved = default, string InvoiceNumber = default, bool? IsPaid = default, string PaymentNumber = default, int? PaymentType = default, DateTime? StartDate = default, int? Status = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ContractID = ContractID;
-			this.DatePurchased = DatePurchased;
-			this.EndDate = EndDate;
-			this.HourlyRate = HourlyRate;
-			this.Hours = Hours;
-			this.HoursApproved = HoursApproved;
-			this.InvoiceNumber = InvoiceNumber;
-			this.IsPaid = IsPaid;
-			this.PaymentNumber = PaymentNumber;
-			this.PaymentType = PaymentType;
-			this.StartDate = StartDate;
-			this.Status = Status;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -128,6 +93,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractBlockInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

@@ -10,23 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractBlockHourFactorModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractBlockHourFactorModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="BlockHourMultiplier">BlockHourMultiplier.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="RoleID">RoleID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractBlockHourFactorModel(long? Id = default, double? BlockHourMultiplier = default, int? ContractID = default, int? RoleID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.BlockHourMultiplier = BlockHourMultiplier;
-			this.ContractID = ContractID;
-			this.RoleID = RoleID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -55,6 +38,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractFactorInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

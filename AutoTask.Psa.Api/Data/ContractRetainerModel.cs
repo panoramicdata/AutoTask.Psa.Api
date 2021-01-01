@@ -11,43 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractRetainerModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractRetainerModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="Amount">Amount.</param>
-		/// <param name="AmountApproved">AmountApproved.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="DatePurchased">DatePurchased.</param>
-		/// <param name="EndDate">EndDate.</param>
-		/// <param name="InternalCurrencyAmount">InternalCurrencyAmount.</param>
-		/// <param name="InternalCurrencyAmountApproved">InternalCurrencyAmountApproved.</param>
-		/// <param name="InvoiceNumber">InvoiceNumber.</param>
-		/// <param name="IsPaid">IsPaid.</param>
-		/// <param name="PaymentID">PaymentID.</param>
-		/// <param name="PaymentNumber">PaymentNumber.</param>
-		/// <param name="StartDate">StartDate.</param>
-		/// <param name="Status">Status.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractRetainerModel(long? Id = default, double? Amount = default, double? AmountApproved = default, int? ContractID = default, DateTime? DatePurchased = default, DateTime? EndDate = default, double? InternalCurrencyAmount = default, double? InternalCurrencyAmountApproved = default, string InvoiceNumber = default, bool? IsPaid = default, int? PaymentID = default, string PaymentNumber = default, DateTime? StartDate = default, int? Status = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.Amount = Amount;
-			this.AmountApproved = AmountApproved;
-			this.ContractID = ContractID;
-			this.DatePurchased = DatePurchased;
-			this.EndDate = EndDate;
-			this.InternalCurrencyAmount = InternalCurrencyAmount;
-			this.InternalCurrencyAmountApproved = InternalCurrencyAmountApproved;
-			this.InvoiceNumber = InvoiceNumber;
-			this.IsPaid = IsPaid;
-			this.PaymentID = PaymentID;
-			this.PaymentNumber = PaymentNumber;
-			this.StartDate = StartDate;
-			this.Status = Status;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -136,6 +99,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractRetainerInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

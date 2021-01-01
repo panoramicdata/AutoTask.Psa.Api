@@ -10,25 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class PriceListProductTierModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="PriceListProductTierModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CurrencyID">CurrencyID.</param>
-		/// <param name="ProductTierID">ProductTierID.</param>
-		/// <param name="UnitPrice">UnitPrice.</param>
-		/// <param name="UsesInternalCurrencyPrice">UsesInternalCurrencyPrice.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public PriceListProductTierModel(long? Id = default, int? CurrencyID = default, int? ProductTierID = default, double? UnitPrice = default, bool? UsesInternalCurrencyPrice = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CurrencyID = CurrencyID;
-			this.ProductTierID = ProductTierID;
-			this.UnitPrice = UnitPrice;
-			this.UsesInternalCurrencyPrice = UsesInternalCurrencyPrice;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -63,6 +44,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncPriceListProductTierInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

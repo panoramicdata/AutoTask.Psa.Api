@@ -537,7 +537,7 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Initializes a new instance of the <see cref="Expression" /> class.
 		/// </summary>
-		[JsonConstructorAttribute]
+		[JsonConstructor]
 		public Expression()
 		{
 		}
@@ -547,6 +547,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "Type", EmitDefaultValue = false)]
 		public string Type { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets CanReduce
 		/// </summary>

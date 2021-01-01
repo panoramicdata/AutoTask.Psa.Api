@@ -10,29 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ResourceRoleDepartmentModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ResourceRoleDepartmentModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="DepartmentID">DepartmentID.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="IsDefault">IsDefault.</param>
-		/// <param name="IsDepartmentLead">IsDepartmentLead.</param>
-		/// <param name="ResourceID">ResourceID.</param>
-		/// <param name="RoleID">RoleID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ResourceRoleDepartmentModel(long? Id = default, int? DepartmentID = default, bool? IsActive = default, bool? IsDefault = default, bool? IsDepartmentLead = default, int? ResourceID = default, int? RoleID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.DepartmentID = DepartmentID;
-			this.IsActive = IsActive;
-			this.IsDefault = IsDefault;
-			this.IsDepartmentLead = IsDepartmentLead;
-			this.ResourceID = ResourceID;
-			this.RoleID = RoleID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -79,6 +56,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncResourceRoleDepartmentInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

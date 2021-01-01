@@ -10,33 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class CountryModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="CountryModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="AddressFormatID">AddressFormatID.</param>
-		/// <param name="CountryCode">CountryCode.</param>
-		/// <param name="DisplayName">DisplayName.</param>
-		/// <param name="InvoiceTemplateID">InvoiceTemplateID.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="IsDefaultCountry">IsDefaultCountry.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="QuoteTemplateID">QuoteTemplateID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public CountryModel(long? Id = default, long? AddressFormatID = default, string CountryCode = default, string DisplayName = default, int? InvoiceTemplateID = default, bool? IsActive = default, bool? IsDefaultCountry = default, string Name = default, int? QuoteTemplateID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.AddressFormatID = AddressFormatID;
-			this.CountryCode = CountryCode;
-			this.DisplayName = DisplayName;
-			this.InvoiceTemplateID = InvoiceTemplateID;
-			this.IsActive = IsActive;
-			this.IsDefaultCountry = IsDefaultCountry;
-			this.Name = Name;
-			this.QuoteTemplateID = QuoteTemplateID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

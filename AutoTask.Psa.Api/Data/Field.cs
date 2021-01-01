@@ -11,43 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class Field
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Field" /> class.
-		/// </summary>
-		/// <param name="Name">Name.</param>
-		/// <param name="Label">Label.</param>
-		/// <param name="Type">Type.</param>
-		/// <param name="Length">Length.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="IsRequired">IsRequired.</param>
-		/// <param name="IsReadOnly">IsReadOnly.</param>
-		/// <param name="IsQueryable">IsQueryable.</param>
-		/// <param name="IsReference">IsReference.</param>
-		/// <param name="ReferenceEntityType">ReferenceEntityType.</param>
-		/// <param name="IsPickList">IsPickList.</param>
-		/// <param name="PicklistValues">PicklistValues.</param>
-		/// <param name="PicklistParentValueField">PicklistParentValueField.</param>
-		/// <param name="DefaultValue">DefaultValue.</param>
-		/// <param name="IsSupportedWebhookField">IsSupportedWebhookField.</param>
-		public Field(string Name = default, string Label = default, string Type = default, int? Length = default, string Description = default, bool? IsRequired = default, bool? IsReadOnly = default, bool? IsQueryable = default, bool? IsReference = default, string ReferenceEntityType = default, bool? IsPickList = default, List<PickListValue> PicklistValues = default, string PicklistParentValueField = default, string DefaultValue = default, Object IsSupportedWebhookField = default)
-		{
-			this.Name = Name;
-			this.Label = Label;
-			this.Type = Type;
-			this.Length = Length;
-			this.Description = Description;
-			this.IsRequired = IsRequired;
-			this.IsReadOnly = IsReadOnly;
-			this.IsQueryable = IsQueryable;
-			this.IsReference = IsReference;
-			this.ReferenceEntityType = ReferenceEntityType;
-			this.IsPickList = IsPickList;
-			this.PicklistValues = PicklistValues;
-			this.PicklistParentValueField = PicklistParentValueField;
-			this.DefaultValue = DefaultValue;
-			this.IsSupportedWebhookField = IsSupportedWebhookField;
-		}
-
-		/// <summary>
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]

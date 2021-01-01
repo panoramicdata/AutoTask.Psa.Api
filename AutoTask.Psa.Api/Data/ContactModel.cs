@@ -11,101 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContactModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContactModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="AdditionalAddressInformation">AdditionalAddressInformation.</param>
-		/// <param name="AddressLine">AddressLine.</param>
-		/// <param name="AddressLine1">AddressLine1.</param>
-		/// <param name="AlternatePhone">AlternatePhone.</param>
-		/// <param name="ApiVendorID">ApiVendorID.</param>
-		/// <param name="BulkEmailOptOutTime">BulkEmailOptOutTime.</param>
-		/// <param name="City">City.</param>
-		/// <param name="CompanyID">CompanyID.</param>
-		/// <param name="CompanyLocationID">CompanyLocationID.</param>
-		/// <param name="CountryID">CountryID.</param>
-		/// <param name="CreateDate">CreateDate.</param>
-		/// <param name="EmailAddress">EmailAddress.</param>
-		/// <param name="EmailAddress2">EmailAddress2.</param>
-		/// <param name="EmailAddress3">EmailAddress3.</param>
-		/// <param name="Extension">Extension.</param>
-		/// <param name="ExternalID">ExternalID.</param>
-		/// <param name="FacebookUrl">FacebookUrl.</param>
-		/// <param name="FaxNumber">FaxNumber.</param>
-		/// <param name="FirstName">FirstName.</param>
-		/// <param name="ImpersonatorCreatorResourceID">ImpersonatorCreatorResourceID.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="IsOptedOutFromBulkEmail">IsOptedOutFromBulkEmail.</param>
-		/// <param name="LastActivityDate">LastActivityDate.</param>
-		/// <param name="LastModifiedDate">LastModifiedDate.</param>
-		/// <param name="LastName">LastName.</param>
-		/// <param name="LinkedInUrl">LinkedInUrl.</param>
-		/// <param name="MiddleInitial">MiddleInitial.</param>
-		/// <param name="MobilePhone">MobilePhone.</param>
-		/// <param name="NamePrefix">NamePrefix.</param>
-		/// <param name="NameSuffix">NameSuffix.</param>
-		/// <param name="Note">Note.</param>
-		/// <param name="ReceivesEmailNotifications">ReceivesEmailNotifications.</param>
-		/// <param name="Phone">Phone.</param>
-		/// <param name="PrimaryContact">PrimaryContact.</param>
-		/// <param name="RoomNumber">RoomNumber.</param>
-		/// <param name="SolicitationOptOut">SolicitationOptOut.</param>
-		/// <param name="SolicitationOptOutTime">SolicitationOptOutTime.</param>
-		/// <param name="State">State.</param>
-		/// <param name="SurveyOptOut">SurveyOptOut.</param>
-		/// <param name="Title">Title.</param>
-		/// <param name="TwitterUrl">TwitterUrl.</param>
-		/// <param name="ZipCode">ZipCode.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContactModel(long? Id = default, string AdditionalAddressInformation = default, string AddressLine = default, string AddressLine1 = default, string AlternatePhone = default, int? ApiVendorID = default, DateTime? BulkEmailOptOutTime = default, string City = default, int? CompanyID = default, int? CompanyLocationID = default, int? CountryID = default, DateTime? CreateDate = default, string EmailAddress = default, string EmailAddress2 = default, string EmailAddress3 = default, string Extension = default, string ExternalID = default, string FacebookUrl = default, string FaxNumber = default, string FirstName = default, int? ImpersonatorCreatorResourceID = default, int? IsActive = default, bool? IsOptedOutFromBulkEmail = default, DateTime? LastActivityDate = default, DateTime? LastModifiedDate = default, string LastName = default, string LinkedInUrl = default, string MiddleInitial = default, string MobilePhone = default, int? NamePrefix = default, int? NameSuffix = default, string Note = default, bool? ReceivesEmailNotifications = default, string Phone = default, bool? PrimaryContact = default, string RoomNumber = default, bool? SolicitationOptOut = default, DateTime? SolicitationOptOutTime = default, string State = default, bool? SurveyOptOut = default, string Title = default, string TwitterUrl = default, string ZipCode = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.AdditionalAddressInformation = AdditionalAddressInformation;
-			this.AddressLine = AddressLine;
-			this.AddressLine1 = AddressLine1;
-			this.AlternatePhone = AlternatePhone;
-			this.ApiVendorID = ApiVendorID;
-			this.BulkEmailOptOutTime = BulkEmailOptOutTime;
-			this.City = City;
-			this.CompanyID = CompanyID;
-			this.CompanyLocationID = CompanyLocationID;
-			this.CountryID = CountryID;
-			this.CreateDate = CreateDate;
-			this.EmailAddress = EmailAddress;
-			this.EmailAddress2 = EmailAddress2;
-			this.EmailAddress3 = EmailAddress3;
-			this.Extension = Extension;
-			this.ExternalID = ExternalID;
-			this.FacebookUrl = FacebookUrl;
-			this.FaxNumber = FaxNumber;
-			this.FirstName = FirstName;
-			this.ImpersonatorCreatorResourceID = ImpersonatorCreatorResourceID;
-			this.IsActive = IsActive;
-			this.IsOptedOutFromBulkEmail = IsOptedOutFromBulkEmail;
-			this.LastActivityDate = LastActivityDate;
-			this.LastModifiedDate = LastModifiedDate;
-			this.LastName = LastName;
-			this.LinkedInUrl = LinkedInUrl;
-			this.MiddleInitial = MiddleInitial;
-			this.MobilePhone = MobilePhone;
-			this.NamePrefix = NamePrefix;
-			this.NameSuffix = NameSuffix;
-			this.Note = Note;
-			this.ReceivesEmailNotifications = ReceivesEmailNotifications;
-			this.Phone = Phone;
-			this.PrimaryContact = PrimaryContact;
-			this.RoomNumber = RoomNumber;
-			this.SolicitationOptOut = SolicitationOptOut;
-			this.SolicitationOptOutTime = SolicitationOptOutTime;
-			this.State = State;
-			this.SurveyOptOut = SurveyOptOut;
-			this.Title = Title;
-			this.TwitterUrl = TwitterUrl;
-			this.ZipCode = ZipCode;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -368,6 +273,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContactInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

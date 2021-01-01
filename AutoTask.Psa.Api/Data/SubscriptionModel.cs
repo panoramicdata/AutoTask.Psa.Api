@@ -11,49 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class SubscriptionModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="SubscriptionModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ConfigurationItemID">ConfigurationItemID.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="EffectiveDate">EffectiveDate.</param>
-		/// <param name="ExpirationDate">ExpirationDate.</param>
-		/// <param name="ImpersonatorCreatorResourceID">ImpersonatorCreatorResourceID.</param>
-		/// <param name="MaterialCodeID">MaterialCodeID.</param>
-		/// <param name="OrganizationalLevelAssociationID">OrganizationalLevelAssociationID.</param>
-		/// <param name="PeriodCost">PeriodCost.</param>
-		/// <param name="PeriodPrice">PeriodPrice.</param>
-		/// <param name="PeriodType">PeriodType.</param>
-		/// <param name="PurchaseOrderNumber">PurchaseOrderNumber.</param>
-		/// <param name="Status">Status.</param>
-		/// <param name="SubscriptionName">SubscriptionName.</param>
-		/// <param name="TotalCost">TotalCost.</param>
-		/// <param name="TotalPrice">TotalPrice.</param>
-		/// <param name="VendorID">VendorID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public SubscriptionModel(long? Id = default, int? ConfigurationItemID = default, string Description = default, DateTime? EffectiveDate = default, DateTime? ExpirationDate = default, int? ImpersonatorCreatorResourceID = default, int? MaterialCodeID = default, int? OrganizationalLevelAssociationID = default, double? PeriodCost = default, double? PeriodPrice = default, int? PeriodType = default, string PurchaseOrderNumber = default, int? Status = default, string SubscriptionName = default, double? TotalCost = default, double? TotalPrice = default, int? VendorID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ConfigurationItemID = ConfigurationItemID;
-			this.Description = Description;
-			this.EffectiveDate = EffectiveDate;
-			this.ExpirationDate = ExpirationDate;
-			this.ImpersonatorCreatorResourceID = ImpersonatorCreatorResourceID;
-			this.MaterialCodeID = MaterialCodeID;
-			this.OrganizationalLevelAssociationID = OrganizationalLevelAssociationID;
-			this.PeriodCost = PeriodCost;
-			this.PeriodPrice = PeriodPrice;
-			this.PeriodType = PeriodType;
-			this.PurchaseOrderNumber = PurchaseOrderNumber;
-			this.Status = Status;
-			this.SubscriptionName = SubscriptionName;
-			this.TotalCost = TotalCost;
-			this.TotalPrice = TotalPrice;
-			this.VendorID = VendorID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

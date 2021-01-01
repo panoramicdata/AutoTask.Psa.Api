@@ -10,29 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ProductVendorModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ProductVendorModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="IsDefault">IsDefault.</param>
-		/// <param name="ProductID">ProductID.</param>
-		/// <param name="VendorCost">VendorCost.</param>
-		/// <param name="VendorID">VendorID.</param>
-		/// <param name="VendorPartNumber">VendorPartNumber.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ProductVendorModel(long? Id = default, bool? IsActive = default, bool? IsDefault = default, int? ProductID = default, double? VendorCost = default, int? VendorID = default, string VendorPartNumber = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.IsActive = IsActive;
-			this.IsDefault = IsDefault;
-			this.ProductID = ProductID;
-			this.VendorCost = VendorCost;
-			this.VendorID = VendorID;
-			this.VendorPartNumber = VendorPartNumber;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -79,6 +56,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncProductVendorInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

@@ -8,9 +8,9 @@ using Xunit.Abstractions;
 
 namespace AutoTask.Psa.Api.Test
 {
-	public class TasksTests : TestBase
+	public class TaskTests : TestBase
 	{
-		public TasksTests(
+		public TaskTests(
 			ITestOutputHelper testOutputHelper,
 			IOptions<AppSettings> options
 			) :	base(testOutputHelper, options)
@@ -18,7 +18,7 @@ namespace AutoTask.Psa.Api.Test
 		}
 
 		[Fact]
-		public async void Test1()
+		public async void QueryAsync_Succeeds()
 		{
 			var queryModel = new QueryModel
 			{

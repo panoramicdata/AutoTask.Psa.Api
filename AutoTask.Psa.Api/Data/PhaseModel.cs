@@ -11,43 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class PhaseModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="PhaseModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CreateDate">CreateDate.</param>
-		/// <param name="CreatorResourceID">CreatorResourceID.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="DueDate">DueDate.</param>
-		/// <param name="EstimatedHours">EstimatedHours.</param>
-		/// <param name="ExternalID">ExternalID.</param>
-		/// <param name="IsScheduled">IsScheduled.</param>
-		/// <param name="LastActivityDateTime">LastActivityDateTime.</param>
-		/// <param name="ParentPhaseID">ParentPhaseID.</param>
-		/// <param name="PhaseNumber">PhaseNumber.</param>
-		/// <param name="ProjectID">ProjectID.</param>
-		/// <param name="StartDate">StartDate.</param>
-		/// <param name="Title">Title.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public PhaseModel(long? Id = default, DateTime? CreateDate = default, int? CreatorResourceID = default, string Description = default, DateTime? DueDate = default, double? EstimatedHours = default, string ExternalID = default, bool? IsScheduled = default, DateTime? LastActivityDateTime = default, int? ParentPhaseID = default, string PhaseNumber = default, int? ProjectID = default, DateTime? StartDate = default, string Title = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CreateDate = CreateDate;
-			this.CreatorResourceID = CreatorResourceID;
-			this.Description = Description;
-			this.DueDate = DueDate;
-			this.EstimatedHours = EstimatedHours;
-			this.ExternalID = ExternalID;
-			this.IsScheduled = IsScheduled;
-			this.LastActivityDateTime = LastActivityDateTime;
-			this.ParentPhaseID = ParentPhaseID;
-			this.PhaseNumber = PhaseNumber;
-			this.ProjectID = ProjectID;
-			this.StartDate = StartDate;
-			this.Title = Title;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -136,6 +99,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncPhaseInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

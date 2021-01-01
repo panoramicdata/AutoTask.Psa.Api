@@ -10,27 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ResourceRoleModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ResourceRoleModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="DepartmentID">DepartmentID.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="QueueID">QueueID.</param>
-		/// <param name="ResourceID">ResourceID.</param>
-		/// <param name="RoleID">RoleID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ResourceRoleModel(long? Id = default, long? DepartmentID = default, bool? IsActive = default, long? QueueID = default, long? ResourceID = default, long? RoleID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.DepartmentID = DepartmentID;
-			this.IsActive = IsActive;
-			this.QueueID = QueueID;
-			this.ResourceID = ResourceID;
-			this.RoleID = RoleID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -71,6 +50,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public long? SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

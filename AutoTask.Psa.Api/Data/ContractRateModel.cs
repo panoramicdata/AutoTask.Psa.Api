@@ -10,25 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractRateModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractRateModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ContractHourlyRate">ContractHourlyRate.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="InternalCurrencyContractHourlyRate">InternalCurrencyContractHourlyRate.</param>
-		/// <param name="RoleID">RoleID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractRateModel(long? Id = default, double? ContractHourlyRate = default, int? ContractID = default, double? InternalCurrencyContractHourlyRate = default, int? RoleID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ContractHourlyRate = ContractHourlyRate;
-			this.ContractID = ContractID;
-			this.InternalCurrencyContractHourlyRate = InternalCurrencyContractHourlyRate;
-			this.RoleID = RoleID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -63,6 +44,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractRateInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

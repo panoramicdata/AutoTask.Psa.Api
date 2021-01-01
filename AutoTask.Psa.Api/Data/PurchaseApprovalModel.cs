@@ -10,23 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class PurchaseApprovalModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="PurchaseApprovalModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CostType">CostType.</param>
-		/// <param name="IsApproved">IsApproved.</param>
-		/// <param name="RejectNote">RejectNote.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public PurchaseApprovalModel(long? Id = default, string CostType = default, bool? IsApproved = default, string RejectNote = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CostType = CostType;
-			this.IsApproved = IsApproved;
-			this.RejectNote = RejectNote;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

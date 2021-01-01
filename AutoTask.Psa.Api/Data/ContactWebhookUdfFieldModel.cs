@@ -10,25 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContactWebhookUdfFieldModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContactWebhookUdfFieldModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="IsDisplayAlwaysField">IsDisplayAlwaysField.</param>
-		/// <param name="IsSubscribedField">IsSubscribedField.</param>
-		/// <param name="UdfFieldID">UdfFieldID.</param>
-		/// <param name="WebhookID">WebhookID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContactWebhookUdfFieldModel(long? Id = default, bool? IsDisplayAlwaysField = default, bool? IsSubscribedField = default, int? UdfFieldID = default, int? WebhookID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.IsDisplayAlwaysField = IsDisplayAlwaysField;
-			this.IsSubscribedField = IsSubscribedField;
-			this.UdfFieldID = UdfFieldID;
-			this.WebhookID = WebhookID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -63,6 +44,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContactWebhookUdfFieldInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

@@ -10,25 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class PriceListServiceBundleModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="PriceListServiceBundleModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CurrencyID">CurrencyID.</param>
-		/// <param name="ServiceBundleID">ServiceBundleID.</param>
-		/// <param name="UnitPrice">UnitPrice.</param>
-		/// <param name="UsesInternalCurrencyPrice">UsesInternalCurrencyPrice.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public PriceListServiceBundleModel(long? Id = default, int? CurrencyID = default, int? ServiceBundleID = default, double? UnitPrice = default, bool? UsesInternalCurrencyPrice = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CurrencyID = CurrencyID;
-			this.ServiceBundleID = ServiceBundleID;
-			this.UnitPrice = UnitPrice;
-			this.UsesInternalCurrencyPrice = UsesInternalCurrencyPrice;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

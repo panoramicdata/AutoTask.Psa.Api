@@ -10,25 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ProductTierModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ProductTierModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ProductID">ProductID.</param>
-		/// <param name="UnitCost">UnitCost.</param>
-		/// <param name="UnitPrice">UnitPrice.</param>
-		/// <param name="UpToUnitCount">UpToUnitCount.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ProductTierModel(long? Id = default, int? ProductID = default, double? UnitCost = default, double? UnitPrice = default, double? UpToUnitCount = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ProductID = ProductID;
-			this.UnitCost = UnitCost;
-			this.UnitPrice = UnitPrice;
-			this.UpToUnitCount = UpToUnitCount;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -63,6 +44,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncProductTierInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

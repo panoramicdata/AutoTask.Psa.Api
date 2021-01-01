@@ -10,43 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class CompanyWebhookModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="CompanyWebhookModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="DeactivationUrl">DeactivationUrl.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="IsReady">IsReady.</param>
-		/// <param name="IsSubscribedToCreateEvents">IsSubscribedToCreateEvents.</param>
-		/// <param name="IsSubscribedToDeleteEvents">IsSubscribedToDeleteEvents.</param>
-		/// <param name="IsSubscribedToUpdateEvents">IsSubscribedToUpdateEvents.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="NotificationEmailAddress">NotificationEmailAddress.</param>
-		/// <param name="OwnerResourceID">OwnerResourceID.</param>
-		/// <param name="SecretKey">SecretKey.</param>
-		/// <param name="SendThresholdExceededNotification">SendThresholdExceededNotification.</param>
-		/// <param name="WebhookGUID">WebhookGUID.</param>
-		/// <param name="WebhookUrl">WebhookUrl.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public CompanyWebhookModel(long? Id = default, string DeactivationUrl = default, bool? IsActive = default, bool? IsReady = default, bool? IsSubscribedToCreateEvents = default, bool? IsSubscribedToDeleteEvents = default, bool? IsSubscribedToUpdateEvents = default, string Name = default, string NotificationEmailAddress = default, int? OwnerResourceID = default, string SecretKey = default, bool? SendThresholdExceededNotification = default, string WebhookGUID = default, string WebhookUrl = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.DeactivationUrl = DeactivationUrl;
-			this.IsActive = IsActive;
-			this.IsReady = IsReady;
-			this.IsSubscribedToCreateEvents = IsSubscribedToCreateEvents;
-			this.IsSubscribedToDeleteEvents = IsSubscribedToDeleteEvents;
-			this.IsSubscribedToUpdateEvents = IsSubscribedToUpdateEvents;
-			this.Name = Name;
-			this.NotificationEmailAddress = NotificationEmailAddress;
-			this.OwnerResourceID = OwnerResourceID;
-			this.SecretKey = SecretKey;
-			this.SendThresholdExceededNotification = SendThresholdExceededNotification;
-			this.WebhookGUID = WebhookGUID;
-			this.WebhookUrl = WebhookUrl;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

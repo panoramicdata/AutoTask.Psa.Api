@@ -10,21 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class InventoryItemSerialNumberModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="InventoryItemSerialNumberModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="InventoryItemID">InventoryItemID.</param>
-		/// <param name="SerialNumber">SerialNumber.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public InventoryItemSerialNumberModel(long? Id = default, long? InventoryItemID = default, string SerialNumber = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.InventoryItemID = InventoryItemID;
-			this.SerialNumber = SerialNumber;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -47,6 +32,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncInventoryItemSerialNumberInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

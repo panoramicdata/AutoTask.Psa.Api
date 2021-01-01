@@ -10,25 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ShippingTypeModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ShippingTypeModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="BillingCodeID">BillingCodeID.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ShippingTypeModel(long? Id = default, int? BillingCodeID = default, string Description = default, bool? IsActive = default, string Name = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.BillingCodeID = BillingCodeID;
-			this.Description = Description;
-			this.IsActive = IsActive;
-			this.Name = Name;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

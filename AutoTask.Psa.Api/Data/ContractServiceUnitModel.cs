@@ -11,41 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractServiceUnitModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractServiceUnitModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ApproveAndPostDate">ApproveAndPostDate.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="ContractServiceID">ContractServiceID.</param>
-		/// <param name="Cost">Cost.</param>
-		/// <param name="EndDate">EndDate.</param>
-		/// <param name="InternalCurrencyPrice">InternalCurrencyPrice.</param>
-		/// <param name="OrganizationalLevelAssociationID">OrganizationalLevelAssociationID.</param>
-		/// <param name="Price">Price.</param>
-		/// <param name="ServiceID">ServiceID.</param>
-		/// <param name="StartDate">StartDate.</param>
-		/// <param name="Units">Units.</param>
-		/// <param name="VendorCompanyID">VendorCompanyID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractServiceUnitModel(long? Id = default, DateTime? ApproveAndPostDate = default, int? ContractID = default, int? ContractServiceID = default, double? Cost = default, DateTime? EndDate = default, double? InternalCurrencyPrice = default, int? OrganizationalLevelAssociationID = default, double? Price = default, int? ServiceID = default, DateTime? StartDate = default, int? Units = default, int? VendorCompanyID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ApproveAndPostDate = ApproveAndPostDate;
-			this.ContractID = ContractID;
-			this.ContractServiceID = ContractServiceID;
-			this.Cost = Cost;
-			this.EndDate = EndDate;
-			this.InternalCurrencyPrice = InternalCurrencyPrice;
-			this.OrganizationalLevelAssociationID = OrganizationalLevelAssociationID;
-			this.Price = Price;
-			this.ServiceID = ServiceID;
-			this.StartDate = StartDate;
-			this.Units = Units;
-			this.VendorCompanyID = VendorCompanyID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -128,6 +93,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public long? SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

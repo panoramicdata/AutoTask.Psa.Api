@@ -11,31 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class PurchaseOrderItemReceivingModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="PurchaseOrderItemReceivingModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="PurchaseOrderItemID">PurchaseOrderItemID.</param>
-		/// <param name="QuantityBackOrdered">QuantityBackOrdered.</param>
-		/// <param name="QuantityNowReceiving">QuantityNowReceiving.</param>
-		/// <param name="QuantityPreviouslyReceived">QuantityPreviouslyReceived.</param>
-		/// <param name="ReceiveDate">ReceiveDate.</param>
-		/// <param name="ReceivedByResourceID">ReceivedByResourceID.</param>
-		/// <param name="SerialNumber">SerialNumber.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public PurchaseOrderItemReceivingModel(long? Id = default, long? PurchaseOrderItemID = default, int? QuantityBackOrdered = default, int? QuantityNowReceiving = default, int? QuantityPreviouslyReceived = default, DateTime? ReceiveDate = default, int? ReceivedByResourceID = default, string SerialNumber = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.PurchaseOrderItemID = PurchaseOrderItemID;
-			this.QuantityBackOrdered = QuantityBackOrdered;
-			this.QuantityNowReceiving = QuantityNowReceiving;
-			this.QuantityPreviouslyReceived = QuantityPreviouslyReceived;
-			this.ReceiveDate = ReceiveDate;
-			this.ReceivedByResourceID = ReceivedByResourceID;
-			this.SerialNumber = SerialNumber;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -88,6 +63,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncPurchaseOrderReceiveInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

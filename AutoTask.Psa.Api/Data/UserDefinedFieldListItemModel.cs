@@ -11,25 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class UserDefinedFieldListItemModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="UserDefinedFieldListItemModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CreateDate">CreateDate.</param>
-		/// <param name="UdfFieldId">UdfFieldId.</param>
-		/// <param name="ValueForDisplay">ValueForDisplay.</param>
-		/// <param name="ValueForExport">ValueForExport.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public UserDefinedFieldListItemModel(long? Id = default, DateTime? CreateDate = default, long? UdfFieldId = default, string ValueForDisplay = default, string ValueForExport = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CreateDate = CreateDate;
-			this.UdfFieldId = UdfFieldId;
-			this.ValueForDisplay = ValueForDisplay;
-			this.ValueForExport = ValueForExport;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -64,6 +45,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncUserDefinedFieldListItemInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

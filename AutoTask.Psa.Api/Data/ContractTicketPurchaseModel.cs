@@ -11,41 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractTicketPurchaseModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractTicketPurchaseModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="DatePurchased">DatePurchased.</param>
-		/// <param name="EndDate">EndDate.</param>
-		/// <param name="InvoiceNumber">InvoiceNumber.</param>
-		/// <param name="IsPaid">IsPaid.</param>
-		/// <param name="PaymentNumber">PaymentNumber.</param>
-		/// <param name="PaymentType">PaymentType.</param>
-		/// <param name="PerTicketRate">PerTicketRate.</param>
-		/// <param name="StartDate">StartDate.</param>
-		/// <param name="Status">Status.</param>
-		/// <param name="TicketsPurchased">TicketsPurchased.</param>
-		/// <param name="TicketsUsed">TicketsUsed.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractTicketPurchaseModel(long? Id = default, long? ContractID = default, DateTime? DatePurchased = default, DateTime? EndDate = default, string InvoiceNumber = default, bool? IsPaid = default, string PaymentNumber = default, int? PaymentType = default, double? PerTicketRate = default, DateTime? StartDate = default, int? Status = default, double? TicketsPurchased = default, double? TicketsUsed = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ContractID = ContractID;
-			this.DatePurchased = DatePurchased;
-			this.EndDate = EndDate;
-			this.InvoiceNumber = InvoiceNumber;
-			this.IsPaid = IsPaid;
-			this.PaymentNumber = PaymentNumber;
-			this.PaymentType = PaymentType;
-			this.PerTicketRate = PerTicketRate;
-			this.StartDate = StartDate;
-			this.Status = Status;
-			this.TicketsPurchased = TicketsPurchased;
-			this.TicketsUsed = TicketsUsed;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -128,6 +93,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractTicketPurchaseInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

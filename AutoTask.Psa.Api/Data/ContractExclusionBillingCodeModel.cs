@@ -10,21 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractExclusionBillingCodeModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractExclusionBillingCodeModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="BillingCodeID">BillingCodeID.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractExclusionBillingCodeModel(long? Id = default, long? BillingCodeID = default, long? ContractID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.BillingCodeID = BillingCodeID;
-			this.ContractID = ContractID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -47,6 +32,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractExclusionAllocationCodeInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

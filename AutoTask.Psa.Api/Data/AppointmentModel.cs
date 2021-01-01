@@ -11,33 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class AppointmentModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="AppointmentModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CreateDateTime">CreateDateTime.</param>
-		/// <param name="CreatorResourceID">CreatorResourceID.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="EndDateTime">EndDateTime.</param>
-		/// <param name="ResourceID">ResourceID.</param>
-		/// <param name="StartDateTime">StartDateTime.</param>
-		/// <param name="Title">Title.</param>
-		/// <param name="UpdateDateTime">UpdateDateTime.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public AppointmentModel(long? Id = default, DateTime? CreateDateTime = default, int? CreatorResourceID = default, string Description = default, DateTime? EndDateTime = default, int? ResourceID = default, DateTime? StartDateTime = default, string Title = default, DateTime? UpdateDateTime = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CreateDateTime = CreateDateTime;
-			this.CreatorResourceID = CreatorResourceID;
-			this.Description = Description;
-			this.EndDateTime = EndDateTime;
-			this.ResourceID = ResourceID;
-			this.StartDateTime = StartDateTime;
-			this.Title = Title;
-			this.UpdateDateTime = UpdateDateTime;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

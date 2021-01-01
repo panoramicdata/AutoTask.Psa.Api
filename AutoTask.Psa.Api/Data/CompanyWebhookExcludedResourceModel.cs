@@ -10,21 +10,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class CompanyWebhookExcludedResourceModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="CompanyWebhookExcludedResourceModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="ResourceID">ResourceID.</param>
-		/// <param name="WebhookID">WebhookID.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public CompanyWebhookExcludedResourceModel(long? Id = default, int? ResourceID = default, int? WebhookID = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.ResourceID = ResourceID;
-			this.WebhookID = WebhookID;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -47,6 +32,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncAccountWebhookExcludedResourceInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>

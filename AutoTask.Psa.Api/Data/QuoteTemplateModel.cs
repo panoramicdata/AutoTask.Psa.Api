@@ -11,55 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class QuoteTemplateModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="QuoteTemplateModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="CalculateTaxSeparately">CalculateTaxSeparately.</param>
-		/// <param name="CreateDate">CreateDate.</param>
-		/// <param name="CreatedBy">CreatedBy.</param>
-		/// <param name="CurrencyNegativeFormat">CurrencyNegativeFormat.</param>
-		/// <param name="CurrencyPositiveFormat">CurrencyPositiveFormat.</param>
-		/// <param name="DateFormat">DateFormat.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="DisplayTaxCategorySuperscripts">DisplayTaxCategorySuperscripts.</param>
-		/// <param name="IsActive">IsActive.</param>
-		/// <param name="LastActivityBy">LastActivityBy.</param>
-		/// <param name="LastActivityDate">LastActivityDate.</param>
-		/// <param name="Name">Name.</param>
-		/// <param name="NumberFormat">NumberFormat.</param>
-		/// <param name="PageLayout">PageLayout.</param>
-		/// <param name="PageNumberFormat">PageNumberFormat.</param>
-		/// <param name="ShowEachTaxInGroup">ShowEachTaxInGroup.</param>
-		/// <param name="ShowGridHeader">ShowGridHeader.</param>
-		/// <param name="ShowTaxCategory">ShowTaxCategory.</param>
-		/// <param name="ShowVerticalGridLines">ShowVerticalGridLines.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public QuoteTemplateModel(long? Id = default, bool? CalculateTaxSeparately = default, DateTime? CreateDate = default, int? CreatedBy = default, string CurrencyNegativeFormat = default, string CurrencyPositiveFormat = default, int? DateFormat = default, string Description = default, bool? DisplayTaxCategorySuperscripts = default, bool? IsActive = default, int? LastActivityBy = default, DateTime? LastActivityDate = default, string Name = default, int? NumberFormat = default, int? PageLayout = default, int? PageNumberFormat = default, bool? ShowEachTaxInGroup = default, bool? ShowGridHeader = default, bool? ShowTaxCategory = default, bool? ShowVerticalGridLines = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.CalculateTaxSeparately = CalculateTaxSeparately;
-			this.CreateDate = CreateDate;
-			this.CreatedBy = CreatedBy;
-			this.CurrencyNegativeFormat = CurrencyNegativeFormat;
-			this.CurrencyPositiveFormat = CurrencyPositiveFormat;
-			this.DateFormat = DateFormat;
-			this.Description = Description;
-			this.DisplayTaxCategorySuperscripts = DisplayTaxCategorySuperscripts;
-			this.IsActive = IsActive;
-			this.LastActivityBy = LastActivityBy;
-			this.LastActivityDate = LastActivityDate;
-			this.Name = Name;
-			this.NumberFormat = NumberFormat;
-			this.PageLayout = PageLayout;
-			this.PageNumberFormat = PageNumberFormat;
-			this.ShowEachTaxInGroup = ShowEachTaxInGroup;
-			this.ShowGridHeader = ShowGridHeader;
-			this.ShowTaxCategory = ShowTaxCategory;
-			this.ShowVerticalGridLines = ShowVerticalGridLines;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]

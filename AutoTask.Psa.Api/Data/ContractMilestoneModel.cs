@@ -11,41 +11,6 @@ namespace AutoTask.Psa.Api.Data
 	public partial class ContractMilestoneModel
 	{
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ContractMilestoneModel" /> class.
-		/// </summary>
-		/// <param name="Id">Id.</param>
-		/// <param name="Amount">Amount.</param>
-		/// <param name="BillingCodeID">BillingCodeID.</param>
-		/// <param name="ContractID">ContractID.</param>
-		/// <param name="CreateDate">CreateDate.</param>
-		/// <param name="CreatorResourceID">CreatorResourceID.</param>
-		/// <param name="DateDue">DateDue.</param>
-		/// <param name="Description">Description.</param>
-		/// <param name="InternalCurrencyAmount">InternalCurrencyAmount.</param>
-		/// <param name="IsInitialPayment">IsInitialPayment.</param>
-		/// <param name="OrganizationalLevelAssociationID">OrganizationalLevelAssociationID.</param>
-		/// <param name="Status">Status.</param>
-		/// <param name="Title">Title.</param>
-		/// <param name="UserDefinedFields">UserDefinedFields.</param>
-		public ContractMilestoneModel(long? Id = default, double? Amount = default, int? BillingCodeID = default, int? ContractID = default, DateTime? CreateDate = default, int? CreatorResourceID = default, DateTime? DateDue = default, string Description = default, double? InternalCurrencyAmount = default, bool? IsInitialPayment = default, int? OrganizationalLevelAssociationID = default, int? Status = default, string Title = default, List<UserDefinedField> UserDefinedFields = default)
-		{
-			this.Id = Id;
-			this.Amount = Amount;
-			this.BillingCodeID = BillingCodeID;
-			this.ContractID = ContractID;
-			this.CreateDate = CreateDate;
-			this.CreatorResourceID = CreatorResourceID;
-			this.DateDue = DateDue;
-			this.Description = Description;
-			this.InternalCurrencyAmount = InternalCurrencyAmount;
-			this.IsInitialPayment = IsInitialPayment;
-			this.OrganizationalLevelAssociationID = OrganizationalLevelAssociationID;
-			this.Status = Status;
-			this.Title = Title;
-			this.UserDefinedFields = UserDefinedFields;
-		}
-
-		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
 		[DataMember(Name = "Id", EmitDefaultValue = false)]
@@ -128,6 +93,7 @@ namespace AutoTask.Psa.Api.Data
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
 		public ExpressionFuncContractMilestoneInt64 SoapParentPropertyId { get; private set; }
+
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
