@@ -26,7 +26,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Comments
 		/// </summary>
 		[DataMember(Name = "Comments", EmitDefaultValue = false)]
-		public string Comments { get; set; }
+		public string Comments { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets CompanyID
@@ -74,7 +74,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets InvoiceNumber
 		/// </summary>
 		[DataMember(Name = "InvoiceNumber", EmitDefaultValue = false)]
-		public string InvoiceNumber { get; set; }
+		public string InvoiceNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets InvoiceTotal
@@ -92,7 +92,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets OrderNumber
 		/// </summary>
 		[DataMember(Name = "OrderNumber", EmitDefaultValue = false)]
-		public string OrderNumber { get; set; }
+		public string OrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets PaidDate
@@ -116,7 +116,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets TaxRegionName
 		/// </summary>
 		[DataMember(Name = "TaxRegionName", EmitDefaultValue = false)]
-		public string TaxRegionName { get; set; }
+		public string TaxRegionName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ToDate
@@ -152,6 +152,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

@@ -68,7 +68,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets InvoiceDescription
 		/// </summary>
 		[DataMember(Name = "InvoiceDescription", EmitDefaultValue = false)]
-		public string InvoiceDescription { get; set; }
+		public string InvoiceDescription { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsActive
@@ -110,12 +110,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
-		public ExpressionFuncContractBillingRuleInt64 SoapParentPropertyId { get; private set; }
+		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

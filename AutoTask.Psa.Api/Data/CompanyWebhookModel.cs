@@ -19,7 +19,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets DeactivationUrl
 		/// </summary>
 		[DataMember(Name = "DeactivationUrl", EmitDefaultValue = false)]
-		public string DeactivationUrl { get; set; }
+		public string DeactivationUrl { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsActive
@@ -55,13 +55,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets NotificationEmailAddress
 		/// </summary>
 		[DataMember(Name = "NotificationEmailAddress", EmitDefaultValue = false)]
-		public string NotificationEmailAddress { get; set; }
+		public string NotificationEmailAddress { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets OwnerResourceID
@@ -73,7 +73,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SecretKey
 		/// </summary>
 		[DataMember(Name = "SecretKey", EmitDefaultValue = false)]
-		public string SecretKey { get; set; }
+		public string SecretKey { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SendThresholdExceededNotification
@@ -85,18 +85,18 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets WebhookGUID
 		/// </summary>
 		[DataMember(Name = "WebhookGUID", EmitDefaultValue = false)]
-		public string WebhookGUID { get; set; }
+		public string WebhookGUID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets WebhookUrl
 		/// </summary>
 		[DataMember(Name = "WebhookUrl", EmitDefaultValue = false)]
-		public string WebhookUrl { get; set; }
+		public string WebhookUrl { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

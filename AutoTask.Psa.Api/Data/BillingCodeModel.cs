@@ -37,13 +37,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ExternalNumber
 		/// </summary>
 		[DataMember(Name = "ExternalNumber", EmitDefaultValue = false)]
-		public string ExternalNumber { get; set; }
+		public string ExternalNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets GeneralLedgerAccount
@@ -73,7 +73,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TaxCategoryID
@@ -103,6 +103,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

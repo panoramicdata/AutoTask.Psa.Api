@@ -25,7 +25,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SkillDescription
 		/// </summary>
 		[DataMember(Name = "SkillDescription", EmitDefaultValue = false)]
-		public string SkillDescription { get; set; }
+		public string SkillDescription { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SkillID
@@ -43,12 +43,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
-		public ExpressionFuncResourceSkillInt64 SoapParentPropertyId { get; private set; }
+		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

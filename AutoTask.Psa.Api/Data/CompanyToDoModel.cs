@@ -26,7 +26,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ActivityDescription
 		/// </summary>
 		[DataMember(Name = "ActivityDescription", EmitDefaultValue = false)]
-		public string ActivityDescription { get; set; }
+		public string ActivityDescription { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets AssignedToResourceID
@@ -110,12 +110,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
-		public ExpressionFuncAccountToDoInt64 SoapParentPropertyId { get; private set; }
+		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

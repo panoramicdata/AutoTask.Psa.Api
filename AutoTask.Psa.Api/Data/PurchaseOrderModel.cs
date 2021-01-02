@@ -38,13 +38,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ExternalPONumber
 		/// </summary>
 		[DataMember(Name = "ExternalPONumber", EmitDefaultValue = false)]
-		public string ExternalPONumber { get; set; }
+		public string ExternalPONumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Fax
 		/// </summary>
 		[DataMember(Name = "Fax", EmitDefaultValue = false)]
-		public string Fax { get; set; }
+		public string Fax { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Freight
@@ -56,7 +56,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets GeneralMemo
 		/// </summary>
 		[DataMember(Name = "GeneralMemo", EmitDefaultValue = false)]
-		public string GeneralMemo { get; set; }
+		public string GeneralMemo { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ImpersonatorCreatorResourceID
@@ -86,7 +86,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Phone
 		/// </summary>
 		[DataMember(Name = "Phone", EmitDefaultValue = false)]
-		public string Phone { get; set; }
+		public string Phone { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets PurchaseForCompanyID
@@ -110,37 +110,37 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ShipToAddress1
 		/// </summary>
 		[DataMember(Name = "ShipToAddress1", EmitDefaultValue = false)]
-		public string ShipToAddress1 { get; set; }
+		public string ShipToAddress1 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ShipToAddress2
 		/// </summary>
 		[DataMember(Name = "ShipToAddress2", EmitDefaultValue = false)]
-		public string ShipToAddress2 { get; set; }
+		public string ShipToAddress2 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ShipToCity
 		/// </summary>
 		[DataMember(Name = "ShipToCity", EmitDefaultValue = false)]
-		public string ShipToCity { get; set; }
+		public string ShipToCity { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ShipToName
 		/// </summary>
 		[DataMember(Name = "ShipToName", EmitDefaultValue = false)]
-		public string ShipToName { get; set; }
+		public string ShipToName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ShipToPostalCode
 		/// </summary>
 		[DataMember(Name = "ShipToPostalCode", EmitDefaultValue = false)]
-		public string ShipToPostalCode { get; set; }
+		public string ShipToPostalCode { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ShipToState
 		/// </summary>
 		[DataMember(Name = "ShipToState", EmitDefaultValue = false)]
-		public string ShipToState { get; set; }
+		public string ShipToState { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ShowEachTaxInGroup
@@ -188,12 +188,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets VendorInvoiceNumber
 		/// </summary>
 		[DataMember(Name = "VendorInvoiceNumber", EmitDefaultValue = false)]
-		public string VendorInvoiceNumber { get; set; }
+		public string VendorInvoiceNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

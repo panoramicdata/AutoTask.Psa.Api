@@ -19,7 +19,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets EstimatedHours
@@ -49,7 +49,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets PurchaseOrderNumber
 		/// </summary>
 		[DataMember(Name = "PurchaseOrderNumber", EmitDefaultValue = false)]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets QueueID
@@ -61,7 +61,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Resolution
 		/// </summary>
 		[DataMember(Name = "Resolution", EmitDefaultValue = false)]
-		public string Resolution { get; set; }
+		public string Resolution { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ServiceLevelAgreementID
@@ -103,7 +103,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Title
 		/// </summary>
 		[DataMember(Name = "Title", EmitDefaultValue = false)]
-		public string Title { get; set; }
+		public string Title { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets WorkTypeID
@@ -121,6 +121,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

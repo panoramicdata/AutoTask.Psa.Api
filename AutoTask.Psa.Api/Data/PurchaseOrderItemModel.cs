@@ -50,7 +50,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Memo
 		/// </summary>
 		[DataMember(Name = "Memo", EmitDefaultValue = false)]
-		public string Memo { get; set; }
+		public string Memo { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets OrderID
@@ -98,12 +98,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
-		public ExpressionFuncPurchaseOrderItemInt64 SoapParentPropertyId { get; private set; }
+		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

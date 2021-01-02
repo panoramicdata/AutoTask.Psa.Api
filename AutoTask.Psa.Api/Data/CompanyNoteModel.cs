@@ -80,13 +80,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Note
 		/// </summary>
 		[DataMember(Name = "Note", EmitDefaultValue = false)]
-		public string Note { get; set; }
+		public string Note { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets OpportunityID
@@ -104,12 +104,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
-		public ExpressionFuncAccountNoteInt64 SoapParentPropertyId { get; private set; }
+		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

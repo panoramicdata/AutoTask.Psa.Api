@@ -12,12 +12,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Value
 		/// </summary>
 		[DataMember(Name = "Value", EmitDefaultValue = false)]
-		public string Value { get; set; }
+		public string Value { get; set; } = string.Empty;
 	}
 }

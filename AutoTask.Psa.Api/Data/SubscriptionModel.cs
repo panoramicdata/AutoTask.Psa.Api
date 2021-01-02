@@ -26,7 +26,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets EffectiveDate
@@ -80,7 +80,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets PurchaseOrderNumber
 		/// </summary>
 		[DataMember(Name = "PurchaseOrderNumber", EmitDefaultValue = false)]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Status
@@ -92,7 +92,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SubscriptionName
 		/// </summary>
 		[DataMember(Name = "SubscriptionName", EmitDefaultValue = false)]
-		public string SubscriptionName { get; set; }
+		public string SubscriptionName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TotalCost
@@ -116,6 +116,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

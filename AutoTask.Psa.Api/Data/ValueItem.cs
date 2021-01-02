@@ -13,7 +13,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ElementList
 		/// </summary>
 		[DataMember(Name = "ElementList", EmitDefaultValue = false)]
-		public List<CollectionItem> ElementList { get; set; }
+		public List<CollectionItem> ElementList { get; set; } = new();
 
 		/// <summary>
 		/// Gets or Sets BoolValue
@@ -31,6 +31,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets StringValue
 		/// </summary>
 		[DataMember(Name = "StringValue", EmitDefaultValue = false)]
-		public string StringValue { get; set; }
+		public string StringValue { get; set; } = string.Empty;
 	}
 }

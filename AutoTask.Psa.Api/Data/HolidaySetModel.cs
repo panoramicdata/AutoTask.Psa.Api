@@ -19,18 +19,18 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets HolidaySetDescription
 		/// </summary>
 		[DataMember(Name = "HolidaySetDescription", EmitDefaultValue = false)]
-		public string HolidaySetDescription { get; set; }
+		public string HolidaySetDescription { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets HolidaySetName
 		/// </summary>
 		[DataMember(Name = "HolidaySetName", EmitDefaultValue = false)]
-		public string HolidaySetName { get; set; }
+		public string HolidaySetName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

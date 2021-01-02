@@ -18,7 +18,7 @@ namespace AutoTask.Psa.Api.Data
 		public NodeTypeEnum? NodeType { get; set; }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ExpressionFuncAccountAlertInt64" /> class.
+		/// Initializes a new instance of the <see cref="ExpressionFunc" /> class.
 		/// </summary>
 		[JsonConstructor]
 		public ExpressionFunc()
@@ -29,19 +29,19 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Type
 		/// </summary>
 		[DataMember(Name = "Type", EmitDefaultValue = false)]
-		public string Type { get; set; }
+		public string Type { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Parameters
 		/// </summary>
 		[DataMember(Name = "Parameters", EmitDefaultValue = false)]
-		public List<ParameterExpression> Parameters { get; set; }
+		public List<ParameterExpression> Parameters { get; set; } = new();
 
 		/// <summary>
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Body
@@ -53,7 +53,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ReturnType
 		/// </summary>
 		[DataMember(Name = "ReturnType", EmitDefaultValue = false)]
-		public string ReturnType { get; set; }
+		public string ReturnType { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TailCall

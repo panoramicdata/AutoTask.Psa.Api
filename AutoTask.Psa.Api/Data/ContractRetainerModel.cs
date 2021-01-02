@@ -62,7 +62,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets InvoiceNumber
 		/// </summary>
 		[DataMember(Name = "InvoiceNumber", EmitDefaultValue = false)]
-		public string InvoiceNumber { get; set; }
+		public string InvoiceNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsPaid
@@ -80,7 +80,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets PaymentNumber
 		/// </summary>
 		[DataMember(Name = "PaymentNumber", EmitDefaultValue = false)]
-		public string PaymentNumber { get; set; }
+		public string PaymentNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets StartDate
@@ -98,12 +98,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
-		public ExpressionFuncContractRetainerInt64 SoapParentPropertyId { get; private set; }
+		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

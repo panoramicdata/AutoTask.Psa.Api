@@ -26,7 +26,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Notes
 		/// </summary>
 		[DataMember(Name = "Notes", EmitDefaultValue = false)]
-		public string Notes { get; set; }
+		public string Notes { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ProductID
@@ -44,7 +44,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SerialNumber
 		/// </summary>
 		[DataMember(Name = "SerialNumber", EmitDefaultValue = false)]
-		public string SerialNumber { get; set; }
+		public string SerialNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ToLocationID
@@ -68,12 +68,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UpdateNote
 		/// </summary>
 		[DataMember(Name = "UpdateNote", EmitDefaultValue = false)]
-		public string UpdateNote { get; set; }
+		public string UpdateNote { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

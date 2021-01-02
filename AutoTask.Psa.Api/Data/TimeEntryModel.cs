@@ -116,7 +116,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets InternalNotes
 		/// </summary>
 		[DataMember(Name = "InternalNotes", EmitDefaultValue = false)]
-		public string InternalNotes { get; set; }
+		public string InternalNotes { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsNonBillable
@@ -170,7 +170,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SummaryNotes
 		/// </summary>
 		[DataMember(Name = "SummaryNotes", EmitDefaultValue = false)]
-		public string SummaryNotes { get; set; }
+		public string SummaryNotes { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TaskID
@@ -194,6 +194,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

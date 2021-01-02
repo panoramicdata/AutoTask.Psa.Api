@@ -19,7 +19,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsActive
@@ -37,18 +37,18 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RelativeUrl
 		/// </summary>
 		[DataMember(Name = "RelativeUrl", EmitDefaultValue = false)]
-		public string RelativeUrl { get; set; }
+		public string RelativeUrl { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

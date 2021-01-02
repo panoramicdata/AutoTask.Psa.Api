@@ -110,19 +110,19 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets DattoHostname
 		/// </summary>
 		[DataMember(Name = "DattoHostname", EmitDefaultValue = false)]
-		public string DattoHostname { get; set; }
+		public string DattoHostname { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DattoInternalIP
 		/// </summary>
 		[DataMember(Name = "DattoInternalIP", EmitDefaultValue = false)]
-		public string DattoInternalIP { get; set; }
+		public string DattoInternalIP { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DattoKernelVersionID
 		/// </summary>
 		[DataMember(Name = "DattoKernelVersionID", EmitDefaultValue = false)]
-		public string DattoKernelVersionID { get; set; }
+		public string DattoKernelVersionID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DattoLastCheckInDateTime
@@ -164,7 +164,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets DattoOSVersionID
 		/// </summary>
 		[DataMember(Name = "DattoOSVersionID", EmitDefaultValue = false)]
-		public string DattoOSVersionID { get; set; }
+		public string DattoOSVersionID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DattoPercentageUsed
@@ -182,13 +182,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets DattoRemoteIP
 		/// </summary>
 		[DataMember(Name = "DattoRemoteIP", EmitDefaultValue = false)]
-		public string DattoRemoteIP { get; set; }
+		public string DattoRemoteIP { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DattoSerialNumber
 		/// </summary>
 		[DataMember(Name = "DattoSerialNumber", EmitDefaultValue = false)]
-		public string DattoSerialNumber { get; set; }
+		public string DattoSerialNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DattoUptimeSeconds
@@ -206,13 +206,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets DattoZFSVersionID
 		/// </summary>
 		[DataMember(Name = "DattoZFSVersionID", EmitDefaultValue = false)]
-		public string DattoZFSVersionID { get; set; }
+		public string DattoZFSVersionID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DeviceNetworkingID
 		/// </summary>
 		[DataMember(Name = "DeviceNetworkingID", EmitDefaultValue = false)]
-		public string DeviceNetworkingID { get; set; }
+		public string DeviceNetworkingID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets HourlyCost
@@ -272,7 +272,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Location
 		/// </summary>
 		[DataMember(Name = "Location", EmitDefaultValue = false)]
-		public string Location { get; set; }
+		public string Location { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets MonthlyCost
@@ -284,7 +284,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Notes
 		/// </summary>
 		[DataMember(Name = "Notes", EmitDefaultValue = false)]
-		public string Notes { get; set; }
+		public string Notes { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets NumberOfUsers
@@ -314,91 +314,91 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ReferenceNumber
 		/// </summary>
 		[DataMember(Name = "ReferenceNumber", EmitDefaultValue = false)]
-		public string ReferenceNumber { get; set; }
+		public string ReferenceNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ReferenceTitle
 		/// </summary>
 		[DataMember(Name = "ReferenceTitle", EmitDefaultValue = false)]
-		public string ReferenceTitle { get; set; }
+		public string ReferenceTitle { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditAntivirusStatusID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditAntivirusStatusID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditAntivirusStatusID { get; set; }
+		public string RMMDeviceAuditAntivirusStatusID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditArchitectureID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditArchitectureID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditArchitectureID { get; set; }
+		public string RMMDeviceAuditArchitectureID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditBackupStatusID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditBackupStatusID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditBackupStatusID { get; set; }
+		public string RMMDeviceAuditBackupStatusID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditDescription
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditDescription", EmitDefaultValue = false)]
-		public string RMMDeviceAuditDescription { get; set; }
+		public string RMMDeviceAuditDescription { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditDeviceTypeID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditDeviceTypeID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditDeviceTypeID { get; set; }
+		public string RMMDeviceAuditDeviceTypeID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditDisplayAdaptorID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditDisplayAdaptorID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditDisplayAdaptorID { get; set; }
+		public string RMMDeviceAuditDisplayAdaptorID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditDomainID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditDomainID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditDomainID { get; set; }
+		public string RMMDeviceAuditDomainID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditExternalIPAddress
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditExternalIPAddress", EmitDefaultValue = false)]
-		public string RMMDeviceAuditExternalIPAddress { get; set; }
+		public string RMMDeviceAuditExternalIPAddress { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditHostname
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditHostname", EmitDefaultValue = false)]
-		public string RMMDeviceAuditHostname { get; set; }
+		public string RMMDeviceAuditHostname { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditIPAddress
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditIPAddress", EmitDefaultValue = false)]
-		public string RMMDeviceAuditIPAddress { get; set; }
+		public string RMMDeviceAuditIPAddress { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditLastUser
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditLastUser", EmitDefaultValue = false)]
-		public string RMMDeviceAuditLastUser { get; set; }
+		public string RMMDeviceAuditLastUser { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditMacAddress
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditMacAddress", EmitDefaultValue = false)]
-		public string RMMDeviceAuditMacAddress { get; set; }
+		public string RMMDeviceAuditMacAddress { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditManufacturerID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditManufacturerID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditManufacturerID { get; set; }
+		public string RMMDeviceAuditManufacturerID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditMemoryBytes
@@ -416,85 +416,85 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets RMMDeviceAuditMobileNetworkOperatorID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditMobileNetworkOperatorID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditMobileNetworkOperatorID { get; set; }
+		public string RMMDeviceAuditMobileNetworkOperatorID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditMobileNumber
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditMobileNumber", EmitDefaultValue = false)]
-		public string RMMDeviceAuditMobileNumber { get; set; }
+		public string RMMDeviceAuditMobileNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditModelID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditModelID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditModelID { get; set; }
+		public string RMMDeviceAuditModelID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditMotherboardID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditMotherboardID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditMotherboardID { get; set; }
+		public string RMMDeviceAuditMotherboardID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditOperatingSystemID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditOperatingSystemID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditOperatingSystemID { get; set; }
+		public string RMMDeviceAuditOperatingSystemID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditOperatingSystemNameID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditOperatingSystemNameID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditOperatingSystemNameID { get; set; }
+		public string RMMDeviceAuditOperatingSystemNameID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditOperatingSystemVersionID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditOperatingSystemVersionID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditOperatingSystemVersionID { get; set; }
+		public string RMMDeviceAuditOperatingSystemVersionID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditPatchStatusID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditPatchStatusID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditPatchStatusID { get; set; }
+		public string RMMDeviceAuditPatchStatusID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditProcessorID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditProcessorID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditProcessorID { get; set; }
+		public string RMMDeviceAuditProcessorID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditServicePackID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditServicePackID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditServicePackID { get; set; }
+		public string RMMDeviceAuditServicePackID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditSNMPContact
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditSNMPContact", EmitDefaultValue = false)]
-		public string RMMDeviceAuditSNMPContact { get; set; }
+		public string RMMDeviceAuditSNMPContact { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditSNMPLocation
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditSNMPLocation", EmitDefaultValue = false)]
-		public string RMMDeviceAuditSNMPLocation { get; set; }
+		public string RMMDeviceAuditSNMPLocation { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditSNMPName
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditSNMPName", EmitDefaultValue = false)]
-		public string RMMDeviceAuditSNMPName { get; set; }
+		public string RMMDeviceAuditSNMPName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditSoftwareStatusID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceAuditSoftwareStatusID", EmitDefaultValue = false)]
-		public string RMMDeviceAuditSoftwareStatusID { get; set; }
+		public string RMMDeviceAuditSoftwareStatusID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMDeviceAuditStorageBytes
@@ -512,7 +512,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets RMMDeviceUID
 		/// </summary>
 		[DataMember(Name = "RMMDeviceUID", EmitDefaultValue = false)]
-		public string RMMDeviceUID { get; set; }
+		public string RMMDeviceUID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RMMOpenAlertCount
@@ -524,7 +524,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SerialNumber
 		/// </summary>
 		[DataMember(Name = "SerialNumber", EmitDefaultValue = false)]
-		public string SerialNumber { get; set; }
+		public string SerialNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ServiceBundleID
@@ -578,6 +578,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

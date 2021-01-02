@@ -50,7 +50,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ContactName
 		/// </summary>
 		[DataMember(Name = "ContactName", EmitDefaultValue = false)]
-		public string ContactName { get; set; }
+		public string ContactName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ContractCategory
@@ -68,13 +68,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ContractName
 		/// </summary>
 		[DataMember(Name = "ContractName", EmitDefaultValue = false)]
-		public string ContractName { get; set; }
+		public string ContractName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ContractNumber
 		/// </summary>
 		[DataMember(Name = "ContractNumber", EmitDefaultValue = false)]
-		public string ContractNumber { get; set; }
+		public string ContractNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ContractPeriodType
@@ -92,7 +92,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets EndDate
@@ -170,7 +170,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets PurchaseOrderNumber
 		/// </summary>
 		[DataMember(Name = "PurchaseOrderNumber", EmitDefaultValue = false)]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RenewedContractID
@@ -218,6 +218,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

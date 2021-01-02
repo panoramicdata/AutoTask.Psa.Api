@@ -14,19 +14,19 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Label
 		/// </summary>
 		[DataMember(Name = "Label", EmitDefaultValue = false)]
-		public string Label { get; set; }
+		public string Label { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Type
 		/// </summary>
 		[DataMember(Name = "Type", EmitDefaultValue = false)]
-		public string Type { get; set; }
+		public string Type { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Length
@@ -38,7 +38,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsRequired
@@ -68,7 +68,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ReferenceEntityType
 		/// </summary>
 		[DataMember(Name = "ReferenceEntityType", EmitDefaultValue = false)]
-		public string ReferenceEntityType { get; set; }
+		public string ReferenceEntityType { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsPickList
@@ -80,19 +80,19 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets PicklistValues
 		/// </summary>
 		[DataMember(Name = "PicklistValues", EmitDefaultValue = false)]
-		public List<PickListValue> PicklistValues { get; set; }
+		public List<PickListValue> PicklistValues { get; set; } = new();
 
 		/// <summary>
 		/// Gets or Sets PicklistParentValueField
 		/// </summary>
 		[DataMember(Name = "PicklistParentValueField", EmitDefaultValue = false)]
-		public string PicklistParentValueField { get; set; }
+		public string PicklistParentValueField { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DefaultValue
 		/// </summary>
 		[DataMember(Name = "DefaultValue", EmitDefaultValue = false)]
-		public string DefaultValue { get; set; }
+		public string DefaultValue { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsSupportedWebhookField

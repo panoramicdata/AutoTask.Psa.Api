@@ -20,7 +20,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Action
 		/// </summary>
 		[DataMember(Name = "Action", EmitDefaultValue = false)]
-		public string Action { get; set; }
+		public string Action { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Date
@@ -32,7 +32,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Detail
 		/// </summary>
 		[DataMember(Name = "Detail", EmitDefaultValue = false)]
-		public string Detail { get; set; }
+		public string Detail { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ResourceID
@@ -56,6 +56,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

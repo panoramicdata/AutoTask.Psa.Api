@@ -32,7 +32,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DueDate
@@ -50,7 +50,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ExternalID
 		/// </summary>
 		[DataMember(Name = "ExternalID", EmitDefaultValue = false)]
-		public string ExternalID { get; set; }
+		public string ExternalID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsScheduled
@@ -74,7 +74,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets PhaseNumber
 		/// </summary>
 		[DataMember(Name = "PhaseNumber", EmitDefaultValue = false)]
-		public string PhaseNumber { get; set; }
+		public string PhaseNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ProjectID
@@ -92,18 +92,18 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Title
 		/// </summary>
 		[DataMember(Name = "Title", EmitDefaultValue = false)]
-		public string Title { get; set; }
+		public string Title { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
-		public ExpressionFuncPhaseInt64 SoapParentPropertyId { get; private set; }
+		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

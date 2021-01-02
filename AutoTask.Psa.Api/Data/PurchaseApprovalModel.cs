@@ -19,7 +19,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets CostType
 		/// </summary>
 		[DataMember(Name = "CostType", EmitDefaultValue = false)]
-		public string CostType { get; set; }
+		public string CostType { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsApproved
@@ -31,12 +31,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets RejectNote
 		/// </summary>
 		[DataMember(Name = "RejectNote", EmitDefaultValue = false)]
-		public string RejectNote { get; set; }
+		public string RejectNote { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

@@ -62,7 +62,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ExpenseItemID
@@ -122,19 +122,19 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ItemName
 		/// </summary>
 		[DataMember(Name = "ItemName", EmitDefaultValue = false)]
-		public string ItemName { get; set; }
+		public string ItemName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets LineItemFullDescription
 		/// </summary>
 		[DataMember(Name = "LineItemFullDescription", EmitDefaultValue = false)]
-		public string LineItemFullDescription { get; set; }
+		public string LineItemFullDescription { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets LineItemGroupDescription
 		/// </summary>
 		[DataMember(Name = "LineItemGroupDescription", EmitDefaultValue = false)]
-		public string LineItemGroupDescription { get; set; }
+		public string LineItemGroupDescription { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets LineItemID
@@ -194,7 +194,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets PurchaseOrderNumber
 		/// </summary>
 		[DataMember(Name = "PurchaseOrderNumber", EmitDefaultValue = false)]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Quantity
@@ -284,6 +284,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

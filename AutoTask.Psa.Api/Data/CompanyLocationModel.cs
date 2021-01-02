@@ -19,31 +19,31 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Address1
 		/// </summary>
 		[DataMember(Name = "Address1", EmitDefaultValue = false)]
-		public string Address1 { get; set; }
+		public string Address1 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Address2
 		/// </summary>
 		[DataMember(Name = "Address2", EmitDefaultValue = false)]
-		public string Address2 { get; set; }
+		public string Address2 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets AlternatePhone1
 		/// </summary>
 		[DataMember(Name = "AlternatePhone1", EmitDefaultValue = false)]
-		public string AlternatePhone1 { get; set; }
+		public string AlternatePhone1 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets AlternatePhone2
 		/// </summary>
 		[DataMember(Name = "AlternatePhone2", EmitDefaultValue = false)]
-		public string AlternatePhone2 { get; set; }
+		public string AlternatePhone2 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets City
 		/// </summary>
 		[DataMember(Name = "City", EmitDefaultValue = false)]
-		public string City { get; set; }
+		public string City { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets CompanyID
@@ -61,13 +61,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Fax
 		/// </summary>
 		[DataMember(Name = "Fax", EmitDefaultValue = false)]
-		public string Fax { get; set; }
+		public string Fax { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsActive
@@ -97,19 +97,19 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Phone
 		/// </summary>
 		[DataMember(Name = "Phone", EmitDefaultValue = false)]
-		public string Phone { get; set; }
+		public string Phone { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets PostalCode
 		/// </summary>
 		[DataMember(Name = "PostalCode", EmitDefaultValue = false)]
-		public string PostalCode { get; set; }
+		public string PostalCode { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RoundtripDistance
@@ -121,7 +121,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets State
 		/// </summary>
 		[DataMember(Name = "State", EmitDefaultValue = false)]
-		public string State { get; set; }
+		public string State { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TaxRegionID
@@ -133,12 +133,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
-		public ExpressionFuncAccountPhysicalLocationInt64 SoapParentPropertyId { get; private set; }
+		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

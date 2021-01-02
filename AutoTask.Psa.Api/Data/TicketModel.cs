@@ -62,31 +62,31 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ChangeInfoField1
 		/// </summary>
 		[DataMember(Name = "ChangeInfoField1", EmitDefaultValue = false)]
-		public string ChangeInfoField1 { get; set; }
+		public string ChangeInfoField1 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ChangeInfoField2
 		/// </summary>
 		[DataMember(Name = "ChangeInfoField2", EmitDefaultValue = false)]
-		public string ChangeInfoField2 { get; set; }
+		public string ChangeInfoField2 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ChangeInfoField3
 		/// </summary>
 		[DataMember(Name = "ChangeInfoField3", EmitDefaultValue = false)]
-		public string ChangeInfoField3 { get; set; }
+		public string ChangeInfoField3 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ChangeInfoField4
 		/// </summary>
 		[DataMember(Name = "ChangeInfoField4", EmitDefaultValue = false)]
-		public string ChangeInfoField4 { get; set; }
+		public string ChangeInfoField4 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ChangeInfoField5
 		/// </summary>
 		[DataMember(Name = "ChangeInfoField5", EmitDefaultValue = false)]
-		public string ChangeInfoField5 { get; set; }
+		public string ChangeInfoField5 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets CompanyID
@@ -170,7 +170,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DueDateTime
@@ -188,7 +188,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ExternalID
 		/// </summary>
 		[DataMember(Name = "ExternalID", EmitDefaultValue = false)]
-		public string ExternalID { get; set; }
+		public string ExternalID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets FirstResponseAssignedResourceID
@@ -320,7 +320,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets PurchaseOrderNumber
 		/// </summary>
 		[DataMember(Name = "PurchaseOrderNumber", EmitDefaultValue = false)]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets QueueID
@@ -332,7 +332,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Resolution
 		/// </summary>
 		[DataMember(Name = "Resolution", EmitDefaultValue = false)]
-		public string Resolution { get; set; }
+		public string Resolution { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ResolutionPlanDateTime
@@ -374,7 +374,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets RMMAlertID
 		/// </summary>
 		[DataMember(Name = "RMMAlertID", EmitDefaultValue = false)]
-		public string RMMAlertID { get; set; }
+		public string RMMAlertID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ServiceLevelAgreementHasBeenMet
@@ -428,7 +428,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets TicketNumber
 		/// </summary>
 		[DataMember(Name = "TicketNumber", EmitDefaultValue = false)]
-		public string TicketNumber { get; set; }
+		public string TicketNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TicketType
@@ -440,12 +440,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Title
 		/// </summary>
 		[DataMember(Name = "Title", EmitDefaultValue = false)]
-		public string Title { get; set; }
+		public string Title { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

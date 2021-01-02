@@ -38,13 +38,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets AttachmentType
 		/// </summary>
 		[DataMember(Name = "AttachmentType", EmitDefaultValue = false)]
-		public string AttachmentType { get; set; }
+		public string AttachmentType { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ContentType
 		/// </summary>
 		[DataMember(Name = "ContentType", EmitDefaultValue = false)]
-		public string ContentType { get; set; }
+		public string ContentType { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets FileSize
@@ -56,7 +56,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets FullPath
 		/// </summary>
 		[DataMember(Name = "FullPath", EmitDefaultValue = false)]
-		public string FullPath { get; set; }
+		public string FullPath { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ImpersonatorCreatorResourceID
@@ -92,7 +92,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Title
 		/// </summary>
 		[DataMember(Name = "Title", EmitDefaultValue = false)]
-		public string Title { get; set; }
+		public string Title { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SoapParentPropertyId
@@ -104,6 +104,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

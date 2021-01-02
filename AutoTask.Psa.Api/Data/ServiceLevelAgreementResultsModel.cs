@@ -79,7 +79,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ServiceLevelAgreementName
 		/// </summary>
 		[DataMember(Name = "ServiceLevelAgreementName", EmitDefaultValue = false)]
-		public string ServiceLevelAgreementName { get; set; }
+		public string ServiceLevelAgreementName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TicketID
@@ -97,6 +97,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

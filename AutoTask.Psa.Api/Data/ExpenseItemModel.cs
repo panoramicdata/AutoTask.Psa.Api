@@ -26,19 +26,19 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Destination
 		/// </summary>
 		[DataMember(Name = "Destination", EmitDefaultValue = false)]
-		public string Destination { get; set; }
+		public string Destination { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets EntertainmentLocation
 		/// </summary>
 		[DataMember(Name = "EntertainmentLocation", EmitDefaultValue = false)]
-		public string EntertainmentLocation { get; set; }
+		public string EntertainmentLocation { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ExpenseCategory
@@ -74,7 +74,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets GLCode
 		/// </summary>
 		[DataMember(Name = "GLCode", EmitDefaultValue = false)]
-		public string GLCode { get; set; }
+		public string GLCode { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets HaveReceipt
@@ -134,7 +134,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Origin
 		/// </summary>
 		[DataMember(Name = "Origin", EmitDefaultValue = false)]
-		public string Origin { get; set; }
+		public string Origin { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets PaymentType
@@ -152,7 +152,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets PurchaseOrderNumber
 		/// </summary>
 		[DataMember(Name = "PurchaseOrderNumber", EmitDefaultValue = false)]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ReimbursementCurrencyReimbursementAmount
@@ -182,12 +182,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
-		public ExpressionFuncExpenseItemInt64 SoapParentPropertyId { get; private set; }
+		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

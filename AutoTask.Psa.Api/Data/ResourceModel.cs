@@ -20,13 +20,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets AccountingReferenceID
 		/// </summary>
 		[DataMember(Name = "AccountingReferenceID", EmitDefaultValue = false)]
-		public string AccountingReferenceID { get; set; }
+		public string AccountingReferenceID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DateFormat
 		/// </summary>
 		[DataMember(Name = "DateFormat", EmitDefaultValue = false)]
-		public string DateFormat { get; set; }
+		public string DateFormat { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DefaultServiceDeskRoleID
@@ -38,49 +38,49 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Email
 		/// </summary>
 		[DataMember(Name = "Email", EmitDefaultValue = false)]
-		public string Email { get; set; }
+		public string Email { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Email2
 		/// </summary>
 		[DataMember(Name = "Email2", EmitDefaultValue = false)]
-		public string Email2 { get; set; }
+		public string Email2 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Email3
 		/// </summary>
 		[DataMember(Name = "Email3", EmitDefaultValue = false)]
-		public string Email3 { get; set; }
+		public string Email3 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets EmailTypeCode
 		/// </summary>
 		[DataMember(Name = "EmailTypeCode", EmitDefaultValue = false)]
-		public string EmailTypeCode { get; set; }
+		public string EmailTypeCode { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets EmailTypeCode2
 		/// </summary>
 		[DataMember(Name = "EmailTypeCode2", EmitDefaultValue = false)]
-		public string EmailTypeCode2 { get; set; }
+		public string EmailTypeCode2 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets EmailTypeCode3
 		/// </summary>
 		[DataMember(Name = "EmailTypeCode3", EmitDefaultValue = false)]
-		public string EmailTypeCode3 { get; set; }
+		public string EmailTypeCode3 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets FirstName
 		/// </summary>
 		[DataMember(Name = "FirstName", EmitDefaultValue = false)]
-		public string FirstName { get; set; }
+		public string FirstName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Gender
 		/// </summary>
 		[DataMember(Name = "Gender", EmitDefaultValue = false)]
-		public string Gender { get; set; }
+		public string Gender { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Greeting
@@ -98,13 +98,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets HomePhone
 		/// </summary>
 		[DataMember(Name = "HomePhone", EmitDefaultValue = false)]
-		public string HomePhone { get; set; }
+		public string HomePhone { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Initials
 		/// </summary>
 		[DataMember(Name = "Initials", EmitDefaultValue = false)]
-		public string Initials { get; set; }
+		public string Initials { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets InternalCost
@@ -122,7 +122,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets LastName
 		/// </summary>
 		[DataMember(Name = "LastName", EmitDefaultValue = false)]
-		public string LastName { get; set; }
+		public string LastName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets LicenseType
@@ -140,31 +140,31 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets MiddleName
 		/// </summary>
 		[DataMember(Name = "MiddleName", EmitDefaultValue = false)]
-		public string MiddleName { get; set; }
+		public string MiddleName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets MobilePhone
 		/// </summary>
 		[DataMember(Name = "MobilePhone", EmitDefaultValue = false)]
-		public string MobilePhone { get; set; }
+		public string MobilePhone { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets NumberFormat
 		/// </summary>
 		[DataMember(Name = "NumberFormat", EmitDefaultValue = false)]
-		public string NumberFormat { get; set; }
+		public string NumberFormat { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets OfficeExtension
 		/// </summary>
 		[DataMember(Name = "OfficeExtension", EmitDefaultValue = false)]
-		public string OfficeExtension { get; set; }
+		public string OfficeExtension { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets OfficePhone
 		/// </summary>
 		[DataMember(Name = "OfficePhone", EmitDefaultValue = false)]
-		public string OfficePhone { get; set; }
+		public string OfficePhone { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets PayrollType
@@ -176,7 +176,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ResourceType
 		/// </summary>
 		[DataMember(Name = "ResourceType", EmitDefaultValue = false)]
-		public string ResourceType { get; set; }
+		public string ResourceType { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Suffix
@@ -194,25 +194,25 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets TimeFormat
 		/// </summary>
 		[DataMember(Name = "TimeFormat", EmitDefaultValue = false)]
-		public string TimeFormat { get; set; }
+		public string TimeFormat { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Title
 		/// </summary>
 		[DataMember(Name = "Title", EmitDefaultValue = false)]
-		public string Title { get; set; }
+		public string Title { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TravelAvailabilityPct
 		/// </summary>
 		[DataMember(Name = "TravelAvailabilityPct", EmitDefaultValue = false)]
-		public string TravelAvailabilityPct { get; set; }
+		public string TravelAvailabilityPct { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserName
 		/// </summary>
 		[DataMember(Name = "UserName", EmitDefaultValue = false)]
-		public string UserName { get; set; }
+		public string UserName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserType
@@ -224,6 +224,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

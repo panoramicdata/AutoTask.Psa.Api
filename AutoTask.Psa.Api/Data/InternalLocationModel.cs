@@ -19,31 +19,31 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets AdditionalAddressInfo
 		/// </summary>
 		[DataMember(Name = "AdditionalAddressInfo", EmitDefaultValue = false)]
-		public string AdditionalAddressInfo { get; set; }
+		public string AdditionalAddressInfo { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Address1
 		/// </summary>
 		[DataMember(Name = "Address1", EmitDefaultValue = false)]
-		public string Address1 { get; set; }
+		public string Address1 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Address2
 		/// </summary>
 		[DataMember(Name = "Address2", EmitDefaultValue = false)]
-		public string Address2 { get; set; }
+		public string Address2 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets City
 		/// </summary>
 		[DataMember(Name = "City", EmitDefaultValue = false)]
-		public string City { get; set; }
+		public string City { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Country
 		/// </summary>
 		[DataMember(Name = "Country", EmitDefaultValue = false)]
-		public string Country { get; set; }
+		public string Country { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets HolidaySetId
@@ -61,30 +61,30 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets PostalCode
 		/// </summary>
 		[DataMember(Name = "PostalCode", EmitDefaultValue = false)]
-		public string PostalCode { get; set; }
+		public string PostalCode { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets State
 		/// </summary>
 		[DataMember(Name = "State", EmitDefaultValue = false)]
-		public string State { get; set; }
+		public string State { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TimeZone
 		/// </summary>
 		[DataMember(Name = "TimeZone", EmitDefaultValue = false)]
-		public string TimeZone { get; set; }
+		public string TimeZone { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

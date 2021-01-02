@@ -18,6 +18,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets StringValue
 		/// </summary>
 		[DataMember(Name = "StringValue", EmitDefaultValue = false)]
-		public string StringValue { get; set; }
+		public string StringValue { get; set; } = string.Empty;
 	}
 }

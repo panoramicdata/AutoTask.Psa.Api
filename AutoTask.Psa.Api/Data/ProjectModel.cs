@@ -92,7 +92,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Duration
@@ -122,7 +122,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ExtProjectNumber
 		/// </summary>
 		[DataMember(Name = "ExtProjectNumber", EmitDefaultValue = false)]
-		public string ExtProjectNumber { get; set; }
+		public string ExtProjectNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ExtProjectType
@@ -212,13 +212,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ProjectName
 		/// </summary>
 		[DataMember(Name = "ProjectName", EmitDefaultValue = false)]
-		public string ProjectName { get; set; }
+		public string ProjectName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ProjectNumber
 		/// </summary>
 		[DataMember(Name = "ProjectNumber", EmitDefaultValue = false)]
-		public string ProjectNumber { get; set; }
+		public string ProjectNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ProjectType
@@ -230,7 +230,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets PurchaseOrderNumber
 		/// </summary>
 		[DataMember(Name = "PurchaseOrderNumber", EmitDefaultValue = false)]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SGDA
@@ -260,12 +260,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets StatusDetail
 		/// </summary>
 		[DataMember(Name = "StatusDetail", EmitDefaultValue = false)]
-		public string StatusDetail { get; set; }
+		public string StatusDetail { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

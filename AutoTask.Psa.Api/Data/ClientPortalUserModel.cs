@@ -43,7 +43,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Password
 		/// </summary>
 		[DataMember(Name = "Password", EmitDefaultValue = false)]
-		public string Password { get; set; }
+		public string Password { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SecurityLevel
@@ -61,12 +61,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserName
 		/// </summary>
 		[DataMember(Name = "UserName", EmitDefaultValue = false)]
-		public string UserName { get; set; }
+		public string UserName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

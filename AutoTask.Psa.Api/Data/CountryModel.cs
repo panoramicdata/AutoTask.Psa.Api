@@ -25,13 +25,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets CountryCode
 		/// </summary>
 		[DataMember(Name = "CountryCode", EmitDefaultValue = false)]
-		public string CountryCode { get; set; }
+		public string CountryCode { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DisplayName
 		/// </summary>
 		[DataMember(Name = "DisplayName", EmitDefaultValue = false)]
-		public string DisplayName { get; set; }
+		public string DisplayName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets InvoiceTemplateID
@@ -55,7 +55,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets QuoteTemplateID
@@ -67,6 +67,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

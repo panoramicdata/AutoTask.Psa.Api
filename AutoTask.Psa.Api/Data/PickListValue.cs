@@ -12,13 +12,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Value
 		/// </summary>
 		[DataMember(Name = "Value", EmitDefaultValue = false)]
-		public string Value { get; set; }
+		public string Value { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Label
 		/// </summary>
 		[DataMember(Name = "Label", EmitDefaultValue = false)]
-		public string Label { get; set; }
+		public string Label { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsDefaultValue
@@ -36,7 +36,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ParentValue
 		/// </summary>
 		[DataMember(Name = "parentValue", EmitDefaultValue = false)]
-		public string ParentValue { get; set; }
+		public string ParentValue { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsActive

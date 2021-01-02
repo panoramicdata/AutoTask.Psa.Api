@@ -37,7 +37,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets LocationName
 		/// </summary>
 		[DataMember(Name = "LocationName", EmitDefaultValue = false)]
-		public string LocationName { get; set; }
+		public string LocationName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ResourceID
@@ -49,6 +49,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

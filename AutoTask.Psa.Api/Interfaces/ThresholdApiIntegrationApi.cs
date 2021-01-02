@@ -15,6 +15,6 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <returns>Task of ThresholdStatusResultModel</returns>
 		[Get("/V1.0/ThresholdInformation")]
-		Task<ThresholdStatusResultModel> ThresholdApiIntegrationQueryThresholdInformation(string ApiIntegrationCode, string UserName, string Secret, string ImpersonationResourceId = null);
+		Task<ThresholdStatusResultModel> ThresholdApiIntegrationQueryThresholdInformation();
 	}
 }

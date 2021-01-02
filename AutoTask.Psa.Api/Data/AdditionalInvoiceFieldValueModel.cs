@@ -25,7 +25,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets FieldValue
 		/// </summary>
 		[DataMember(Name = "FieldValue", EmitDefaultValue = false)]
-		public string FieldValue { get; set; }
+		public string FieldValue { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets InvoiceBatchID
@@ -37,6 +37,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

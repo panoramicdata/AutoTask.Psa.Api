@@ -20,31 +20,31 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets AdditionalBillToAddressInformation
 		/// </summary>
 		[DataMember(Name = "AdditionalBillToAddressInformation", EmitDefaultValue = false)]
-		public string AdditionalBillToAddressInformation { get; set; }
+		public string AdditionalBillToAddressInformation { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets AdditionalShipToAddressInformation
 		/// </summary>
 		[DataMember(Name = "AdditionalShipToAddressInformation", EmitDefaultValue = false)]
-		public string AdditionalShipToAddressInformation { get; set; }
+		public string AdditionalShipToAddressInformation { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets BillingAddress1
 		/// </summary>
 		[DataMember(Name = "BillingAddress1", EmitDefaultValue = false)]
-		public string BillingAddress1 { get; set; }
+		public string BillingAddress1 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets BillingAddress2
 		/// </summary>
 		[DataMember(Name = "BillingAddress2", EmitDefaultValue = false)]
-		public string BillingAddress2 { get; set; }
+		public string BillingAddress2 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets BillToCity
 		/// </summary>
 		[DataMember(Name = "BillToCity", EmitDefaultValue = false)]
-		public string BillToCity { get; set; }
+		public string BillToCity { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets BillToCountryID
@@ -56,13 +56,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets BillToPostalCode
 		/// </summary>
 		[DataMember(Name = "BillToPostalCode", EmitDefaultValue = false)]
-		public string BillToPostalCode { get; set; }
+		public string BillToPostalCode { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets BillToState
 		/// </summary>
 		[DataMember(Name = "BillToState", EmitDefaultValue = false)]
-		public string BillToState { get; set; }
+		public string BillToState { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets CompanyID
@@ -116,19 +116,19 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ShipToAddress1
 		/// </summary>
 		[DataMember(Name = "ShipToAddress1", EmitDefaultValue = false)]
-		public string ShipToAddress1 { get; set; }
+		public string ShipToAddress1 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ShipToAddress2
 		/// </summary>
 		[DataMember(Name = "ShipToAddress2", EmitDefaultValue = false)]
-		public string ShipToAddress2 { get; set; }
+		public string ShipToAddress2 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ShipToCity
 		/// </summary>
 		[DataMember(Name = "ShipToCity", EmitDefaultValue = false)]
-		public string ShipToCity { get; set; }
+		public string ShipToCity { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ShipToCountryID
@@ -140,13 +140,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ShipToPostalCode
 		/// </summary>
 		[DataMember(Name = "ShipToPostalCode", EmitDefaultValue = false)]
-		public string ShipToPostalCode { get; set; }
+		public string ShipToPostalCode { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ShipToState
 		/// </summary>
 		[DataMember(Name = "ShipToState", EmitDefaultValue = false)]
-		public string ShipToState { get; set; }
+		public string ShipToState { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Status
@@ -158,18 +158,18 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Title
 		/// </summary>
 		[DataMember(Name = "Title", EmitDefaultValue = false)]
-		public string Title { get; set; }
+		public string Title { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
-		public ExpressionFuncSalesOrderInt64 SoapParentPropertyId { get; private set; }
+		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

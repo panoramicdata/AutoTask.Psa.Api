@@ -50,7 +50,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Comment
 		/// </summary>
 		[DataMember(Name = "Comment", EmitDefaultValue = false)]
-		public string Comment { get; set; }
+		public string Comment { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets CompanyID
@@ -80,7 +80,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets EffectiveDate
@@ -110,13 +110,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ExtApprovalResponseSignature
 		/// </summary>
 		[DataMember(Name = "ExtApprovalResponseSignature", EmitDefaultValue = false)]
-		public string ExtApprovalResponseSignature { get; set; }
+		public string ExtApprovalResponseSignature { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ExternalQuoteNumber
 		/// </summary>
 		[DataMember(Name = "ExternalQuoteNumber", EmitDefaultValue = false)]
-		public string ExternalQuoteNumber { get; set; }
+		public string ExternalQuoteNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets GroupByID
@@ -152,7 +152,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets OpportunityID
@@ -188,7 +188,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets PurchaseOrderNumber
 		/// </summary>
 		[DataMember(Name = "PurchaseOrderNumber", EmitDefaultValue = false)]
-		public string PurchaseOrderNumber { get; set; }
+		public string PurchaseOrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets QuoteNumber
@@ -242,6 +242,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

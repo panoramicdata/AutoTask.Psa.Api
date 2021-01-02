@@ -14,13 +14,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DataType
 		/// </summary>
 		[DataMember(Name = "DataType", EmitDefaultValue = false)]
-		public string DataType { get; set; }
+		public string DataType { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Length
@@ -56,7 +56,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ReferenceEntityType
 		/// </summary>
 		[DataMember(Name = "ReferenceEntityType", EmitDefaultValue = false)]
-		public string ReferenceEntityType { get; set; }
+		public string ReferenceEntityType { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsPickList
@@ -68,13 +68,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets PicklistValues
 		/// </summary>
 		[DataMember(Name = "PicklistValues", EmitDefaultValue = false)]
-		public List<PickListValue> PicklistValues { get; set; }
+		public List<PickListValue> PicklistValues { get; set; } = new();
 
 		/// <summary>
 		/// Gets or Sets PicklistParentValueField
 		/// </summary>
 		[DataMember(Name = "PicklistParentValueField", EmitDefaultValue = false)]
-		public string PicklistParentValueField { get; set; }
+		public string PicklistParentValueField { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsSupportedWebhookField

@@ -38,7 +38,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets DepartmentNumber
 		/// </summary>
 		[DataMember(Name = "DepartmentNumber", EmitDefaultValue = false)]
-		public string DepartmentNumber { get; set; }
+		public string DepartmentNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets InternalCurrencyCashAdvanceAmount
@@ -56,7 +56,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets OrganizationalLevelAssociationID
@@ -68,7 +68,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets QuickBooksReferenceNumber
 		/// </summary>
 		[DataMember(Name = "QuickBooksReferenceNumber", EmitDefaultValue = false)]
-		public string QuickBooksReferenceNumber { get; set; }
+		public string QuickBooksReferenceNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ReimbursementCurrencyAmountDue
@@ -92,7 +92,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets RejectionReason
 		/// </summary>
 		[DataMember(Name = "RejectionReason", EmitDefaultValue = false)]
-		public string RejectionReason { get; set; }
+		public string RejectionReason { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Status
@@ -128,6 +128,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

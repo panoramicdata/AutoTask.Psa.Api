@@ -38,13 +38,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets CurrencyNegativeFormat
 		/// </summary>
 		[DataMember(Name = "CurrencyNegativeFormat", EmitDefaultValue = false)]
-		public string CurrencyNegativeFormat { get; set; }
+		public string CurrencyNegativeFormat { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets CurrencyPositiveFormat
 		/// </summary>
 		[DataMember(Name = "CurrencyPositiveFormat", EmitDefaultValue = false)]
-		public string CurrencyPositiveFormat { get; set; }
+		public string CurrencyPositiveFormat { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DateFormat
@@ -56,7 +56,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DisplayTaxCategorySuperscripts
@@ -86,7 +86,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets NumberFormat
@@ -134,6 +134,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

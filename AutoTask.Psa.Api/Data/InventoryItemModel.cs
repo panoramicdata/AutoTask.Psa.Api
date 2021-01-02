@@ -25,7 +25,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Bin
 		/// </summary>
 		[DataMember(Name = "Bin", EmitDefaultValue = false)]
-		public string Bin { get; set; }
+		public string Bin { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ImpersonatorCreatorResourceID
@@ -85,12 +85,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ReferenceNumber
 		/// </summary>
 		[DataMember(Name = "ReferenceNumber", EmitDefaultValue = false)]
-		public string ReferenceNumber { get; set; }
+		public string ReferenceNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

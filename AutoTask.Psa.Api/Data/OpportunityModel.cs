@@ -62,7 +62,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Barriers
 		/// </summary>
 		[DataMember(Name = "Barriers", EmitDefaultValue = false)]
-		public string Barriers { get; set; }
+		public string Barriers { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ClosedDate
@@ -104,13 +104,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets HelpNeeded
 		/// </summary>
 		[DataMember(Name = "HelpNeeded", EmitDefaultValue = false)]
-		public string HelpNeeded { get; set; }
+		public string HelpNeeded { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ImpersonatorCreatorResourceID
@@ -140,7 +140,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets LossReasonDetail
 		/// </summary>
 		[DataMember(Name = "LossReasonDetail", EmitDefaultValue = false)]
-		public string LossReasonDetail { get; set; }
+		public string LossReasonDetail { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets LostDate
@@ -152,7 +152,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Market
 		/// </summary>
 		[DataMember(Name = "Market", EmitDefaultValue = false)]
-		public string Market { get; set; }
+		public string Market { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets MonthlyCost
@@ -170,7 +170,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets NextStep
 		/// </summary>
 		[DataMember(Name = "NextStep", EmitDefaultValue = false)]
-		public string NextStep { get; set; }
+		public string NextStep { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets OnetimeCost
@@ -236,7 +236,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets PromotionName
 		/// </summary>
 		[DataMember(Name = "PromotionName", EmitDefaultValue = false)]
-		public string PromotionName { get; set; }
+		public string PromotionName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets QuarterlyCost
@@ -272,7 +272,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets RevenueSpreadUnit
 		/// </summary>
 		[DataMember(Name = "RevenueSpreadUnit", EmitDefaultValue = false)]
-		public string RevenueSpreadUnit { get; set; }
+		public string RevenueSpreadUnit { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SalesOrderID
@@ -332,7 +332,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Title
 		/// </summary>
 		[DataMember(Name = "Title", EmitDefaultValue = false)]
-		public string Title { get; set; }
+		public string Title { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TotalAmountMonths
@@ -356,7 +356,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets WinReasonDetail
 		/// </summary>
 		[DataMember(Name = "WinReasonDetail", EmitDefaultValue = false)]
-		public string WinReasonDetail { get; set; }
+		public string WinReasonDetail { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets YearlyCost
@@ -374,6 +374,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

@@ -26,13 +26,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets EntityNumber
 		/// </summary>
 		[DataMember(Name = "EntityNumber", EmitDefaultValue = false)]
-		public string EntityNumber { get; set; }
+		public string EntityNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets EntityTitle
 		/// </summary>
 		[DataMember(Name = "EntityTitle", EmitDefaultValue = false)]
-		public string EntityTitle { get; set; }
+		public string EntityTitle { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets InitiatingContactID
@@ -98,13 +98,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets RecipientDisplayName
 		/// </summary>
 		[DataMember(Name = "RecipientDisplayName", EmitDefaultValue = false)]
-		public string RecipientDisplayName { get; set; }
+		public string RecipientDisplayName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets RecipientEmailAddress
 		/// </summary>
 		[DataMember(Name = "RecipientEmailAddress", EmitDefaultValue = false)]
-		public string RecipientEmailAddress { get; set; }
+		public string RecipientEmailAddress { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TaskID
@@ -116,7 +116,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets TemplateName
 		/// </summary>
 		[DataMember(Name = "TemplateName", EmitDefaultValue = false)]
-		public string TemplateName { get; set; }
+		public string TemplateName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TicketID
@@ -134,6 +134,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

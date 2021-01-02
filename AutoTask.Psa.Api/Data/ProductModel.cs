@@ -37,7 +37,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Description
 		/// </summary>
 		[DataMember(Name = "Description", EmitDefaultValue = false)]
-		public string Description { get; set; }
+		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DoesNotRequireProcurement
@@ -49,7 +49,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ExternalProductID
 		/// </summary>
 		[DataMember(Name = "ExternalProductID", EmitDefaultValue = false)]
-		public string ExternalProductID { get; set; }
+		public string ExternalProductID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ImpersonatorCreatorResourceID
@@ -61,7 +61,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets InternalProductID
 		/// </summary>
 		[DataMember(Name = "InternalProductID", EmitDefaultValue = false)]
-		public string InternalProductID { get; set; }
+		public string InternalProductID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsActive
@@ -85,19 +85,19 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Link
 		/// </summary>
 		[DataMember(Name = "Link", EmitDefaultValue = false)]
-		public string Link { get; set; }
+		public string Link { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ManufacturerName
 		/// </summary>
 		[DataMember(Name = "ManufacturerName", EmitDefaultValue = false)]
-		public string ManufacturerName { get; set; }
+		public string ManufacturerName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ManufacturerProductName
 		/// </summary>
 		[DataMember(Name = "ManufacturerProductName", EmitDefaultValue = false)]
-		public string ManufacturerProductName { get; set; }
+		public string ManufacturerProductName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets MarkupRate
@@ -115,7 +115,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Name
 		/// </summary>
 		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets PeriodType
@@ -145,7 +145,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SKU
 		/// </summary>
 		[DataMember(Name = "SKU", EmitDefaultValue = false)]
-		public string SKU { get; set; }
+		public string SKU { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UnitCost
@@ -163,12 +163,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets VendorProductNumber
 		/// </summary>
 		[DataMember(Name = "VendorProductNumber", EmitDefaultValue = false)]
-		public string VendorProductNumber { get; set; }
+		public string VendorProductNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

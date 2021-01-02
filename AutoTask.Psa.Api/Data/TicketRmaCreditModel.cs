@@ -25,7 +25,7 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets CreditDetails
 		/// </summary>
 		[DataMember(Name = "CreditDetails", EmitDefaultValue = false)]
-		public string CreditDetails { get; set; }
+		public string CreditDetails { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets InternalCurrencyCreditAmount
@@ -43,12 +43,12 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
 		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
-		public ExpressionFuncTicketRmaCreditInt64 SoapParentPropertyId { get; private set; }
+		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

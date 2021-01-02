@@ -13,6 +13,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets Fields
 		/// </summary>
 		[DataMember(Name = "Fields", EmitDefaultValue = false)]
-		public List<Field> Fields { get; set; }
+		public List<Field> Fields { get; set; } = new();
 	}
 }

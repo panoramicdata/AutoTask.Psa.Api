@@ -38,13 +38,13 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets ErrorMessage
 		/// </summary>
 		[DataMember(Name = "ErrorMessage", EmitDefaultValue = false)]
-		public string ErrorMessage { get; set; }
+		public string ErrorMessage { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Payload
 		/// </summary>
 		[DataMember(Name = "Payload", EmitDefaultValue = false)]
-		public string Payload { get; set; }
+		public string Payload { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SequenceNumber
@@ -56,6 +56,6 @@ namespace AutoTask.Psa.Api.Data
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
 		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
-		public List<UserDefinedField> UserDefinedFields { get; set; }
+		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }
