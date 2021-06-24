@@ -1,6 +1,6 @@
+using AutoTask.Psa.Api.Data;
 using Refit;
 using System.Threading.Tasks;
-using AutoTask.Psa.Api.Data;
 
 namespace AutoTask.Psa.Api.Interfaces
 {
@@ -10,7 +10,7 @@ namespace AutoTask.Psa.Api.Interfaces
 	public interface ITasksApi
 	{
 		/// <summary>
-		///
+		/// Query Tasks
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="queryModel"></param>
@@ -19,7 +19,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		Task<QueryResponse<TaskModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
-		///
+		/// Count Tasks
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="queryModel"></param>
@@ -28,7 +28,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
 
 		/// <summary>
-		///
+		/// Get Task entity info
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <returns>Task of EntityInformationResultModel</returns>
@@ -36,7 +36,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		Task<EntityInformationResultModel> GetEntityInfoAsync();
 
 		/// <summary>
-		///
+		/// Get Task field info
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <returns>Task of FieldInformationResultModel</returns>
@@ -44,7 +44,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		Task<FieldInformationResultModel> GetFieldInfoAsync();
 
 		/// <summary>
-		///
+		/// Get a single task
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="id"></param>
@@ -53,7 +53,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		Task<TaskModel> GetAsync([AliasAs("id")] long id);
 
 		/// <summary>
-		///
+		/// Get Task user defined fields
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
@@ -61,7 +61,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync();
 
 		/// <summary>
-		///
+		/// Query Tasks
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="search"></param>
@@ -70,7 +70,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		Task<TaskModel> StringQueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
-		///
+		/// Count Tasks by query
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 		/// <param name="search"></param>
