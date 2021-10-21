@@ -12,163 +12,163 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets BillingType
 		/// </summary>
-		[DataMember(Name = "BillingType", EmitDefaultValue = false)]
+		[DataMember(Name = "BillingType")]
 		public int? BillingType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ChargeBillingCodeID
 		/// </summary>
-		[DataMember(Name = "ChargeBillingCodeID", EmitDefaultValue = false)]
+		[DataMember(Name = "ChargeBillingCodeID")]
 		public int? ChargeBillingCodeID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets DefaultVendorID
 		/// </summary>
-		[DataMember(Name = "DefaultVendorID", EmitDefaultValue = false)]
+		[DataMember(Name = "DefaultVendorID")]
 		public int? DefaultVendorID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Description
 		/// </summary>
-		[DataMember(Name = "Description", EmitDefaultValue = false)]
+		[DataMember(Name = "Description")]
 		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DoesNotRequireProcurement
 		/// </summary>
-		[DataMember(Name = "DoesNotRequireProcurement", EmitDefaultValue = false)]
+		[DataMember(Name = "DoesNotRequireProcurement")]
 		public bool? DoesNotRequireProcurement { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ExternalProductID
 		/// </summary>
-		[DataMember(Name = "ExternalProductID", EmitDefaultValue = false)]
+		[DataMember(Name = "ExternalProductID")]
 		public string ExternalProductID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ImpersonatorCreatorResourceID
 		/// </summary>
-		[DataMember(Name = "ImpersonatorCreatorResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "ImpersonatorCreatorResourceID")]
 		public int? ImpersonatorCreatorResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets InternalProductID
 		/// </summary>
-		[DataMember(Name = "InternalProductID", EmitDefaultValue = false)]
+		[DataMember(Name = "InternalProductID")]
 		public string InternalProductID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsActive
 		/// </summary>
-		[DataMember(Name = "IsActive", EmitDefaultValue = false)]
+		[DataMember(Name = "IsActive")]
 		public bool? IsActive { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsEligibleForRma
 		/// </summary>
-		[DataMember(Name = "IsEligibleForRma", EmitDefaultValue = false)]
+		[DataMember(Name = "IsEligibleForRma")]
 		public bool? IsEligibleForRma { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsSerialized
 		/// </summary>
-		[DataMember(Name = "IsSerialized", EmitDefaultValue = false)]
+		[DataMember(Name = "IsSerialized")]
 		public bool? IsSerialized { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Link
 		/// </summary>
-		[DataMember(Name = "Link", EmitDefaultValue = false)]
+		[DataMember(Name = "Link")]
 		public string Link { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ManufacturerName
 		/// </summary>
-		[DataMember(Name = "ManufacturerName", EmitDefaultValue = false)]
+		[DataMember(Name = "ManufacturerName")]
 		public string ManufacturerName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ManufacturerProductName
 		/// </summary>
-		[DataMember(Name = "ManufacturerProductName", EmitDefaultValue = false)]
+		[DataMember(Name = "ManufacturerProductName")]
 		public string ManufacturerProductName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets MarkupRate
 		/// </summary>
-		[DataMember(Name = "MarkupRate", EmitDefaultValue = false)]
+		[DataMember(Name = "MarkupRate")]
 		public double? MarkupRate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets MSRP
 		/// </summary>
-		[DataMember(Name = "MSRP", EmitDefaultValue = false)]
+		[DataMember(Name = "MSRP")]
 		public double? MSRP { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Name
 		/// </summary>
-		[DataMember(Name = "Name", EmitDefaultValue = false)]
+		[DataMember(Name = "Name")]
 		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets PeriodType
 		/// </summary>
-		[DataMember(Name = "PeriodType", EmitDefaultValue = false)]
+		[DataMember(Name = "PeriodType")]
 		public int? PeriodType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets PriceCostMethod
 		/// </summary>
-		[DataMember(Name = "PriceCostMethod", EmitDefaultValue = false)]
+		[DataMember(Name = "PriceCostMethod")]
 		public int? PriceCostMethod { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ProductBillingCodeID
 		/// </summary>
-		[DataMember(Name = "ProductBillingCodeID", EmitDefaultValue = false)]
+		[DataMember(Name = "ProductBillingCodeID")]
 		public int? ProductBillingCodeID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ProductCategory
 		/// </summary>
-		[DataMember(Name = "ProductCategory", EmitDefaultValue = false)]
+		[DataMember(Name = "ProductCategory")]
 		public int? ProductCategory { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SKU
 		/// </summary>
-		[DataMember(Name = "SKU", EmitDefaultValue = false)]
+		[DataMember(Name = "SKU")]
 		public string SKU { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UnitCost
 		/// </summary>
-		[DataMember(Name = "UnitCost", EmitDefaultValue = false)]
+		[DataMember(Name = "UnitCost")]
 		public double? UnitCost { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UnitPrice
 		/// </summary>
-		[DataMember(Name = "UnitPrice", EmitDefaultValue = false)]
+		[DataMember(Name = "UnitPrice")]
 		public double? UnitPrice { get; set; }
 
 		/// <summary>
 		/// Gets or Sets VendorProductNumber
 		/// </summary>
-		[DataMember(Name = "VendorProductNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "VendorProductNumber")]
 		public string VendorProductNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

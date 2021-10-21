@@ -11,7 +11,7 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets QueryCount
 		/// </summary>
-		[DataMember(Name = "QueryCount", EmitDefaultValue = false)]
+		[DataMember(Name = "QueryCount")]
 		public int? QueryCount { get; set; }
 	}
 }

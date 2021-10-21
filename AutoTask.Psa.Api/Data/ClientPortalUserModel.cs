@@ -12,61 +12,61 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ContactID
 		/// </summary>
-		[DataMember(Name = "ContactID", EmitDefaultValue = false)]
+		[DataMember(Name = "ContactID")]
 		public int? ContactID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets DateFormat
 		/// </summary>
-		[DataMember(Name = "DateFormat", EmitDefaultValue = false)]
+		[DataMember(Name = "DateFormat")]
 		public int? DateFormat { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsClientPortalActive
 		/// </summary>
-		[DataMember(Name = "IsClientPortalActive", EmitDefaultValue = false)]
+		[DataMember(Name = "IsClientPortalActive")]
 		public bool? IsClientPortalActive { get; set; }
 
 		/// <summary>
 		/// Gets or Sets NumberFormat
 		/// </summary>
-		[DataMember(Name = "NumberFormat", EmitDefaultValue = false)]
+		[DataMember(Name = "NumberFormat")]
 		public int? NumberFormat { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Password
 		/// </summary>
-		[DataMember(Name = "Password", EmitDefaultValue = false)]
+		[DataMember(Name = "Password")]
 		public string Password { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SecurityLevel
 		/// </summary>
-		[DataMember(Name = "SecurityLevel", EmitDefaultValue = false)]
+		[DataMember(Name = "SecurityLevel")]
 		public int? SecurityLevel { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TimeFormat
 		/// </summary>
-		[DataMember(Name = "TimeFormat", EmitDefaultValue = false)]
+		[DataMember(Name = "TimeFormat")]
 		public int? TimeFormat { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserName
 		/// </summary>
-		[DataMember(Name = "UserName", EmitDefaultValue = false)]
+		[DataMember(Name = "UserName")]
 		public string UserName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

@@ -13,121 +13,121 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets AmountDue
 		/// </summary>
-		[DataMember(Name = "AmountDue", EmitDefaultValue = false)]
+		[DataMember(Name = "AmountDue")]
 		public double? AmountDue { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ApprovedDate
 		/// </summary>
-		[DataMember(Name = "ApprovedDate", EmitDefaultValue = false)]
+		[DataMember(Name = "ApprovedDate")]
 		public DateTime? ApprovedDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ApproverID
 		/// </summary>
-		[DataMember(Name = "ApproverID", EmitDefaultValue = false)]
+		[DataMember(Name = "ApproverID")]
 		public int? ApproverID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets DepartmentNumber
 		/// </summary>
-		[DataMember(Name = "DepartmentNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "DepartmentNumber")]
 		public string DepartmentNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets InternalCurrencyCashAdvanceAmount
 		/// </summary>
-		[DataMember(Name = "InternalCurrencyCashAdvanceAmount", EmitDefaultValue = false)]
+		[DataMember(Name = "InternalCurrencyCashAdvanceAmount")]
 		public double? InternalCurrencyCashAdvanceAmount { get; set; }
 
 		/// <summary>
 		/// Gets or Sets InternalCurrencyExpenseTotal
 		/// </summary>
-		[DataMember(Name = "InternalCurrencyExpenseTotal", EmitDefaultValue = false)]
+		[DataMember(Name = "InternalCurrencyExpenseTotal")]
 		public double? InternalCurrencyExpenseTotal { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Name
 		/// </summary>
-		[DataMember(Name = "Name", EmitDefaultValue = false)]
+		[DataMember(Name = "Name")]
 		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets OrganizationalLevelAssociationID
 		/// </summary>
-		[DataMember(Name = "OrganizationalLevelAssociationID", EmitDefaultValue = false)]
+		[DataMember(Name = "OrganizationalLevelAssociationID")]
 		public int? OrganizationalLevelAssociationID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets QuickBooksReferenceNumber
 		/// </summary>
-		[DataMember(Name = "QuickBooksReferenceNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "QuickBooksReferenceNumber")]
 		public string QuickBooksReferenceNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ReimbursementCurrencyAmountDue
 		/// </summary>
-		[DataMember(Name = "ReimbursementCurrencyAmountDue", EmitDefaultValue = false)]
+		[DataMember(Name = "ReimbursementCurrencyAmountDue")]
 		public double? ReimbursementCurrencyAmountDue { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ReimbursementCurrencyCashAdvanceAmount
 		/// </summary>
-		[DataMember(Name = "ReimbursementCurrencyCashAdvanceAmount", EmitDefaultValue = false)]
+		[DataMember(Name = "ReimbursementCurrencyCashAdvanceAmount")]
 		public double? ReimbursementCurrencyCashAdvanceAmount { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ReimbursementCurrencyID
 		/// </summary>
-		[DataMember(Name = "ReimbursementCurrencyID", EmitDefaultValue = false)]
+		[DataMember(Name = "ReimbursementCurrencyID")]
 		public int? ReimbursementCurrencyID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets RejectionReason
 		/// </summary>
-		[DataMember(Name = "RejectionReason", EmitDefaultValue = false)]
+		[DataMember(Name = "RejectionReason")]
 		public string RejectionReason { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Status
 		/// </summary>
-		[DataMember(Name = "Status", EmitDefaultValue = false)]
+		[DataMember(Name = "Status")]
 		public int? Status { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Submit
 		/// </summary>
-		[DataMember(Name = "Submit", EmitDefaultValue = false)]
+		[DataMember(Name = "Submit")]
 		public bool? Submit { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SubmitDate
 		/// </summary>
-		[DataMember(Name = "SubmitDate", EmitDefaultValue = false)]
+		[DataMember(Name = "SubmitDate")]
 		public DateTime? SubmitDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SubmitterID
 		/// </summary>
-		[DataMember(Name = "SubmitterID", EmitDefaultValue = false)]
+		[DataMember(Name = "SubmitterID")]
 		public int? SubmitterID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets WeekEnding
 		/// </summary>
-		[DataMember(Name = "WeekEnding", EmitDefaultValue = false)]
+		[DataMember(Name = "WeekEnding")]
 		public DateTime? WeekEnding { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

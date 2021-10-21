@@ -17,37 +17,37 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Name
 		/// </summary>
-		[DataMember(Name = "Name", EmitDefaultValue = false)]
+		[DataMember(Name = "Name")]
 		public string? Name { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsActive
 		/// </summary>
-		[DataMember(Name = "IsActive", EmitDefaultValue = false)]
+		[DataMember(Name = "IsActive")]
 		public bool? IsActive { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsSystemActionType
 		/// </summary>
-		[DataMember(Name = "IsSystemActionType", EmitDefaultValue = false)]
+		[DataMember(Name = "IsSystemActionType")]
 		public bool? IsSystemActionType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets View
 		/// </summary>
-		[DataMember(Name = "View", EmitDefaultValue = false)]
+		[DataMember(Name = "View")]
 		public int? View { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField>? UserDefinedFields { get; set; }
 	}
 }

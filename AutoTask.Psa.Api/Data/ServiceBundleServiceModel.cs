@@ -12,31 +12,31 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ServiceBundleID
 		/// </summary>
-		[DataMember(Name = "ServiceBundleID", EmitDefaultValue = false)]
+		[DataMember(Name = "ServiceBundleID")]
 		public long? ServiceBundleID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ServiceID
 		/// </summary>
-		[DataMember(Name = "ServiceID", EmitDefaultValue = false)]
+		[DataMember(Name = "ServiceID")]
 		public long? ServiceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
-		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
+		[DataMember(Name = "SoapParentPropertyId")]
 		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

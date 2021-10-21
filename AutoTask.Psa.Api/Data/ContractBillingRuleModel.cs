@@ -13,109 +13,109 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ContractID
 		/// </summary>
-		[DataMember(Name = "ContractID", EmitDefaultValue = false)]
+		[DataMember(Name = "ContractID")]
 		public int? ContractID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreateChargesAsBillable
 		/// </summary>
-		[DataMember(Name = "CreateChargesAsBillable", EmitDefaultValue = false)]
+		[DataMember(Name = "CreateChargesAsBillable")]
 		public bool? CreateChargesAsBillable { get; set; }
 
 		/// <summary>
 		/// Gets or Sets DailyProratedCost
 		/// </summary>
-		[DataMember(Name = "DailyProratedCost", EmitDefaultValue = false)]
+		[DataMember(Name = "DailyProratedCost")]
 		public double? DailyProratedCost { get; set; }
 
 		/// <summary>
 		/// Gets or Sets DailyProratedPrice
 		/// </summary>
-		[DataMember(Name = "DailyProratedPrice", EmitDefaultValue = false)]
+		[DataMember(Name = "DailyProratedPrice")]
 		public double? DailyProratedPrice { get; set; }
 
 		/// <summary>
 		/// Gets or Sets DetermineUnits
 		/// </summary>
-		[DataMember(Name = "DetermineUnits", EmitDefaultValue = false)]
+		[DataMember(Name = "DetermineUnits")]
 		public int? DetermineUnits { get; set; }
 
 		/// <summary>
 		/// Gets or Sets EndDate
 		/// </summary>
-		[DataMember(Name = "EndDate", EmitDefaultValue = false)]
+		[DataMember(Name = "EndDate")]
 		public DateTime? EndDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ExecutionMethod
 		/// </summary>
-		[DataMember(Name = "ExecutionMethod", EmitDefaultValue = false)]
+		[DataMember(Name = "ExecutionMethod")]
 		public int? ExecutionMethod { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IncludeItemsInChargeDescription
 		/// </summary>
-		[DataMember(Name = "IncludeItemsInChargeDescription", EmitDefaultValue = false)]
+		[DataMember(Name = "IncludeItemsInChargeDescription")]
 		public bool? IncludeItemsInChargeDescription { get; set; }
 
 		/// <summary>
 		/// Gets or Sets InvoiceDescription
 		/// </summary>
-		[DataMember(Name = "InvoiceDescription", EmitDefaultValue = false)]
+		[DataMember(Name = "InvoiceDescription")]
 		public string InvoiceDescription { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsActive
 		/// </summary>
-		[DataMember(Name = "IsActive", EmitDefaultValue = false)]
+		[DataMember(Name = "IsActive")]
 		public bool? IsActive { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsDailyProrationEnabled
 		/// </summary>
-		[DataMember(Name = "IsDailyProrationEnabled", EmitDefaultValue = false)]
+		[DataMember(Name = "IsDailyProrationEnabled")]
 		public bool? IsDailyProrationEnabled { get; set; }
 
 		/// <summary>
 		/// Gets or Sets MaximumUnits
 		/// </summary>
-		[DataMember(Name = "MaximumUnits", EmitDefaultValue = false)]
+		[DataMember(Name = "MaximumUnits")]
 		public int? MaximumUnits { get; set; }
 
 		/// <summary>
 		/// Gets or Sets MinimumUnits
 		/// </summary>
-		[DataMember(Name = "MinimumUnits", EmitDefaultValue = false)]
+		[DataMember(Name = "MinimumUnits")]
 		public int? MinimumUnits { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ProductID
 		/// </summary>
-		[DataMember(Name = "ProductID", EmitDefaultValue = false)]
+		[DataMember(Name = "ProductID")]
 		public int? ProductID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets StartDate
 		/// </summary>
-		[DataMember(Name = "StartDate", EmitDefaultValue = false)]
+		[DataMember(Name = "StartDate")]
 		public DateTime? StartDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
-		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
+		[DataMember(Name = "SoapParentPropertyId")]
 		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

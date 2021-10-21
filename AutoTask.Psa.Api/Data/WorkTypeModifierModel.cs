@@ -12,25 +12,25 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ModifierType
 		/// </summary>
-		[DataMember(Name = "ModifierType", EmitDefaultValue = false)]
+		[DataMember(Name = "ModifierType")]
 		public int? ModifierType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ModifierValue
 		/// </summary>
-		[DataMember(Name = "ModifierValue", EmitDefaultValue = false)]
+		[DataMember(Name = "ModifierValue")]
 		public double? ModifierValue { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

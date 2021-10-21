@@ -12,25 +12,25 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets ElementList
 		/// </summary>
-		[DataMember(Name = "ElementList", EmitDefaultValue = false)]
+		[DataMember(Name = "ElementList")]
 		public List<CollectionItem> ElementList { get; set; } = new();
 
 		/// <summary>
 		/// Gets or Sets BoolValue
 		/// </summary>
-		[DataMember(Name = "BoolValue", EmitDefaultValue = false)]
+		[DataMember(Name = "BoolValue")]
 		public bool? BoolValue { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IntegerValue
 		/// </summary>
-		[DataMember(Name = "IntegerValue", EmitDefaultValue = false)]
+		[DataMember(Name = "IntegerValue")]
 		public int? IntegerValue { get; set; }
 
 		/// <summary>
 		/// Gets or Sets StringValue
 		/// </summary>
-		[DataMember(Name = "StringValue", EmitDefaultValue = false)]
+		[DataMember(Name = "StringValue")]
 		public string StringValue { get; set; } = string.Empty;
 	}
 }

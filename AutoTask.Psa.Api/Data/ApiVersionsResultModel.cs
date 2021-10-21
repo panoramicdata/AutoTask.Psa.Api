@@ -12,7 +12,7 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets ApiVersions
 		/// </summary>
-		[DataMember(Name = "ApiVersions", EmitDefaultValue = false)]
+		[DataMember(Name = "ApiVersions")]
 		public List<string> ApiVersions { get; set; } = new();
 	}
 }

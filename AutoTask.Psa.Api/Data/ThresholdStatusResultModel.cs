@@ -12,19 +12,19 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets ExternalRequestThreshold
 		/// </summary>
-		[DataMember(Name = "ExternalRequestThreshold", EmitDefaultValue = false)]
+		[DataMember(Name = "ExternalRequestThreshold")]
 		public int? ExternalRequestThreshold { get; private set; }
 
 		/// <summary>
 		/// Gets or Sets RequestThresholdTimeframe
 		/// </summary>
-		[DataMember(Name = "RequestThresholdTimeframe", EmitDefaultValue = false)]
+		[DataMember(Name = "RequestThresholdTimeframe")]
 		public int? RequestThresholdTimeframe { get; private set; }
 
 		/// <summary>
 		/// Gets or Sets CurrentTimeframeRequestCount
 		/// </summary>
-		[DataMember(Name = "CurrentTimeframeRequestCount", EmitDefaultValue = false)]
+		[DataMember(Name = "CurrentTimeframeRequestCount")]
 		public int? CurrentTimeframeRequestCount { get; private set; }
 	}
 }

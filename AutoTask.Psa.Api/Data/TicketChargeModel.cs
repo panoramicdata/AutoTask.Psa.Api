@@ -13,181 +13,181 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets BillableAmount
 		/// </summary>
-		[DataMember(Name = "BillableAmount", EmitDefaultValue = false)]
+		[DataMember(Name = "BillableAmount")]
 		public double? BillableAmount { get; set; }
 
 		/// <summary>
 		/// Gets or Sets BillingCodeID
 		/// </summary>
-		[DataMember(Name = "BillingCodeID", EmitDefaultValue = false)]
+		[DataMember(Name = "BillingCodeID")]
 		public long? BillingCodeID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ChargeType
 		/// </summary>
-		[DataMember(Name = "ChargeType", EmitDefaultValue = false)]
+		[DataMember(Name = "ChargeType")]
 		public int? ChargeType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ContractServiceBundleID
 		/// </summary>
-		[DataMember(Name = "ContractServiceBundleID", EmitDefaultValue = false)]
+		[DataMember(Name = "ContractServiceBundleID")]
 		public long? ContractServiceBundleID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ContractServiceID
 		/// </summary>
-		[DataMember(Name = "ContractServiceID", EmitDefaultValue = false)]
+		[DataMember(Name = "ContractServiceID")]
 		public long? ContractServiceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreateDate
 		/// </summary>
-		[DataMember(Name = "CreateDate", EmitDefaultValue = false)]
+		[DataMember(Name = "CreateDate")]
 		public DateTime? CreateDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreatorResourceID
 		/// </summary>
-		[DataMember(Name = "CreatorResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "CreatorResourceID")]
 		public long? CreatorResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets DatePurchased
 		/// </summary>
-		[DataMember(Name = "DatePurchased", EmitDefaultValue = false)]
+		[DataMember(Name = "DatePurchased")]
 		public DateTime? DatePurchased { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Description
 		/// </summary>
-		[DataMember(Name = "Description", EmitDefaultValue = false)]
+		[DataMember(Name = "Description")]
 		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ExtendedCost
 		/// </summary>
-		[DataMember(Name = "ExtendedCost", EmitDefaultValue = false)]
+		[DataMember(Name = "ExtendedCost")]
 		public double? ExtendedCost { get; set; }
 
 		/// <summary>
 		/// Gets or Sets InternalCurrencyBillableAmount
 		/// </summary>
-		[DataMember(Name = "InternalCurrencyBillableAmount", EmitDefaultValue = false)]
+		[DataMember(Name = "InternalCurrencyBillableAmount")]
 		public double? InternalCurrencyBillableAmount { get; set; }
 
 		/// <summary>
 		/// Gets or Sets InternalCurrencyUnitPrice
 		/// </summary>
-		[DataMember(Name = "InternalCurrencyUnitPrice", EmitDefaultValue = false)]
+		[DataMember(Name = "InternalCurrencyUnitPrice")]
 		public double? InternalCurrencyUnitPrice { get; set; }
 
 		/// <summary>
 		/// Gets or Sets InternalPurchaseOrderNumber
 		/// </summary>
-		[DataMember(Name = "InternalPurchaseOrderNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "InternalPurchaseOrderNumber")]
 		public string InternalPurchaseOrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsBillableToCompany
 		/// </summary>
-		[DataMember(Name = "IsBillableToCompany", EmitDefaultValue = false)]
+		[DataMember(Name = "IsBillableToCompany")]
 		public bool? IsBillableToCompany { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsBilled
 		/// </summary>
-		[DataMember(Name = "IsBilled", EmitDefaultValue = false)]
+		[DataMember(Name = "IsBilled")]
 		public bool? IsBilled { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Name
 		/// </summary>
-		[DataMember(Name = "Name", EmitDefaultValue = false)]
+		[DataMember(Name = "Name")]
 		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Notes
 		/// </summary>
-		[DataMember(Name = "Notes", EmitDefaultValue = false)]
+		[DataMember(Name = "Notes")]
 		public string Notes { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets OrganizationalLevelAssociationID
 		/// </summary>
-		[DataMember(Name = "OrganizationalLevelAssociationID", EmitDefaultValue = false)]
+		[DataMember(Name = "OrganizationalLevelAssociationID")]
 		public int? OrganizationalLevelAssociationID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ProductID
 		/// </summary>
-		[DataMember(Name = "ProductID", EmitDefaultValue = false)]
+		[DataMember(Name = "ProductID")]
 		public long? ProductID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets PurchaseOrderNumber
 		/// </summary>
-		[DataMember(Name = "PurchaseOrderNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "PurchaseOrderNumber")]
 		public string PurchaseOrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Status
 		/// </summary>
-		[DataMember(Name = "Status", EmitDefaultValue = false)]
+		[DataMember(Name = "Status")]
 		public long? Status { get; set; }
 
 		/// <summary>
 		/// Gets or Sets StatusLastModifiedBy
 		/// </summary>
-		[DataMember(Name = "StatusLastModifiedBy", EmitDefaultValue = false)]
+		[DataMember(Name = "StatusLastModifiedBy")]
 		public long? StatusLastModifiedBy { get; set; }
 
 		/// <summary>
 		/// Gets or Sets StatusLastModifiedDate
 		/// </summary>
-		[DataMember(Name = "StatusLastModifiedDate", EmitDefaultValue = false)]
+		[DataMember(Name = "StatusLastModifiedDate")]
 		public DateTime? StatusLastModifiedDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TicketID
 		/// </summary>
-		[DataMember(Name = "TicketID", EmitDefaultValue = false)]
+		[DataMember(Name = "TicketID")]
 		public long? TicketID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UnitCost
 		/// </summary>
-		[DataMember(Name = "UnitCost", EmitDefaultValue = false)]
+		[DataMember(Name = "UnitCost")]
 		public double? UnitCost { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UnitPrice
 		/// </summary>
-		[DataMember(Name = "UnitPrice", EmitDefaultValue = false)]
+		[DataMember(Name = "UnitPrice")]
 		public double? UnitPrice { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UnitQuantity
 		/// </summary>
-		[DataMember(Name = "UnitQuantity", EmitDefaultValue = false)]
+		[DataMember(Name = "UnitQuantity")]
 		public double? UnitQuantity { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
-		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
+		[DataMember(Name = "SoapParentPropertyId")]
 		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

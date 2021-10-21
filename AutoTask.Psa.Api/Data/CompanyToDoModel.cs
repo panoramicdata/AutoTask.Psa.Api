@@ -13,109 +13,109 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ActionType
 		/// </summary>
-		[DataMember(Name = "ActionType", EmitDefaultValue = false)]
+		[DataMember(Name = "ActionType")]
 		public int? ActionType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ActivityDescription
 		/// </summary>
-		[DataMember(Name = "ActivityDescription", EmitDefaultValue = false)]
+		[DataMember(Name = "ActivityDescription")]
 		public string ActivityDescription { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets AssignedToResourceID
 		/// </summary>
-		[DataMember(Name = "AssignedToResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "AssignedToResourceID")]
 		public long? AssignedToResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CompanyID
 		/// </summary>
-		[DataMember(Name = "CompanyID", EmitDefaultValue = false)]
+		[DataMember(Name = "CompanyID")]
 		public long? CompanyID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CompletedDate
 		/// </summary>
-		[DataMember(Name = "CompletedDate", EmitDefaultValue = false)]
+		[DataMember(Name = "CompletedDate")]
 		public DateTime? CompletedDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ContactID
 		/// </summary>
-		[DataMember(Name = "ContactID", EmitDefaultValue = false)]
+		[DataMember(Name = "ContactID")]
 		public long? ContactID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ContractID
 		/// </summary>
-		[DataMember(Name = "ContractID", EmitDefaultValue = false)]
+		[DataMember(Name = "ContractID")]
 		public long? ContractID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreateDateTime
 		/// </summary>
-		[DataMember(Name = "CreateDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "CreateDateTime")]
 		public DateTime? CreateDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreatorResourceID
 		/// </summary>
-		[DataMember(Name = "CreatorResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "CreatorResourceID")]
 		public long? CreatorResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets EndDateTime
 		/// </summary>
-		[DataMember(Name = "EndDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "EndDateTime")]
 		public DateTime? EndDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ImpersonatorCreatorResourceID
 		/// </summary>
-		[DataMember(Name = "ImpersonatorCreatorResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "ImpersonatorCreatorResourceID")]
 		public int? ImpersonatorCreatorResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LastModifiedDate
 		/// </summary>
-		[DataMember(Name = "LastModifiedDate", EmitDefaultValue = false)]
+		[DataMember(Name = "LastModifiedDate")]
 		public DateTime? LastModifiedDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets OpportunityID
 		/// </summary>
-		[DataMember(Name = "OpportunityID", EmitDefaultValue = false)]
+		[DataMember(Name = "OpportunityID")]
 		public long? OpportunityID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets StartDateTime
 		/// </summary>
-		[DataMember(Name = "StartDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "StartDateTime")]
 		public DateTime? StartDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TicketID
 		/// </summary>
-		[DataMember(Name = "TicketID", EmitDefaultValue = false)]
+		[DataMember(Name = "TicketID")]
 		public long? TicketID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
-		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
+		[DataMember(Name = "SoapParentPropertyId")]
 		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

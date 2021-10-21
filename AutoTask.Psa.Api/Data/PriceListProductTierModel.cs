@@ -12,43 +12,43 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CurrencyID
 		/// </summary>
-		[DataMember(Name = "CurrencyID", EmitDefaultValue = false)]
+		[DataMember(Name = "CurrencyID")]
 		public int? CurrencyID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ProductTierID
 		/// </summary>
-		[DataMember(Name = "ProductTierID", EmitDefaultValue = false)]
+		[DataMember(Name = "ProductTierID")]
 		public int? ProductTierID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UnitPrice
 		/// </summary>
-		[DataMember(Name = "UnitPrice", EmitDefaultValue = false)]
+		[DataMember(Name = "UnitPrice")]
 		public double? UnitPrice { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UsesInternalCurrencyPrice
 		/// </summary>
-		[DataMember(Name = "UsesInternalCurrencyPrice", EmitDefaultValue = false)]
+		[DataMember(Name = "UsesInternalCurrencyPrice")]
 		public bool? UsesInternalCurrencyPrice { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
-		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
+		[DataMember(Name = "SoapParentPropertyId")]
 		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

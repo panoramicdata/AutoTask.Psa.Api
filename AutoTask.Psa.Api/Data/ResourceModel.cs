@@ -13,217 +13,217 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets AccountingReferenceID
 		/// </summary>
-		[DataMember(Name = "AccountingReferenceID", EmitDefaultValue = false)]
+		[DataMember(Name = "AccountingReferenceID")]
 		public string AccountingReferenceID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DateFormat
 		/// </summary>
-		[DataMember(Name = "DateFormat", EmitDefaultValue = false)]
+		[DataMember(Name = "DateFormat")]
 		public string DateFormat { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DefaultServiceDeskRoleID
 		/// </summary>
-		[DataMember(Name = "DefaultServiceDeskRoleID", EmitDefaultValue = false)]
+		[DataMember(Name = "DefaultServiceDeskRoleID")]
 		public long? DefaultServiceDeskRoleID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Email
 		/// </summary>
-		[DataMember(Name = "Email", EmitDefaultValue = false)]
+		[DataMember(Name = "Email")]
 		public string Email { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Email2
 		/// </summary>
-		[DataMember(Name = "Email2", EmitDefaultValue = false)]
+		[DataMember(Name = "Email2")]
 		public string Email2 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Email3
 		/// </summary>
-		[DataMember(Name = "Email3", EmitDefaultValue = false)]
+		[DataMember(Name = "Email3")]
 		public string Email3 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets EmailTypeCode
 		/// </summary>
-		[DataMember(Name = "EmailTypeCode", EmitDefaultValue = false)]
+		[DataMember(Name = "EmailTypeCode")]
 		public string EmailTypeCode { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets EmailTypeCode2
 		/// </summary>
-		[DataMember(Name = "EmailTypeCode2", EmitDefaultValue = false)]
+		[DataMember(Name = "EmailTypeCode2")]
 		public string EmailTypeCode2 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets EmailTypeCode3
 		/// </summary>
-		[DataMember(Name = "EmailTypeCode3", EmitDefaultValue = false)]
+		[DataMember(Name = "EmailTypeCode3")]
 		public string EmailTypeCode3 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets FirstName
 		/// </summary>
-		[DataMember(Name = "FirstName", EmitDefaultValue = false)]
+		[DataMember(Name = "FirstName")]
 		public string FirstName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Gender
 		/// </summary>
-		[DataMember(Name = "Gender", EmitDefaultValue = false)]
+		[DataMember(Name = "Gender")]
 		public string Gender { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Greeting
 		/// </summary>
-		[DataMember(Name = "Greeting", EmitDefaultValue = false)]
+		[DataMember(Name = "Greeting")]
 		public int? Greeting { get; set; }
 
 		/// <summary>
 		/// Gets or Sets HireDate
 		/// </summary>
-		[DataMember(Name = "HireDate", EmitDefaultValue = false)]
+		[DataMember(Name = "HireDate")]
 		public DateTime? HireDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets HomePhone
 		/// </summary>
-		[DataMember(Name = "HomePhone", EmitDefaultValue = false)]
+		[DataMember(Name = "HomePhone")]
 		public string HomePhone { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Initials
 		/// </summary>
-		[DataMember(Name = "Initials", EmitDefaultValue = false)]
+		[DataMember(Name = "Initials")]
 		public string Initials { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets InternalCost
 		/// </summary>
-		[DataMember(Name = "InternalCost", EmitDefaultValue = false)]
+		[DataMember(Name = "InternalCost")]
 		public double? InternalCost { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsActive
 		/// </summary>
-		[DataMember(Name = "IsActive", EmitDefaultValue = false)]
+		[DataMember(Name = "IsActive")]
 		public bool? IsActive { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LastName
 		/// </summary>
-		[DataMember(Name = "LastName", EmitDefaultValue = false)]
+		[DataMember(Name = "LastName")]
 		public string LastName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets LicenseType
 		/// </summary>
-		[DataMember(Name = "LicenseType", EmitDefaultValue = false)]
+		[DataMember(Name = "LicenseType")]
 		public int? LicenseType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LocationID
 		/// </summary>
-		[DataMember(Name = "LocationID", EmitDefaultValue = false)]
+		[DataMember(Name = "LocationID")]
 		public int? LocationID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets MiddleName
 		/// </summary>
-		[DataMember(Name = "MiddleName", EmitDefaultValue = false)]
+		[DataMember(Name = "MiddleName")]
 		public string MiddleName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets MobilePhone
 		/// </summary>
-		[DataMember(Name = "MobilePhone", EmitDefaultValue = false)]
+		[DataMember(Name = "MobilePhone")]
 		public string MobilePhone { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets NumberFormat
 		/// </summary>
-		[DataMember(Name = "NumberFormat", EmitDefaultValue = false)]
+		[DataMember(Name = "NumberFormat")]
 		public string NumberFormat { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets OfficeExtension
 		/// </summary>
-		[DataMember(Name = "OfficeExtension", EmitDefaultValue = false)]
+		[DataMember(Name = "OfficeExtension")]
 		public string OfficeExtension { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets OfficePhone
 		/// </summary>
-		[DataMember(Name = "OfficePhone", EmitDefaultValue = false)]
+		[DataMember(Name = "OfficePhone")]
 		public string OfficePhone { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets PayrollType
 		/// </summary>
-		[DataMember(Name = "PayrollType", EmitDefaultValue = false)]
+		[DataMember(Name = "PayrollType")]
 		public int? PayrollType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ResourceType
 		/// </summary>
-		[DataMember(Name = "ResourceType", EmitDefaultValue = false)]
+		[DataMember(Name = "ResourceType")]
 		public string ResourceType { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Suffix
 		/// </summary>
-		[DataMember(Name = "Suffix", EmitDefaultValue = false)]
+		[DataMember(Name = "Suffix")]
 		public int? Suffix { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SurveyResourceRating
 		/// </summary>
-		[DataMember(Name = "SurveyResourceRating", EmitDefaultValue = false)]
+		[DataMember(Name = "SurveyResourceRating")]
 		public double? SurveyResourceRating { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TimeFormat
 		/// </summary>
-		[DataMember(Name = "TimeFormat", EmitDefaultValue = false)]
+		[DataMember(Name = "TimeFormat")]
 		public string TimeFormat { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Title
 		/// </summary>
-		[DataMember(Name = "Title", EmitDefaultValue = false)]
+		[DataMember(Name = "Title")]
 		public string Title { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TravelAvailabilityPct
 		/// </summary>
-		[DataMember(Name = "TravelAvailabilityPct", EmitDefaultValue = false)]
+		[DataMember(Name = "TravelAvailabilityPct")]
 		public string TravelAvailabilityPct { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserName
 		/// </summary>
-		[DataMember(Name = "UserName", EmitDefaultValue = false)]
+		[DataMember(Name = "UserName")]
 		public string UserName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserType
 		/// </summary>
-		[DataMember(Name = "UserType", EmitDefaultValue = false)]
+		[DataMember(Name = "UserType")]
 		public int? UserType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

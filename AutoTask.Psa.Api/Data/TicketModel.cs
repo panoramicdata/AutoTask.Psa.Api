@@ -13,439 +13,439 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ApiVendorID
 		/// </summary>
-		[DataMember(Name = "ApiVendorID", EmitDefaultValue = false)]
+		[DataMember(Name = "ApiVendorID")]
 		public int? ApiVendorID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets AssignedResourceID
 		/// </summary>
-		[DataMember(Name = "AssignedResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "AssignedResourceID")]
 		public int? AssignedResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets AssignedResourceRoleID
 		/// </summary>
-		[DataMember(Name = "AssignedResourceRoleID", EmitDefaultValue = false)]
+		[DataMember(Name = "AssignedResourceRoleID")]
 		public int? AssignedResourceRoleID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets BillingCodeID
 		/// </summary>
-		[DataMember(Name = "BillingCodeID", EmitDefaultValue = false)]
+		[DataMember(Name = "BillingCodeID")]
 		public int? BillingCodeID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ChangeApprovalBoard
 		/// </summary>
-		[DataMember(Name = "ChangeApprovalBoard", EmitDefaultValue = false)]
+		[DataMember(Name = "ChangeApprovalBoard")]
 		public int? ChangeApprovalBoard { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ChangeApprovalStatus
 		/// </summary>
-		[DataMember(Name = "ChangeApprovalStatus", EmitDefaultValue = false)]
+		[DataMember(Name = "ChangeApprovalStatus")]
 		public int? ChangeApprovalStatus { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ChangeApprovalType
 		/// </summary>
-		[DataMember(Name = "ChangeApprovalType", EmitDefaultValue = false)]
+		[DataMember(Name = "ChangeApprovalType")]
 		public int? ChangeApprovalType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ChangeInfoField1
 		/// </summary>
-		[DataMember(Name = "ChangeInfoField1", EmitDefaultValue = false)]
+		[DataMember(Name = "ChangeInfoField1")]
 		public string ChangeInfoField1 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ChangeInfoField2
 		/// </summary>
-		[DataMember(Name = "ChangeInfoField2", EmitDefaultValue = false)]
+		[DataMember(Name = "ChangeInfoField2")]
 		public string ChangeInfoField2 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ChangeInfoField3
 		/// </summary>
-		[DataMember(Name = "ChangeInfoField3", EmitDefaultValue = false)]
+		[DataMember(Name = "ChangeInfoField3")]
 		public string ChangeInfoField3 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ChangeInfoField4
 		/// </summary>
-		[DataMember(Name = "ChangeInfoField4", EmitDefaultValue = false)]
+		[DataMember(Name = "ChangeInfoField4")]
 		public string ChangeInfoField4 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ChangeInfoField5
 		/// </summary>
-		[DataMember(Name = "ChangeInfoField5", EmitDefaultValue = false)]
+		[DataMember(Name = "ChangeInfoField5")]
 		public string ChangeInfoField5 { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets CompanyID
 		/// </summary>
-		[DataMember(Name = "CompanyID", EmitDefaultValue = false)]
+		[DataMember(Name = "CompanyID")]
 		public int? CompanyID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CompanyLocationID
 		/// </summary>
-		[DataMember(Name = "CompanyLocationID", EmitDefaultValue = false)]
+		[DataMember(Name = "CompanyLocationID")]
 		public int? CompanyLocationID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CompletedByResourceID
 		/// </summary>
-		[DataMember(Name = "CompletedByResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "CompletedByResourceID")]
 		public int? CompletedByResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CompletedDate
 		/// </summary>
-		[DataMember(Name = "CompletedDate", EmitDefaultValue = false)]
+		[DataMember(Name = "CompletedDate")]
 		public DateTime? CompletedDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ConfigurationItemID
 		/// </summary>
-		[DataMember(Name = "ConfigurationItemID", EmitDefaultValue = false)]
+		[DataMember(Name = "ConfigurationItemID")]
 		public int? ConfigurationItemID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ContactID
 		/// </summary>
-		[DataMember(Name = "ContactID", EmitDefaultValue = false)]
+		[DataMember(Name = "ContactID")]
 		public int? ContactID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ContractID
 		/// </summary>
-		[DataMember(Name = "ContractID", EmitDefaultValue = false)]
+		[DataMember(Name = "ContractID")]
 		public int? ContractID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ContractServiceBundleID
 		/// </summary>
-		[DataMember(Name = "ContractServiceBundleID", EmitDefaultValue = false)]
+		[DataMember(Name = "ContractServiceBundleID")]
 		public long? ContractServiceBundleID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ContractServiceID
 		/// </summary>
-		[DataMember(Name = "ContractServiceID", EmitDefaultValue = false)]
+		[DataMember(Name = "ContractServiceID")]
 		public long? ContractServiceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreateDate
 		/// </summary>
-		[DataMember(Name = "CreateDate", EmitDefaultValue = false)]
+		[DataMember(Name = "CreateDate")]
 		public DateTime? CreateDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreatorResourceID
 		/// </summary>
-		[DataMember(Name = "CreatorResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "CreatorResourceID")]
 		public int? CreatorResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreatorType
 		/// </summary>
-		[DataMember(Name = "CreatorType", EmitDefaultValue = false)]
+		[DataMember(Name = "CreatorType")]
 		public int? CreatorType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CurrentServiceThermometerRating
 		/// </summary>
-		[DataMember(Name = "CurrentServiceThermometerRating", EmitDefaultValue = false)]
+		[DataMember(Name = "CurrentServiceThermometerRating")]
 		public int? CurrentServiceThermometerRating { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Description
 		/// </summary>
-		[DataMember(Name = "Description", EmitDefaultValue = false)]
+		[DataMember(Name = "Description")]
 		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DueDateTime
 		/// </summary>
-		[DataMember(Name = "DueDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "DueDateTime")]
 		public DateTime? DueDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets EstimatedHours
 		/// </summary>
-		[DataMember(Name = "EstimatedHours", EmitDefaultValue = false)]
+		[DataMember(Name = "EstimatedHours")]
 		public double? EstimatedHours { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ExternalID
 		/// </summary>
-		[DataMember(Name = "ExternalID", EmitDefaultValue = false)]
+		[DataMember(Name = "ExternalID")]
 		public string ExternalID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets FirstResponseAssignedResourceID
 		/// </summary>
-		[DataMember(Name = "FirstResponseAssignedResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "FirstResponseAssignedResourceID")]
 		public int? FirstResponseAssignedResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets FirstResponseDateTime
 		/// </summary>
-		[DataMember(Name = "FirstResponseDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "FirstResponseDateTime")]
 		public DateTime? FirstResponseDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets FirstResponseDueDateTime
 		/// </summary>
-		[DataMember(Name = "FirstResponseDueDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "FirstResponseDueDateTime")]
 		public DateTime? FirstResponseDueDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets FirstResponseInitiatingResourceID
 		/// </summary>
-		[DataMember(Name = "FirstResponseInitiatingResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "FirstResponseInitiatingResourceID")]
 		public int? FirstResponseInitiatingResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets HoursToBeScheduled
 		/// </summary>
-		[DataMember(Name = "HoursToBeScheduled", EmitDefaultValue = false)]
+		[DataMember(Name = "HoursToBeScheduled")]
 		public double? HoursToBeScheduled { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ImpersonatorCreatorResourceID
 		/// </summary>
-		[DataMember(Name = "ImpersonatorCreatorResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "ImpersonatorCreatorResourceID")]
 		public int? ImpersonatorCreatorResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IssueType
 		/// </summary>
-		[DataMember(Name = "IssueType", EmitDefaultValue = false)]
+		[DataMember(Name = "IssueType")]
 		public int? IssueType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LastActivityDate
 		/// </summary>
-		[DataMember(Name = "LastActivityDate", EmitDefaultValue = false)]
+		[DataMember(Name = "LastActivityDate")]
 		public DateTime? LastActivityDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LastActivityPersonType
 		/// </summary>
-		[DataMember(Name = "LastActivityPersonType", EmitDefaultValue = false)]
+		[DataMember(Name = "LastActivityPersonType")]
 		public int? LastActivityPersonType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LastActivityResourceID
 		/// </summary>
-		[DataMember(Name = "LastActivityResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "LastActivityResourceID")]
 		public int? LastActivityResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LastCustomerNotificationDateTime
 		/// </summary>
-		[DataMember(Name = "LastCustomerNotificationDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "LastCustomerNotificationDateTime")]
 		public DateTime? LastCustomerNotificationDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LastCustomerVisibleActivityDateTime
 		/// </summary>
-		[DataMember(Name = "LastCustomerVisibleActivityDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "LastCustomerVisibleActivityDateTime")]
 		public DateTime? LastCustomerVisibleActivityDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LastTrackedModificationDateTime
 		/// </summary>
-		[DataMember(Name = "LastTrackedModificationDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "LastTrackedModificationDateTime")]
 		public DateTime? LastTrackedModificationDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets MonitorID
 		/// </summary>
-		[DataMember(Name = "MonitorID", EmitDefaultValue = false)]
+		[DataMember(Name = "MonitorID")]
 		public int? MonitorID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets MonitorTypeID
 		/// </summary>
-		[DataMember(Name = "MonitorTypeID", EmitDefaultValue = false)]
+		[DataMember(Name = "MonitorTypeID")]
 		public int? MonitorTypeID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets OpportunityID
 		/// </summary>
-		[DataMember(Name = "OpportunityID", EmitDefaultValue = false)]
+		[DataMember(Name = "OpportunityID")]
 		public int? OpportunityID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets OrganizationalLevelAssociationID
 		/// </summary>
-		[DataMember(Name = "OrganizationalLevelAssociationID", EmitDefaultValue = false)]
+		[DataMember(Name = "OrganizationalLevelAssociationID")]
 		public int? OrganizationalLevelAssociationID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets PreviousServiceThermometerRating
 		/// </summary>
-		[DataMember(Name = "PreviousServiceThermometerRating", EmitDefaultValue = false)]
+		[DataMember(Name = "PreviousServiceThermometerRating")]
 		public int? PreviousServiceThermometerRating { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Priority
 		/// </summary>
-		[DataMember(Name = "Priority", EmitDefaultValue = false)]
+		[DataMember(Name = "Priority")]
 		public int? Priority { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ProblemTicketId
 		/// </summary>
-		[DataMember(Name = "ProblemTicketId", EmitDefaultValue = false)]
+		[DataMember(Name = "ProblemTicketId")]
 		public int? ProblemTicketId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ProjectID
 		/// </summary>
-		[DataMember(Name = "ProjectID", EmitDefaultValue = false)]
+		[DataMember(Name = "ProjectID")]
 		public int? ProjectID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets PurchaseOrderNumber
 		/// </summary>
-		[DataMember(Name = "PurchaseOrderNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "PurchaseOrderNumber")]
 		public string PurchaseOrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets QueueID
 		/// </summary>
-		[DataMember(Name = "QueueID", EmitDefaultValue = false)]
+		[DataMember(Name = "QueueID")]
 		public int? QueueID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Resolution
 		/// </summary>
-		[DataMember(Name = "Resolution", EmitDefaultValue = false)]
+		[DataMember(Name = "Resolution")]
 		public string Resolution { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ResolutionPlanDateTime
 		/// </summary>
-		[DataMember(Name = "ResolutionPlanDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "ResolutionPlanDateTime")]
 		public DateTime? ResolutionPlanDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ResolutionPlanDueDateTime
 		/// </summary>
-		[DataMember(Name = "ResolutionPlanDueDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "ResolutionPlanDueDateTime")]
 		public DateTime? ResolutionPlanDueDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ResolvedDateTime
 		/// </summary>
-		[DataMember(Name = "ResolvedDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "ResolvedDateTime")]
 		public DateTime? ResolvedDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ResolvedDueDateTime
 		/// </summary>
-		[DataMember(Name = "ResolvedDueDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "ResolvedDueDateTime")]
 		public DateTime? ResolvedDueDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets RmaStatus
 		/// </summary>
-		[DataMember(Name = "RmaStatus", EmitDefaultValue = false)]
+		[DataMember(Name = "RmaStatus")]
 		public int? RmaStatus { get; set; }
 
 		/// <summary>
 		/// Gets or Sets RmaType
 		/// </summary>
-		[DataMember(Name = "RmaType", EmitDefaultValue = false)]
+		[DataMember(Name = "RmaType")]
 		public int? RmaType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets RMMAlertID
 		/// </summary>
-		[DataMember(Name = "RMMAlertID", EmitDefaultValue = false)]
+		[DataMember(Name = "RMMAlertID")]
 		public string RMMAlertID { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ServiceLevelAgreementHasBeenMet
 		/// </summary>
-		[DataMember(Name = "ServiceLevelAgreementHasBeenMet", EmitDefaultValue = false)]
+		[DataMember(Name = "ServiceLevelAgreementHasBeenMet")]
 		public bool? ServiceLevelAgreementHasBeenMet { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ServiceLevelAgreementID
 		/// </summary>
-		[DataMember(Name = "ServiceLevelAgreementID", EmitDefaultValue = false)]
+		[DataMember(Name = "ServiceLevelAgreementID")]
 		public int? ServiceLevelAgreementID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ServiceLevelAgreementPausedNextEventHours
 		/// </summary>
-		[DataMember(Name = "ServiceLevelAgreementPausedNextEventHours", EmitDefaultValue = false)]
+		[DataMember(Name = "ServiceLevelAgreementPausedNextEventHours")]
 		public double? ServiceLevelAgreementPausedNextEventHours { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ServiceThermometerTemperature
 		/// </summary>
-		[DataMember(Name = "ServiceThermometerTemperature", EmitDefaultValue = false)]
+		[DataMember(Name = "ServiceThermometerTemperature")]
 		public int? ServiceThermometerTemperature { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Source
 		/// </summary>
-		[DataMember(Name = "Source", EmitDefaultValue = false)]
+		[DataMember(Name = "Source")]
 		public int? Source { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Status
 		/// </summary>
-		[DataMember(Name = "Status", EmitDefaultValue = false)]
+		[DataMember(Name = "Status")]
 		public int? Status { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SubIssueType
 		/// </summary>
-		[DataMember(Name = "SubIssueType", EmitDefaultValue = false)]
+		[DataMember(Name = "SubIssueType")]
 		public int? SubIssueType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TicketCategory
 		/// </summary>
-		[DataMember(Name = "TicketCategory", EmitDefaultValue = false)]
+		[DataMember(Name = "TicketCategory")]
 		public int? TicketCategory { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TicketNumber
 		/// </summary>
-		[DataMember(Name = "TicketNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "TicketNumber")]
 		public string TicketNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TicketType
 		/// </summary>
-		[DataMember(Name = "TicketType", EmitDefaultValue = false)]
+		[DataMember(Name = "TicketType")]
 		public int? TicketType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Title
 		/// </summary>
-		[DataMember(Name = "Title", EmitDefaultValue = false)]
+		[DataMember(Name = "Title")]
 		public string Title { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

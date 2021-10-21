@@ -13,259 +13,259 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ActualBilledHours
 		/// </summary>
-		[DataMember(Name = "ActualBilledHours", EmitDefaultValue = false)]
+		[DataMember(Name = "ActualBilledHours")]
 		public double? ActualBilledHours { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ActualHours
 		/// </summary>
-		[DataMember(Name = "ActualHours", EmitDefaultValue = false)]
+		[DataMember(Name = "ActualHours")]
 		public double? ActualHours { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ChangeOrdersBudget
 		/// </summary>
-		[DataMember(Name = "ChangeOrdersBudget", EmitDefaultValue = false)]
+		[DataMember(Name = "ChangeOrdersBudget")]
 		public double? ChangeOrdersBudget { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ChangeOrdersRevenue
 		/// </summary>
-		[DataMember(Name = "ChangeOrdersRevenue", EmitDefaultValue = false)]
+		[DataMember(Name = "ChangeOrdersRevenue")]
 		public double? ChangeOrdersRevenue { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CompanyID
 		/// </summary>
-		[DataMember(Name = "CompanyID", EmitDefaultValue = false)]
+		[DataMember(Name = "CompanyID")]
 		public int? CompanyID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CompanyOwnerResourceID
 		/// </summary>
-		[DataMember(Name = "CompanyOwnerResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "CompanyOwnerResourceID")]
 		public int? CompanyOwnerResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CompletedDateTime
 		/// </summary>
-		[DataMember(Name = "CompletedDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "CompletedDateTime")]
 		public DateTime? CompletedDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CompletedPercentage
 		/// </summary>
-		[DataMember(Name = "CompletedPercentage", EmitDefaultValue = false)]
+		[DataMember(Name = "CompletedPercentage")]
 		public int? CompletedPercentage { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ContractID
 		/// </summary>
-		[DataMember(Name = "ContractID", EmitDefaultValue = false)]
+		[DataMember(Name = "ContractID")]
 		public int? ContractID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreateDateTime
 		/// </summary>
-		[DataMember(Name = "CreateDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "CreateDateTime")]
 		public DateTime? CreateDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreatorResourceID
 		/// </summary>
-		[DataMember(Name = "CreatorResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "CreatorResourceID")]
 		public int? CreatorResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Department
 		/// </summary>
-		[DataMember(Name = "Department", EmitDefaultValue = false)]
+		[DataMember(Name = "Department")]
 		public int? Department { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Description
 		/// </summary>
-		[DataMember(Name = "Description", EmitDefaultValue = false)]
+		[DataMember(Name = "Description")]
 		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Duration
 		/// </summary>
-		[DataMember(Name = "Duration", EmitDefaultValue = false)]
+		[DataMember(Name = "Duration")]
 		public int? Duration { get; set; }
 
 		/// <summary>
 		/// Gets or Sets EndDateTime
 		/// </summary>
-		[DataMember(Name = "EndDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "EndDateTime")]
 		public DateTime? EndDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets EstimatedSalesCost
 		/// </summary>
-		[DataMember(Name = "EstimatedSalesCost", EmitDefaultValue = false)]
+		[DataMember(Name = "EstimatedSalesCost")]
 		public double? EstimatedSalesCost { get; set; }
 
 		/// <summary>
 		/// Gets or Sets EstimatedTime
 		/// </summary>
-		[DataMember(Name = "EstimatedTime", EmitDefaultValue = false)]
+		[DataMember(Name = "EstimatedTime")]
 		public double? EstimatedTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ExtProjectNumber
 		/// </summary>
-		[DataMember(Name = "ExtProjectNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "ExtProjectNumber")]
 		public string ExtProjectNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ExtProjectType
 		/// </summary>
-		[DataMember(Name = "ExtProjectType", EmitDefaultValue = false)]
+		[DataMember(Name = "ExtProjectType")]
 		public int? ExtProjectType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ImpersonatorCreatorResourceID
 		/// </summary>
-		[DataMember(Name = "ImpersonatorCreatorResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "ImpersonatorCreatorResourceID")]
 		public int? ImpersonatorCreatorResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LaborEstimatedCosts
 		/// </summary>
-		[DataMember(Name = "LaborEstimatedCosts", EmitDefaultValue = false)]
+		[DataMember(Name = "LaborEstimatedCosts")]
 		public double? LaborEstimatedCosts { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LaborEstimatedMarginPercentage
 		/// </summary>
-		[DataMember(Name = "LaborEstimatedMarginPercentage", EmitDefaultValue = false)]
+		[DataMember(Name = "LaborEstimatedMarginPercentage")]
 		public double? LaborEstimatedMarginPercentage { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LaborEstimatedRevenue
 		/// </summary>
-		[DataMember(Name = "LaborEstimatedRevenue", EmitDefaultValue = false)]
+		[DataMember(Name = "LaborEstimatedRevenue")]
 		public double? LaborEstimatedRevenue { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LastActivityDateTime
 		/// </summary>
-		[DataMember(Name = "LastActivityDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "LastActivityDateTime")]
 		public DateTime? LastActivityDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LastActivityPersonType
 		/// </summary>
-		[DataMember(Name = "LastActivityPersonType", EmitDefaultValue = false)]
+		[DataMember(Name = "LastActivityPersonType")]
 		public int? LastActivityPersonType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LastActivityResourceID
 		/// </summary>
-		[DataMember(Name = "LastActivityResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "LastActivityResourceID")]
 		public int? LastActivityResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets OrganizationalLevelAssociationID
 		/// </summary>
-		[DataMember(Name = "OrganizationalLevelAssociationID", EmitDefaultValue = false)]
+		[DataMember(Name = "OrganizationalLevelAssociationID")]
 		public int? OrganizationalLevelAssociationID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets OriginalEstimatedRevenue
 		/// </summary>
-		[DataMember(Name = "OriginalEstimatedRevenue", EmitDefaultValue = false)]
+		[DataMember(Name = "OriginalEstimatedRevenue")]
 		public double? OriginalEstimatedRevenue { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ProjectCostEstimatedMarginPercentage
 		/// </summary>
-		[DataMember(Name = "ProjectCostEstimatedMarginPercentage", EmitDefaultValue = false)]
+		[DataMember(Name = "ProjectCostEstimatedMarginPercentage")]
 		public double? ProjectCostEstimatedMarginPercentage { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ProjectCostsBudget
 		/// </summary>
-		[DataMember(Name = "ProjectCostsBudget", EmitDefaultValue = false)]
+		[DataMember(Name = "ProjectCostsBudget")]
 		public double? ProjectCostsBudget { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ProjectCostsRevenue
 		/// </summary>
-		[DataMember(Name = "ProjectCostsRevenue", EmitDefaultValue = false)]
+		[DataMember(Name = "ProjectCostsRevenue")]
 		public double? ProjectCostsRevenue { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ProjectLeadResourceID
 		/// </summary>
-		[DataMember(Name = "ProjectLeadResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "ProjectLeadResourceID")]
 		public int? ProjectLeadResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ProjectName
 		/// </summary>
-		[DataMember(Name = "ProjectName", EmitDefaultValue = false)]
+		[DataMember(Name = "ProjectName")]
 		public string ProjectName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ProjectNumber
 		/// </summary>
-		[DataMember(Name = "ProjectNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "ProjectNumber")]
 		public string ProjectNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ProjectType
 		/// </summary>
-		[DataMember(Name = "ProjectType", EmitDefaultValue = false)]
+		[DataMember(Name = "ProjectType")]
 		public int? ProjectType { get; set; }
 
 		/// <summary>
 		/// Gets or Sets PurchaseOrderNumber
 		/// </summary>
-		[DataMember(Name = "PurchaseOrderNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "PurchaseOrderNumber")]
 		public string PurchaseOrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SGDA
 		/// </summary>
-		[DataMember(Name = "SGDA", EmitDefaultValue = false)]
+		[DataMember(Name = "SGDA")]
 		public double? SGDA { get; set; }
 
 		/// <summary>
 		/// Gets or Sets StartDateTime
 		/// </summary>
-		[DataMember(Name = "StartDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "StartDateTime")]
 		public DateTime? StartDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Status
 		/// </summary>
-		[DataMember(Name = "Status", EmitDefaultValue = false)]
+		[DataMember(Name = "Status")]
 		public int? Status { get; set; }
 
 		/// <summary>
 		/// Gets or Sets StatusDateTime
 		/// </summary>
-		[DataMember(Name = "StatusDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "StatusDateTime")]
 		public DateTime? StatusDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets StatusDetail
 		/// </summary>
-		[DataMember(Name = "StatusDetail", EmitDefaultValue = false)]
+		[DataMember(Name = "StatusDetail")]
 		public string StatusDetail { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

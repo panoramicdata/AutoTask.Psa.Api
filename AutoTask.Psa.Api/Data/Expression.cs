@@ -1,6 +1,6 @@
-using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using System.Runtime.Serialization;
 
 namespace AutoTask.Psa.Api.Data
 {
@@ -531,7 +531,7 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets NodeType
 		/// </summary>
-		[DataMember(Name = "NodeType", EmitDefaultValue = false)]
+		[DataMember(Name = "NodeType")]
 		public NodeTypeEnum? NodeType { get; set; }
 
 		/// <summary>
@@ -545,13 +545,13 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Type
 		/// </summary>
-		[DataMember(Name = "Type", EmitDefaultValue = false)]
-		public string Type { get; private set; }
+		[DataMember(Name = "Type")]
+		public string Type { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets CanReduce
 		/// </summary>
-		[DataMember(Name = "CanReduce", EmitDefaultValue = false)]
-		public bool? CanReduce { get; private set; }
+		[DataMember(Name = "CanReduce")]
+		public bool? CanReduce { get; set; }
 	}
 }

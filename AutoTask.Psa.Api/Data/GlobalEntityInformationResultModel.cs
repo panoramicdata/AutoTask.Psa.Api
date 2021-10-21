@@ -12,7 +12,7 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets EntityDescriptions
 		/// </summary>
-		[DataMember(Name = "EntityDescriptions", EmitDefaultValue = false)]
+		[DataMember(Name = "EntityDescriptions")]
 		public List<EntityInformationResultModel> EntityDescriptions { get; set; } = new();
 	}
 }

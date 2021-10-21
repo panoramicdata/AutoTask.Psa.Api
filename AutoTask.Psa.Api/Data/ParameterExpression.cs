@@ -1,6 +1,5 @@
-using System.Runtime.Serialization;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
+using System.Runtime.Serialization;
 
 namespace AutoTask.Psa.Api.Data
 {
@@ -13,7 +12,7 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets NodeType
 		/// </summary>
-		[DataMember(Name = "NodeType", EmitDefaultValue = false)]
+		[DataMember(Name = "NodeType")]
 		public NodeTypeEnum? NodeType { get; set; }
 
 		/// <summary>
@@ -27,25 +26,25 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Type
 		/// </summary>
-		[DataMember(Name = "Type", EmitDefaultValue = false)]
-		public string Type { get; private set; }
+		[DataMember(Name = "Type")]
+		public string Type { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Name
 		/// </summary>
-		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; private set; }
+		[DataMember(Name = "Name")]
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsByRef
 		/// </summary>
-		[DataMember(Name = "IsByRef", EmitDefaultValue = false)]
-		public bool? IsByRef { get; private set; }
+		[DataMember(Name = "IsByRef")]
+		public bool? IsByRef { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CanReduce
 		/// </summary>
-		[DataMember(Name = "CanReduce", EmitDefaultValue = false)]
+		[DataMember(Name = "CanReduce")]
 		public bool? CanReduce { get; private set; }
 	}
 }

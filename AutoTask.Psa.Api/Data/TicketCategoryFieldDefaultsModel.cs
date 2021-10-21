@@ -12,115 +12,115 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Description
 		/// </summary>
-		[DataMember(Name = "Description", EmitDefaultValue = false)]
+		[DataMember(Name = "Description")]
 		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets EstimatedHours
 		/// </summary>
-		[DataMember(Name = "EstimatedHours", EmitDefaultValue = false)]
+		[DataMember(Name = "EstimatedHours")]
 		public double? EstimatedHours { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IssueTypeID
 		/// </summary>
-		[DataMember(Name = "IssueTypeID", EmitDefaultValue = false)]
+		[DataMember(Name = "IssueTypeID")]
 		public int? IssueTypeID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets OrganizationalLevelAssociationID
 		/// </summary>
-		[DataMember(Name = "OrganizationalLevelAssociationID", EmitDefaultValue = false)]
+		[DataMember(Name = "OrganizationalLevelAssociationID")]
 		public int? OrganizationalLevelAssociationID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Priority
 		/// </summary>
-		[DataMember(Name = "Priority", EmitDefaultValue = false)]
+		[DataMember(Name = "Priority")]
 		public int? Priority { get; set; }
 
 		/// <summary>
 		/// Gets or Sets PurchaseOrderNumber
 		/// </summary>
-		[DataMember(Name = "PurchaseOrderNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "PurchaseOrderNumber")]
 		public string PurchaseOrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets QueueID
 		/// </summary>
-		[DataMember(Name = "QueueID", EmitDefaultValue = false)]
+		[DataMember(Name = "QueueID")]
 		public int? QueueID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Resolution
 		/// </summary>
-		[DataMember(Name = "Resolution", EmitDefaultValue = false)]
+		[DataMember(Name = "Resolution")]
 		public string Resolution { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ServiceLevelAgreementID
 		/// </summary>
-		[DataMember(Name = "ServiceLevelAgreementID", EmitDefaultValue = false)]
+		[DataMember(Name = "ServiceLevelAgreementID")]
 		public int? ServiceLevelAgreementID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SourceID
 		/// </summary>
-		[DataMember(Name = "SourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "SourceID")]
 		public int? SourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Status
 		/// </summary>
-		[DataMember(Name = "Status", EmitDefaultValue = false)]
+		[DataMember(Name = "Status")]
 		public int? Status { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SubIssueTypeID
 		/// </summary>
-		[DataMember(Name = "SubIssueTypeID", EmitDefaultValue = false)]
+		[DataMember(Name = "SubIssueTypeID")]
 		public int? SubIssueTypeID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TicketCategoryID
 		/// </summary>
-		[DataMember(Name = "TicketCategoryID", EmitDefaultValue = false)]
+		[DataMember(Name = "TicketCategoryID")]
 		public int? TicketCategoryID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TicketTypeID
 		/// </summary>
-		[DataMember(Name = "TicketTypeID", EmitDefaultValue = false)]
+		[DataMember(Name = "TicketTypeID")]
 		public int? TicketTypeID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Title
 		/// </summary>
-		[DataMember(Name = "Title", EmitDefaultValue = false)]
+		[DataMember(Name = "Title")]
 		public string Title { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets WorkTypeID
 		/// </summary>
-		[DataMember(Name = "WorkTypeID", EmitDefaultValue = false)]
+		[DataMember(Name = "WorkTypeID")]
 		public int? WorkTypeID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
-		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
+		[DataMember(Name = "SoapParentPropertyId")]
 		public long? SoapParentPropertyId { get; private set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

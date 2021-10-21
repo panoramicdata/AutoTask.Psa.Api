@@ -13,49 +13,49 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets AccountWebhookID
 		/// </summary>
-		[DataMember(Name = "AccountWebhookID", EmitDefaultValue = false)]
+		[DataMember(Name = "AccountWebhookID")]
 		public int? AccountWebhookID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ContactWebhookID
 		/// </summary>
-		[DataMember(Name = "ContactWebhookID", EmitDefaultValue = false)]
+		[DataMember(Name = "ContactWebhookID")]
 		public int? ContactWebhookID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreateDateTime
 		/// </summary>
-		[DataMember(Name = "CreateDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "CreateDateTime")]
 		public DateTime? CreateDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ErrorMessage
 		/// </summary>
-		[DataMember(Name = "ErrorMessage", EmitDefaultValue = false)]
+		[DataMember(Name = "ErrorMessage")]
 		public string ErrorMessage { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Payload
 		/// </summary>
-		[DataMember(Name = "Payload", EmitDefaultValue = false)]
+		[DataMember(Name = "Payload")]
 		public string Payload { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SequenceNumber
 		/// </summary>
-		[DataMember(Name = "SequenceNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "SequenceNumber")]
 		public int? SequenceNumber { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

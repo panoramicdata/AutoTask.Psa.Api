@@ -13,103 +13,103 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CancelationNoticeHours
 		/// </summary>
-		[DataMember(Name = "CancelationNoticeHours", EmitDefaultValue = false)]
+		[DataMember(Name = "CancelationNoticeHours")]
 		public double? CancelationNoticeHours { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CanceledByResourceID
 		/// </summary>
-		[DataMember(Name = "CanceledByResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "CanceledByResourceID")]
 		public int? CanceledByResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CanceledDateTime
 		/// </summary>
-		[DataMember(Name = "CanceledDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "CanceledDateTime")]
 		public DateTime? CanceledDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CompanyID
 		/// </summary>
-		[DataMember(Name = "CompanyID", EmitDefaultValue = false)]
+		[DataMember(Name = "CompanyID")]
 		public int? CompanyID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CompanyLocationID
 		/// </summary>
-		[DataMember(Name = "CompanyLocationID", EmitDefaultValue = false)]
+		[DataMember(Name = "CompanyLocationID")]
 		public int? CompanyLocationID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreateDateTime
 		/// </summary>
-		[DataMember(Name = "CreateDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "CreateDateTime")]
 		public DateTime? CreateDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreatorResourceID
 		/// </summary>
-		[DataMember(Name = "CreatorResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "CreatorResourceID")]
 		public int? CreatorResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Description
 		/// </summary>
-		[DataMember(Name = "Description", EmitDefaultValue = false)]
+		[DataMember(Name = "Description")]
 		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Duration
 		/// </summary>
-		[DataMember(Name = "Duration", EmitDefaultValue = false)]
+		[DataMember(Name = "Duration")]
 		public double? Duration { get; set; }
 
 		/// <summary>
 		/// Gets or Sets EndDateTime
 		/// </summary>
-		[DataMember(Name = "EndDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "EndDateTime")]
 		public DateTime? EndDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ImpersonatorCreatorResourceID
 		/// </summary>
-		[DataMember(Name = "ImpersonatorCreatorResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "ImpersonatorCreatorResourceID")]
 		public int? ImpersonatorCreatorResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsComplete
 		/// </summary>
-		[DataMember(Name = "IsComplete", EmitDefaultValue = false)]
+		[DataMember(Name = "IsComplete")]
 		public int? IsComplete { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LastModifiedDateTime
 		/// </summary>
-		[DataMember(Name = "LastModifiedDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "LastModifiedDateTime")]
 		public DateTime? LastModifiedDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets StartDateTime
 		/// </summary>
-		[DataMember(Name = "StartDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "StartDateTime")]
 		public DateTime? StartDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Status
 		/// </summary>
-		[DataMember(Name = "Status", EmitDefaultValue = false)]
+		[DataMember(Name = "Status")]
 		public int? Status { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

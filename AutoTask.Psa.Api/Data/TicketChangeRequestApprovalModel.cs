@@ -13,55 +13,55 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ApproveRejectDateTime
 		/// </summary>
-		[DataMember(Name = "ApproveRejectDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "ApproveRejectDateTime")]
 		public DateTime? ApproveRejectDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ApproveRejectNote
 		/// </summary>
-		[DataMember(Name = "ApproveRejectNote", EmitDefaultValue = false)]
+		[DataMember(Name = "ApproveRejectNote")]
 		public string ApproveRejectNote { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ContactID
 		/// </summary>
-		[DataMember(Name = "ContactID", EmitDefaultValue = false)]
+		[DataMember(Name = "ContactID")]
 		public int? ContactID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsApproved
 		/// </summary>
-		[DataMember(Name = "IsApproved", EmitDefaultValue = false)]
+		[DataMember(Name = "IsApproved")]
 		public bool? IsApproved { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ResourceID
 		/// </summary>
-		[DataMember(Name = "ResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "ResourceID")]
 		public int? ResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TicketID
 		/// </summary>
-		[DataMember(Name = "TicketID", EmitDefaultValue = false)]
+		[DataMember(Name = "TicketID")]
 		public int? TicketID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
-		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
+		[DataMember(Name = "SoapParentPropertyId")]
 		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

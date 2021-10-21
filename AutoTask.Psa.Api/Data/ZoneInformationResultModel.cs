@@ -1,5 +1,4 @@
 using System.Runtime.Serialization;
-using Newtonsoft.Json;
 
 namespace AutoTask.Psa.Api.Data
 {
@@ -12,25 +11,25 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets ZoneName
 		/// </summary>
-		[DataMember(Name = "ZoneName", EmitDefaultValue = false)]
-		public string ZoneName { get; private set; }
+		[DataMember(Name = "ZoneName")]
+		public string ZoneName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Url
 		/// </summary>
-		[DataMember(Name = "Url", EmitDefaultValue = false)]
-		public string Url { get; private set; }
+		[DataMember(Name = "Url")]
+		public string Url { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets WebUrl
 		/// </summary>
-		[DataMember(Name = "WebUrl", EmitDefaultValue = false)]
-		public string WebUrl { get; private set; }
+		[DataMember(Name = "WebUrl")]
+		public string WebUrl { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets CI
 		/// </summary>
-		[DataMember(Name = "CI", EmitDefaultValue = false)]
-		public int? CI { get; private set; }
+		[DataMember(Name = "CI")]
+		public int? CI { get; set; }
 	}
 }

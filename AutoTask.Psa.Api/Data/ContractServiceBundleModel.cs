@@ -12,73 +12,73 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets AdjustedPrice
 		/// </summary>
-		[DataMember(Name = "AdjustedPrice", EmitDefaultValue = false)]
+		[DataMember(Name = "AdjustedPrice")]
 		public double? AdjustedPrice { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ContractID
 		/// </summary>
-		[DataMember(Name = "ContractID", EmitDefaultValue = false)]
+		[DataMember(Name = "ContractID")]
 		public int? ContractID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets InternalCurrencyAdjustedPrice
 		/// </summary>
-		[DataMember(Name = "InternalCurrencyAdjustedPrice", EmitDefaultValue = false)]
+		[DataMember(Name = "InternalCurrencyAdjustedPrice")]
 		public double? InternalCurrencyAdjustedPrice { get; set; }
 
 		/// <summary>
 		/// Gets or Sets InternalCurrencyUnitPrice
 		/// </summary>
-		[DataMember(Name = "InternalCurrencyUnitPrice", EmitDefaultValue = false)]
+		[DataMember(Name = "InternalCurrencyUnitPrice")]
 		public double? InternalCurrencyUnitPrice { get; set; }
 
 		/// <summary>
 		/// Gets or Sets InternalDescription
 		/// </summary>
-		[DataMember(Name = "InternalDescription", EmitDefaultValue = false)]
+		[DataMember(Name = "InternalDescription")]
 		public string InternalDescription { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets InvoiceDescription
 		/// </summary>
-		[DataMember(Name = "InvoiceDescription", EmitDefaultValue = false)]
+		[DataMember(Name = "InvoiceDescription")]
 		public string InvoiceDescription { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets QuoteItemID
 		/// </summary>
-		[DataMember(Name = "QuoteItemID", EmitDefaultValue = false)]
+		[DataMember(Name = "QuoteItemID")]
 		public long? QuoteItemID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ServiceBundleID
 		/// </summary>
-		[DataMember(Name = "ServiceBundleID", EmitDefaultValue = false)]
+		[DataMember(Name = "ServiceBundleID")]
 		public int? ServiceBundleID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UnitPrice
 		/// </summary>
-		[DataMember(Name = "UnitPrice", EmitDefaultValue = false)]
+		[DataMember(Name = "UnitPrice")]
 		public double? UnitPrice { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
-		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
+		[DataMember(Name = "SoapParentPropertyId")]
 		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

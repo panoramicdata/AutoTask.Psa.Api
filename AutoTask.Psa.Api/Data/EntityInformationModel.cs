@@ -1,5 +1,4 @@
 using System.Runtime.Serialization;
-using Newtonsoft.Json;
 
 namespace AutoTask.Psa.Api.Data
 {
@@ -12,67 +11,67 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Name
 		/// </summary>
-		[DataMember(Name = "Name", EmitDefaultValue = false)]
-		public string Name { get; private set; }
+		[DataMember(Name = "Name")]
+		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets CanCreate
 		/// </summary>
-		[DataMember(Name = "CanCreate", EmitDefaultValue = false)]
-		public bool? CanCreate { get; private set; }
+		[DataMember(Name = "CanCreate")]
+		public bool? CanCreate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CanDelete
 		/// </summary>
-		[DataMember(Name = "CanDelete", EmitDefaultValue = false)]
-		public bool? CanDelete { get; private set; }
+		[DataMember(Name = "CanDelete")]
+		public bool? CanDelete { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CanQuery
 		/// </summary>
-		[DataMember(Name = "CanQuery", EmitDefaultValue = false)]
-		public bool? CanQuery { get; private set; }
+		[DataMember(Name = "CanQuery")]
+		public bool? CanQuery { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CanUpdate
 		/// </summary>
-		[DataMember(Name = "CanUpdate", EmitDefaultValue = false)]
-		public bool? CanUpdate { get; private set; }
+		[DataMember(Name = "CanUpdate")]
+		public bool? CanUpdate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserAccessForCreate
 		/// </summary>
-		[DataMember(Name = "UserAccessForCreate", EmitDefaultValue = false)]
+		[DataMember(Name = "UserAccessForCreate")]
 		public RestUserAccessLevel UserAccessForCreate { get; private set; }
 
 		/// <summary>
 		/// Gets or Sets UserAccessForDelete
 		/// </summary>
-		[DataMember(Name = "UserAccessForDelete", EmitDefaultValue = false)]
-		public RestUserAccessLevel UserAccessForDelete { get; private set; }
+		[DataMember(Name = "UserAccessForDelete")]
+		public RestUserAccessLevel UserAccessForDelete { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserAccessForQuery
 		/// </summary>
-		[DataMember(Name = "UserAccessForQuery", EmitDefaultValue = false)]
-		public RestUserAccessLevel UserAccessForQuery { get; private set; }
+		[DataMember(Name = "UserAccessForQuery")]
+		public RestUserAccessLevel UserAccessForQuery { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserAccessForUpdate
 		/// </summary>
-		[DataMember(Name = "UserAccessForUpdate", EmitDefaultValue = false)]
-		public RestUserAccessLevel UserAccessForUpdate { get; private set; }
+		[DataMember(Name = "UserAccessForUpdate")]
+		public RestUserAccessLevel UserAccessForUpdate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets HasUserDefinedFields
 		/// </summary>
-		[DataMember(Name = "HasUserDefinedFields", EmitDefaultValue = false)]
-		public bool? HasUserDefinedFields { get; private set; }
+		[DataMember(Name = "HasUserDefinedFields")]
+		public bool? HasUserDefinedFields { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SupportsWebhookCallouts
 		/// </summary>
-		[DataMember(Name = "SupportsWebhookCallouts", EmitDefaultValue = false)]
-		public bool? SupportsWebhookCallouts { get; private set; }
+		[DataMember(Name = "SupportsWebhookCallouts")]
+		public bool? SupportsWebhookCallouts { get; set; }
 	}
 }

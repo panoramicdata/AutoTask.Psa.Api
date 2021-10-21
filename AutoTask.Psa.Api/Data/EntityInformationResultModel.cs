@@ -1,5 +1,4 @@
 using System.Runtime.Serialization;
-using Newtonsoft.Json;
 
 namespace AutoTask.Psa.Api.Data
 {
@@ -12,7 +11,7 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Info
 		/// </summary>
-		[DataMember(Name = "Info", EmitDefaultValue = false)]
-		public EntityInformationModel Info { get; private set; }
+		[DataMember(Name = "Info")]
+		public EntityInformationModel Info { get; set; } = new();
 	}
 }

@@ -1,7 +1,7 @@
-using Refit;
-using System.Threading.Tasks;
-
 using AutoTask.Psa.Api.Data;
+using Refit;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace AutoTask.Psa.Api.Interfaces
 {
@@ -44,7 +44,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of AppointmentModel</returns>
 		[Post("/V1.0/Appointments/query")]
-		Task<AppointmentModel> QueryAsync([Body] QueryModel queryModel);
+		Task<List<AppointmentModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

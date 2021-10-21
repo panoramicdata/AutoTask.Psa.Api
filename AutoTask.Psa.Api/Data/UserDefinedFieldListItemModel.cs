@@ -13,43 +13,43 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreateDate
 		/// </summary>
-		[DataMember(Name = "CreateDate", EmitDefaultValue = false)]
+		[DataMember(Name = "CreateDate")]
 		public DateTime? CreateDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UdfFieldId
 		/// </summary>
-		[DataMember(Name = "UdfFieldId", EmitDefaultValue = false)]
+		[DataMember(Name = "UdfFieldId")]
 		public long? UdfFieldId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ValueForDisplay
 		/// </summary>
-		[DataMember(Name = "ValueForDisplay", EmitDefaultValue = false)]
+		[DataMember(Name = "ValueForDisplay")]
 		public string ValueForDisplay { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ValueForExport
 		/// </summary>
-		[DataMember(Name = "ValueForExport", EmitDefaultValue = false)]
+		[DataMember(Name = "ValueForExport")]
 		public string ValueForExport { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
-		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
+		[DataMember(Name = "SoapParentPropertyId")]
 		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

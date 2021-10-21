@@ -12,43 +12,43 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsCompounded
 		/// </summary>
-		[DataMember(Name = "IsCompounded", EmitDefaultValue = false)]
+		[DataMember(Name = "IsCompounded")]
 		public bool? IsCompounded { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TaxCategoryID
 		/// </summary>
-		[DataMember(Name = "TaxCategoryID", EmitDefaultValue = false)]
+		[DataMember(Name = "TaxCategoryID")]
 		public int? TaxCategoryID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TaxName
 		/// </summary>
-		[DataMember(Name = "TaxName", EmitDefaultValue = false)]
+		[DataMember(Name = "TaxName")]
 		public string TaxName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets TaxRate
 		/// </summary>
-		[DataMember(Name = "TaxRate", EmitDefaultValue = false)]
+		[DataMember(Name = "TaxRate")]
 		public double? TaxRate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TaxRegionID
 		/// </summary>
-		[DataMember(Name = "TaxRegionID", EmitDefaultValue = false)]
+		[DataMember(Name = "TaxRegionID")]
 		public int? TaxRegionID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

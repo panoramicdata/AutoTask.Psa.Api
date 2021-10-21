@@ -13,145 +13,145 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets BatchID
 		/// </summary>
-		[DataMember(Name = "BatchID", EmitDefaultValue = false)]
+		[DataMember(Name = "BatchID")]
 		public int? BatchID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Comments
 		/// </summary>
-		[DataMember(Name = "Comments", EmitDefaultValue = false)]
+		[DataMember(Name = "Comments")]
 		public string Comments { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets CompanyID
 		/// </summary>
-		[DataMember(Name = "CompanyID", EmitDefaultValue = false)]
+		[DataMember(Name = "CompanyID")]
 		public int? CompanyID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreateDateTime
 		/// </summary>
-		[DataMember(Name = "CreateDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "CreateDateTime")]
 		public DateTime? CreateDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CreatorResourceID
 		/// </summary>
-		[DataMember(Name = "CreatorResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "CreatorResourceID")]
 		public int? CreatorResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets DueDate
 		/// </summary>
-		[DataMember(Name = "DueDate", EmitDefaultValue = false)]
+		[DataMember(Name = "DueDate")]
 		public DateTime? DueDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets FromDate
 		/// </summary>
-		[DataMember(Name = "FromDate", EmitDefaultValue = false)]
+		[DataMember(Name = "FromDate")]
 		public DateTime? FromDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets InvoiceDateTime
 		/// </summary>
-		[DataMember(Name = "InvoiceDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "InvoiceDateTime")]
 		public DateTime? InvoiceDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets InvoiceEditorTemplateID
 		/// </summary>
-		[DataMember(Name = "InvoiceEditorTemplateID", EmitDefaultValue = false)]
+		[DataMember(Name = "InvoiceEditorTemplateID")]
 		public int? InvoiceEditorTemplateID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets InvoiceNumber
 		/// </summary>
-		[DataMember(Name = "InvoiceNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "InvoiceNumber")]
 		public string InvoiceNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets InvoiceTotal
 		/// </summary>
-		[DataMember(Name = "InvoiceTotal", EmitDefaultValue = false)]
+		[DataMember(Name = "InvoiceTotal")]
 		public double? InvoiceTotal { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsVoided
 		/// </summary>
-		[DataMember(Name = "IsVoided", EmitDefaultValue = false)]
+		[DataMember(Name = "IsVoided")]
 		public bool? IsVoided { get; set; }
 
 		/// <summary>
 		/// Gets or Sets OrderNumber
 		/// </summary>
-		[DataMember(Name = "OrderNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "OrderNumber")]
 		public string OrderNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets PaidDate
 		/// </summary>
-		[DataMember(Name = "PaidDate", EmitDefaultValue = false)]
+		[DataMember(Name = "PaidDate")]
 		public DateTime? PaidDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets PaymentTerm
 		/// </summary>
-		[DataMember(Name = "PaymentTerm", EmitDefaultValue = false)]
+		[DataMember(Name = "PaymentTerm")]
 		public int? PaymentTerm { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TaxGroup
 		/// </summary>
-		[DataMember(Name = "TaxGroup", EmitDefaultValue = false)]
+		[DataMember(Name = "TaxGroup")]
 		public int? TaxGroup { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TaxRegionName
 		/// </summary>
-		[DataMember(Name = "TaxRegionName", EmitDefaultValue = false)]
+		[DataMember(Name = "TaxRegionName")]
 		public string TaxRegionName { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets ToDate
 		/// </summary>
-		[DataMember(Name = "ToDate", EmitDefaultValue = false)]
+		[DataMember(Name = "ToDate")]
 		public DateTime? ToDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TotalTaxValue
 		/// </summary>
-		[DataMember(Name = "TotalTaxValue", EmitDefaultValue = false)]
+		[DataMember(Name = "TotalTaxValue")]
 		public double? TotalTaxValue { get; set; }
 
 		/// <summary>
 		/// Gets or Sets VoidedByResourceID
 		/// </summary>
-		[DataMember(Name = "VoidedByResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "VoidedByResourceID")]
 		public int? VoidedByResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets VoidedDate
 		/// </summary>
-		[DataMember(Name = "VoidedDate", EmitDefaultValue = false)]
+		[DataMember(Name = "VoidedDate")]
 		public DateTime? VoidedDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets WebServiceDate
 		/// </summary>
-		[DataMember(Name = "WebServiceDate", EmitDefaultValue = false)]
+		[DataMember(Name = "WebServiceDate")]
 		public DateTime? WebServiceDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

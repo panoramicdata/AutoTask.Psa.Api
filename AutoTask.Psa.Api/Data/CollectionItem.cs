@@ -11,13 +11,13 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets IntegerValue
 		/// </summary>
-		[DataMember(Name = "IntegerValue", EmitDefaultValue = false)]
+		[DataMember(Name = "IntegerValue")]
 		public int? IntegerValue { get; set; }
 
 		/// <summary>
 		/// Gets or Sets StringValue
 		/// </summary>
-		[DataMember(Name = "StringValue", EmitDefaultValue = false)]
+		[DataMember(Name = "StringValue")]
 		public string StringValue { get; set; } = string.Empty;
 	}
 }

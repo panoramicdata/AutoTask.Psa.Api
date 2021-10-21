@@ -11,43 +11,43 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Value
 		/// </summary>
-		[DataMember(Name = "Value", EmitDefaultValue = false)]
+		[DataMember(Name = "Value")]
 		public string Value { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Label
 		/// </summary>
-		[DataMember(Name = "Label", EmitDefaultValue = false)]
+		[DataMember(Name = "Label")]
 		public string Label { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsDefaultValue
 		/// </summary>
-		[DataMember(Name = "IsDefaultValue", EmitDefaultValue = false)]
+		[DataMember(Name = "IsDefaultValue")]
 		public bool? IsDefaultValue { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SortOrder
 		/// </summary>
-		[DataMember(Name = "SortOrder", EmitDefaultValue = false)]
+		[DataMember(Name = "SortOrder")]
 		public int? SortOrder { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ParentValue
 		/// </summary>
-		[DataMember(Name = "parentValue", EmitDefaultValue = false)]
+		[DataMember(Name = "parentValue")]
 		public string ParentValue { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets IsActive
 		/// </summary>
-		[DataMember(Name = "IsActive", EmitDefaultValue = false)]
+		[DataMember(Name = "IsActive")]
 		public bool? IsActive { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsSystem
 		/// </summary>
-		[DataMember(Name = "IsSystem", EmitDefaultValue = false)]
+		[DataMember(Name = "IsSystem")]
 		public bool? IsSystem { get; set; }
 	}
 }

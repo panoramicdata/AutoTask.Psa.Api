@@ -12,55 +12,55 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsActive
 		/// </summary>
-		[DataMember(Name = "IsActive", EmitDefaultValue = false)]
+		[DataMember(Name = "IsActive")]
 		public bool? IsActive { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsDefault
 		/// </summary>
-		[DataMember(Name = "IsDefault", EmitDefaultValue = false)]
+		[DataMember(Name = "IsDefault")]
 		public bool? IsDefault { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ProductID
 		/// </summary>
-		[DataMember(Name = "ProductID", EmitDefaultValue = false)]
+		[DataMember(Name = "ProductID")]
 		public int? ProductID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets VendorCost
 		/// </summary>
-		[DataMember(Name = "VendorCost", EmitDefaultValue = false)]
+		[DataMember(Name = "VendorCost")]
 		public double? VendorCost { get; set; }
 
 		/// <summary>
 		/// Gets or Sets VendorID
 		/// </summary>
-		[DataMember(Name = "VendorID", EmitDefaultValue = false)]
+		[DataMember(Name = "VendorID")]
 		public int? VendorID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets VendorPartNumber
 		/// </summary>
-		[DataMember(Name = "VendorPartNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "VendorPartNumber")]
 		public string VendorPartNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
-		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
+		[DataMember(Name = "SoapParentPropertyId")]
 		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

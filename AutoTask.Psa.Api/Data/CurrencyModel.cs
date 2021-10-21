@@ -13,73 +13,73 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets CurrencyNegativeFormat
 		/// </summary>
-		[DataMember(Name = "CurrencyNegativeFormat", EmitDefaultValue = false)]
+		[DataMember(Name = "CurrencyNegativeFormat")]
 		public string CurrencyNegativeFormat { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets CurrencyPositiveFormat
 		/// </summary>
-		[DataMember(Name = "CurrencyPositiveFormat", EmitDefaultValue = false)]
+		[DataMember(Name = "CurrencyPositiveFormat")]
 		public string CurrencyPositiveFormat { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets Description
 		/// </summary>
-		[DataMember(Name = "Description", EmitDefaultValue = false)]
+		[DataMember(Name = "Description")]
 		public string Description { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets DisplaySymbol
 		/// </summary>
-		[DataMember(Name = "DisplaySymbol", EmitDefaultValue = false)]
+		[DataMember(Name = "DisplaySymbol")]
 		public int? DisplaySymbol { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ExchangeRate
 		/// </summary>
-		[DataMember(Name = "ExchangeRate", EmitDefaultValue = false)]
+		[DataMember(Name = "ExchangeRate")]
 		public double? ExchangeRate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsActive
 		/// </summary>
-		[DataMember(Name = "IsActive", EmitDefaultValue = false)]
+		[DataMember(Name = "IsActive")]
 		public bool? IsActive { get; set; }
 
 		/// <summary>
 		/// Gets or Sets IsInternalCurrency
 		/// </summary>
-		[DataMember(Name = "IsInternalCurrency", EmitDefaultValue = false)]
+		[DataMember(Name = "IsInternalCurrency")]
 		public bool? IsInternalCurrency { get; set; }
 
 		/// <summary>
 		/// Gets or Sets LastModifiedDateTime
 		/// </summary>
-		[DataMember(Name = "LastModifiedDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "LastModifiedDateTime")]
 		public DateTime? LastModifiedDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Name
 		/// </summary>
-		[DataMember(Name = "Name", EmitDefaultValue = false)]
+		[DataMember(Name = "Name")]
 		public string Name { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets UpdateResourceId
 		/// </summary>
-		[DataMember(Name = "UpdateResourceId", EmitDefaultValue = false)]
+		[DataMember(Name = "UpdateResourceId")]
 		public int? UpdateResourceId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

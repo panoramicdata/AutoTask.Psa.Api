@@ -12,31 +12,31 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Op
 		/// </summary>
-		[DataMember(Name = "op", EmitDefaultValue = false)]
+		[DataMember(Name = "op")]
 		public string? Op { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Field
 		/// </summary>
-		[DataMember(Name = "field", EmitDefaultValue = false)]
+		[DataMember(Name = "field")]
 		public string? Field { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Udf
 		/// </summary>
-		[DataMember(Name = "udf", EmitDefaultValue = false)]
+		[DataMember(Name = "udf")]
 		public bool? Udf { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Value
 		/// </summary>
-		[DataMember(Name = "value", EmitDefaultValue = false)]
+		[DataMember(Name = "value")]
 		public object? Value { get; set; }
 
 		/// <summary>
 		/// Gets or Sets Items
 		/// </summary>
-		[DataMember(Name = "items", EmitDefaultValue = false)]
+		[DataMember(Name = "items")]
 		public List<Filter>? Items { get; set; }
 	}
 }

@@ -13,61 +13,61 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets PurchaseOrderItemID
 		/// </summary>
-		[DataMember(Name = "PurchaseOrderItemID", EmitDefaultValue = false)]
+		[DataMember(Name = "PurchaseOrderItemID")]
 		public long? PurchaseOrderItemID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets QuantityBackOrdered
 		/// </summary>
-		[DataMember(Name = "QuantityBackOrdered", EmitDefaultValue = false)]
+		[DataMember(Name = "QuantityBackOrdered")]
 		public int? QuantityBackOrdered { get; set; }
 
 		/// <summary>
 		/// Gets or Sets QuantityNowReceiving
 		/// </summary>
-		[DataMember(Name = "QuantityNowReceiving", EmitDefaultValue = false)]
+		[DataMember(Name = "QuantityNowReceiving")]
 		public int? QuantityNowReceiving { get; set; }
 
 		/// <summary>
 		/// Gets or Sets QuantityPreviouslyReceived
 		/// </summary>
-		[DataMember(Name = "QuantityPreviouslyReceived", EmitDefaultValue = false)]
+		[DataMember(Name = "QuantityPreviouslyReceived")]
 		public int? QuantityPreviouslyReceived { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ReceiveDate
 		/// </summary>
-		[DataMember(Name = "ReceiveDate", EmitDefaultValue = false)]
+		[DataMember(Name = "ReceiveDate")]
 		public DateTime? ReceiveDate { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ReceivedByResourceID
 		/// </summary>
-		[DataMember(Name = "ReceivedByResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "ReceivedByResourceID")]
 		public int? ReceivedByResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets SerialNumber
 		/// </summary>
-		[DataMember(Name = "SerialNumber", EmitDefaultValue = false)]
+		[DataMember(Name = "SerialNumber")]
 		public string SerialNumber { get; set; } = string.Empty;
 
 		/// <summary>
 		/// Gets or Sets SoapParentPropertyId
 		/// </summary>
-		[DataMember(Name = "SoapParentPropertyId", EmitDefaultValue = false)]
+		[DataMember(Name = "SoapParentPropertyId")]
 		public ExpressionFunc? SoapParentPropertyId { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }

@@ -13,37 +13,37 @@ namespace AutoTask.Psa.Api.Data
 		/// <summary>
 		/// Gets or Sets Id
 		/// </summary>
-		[DataMember(Name = "Id", EmitDefaultValue = false)]
+		[DataMember(Name = "Id")]
 		public long? Id { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ApprovalDateTime
 		/// </summary>
-		[DataMember(Name = "ApprovalDateTime", EmitDefaultValue = false)]
+		[DataMember(Name = "ApprovalDateTime")]
 		public DateTime? ApprovalDateTime { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ApprovalLevel
 		/// </summary>
-		[DataMember(Name = "ApprovalLevel", EmitDefaultValue = false)]
+		[DataMember(Name = "ApprovalLevel")]
 		public int? ApprovalLevel { get; set; }
 
 		/// <summary>
 		/// Gets or Sets ApprovalResourceID
 		/// </summary>
-		[DataMember(Name = "ApprovalResourceID", EmitDefaultValue = false)]
+		[DataMember(Name = "ApprovalResourceID")]
 		public int? ApprovalResourceID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets TimeEntryID
 		/// </summary>
-		[DataMember(Name = "TimeEntryID", EmitDefaultValue = false)]
+		[DataMember(Name = "TimeEntryID")]
 		public int? TimeEntryID { get; set; }
 
 		/// <summary>
 		/// Gets or Sets UserDefinedFields
 		/// </summary>
-		[DataMember(Name = "UserDefinedFields", EmitDefaultValue = false)]
+		[DataMember(Name = "UserDefinedFields")]
 		public List<UserDefinedField> UserDefinedFields { get; set; } = new();
 	}
 }
