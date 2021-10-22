@@ -1,8 +1,6 @@
-using AutoTask.Psa.Api.Data;
 using AutoTask.Psa.Api.Test.Config;
 using FluentAssertions;
 using Microsoft.Extensions.Options;
-using System.Collections.Generic;
 using System.Threading;
 using Xunit;
 using Xunit.Abstractions;
@@ -14,7 +12,7 @@ namespace AutoTask.Psa.Api.Test
 		public ApiVersionTests(
 			ITestOutputHelper testOutputHelper,
 			IOptions<AppSettings> options
-			) :	base(testOutputHelper, options)
+			) : base(testOutputHelper, options)
 		{
 		}
 

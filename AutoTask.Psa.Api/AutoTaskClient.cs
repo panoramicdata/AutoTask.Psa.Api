@@ -18,7 +18,7 @@ namespace AutoTask.Psa.Api
 		public AutoTaskClient(
 			AutoTaskClientOptions options,
 			ILogger logger)
-			:this(new HttpClient(new AuthenticatedHttpClientHandler(options, logger))
+			: this(new HttpClient(new AuthenticatedHttpClientHandler(options, logger))
 			{
 				BaseAddress = new Uri($"https://webservices{options.ServerId}.autotask.net/atservicesrest")
 			})

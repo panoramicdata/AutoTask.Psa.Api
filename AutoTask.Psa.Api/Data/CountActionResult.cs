@@ -1,5 +1,4 @@
 using System.Runtime.Serialization;
-using Newtonsoft.Json;
 
 namespace AutoTask.Psa.Api.Data
 {
@@ -8,5 +7,5 @@ namespace AutoTask.Psa.Api.Data
 	/// </summary>
 	[DataContract]
 	public partial class CountActionResult
-	{	}
+	{ }
 }

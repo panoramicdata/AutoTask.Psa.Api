@@ -43,7 +43,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ActionTypeModel</returns>
 		[Post("/V1.0/ActionTypes/query")]
-		Task<QueryResponse<ActionTypeModel>> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ActionTypeModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		/// Query Count

@@ -19,12 +19,12 @@ namespace AutoTask.Psa.Api.Test
 			Log = testOutputHelper.BuildLoggerFor<TestBase>(LogLevel.Debug);
 			var optionsValue = options.Value;
 			AutoTaskClient = new AutoTaskClient(new AutoTaskClientOptions
-				{
-					ServerId = optionsValue.ServerId,
-					UserName = optionsValue.Username,
-					Password = optionsValue.Password,
-					IntegrationCode = optionsValue.IntegrationCode
-				},
+			{
+				ServerId = optionsValue.ServerId,
+				UserName = optionsValue.Username,
+				Password = optionsValue.Password,
+				IntegrationCode = optionsValue.IntegrationCode
+			},
 				Log
 			);
 		}

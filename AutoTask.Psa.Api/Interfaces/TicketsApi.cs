@@ -1,6 +1,5 @@
 using AutoTask.Psa.Api.Data;
 using Refit;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace AutoTask.Psa.Api.Interfaces
@@ -33,7 +32,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of TicketModel</returns>
 		[Post("/V1.0/Tickets/query")]
-		Task<List<TicketModel>> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<TicketModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

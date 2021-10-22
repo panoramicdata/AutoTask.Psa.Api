@@ -13,7 +13,7 @@ namespace AutoTask.Psa.Api.Test
 		public TaskTests(
 			ITestOutputHelper testOutputHelper,
 			IOptions<AppSettings> options
-			) :	base(testOutputHelper, options)
+			) : base(testOutputHelper, options)
 		{
 		}
 

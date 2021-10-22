@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of TaskModel</returns>
 		[Post("/V1.0/Tasks/query")]
-		Task<QueryResponse<TaskModel>> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<TaskModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		/// Count Tasks

@@ -5,10 +5,22 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
+		<Copyright>Panoramic Data Limited 2021</Copyright>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Description>Datto Autotask PSA REST API
-		</Description>
 		<ApplicationIcon>Icon.ico</ApplicationIcon>
+		<Description>Datto Autotask PSA REST API</Description>
+		<PackageProjectUrl>https://github.com/panoramicdata/AutoTask.Psa.Api</PackageProjectUrl>
+		<PackageIcon>Icon.png</PackageIcon>
+		<RepositoryUrl>https://github.com/panoramicdata/AutoTask.Psa.Api</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>autotask datto psa rest api</PackageTags>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Company>Panoramic Data Limited</Company>
+		<Authors>Panoramic Data Limited</Authors>
+		<PackageReleaseNotes>
+			Initial REST API release
+		</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -20,5 +32,10 @@
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 		<PackageReference Include="Refit" Version="6.1.15" />
 		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Icon.png" />
+		<None Include="Icon.png" Pack="true" PackagePath="" />
 	</ItemGroup>
 </Project>
