@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of PurchaseOrderItemReceivingModel</returns>
 		[Post("/V1.0/PurchaseOrderItemReceiving/query")]
-		Task<PurchaseOrderItemReceivingModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<PurchaseOrderItemReceivingModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

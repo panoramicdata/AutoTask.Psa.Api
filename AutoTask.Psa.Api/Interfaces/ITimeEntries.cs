@@ -41,7 +41,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of TimeEntryModel</returns>
 		[Post("/V1.0/TimeEntries/query")]
-		Task<TimeEntryModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<TimeEntryModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

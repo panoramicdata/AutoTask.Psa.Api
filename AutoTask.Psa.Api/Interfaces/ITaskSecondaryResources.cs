@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of TaskSecondaryResourceModel</returns>
 		[Post("/V1.0/TaskSecondaryResources/query")]
-		Task<TaskSecondaryResourceModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<TaskSecondaryResourceModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

@@ -33,7 +33,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ComanagedAssociationModel</returns>
 		[Post("/V1.0/ComanagedAssociations/query")]
-		Task<ComanagedAssociationModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ComanagedAssociationModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

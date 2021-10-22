@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of PhaseModel</returns>
 		[Post("/V1.0/Phases/query")]
-		Task<PhaseModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<PhaseModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

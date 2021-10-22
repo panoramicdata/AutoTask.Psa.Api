@@ -32,7 +32,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of OrganizationalLevel2Model</returns>
 		[Post("/V1.0/OrganizationalLevel2s/query")]
-		Task<OrganizationalLevel2Model> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<OrganizationalLevel2Model>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

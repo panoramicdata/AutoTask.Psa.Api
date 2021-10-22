@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ConfigurationItemNoteModel</returns>
 		[Post("/V1.0/ConfigurationItemNotes/query")]
-		Task<ConfigurationItemNoteModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ConfigurationItemNoteModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

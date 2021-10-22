@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of UserDefinedFieldListItemModel</returns>
 		[Post("/V1.0/UserDefinedFieldListItems/query")]
-		Task<UserDefinedFieldListItemModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<UserDefinedFieldListItemModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

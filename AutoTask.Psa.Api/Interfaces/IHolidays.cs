@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of HolidayModel</returns>
 		[Post("/V1.0/Holidays/query")]
-		Task<HolidayModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<HolidayModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

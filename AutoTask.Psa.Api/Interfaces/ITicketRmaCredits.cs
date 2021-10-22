@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of TicketRmaCreditModel</returns>
 		[Post("/V1.0/TicketRmaCredits/query")]
-		Task<TicketRmaCreditModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<TicketRmaCreditModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ContractExclusionSetExcludedRoleModel</returns>
 		[Post("/V1.0/ContractExclusionSetExcludedRoles/query")]
-		Task<ContractExclusionSetExcludedRoleModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ContractExclusionSetExcludedRoleModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

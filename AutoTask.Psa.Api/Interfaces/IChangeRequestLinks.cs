@@ -33,7 +33,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ChangeRequestLinkModel</returns>
 		[Post("/V1.0/ChangeRequestLinks/query")]
-		Task<ChangeRequestLinkModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ChangeRequestLinkModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

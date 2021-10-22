@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ClassificationIconModel</returns>
 		[Post("/V1.0/ClassificationIcons/query")]
-		Task<ClassificationIconModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ClassificationIconModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

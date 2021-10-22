@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ResourceServiceDeskRoleModel</returns>
 		[Post("/V1.0/ResourceServiceDeskRoles/query")]
-		Task<ResourceServiceDeskRoleModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ResourceServiceDeskRoleModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

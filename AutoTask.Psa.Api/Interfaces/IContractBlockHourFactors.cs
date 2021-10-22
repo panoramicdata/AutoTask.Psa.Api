@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ContractBlockHourFactorModel</returns>
 		[Post("/V1.0/ContractBlockHourFactors/query")]
-		Task<ContractBlockHourFactorModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ContractBlockHourFactorModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

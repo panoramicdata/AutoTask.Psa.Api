@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ExpenseItemModel</returns>
 		[Post("/V1.0/ExpenseItems/query")]
-		Task<ExpenseItemModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ExpenseItemModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

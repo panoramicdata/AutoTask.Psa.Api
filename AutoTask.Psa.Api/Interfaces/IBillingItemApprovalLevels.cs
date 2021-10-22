@@ -24,7 +24,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of BillingItemApprovalLevelModel</returns>
 		[Post("/V1.0/BillingItemApprovalLevels/query")]
-		Task<BillingItemApprovalLevelModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<BillingItemApprovalLevelModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

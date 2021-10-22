@@ -41,7 +41,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ContactWebhookModel</returns>
 		[Post("/V1.0/ContactWebhooks/query")]
-		Task<ContactWebhookModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ContactWebhookModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

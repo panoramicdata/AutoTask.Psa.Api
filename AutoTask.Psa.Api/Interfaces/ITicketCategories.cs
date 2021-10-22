@@ -24,7 +24,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of TicketCategoryModel</returns>
 		[Post("/V1.0/TicketCategories/query")]
-		Task<TicketCategoryModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<TicketCategoryModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

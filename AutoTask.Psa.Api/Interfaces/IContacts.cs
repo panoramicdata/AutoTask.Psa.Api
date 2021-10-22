@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ContactModel</returns>
 		[Post("/V1.0/Contacts/query")]
-		Task<ContactModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ContactModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

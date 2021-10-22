@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of TicketChangeRequestApprovalModel</returns>
 		[Post("/V1.0/TicketChangeRequestApprovals/query")]
-		Task<TicketChangeRequestApprovalModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<TicketChangeRequestApprovalModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

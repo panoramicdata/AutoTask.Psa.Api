@@ -32,7 +32,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of QuoteLocationModel</returns>
 		[Post("/V1.0/QuoteLocations/query")]
-		Task<QuoteLocationModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<QuoteLocationModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

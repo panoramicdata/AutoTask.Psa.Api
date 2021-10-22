@@ -24,7 +24,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of PriceListMaterialCodeModel</returns>
 		[Post("/V1.0/PriceListMaterialCodes/query")]
-		Task<PriceListMaterialCodeModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<PriceListMaterialCodeModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

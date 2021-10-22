@@ -24,7 +24,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of InventoryTransferModel</returns>
 		[Post("/V1.0/InventoryTransfers/query")]
-		Task<InventoryTransferModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<InventoryTransferModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ContactWebhookExcludedResourceModel</returns>
 		[Post("/V1.0/ContactWebhookExcludedResources/query")]
-		Task<ContactWebhookExcludedResourceModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ContactWebhookExcludedResourceModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

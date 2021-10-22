@@ -41,7 +41,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ChangeOrderChargeModel</returns>
 		[Post("/V1.0/ChangeOrderCharges/query")]
-		Task<ChangeOrderChargeModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ChangeOrderChargeModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

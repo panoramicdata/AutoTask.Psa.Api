@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of NotificationHistoryModel</returns>
 		[Post("/V1.0/NotificationHistory/query")]
-		Task<NotificationHistoryModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<NotificationHistoryModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

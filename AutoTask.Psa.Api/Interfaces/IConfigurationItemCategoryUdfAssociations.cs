@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ConfigurationItemCategoryUdfAssociationModel</returns>
 		[Post("/V1.0/ConfigurationItemCategoryUdfAssociations/query")]
-		Task<ConfigurationItemCategoryUdfAssociationModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ConfigurationItemCategoryUdfAssociationModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

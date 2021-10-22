@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ServiceBundleServiceModel</returns>
 		[Post("/V1.0/ServiceBundleServices/query")]
-		Task<ServiceBundleServiceModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ServiceBundleServiceModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

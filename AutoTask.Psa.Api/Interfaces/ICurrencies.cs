@@ -24,7 +24,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of CurrencyModel</returns>
 		[Post("/V1.0/Currencies/query")]
-		Task<CurrencyModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<CurrencyModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

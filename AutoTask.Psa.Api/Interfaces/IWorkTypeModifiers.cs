@@ -24,7 +24,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of WorkTypeModifierModel</returns>
 		[Post("/V1.0/WorkTypeModifiers/query")]
-		Task<WorkTypeModifierModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<WorkTypeModifierModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

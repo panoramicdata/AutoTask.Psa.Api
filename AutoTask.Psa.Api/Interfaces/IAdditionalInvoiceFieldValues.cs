@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of AdditionalInvoiceFieldValueModel</returns>
 		[Post("/V1.0/AdditionalInvoiceFieldValues/query")]
-		Task<AdditionalInvoiceFieldValueModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<AdditionalInvoiceFieldValueModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

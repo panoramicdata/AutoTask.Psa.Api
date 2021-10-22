@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of CompanyWebhookExcludedResourceModel</returns>
 		[Post("/V1.0/CompanyWebhookExcludedResources/query")]
-		Task<CompanyWebhookExcludedResourceModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<CompanyWebhookExcludedResourceModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

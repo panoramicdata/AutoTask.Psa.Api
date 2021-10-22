@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of CompanyWebhookUdfFieldModel</returns>
 		[Post("/V1.0/CompanyWebhookUdfFields/query")]
-		Task<CompanyWebhookUdfFieldModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<CompanyWebhookUdfFieldModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

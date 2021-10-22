@@ -24,7 +24,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of CountryModel</returns>
 		[Post("/V1.0/Countries/query")]
-		Task<CountryModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<CountryModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

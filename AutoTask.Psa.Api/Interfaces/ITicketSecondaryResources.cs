@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of TicketSecondaryResourceModel</returns>
 		[Post("/V1.0/TicketSecondaryResources/query")]
-		Task<TicketSecondaryResourceModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<TicketSecondaryResourceModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

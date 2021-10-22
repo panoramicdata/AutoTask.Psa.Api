@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of SubscriptionPeriodModel</returns>
 		[Post("/V1.0/SubscriptionPeriods/query")]
-		Task<SubscriptionPeriodModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<SubscriptionPeriodModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

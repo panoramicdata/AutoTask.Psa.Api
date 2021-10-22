@@ -32,7 +32,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of UserDefinedFieldDefinitionModel</returns>
 		[Post("/V1.0/UserDefinedFieldDefinitions/query")]
-		Task<UserDefinedFieldDefinitionModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<UserDefinedFieldDefinitionModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

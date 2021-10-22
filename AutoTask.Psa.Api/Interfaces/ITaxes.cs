@@ -32,7 +32,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of TaxModel</returns>
 		[Post("/V1.0/Taxes/query")]
-		Task<TaxModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<TaxModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

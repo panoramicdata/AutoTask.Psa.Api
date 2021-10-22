@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ProjectAttachmentModel</returns>
 		[Post("/V1.0/ProjectAttachments/query")]
-		Task<ProjectAttachmentModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ProjectAttachmentModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

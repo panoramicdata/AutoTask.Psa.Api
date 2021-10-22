@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of TaskPredecessorModel</returns>
 		[Post("/V1.0/TaskPredecessors/query")]
-		Task<TaskPredecessorModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<TaskPredecessorModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

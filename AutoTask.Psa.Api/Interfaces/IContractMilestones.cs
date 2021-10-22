@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ContractMilestoneModel</returns>
 		[Post("/V1.0/ContractMilestones/query")]
-		Task<ContractMilestoneModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ContractMilestoneModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

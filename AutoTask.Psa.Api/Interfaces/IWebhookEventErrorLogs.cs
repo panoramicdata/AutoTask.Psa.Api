@@ -25,7 +25,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of WebhookEventErrorLogModel</returns>
 		[Post("/V1.0/WebhookEventErrorLogs/query")]
-		Task<WebhookEventErrorLogModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<WebhookEventErrorLogModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ChecklistLibraryChecklistItemModel</returns>
 		[Post("/V1.0/ChecklistLibraryChecklistItems/query")]
-		Task<ChecklistLibraryChecklistItemModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ChecklistLibraryChecklistItemModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

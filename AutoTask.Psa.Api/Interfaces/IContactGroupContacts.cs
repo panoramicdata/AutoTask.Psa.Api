@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ContactGroupContactModel</returns>
 		[Post("/V1.0/ContactGroupContacts/query")]
-		Task<ContactGroupContactModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ContactGroupContactModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

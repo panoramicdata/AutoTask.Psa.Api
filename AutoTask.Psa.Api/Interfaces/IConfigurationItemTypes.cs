@@ -41,7 +41,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of ConfigurationItemTypeModel</returns>
 		[Post("/V1.0/ConfigurationItemTypes/query")]
-		Task<ConfigurationItemTypeModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<ConfigurationItemTypeModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of OrganizationalResourceModel</returns>
 		[Post("/V1.0/OrganizationalResources/query")]
-		Task<OrganizationalResourceModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<OrganizationalResourceModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

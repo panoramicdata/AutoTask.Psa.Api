@@ -16,7 +16,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of InventoryItemSerialNumberModel</returns>
 		[Post("/V1.0/InventoryItemSerialNumbers/query")]
-		Task<InventoryItemSerialNumberModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<InventoryItemSerialNumberModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

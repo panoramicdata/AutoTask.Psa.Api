@@ -32,7 +32,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of RoleModel</returns>
 		[Post("/V1.0/Roles/query")]
-		Task<RoleModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<RoleModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

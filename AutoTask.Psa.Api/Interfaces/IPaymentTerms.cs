@@ -32,7 +32,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of PaymentTermModel</returns>
 		[Post("/V1.0/PaymentTerms/query")]
-		Task<PaymentTermModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<PaymentTermModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///

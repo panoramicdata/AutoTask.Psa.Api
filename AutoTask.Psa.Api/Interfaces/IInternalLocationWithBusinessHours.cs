@@ -32,7 +32,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="queryModel"></param>
 		/// <returns>Task of InternalLocationWithBusinessHoursModel</returns>
 		[Post("/V1.0/InternalLocationWithBusinessHours/query")]
-		Task<InternalLocationWithBusinessHoursModel> QueryAsync([Body] QueryModel queryModel);
+		Task<QueryActionResult<InternalLocationWithBusinessHoursModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
 		///
