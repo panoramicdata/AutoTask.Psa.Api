@@ -27,1002 +27,1008 @@ namespace AutoTask.Psa.Api
 
 		public AutoTaskClient(HttpClient client)
 		{
-			ActionTypes = RestService.For<IActionTypesApi>(client);
-			AdditionalInvoiceFieldValues = RestService.For<IAdditionalInvoiceFieldValuesApi>(client);
-			ApiVersions = RestService.For<IApiVersions>(client);
-			Appointments = RestService.For<IAppointmentsApi>(client);
-			AttachmentInfo = RestService.For<IAttachmentInfoApi>(client);
-			BillingCodes = RestService.For<IBillingCodesApi>(client);
-			BillingItemApprovalLevels = RestService.For<IBillingItemApprovalLevelsApi>(client);
-			BillingItems = RestService.For<IBillingItemsApi>(client);
-			ChangeOrderCharges = RestService.For<IChangeOrderChargesApi>(client);
-			ChangeRequestLinks = RestService.For<IChangeRequestLinksApi>(client);
-			ChecklistLibraries = RestService.For<IChecklistLibrariesApi>(client);
-			ChecklistLibraryChecklistItems = RestService.For<IChecklistLibraryChecklistItemsApi>(client);
-			ChecklistLibraryChecklistItemsChild = RestService.For<IChecklistLibraryChecklistItemsChildApi>(client);
-			ClassificationIcons = RestService.For<IClassificationIconsApi>(client);
-			ClientPortalUsers = RestService.For<IClientPortalUsersApi>(client);
-			ComanagedAssociations = RestService.For<IComanagedAssociationsApi>(client);
-			Companies = RestService.For<ICompaniesApi>(client);
-			CompanyAlerts = RestService.For<ICompanyAlertsApi>(client);
-			CompanyAlertsChild = RestService.For<ICompanyAlertsChildApi>(client);
-			CompanyAttachments = RestService.For<ICompanyAttachmentsApi>(client);
-			CompanyAttachmentsChild = RestService.For<ICompanyAttachmentsChildApi>(client);
-			CompanyContactsChild = RestService.For<ICompanyContactsChildApi>(client);
-			CompanyLocations = RestService.For<ICompanyLocationsApi>(client);
-			CompanyLocationsChild = RestService.For<ICompanyLocationsChildApi>(client);
-			CompanyNotes = RestService.For<ICompanyNotesApi>(client);
-			CompanyNotesChild = RestService.For<ICompanyNotesChildApi>(client);
-			CompanySiteConfigurations = RestService.For<ICompanySiteConfigurationsApi>(client);
-			CompanySiteConfigurationsChild = RestService.For<ICompanySiteConfigurationsChildApi>(client);
-			CompanyTeams = RestService.For<ICompanyTeamsApi>(client);
-			CompanyTeamsChild = RestService.For<ICompanyTeamsChildApi>(client);
-			CompanyToDos = RestService.For<ICompanyToDosApi>(client);
-			CompanyToDosChild = RestService.For<ICompanyToDosChildApi>(client);
-			CompanyWebhookExcludedResources = RestService.For<ICompanyWebhookExcludedResourcesApi>(client);
-			CompanyWebhookExcludedResourcesChild = RestService.For<ICompanyWebhookExcludedResourcesChildApi>(client);
-			CompanyWebhookFields = RestService.For<ICompanyWebhookFieldsApi>(client);
-			CompanyWebhookFieldsChild = RestService.For<ICompanyWebhookFieldsChildApi>(client);
-			CompanyWebhookUdfFields = RestService.For<ICompanyWebhookUdfFieldsApi>(client);
-			CompanyWebhookUdfFieldsChild = RestService.For<ICompanyWebhookUdfFieldsChildApi>(client);
-			CompanyWebhooks = RestService.For<ICompanyWebhooksApi>(client);
-			ConfigurationItemBillingProductAssociations = RestService.For<IConfigurationItemBillingProductAssociationsApi>(client);
-			ConfigurationItemBillingProductAssociationsChild = RestService.For<IConfigurationItemBillingProductAssociationsChildApi>(client);
-			ConfigurationItemCategories = RestService.For<IConfigurationItemCategoriesApi>(client);
-			ConfigurationItemCategoryUdfAssociations = RestService.For<IConfigurationItemCategoryUdfAssociationsApi>(client);
-			ConfigurationItemCategoryUdfAssociationsChild = RestService.For<IConfigurationItemCategoryUdfAssociationsChildApi>(client);
-			ConfigurationItemExts = RestService.For<IConfigurationItemExtsApi>(client);
-			ConfigurationItemNotes = RestService.For<IConfigurationItemNotesApi>(client);
-			ConfigurationItemNotesChild = RestService.For<IConfigurationItemNotesChildApi>(client);
-			ConfigurationItemTypes = RestService.For<IConfigurationItemTypesApi>(client);
-			ConfigurationItems = RestService.For<IConfigurationItemsApi>(client);
-			ContactBillingProductAssociations = RestService.For<IContactBillingProductAssociationsApi>(client);
-			ContactBillingProductAssociationsChild = RestService.For<IContactBillingProductAssociationsChildApi>(client);
-			ContactGroupContacts = RestService.For<IContactGroupContactsApi>(client);
-			ContactGroupContactsChild = RestService.For<IContactGroupContactsChildApi>(client);
-			ContactGroups = RestService.For<IContactGroupsApi>(client);
-			ContactWebhookExcludedResources = RestService.For<IContactWebhookExcludedResourcesApi>(client);
-			ContactWebhookExcludedResourcesChild = RestService.For<IContactWebhookExcludedResourcesChildApi>(client);
-			ContactWebhookFields = RestService.For<IContactWebhookFieldsApi>(client);
-			ContactWebhookFieldsChild = RestService.For<IContactWebhookFieldsChildApi>(client);
-			ContactWebhookUdfFields = RestService.For<IContactWebhookUdfFieldsApi>(client);
-			ContactWebhookUdfFieldsChild = RestService.For<IContactWebhookUdfFieldsChildApi>(client);
-			ContactWebhooks = RestService.For<IContactWebhooksApi>(client);
-			Contacts = RestService.For<IContactsApi>(client);
-			ContractBillingRules = RestService.For<IContractBillingRulesApi>(client);
-			ContractBillingRulesChild = RestService.For<IContractBillingRulesChildApi>(client);
-			ContractBlockHourFactors = RestService.For<IContractBlockHourFactorsApi>(client);
-			ContractBlockHourFactorsChild = RestService.For<IContractBlockHourFactorsChildApi>(client);
-			ContractBlocks = RestService.For<IContractBlocksApi>(client);
-			ContractBlocksChild = RestService.For<IContractBlocksChildApi>(client);
-			ContractCharges = RestService.For<IContractChargesApi>(client);
-			ContractChargesChild = RestService.For<IContractChargesChildApi>(client);
-			ContractExclusionBillingCodes = RestService.For<IContractExclusionBillingCodesApi>(client);
-			ContractExclusionBillingCodesChild = RestService.For<IContractExclusionBillingCodesChildApi>(client);
-			ContractExclusionRoles = RestService.For<IContractExclusionRolesApi>(client);
-			ContractExclusionRolesChild = RestService.For<IContractExclusionRolesChildApi>(client);
-			ContractExclusionSetExcludedRoles = RestService.For<IContractExclusionSetExcludedRolesApi>(client);
-			ContractExclusionSetExcludedRolesChild = RestService.For<IContractExclusionSetExcludedRolesChildApi>(client);
-			ContractExclusionSetExcludedWorkTypes = RestService.For<IContractExclusionSetExcludedWorkTypesApi>(client);
-			ContractExclusionSetExcludedWorkTypesChild = RestService.For<IContractExclusionSetExcludedWorkTypesChildApi>(client);
-			ContractExclusionSets = RestService.For<IContractExclusionSetsApi>(client);
-			ContractMilestones = RestService.For<IContractMilestonesApi>(client);
-			ContractMilestonesChild = RestService.For<IContractMilestonesChildApi>(client);
-			ContractNotes = RestService.For<IContractNotesApi>(client);
-			ContractNotesChild = RestService.For<IContractNotesChildApi>(client);
-			ContractRates = RestService.For<IContractRatesApi>(client);
-			ContractRatesChild = RestService.For<IContractRatesChildApi>(client);
-			ContractRetainers = RestService.For<IContractRetainersApi>(client);
-			ContractRetainersChild = RestService.For<IContractRetainersChildApi>(client);
-			ContractRoleCosts = RestService.For<IContractRoleCostsApi>(client);
-			ContractRoleCostsChild = RestService.For<IContractRoleCostsChildApi>(client);
-			ContractServiceAdjustments = RestService.For<IContractServiceAdjustmentsApi>(client);
-			ContractServiceAdjustmentsChild = RestService.For<IContractServiceAdjustmentsChildApi>(client);
-			ContractServiceBundleAdjustments = RestService.For<IContractServiceBundleAdjustmentsApi>(client);
-			ContractServiceBundleAdjustmentsChild = RestService.For<IContractServiceBundleAdjustmentsChildApi>(client);
-			ContractServiceBundleUnits = RestService.For<IContractServiceBundleUnitsApi>(client);
-			ContractServiceBundleUnitsChild = RestService.For<IContractServiceBundleUnitsChildApi>(client);
-			ContractServiceBundles = RestService.For<IContractServiceBundlesApi>(client);
-			ContractServiceBundlesChild = RestService.For<IContractServiceBundlesChildApi>(client);
-			ContractServiceUnits = RestService.For<IContractServiceUnitsApi>(client);
-			ContractServiceUnitsChild = RestService.For<IContractServiceUnitsChildApi>(client);
-			ContractServices = RestService.For<IContractServicesApi>(client);
-			ContractServicesChild = RestService.For<IContractServicesChildApi>(client);
-			ContractTicketPurchases = RestService.For<IContractTicketPurchasesApi>(client);
-			ContractTicketPurchasesChild = RestService.For<IContractTicketPurchasesChildApi>(client);
-			Contracts = RestService.For<IContractsApi>(client);
-			Countries = RestService.For<ICountriesApi>(client);
-			Currencies = RestService.For<ICurrenciesApi>(client);
-			Departments = RestService.For<IDepartmentsApi>(client);
-			ExpenseItems = RestService.For<IExpenseItemsApi>(client);
-			ExpenseItemsChild = RestService.For<IExpenseItemsChildApi>(client);
-			ExpenseReports = RestService.For<IExpenseReportsApi>(client);
-			HolidaySets = RestService.For<IHolidaySetsApi>(client);
-			Holidays = RestService.For<IHolidaysApi>(client);
-			HolidaysChild = RestService.For<IHolidaysChildApi>(client);
-			InternalLocationWithBusinessHours = RestService.For<IInternalLocationWithBusinessHoursApi>(client);
-			InternalLocations = RestService.For<IInternalLocationsApi>(client);
-			InventoryItemSerialNumbers = RestService.For<IInventoryItemSerialNumbersApi>(client);
-			InventoryItemSerialNumbersChild = RestService.For<IInventoryItemSerialNumbersChildApi>(client);
-			InventoryItems = RestService.For<IInventoryItemsApi>(client);
-			InventoryLocations = RestService.For<IInventoryLocationsApi>(client);
-			InventoryTransfers = RestService.For<IInventoryTransfersApi>(client);
-			InvoiceTemplates = RestService.For<IInvoiceTemplatesApi>(client);
-			Invoices = RestService.For<IInvoicesApi>(client);
-			MetadataApiIntegration = RestService.For<IMetadataApiIntegrationApi>(client);
-			NotificationHistory = RestService.For<INotificationHistoryApi>(client);
-			Opportunities = RestService.For<IOpportunitiesApi>(client);
-			OpportunityAttachments = RestService.For<IOpportunityAttachmentsApi>(client);
-			OpportunityAttachmentsChild = RestService.For<IOpportunityAttachmentsChildApi>(client);
-			OrganizationalLevel1 = RestService.For<IOrganizationalLevel1Api>(client);
-			OrganizationalLevel2 = RestService.For<IOrganizationalLevel2Api>(client);
-			OrganizationalLevelAssociation = RestService.For<IOrganizationalLevelAssociationApi>(client);
-			OrganizationalResources = RestService.For<IOrganizationalResourcesApi>(client);
-			OrganizationalResourcesChild = RestService.For<IOrganizationalResourcesChildApi>(client);
-			PaymentTerms = RestService.For<IPaymentTermsApi>(client);
-			Phases = RestService.For<IPhasesApi>(client);
-			PhasesChild = RestService.For<IPhasesChildApi>(client);
-			PriceListMaterialCodes = RestService.For<IPriceListMaterialCodesApi>(client);
-			PriceListProductTiers = RestService.For<IPriceListProductTiersApi>(client);
-			PriceListProducts = RestService.For<IPriceListProductsApi>(client);
-			PriceListRoles = RestService.For<IPriceListRolesApi>(client);
-			PriceListServiceBundles = RestService.For<IPriceListServiceBundlesApi>(client);
-			PriceListServices = RestService.For<IPriceListServicesApi>(client);
-			PriceListWorkTypeModifiers = RestService.For<IPriceListWorkTypeModifiersApi>(client);
-			ProductNotes = RestService.For<IProductNotesApi>(client);
-			ProductNotesChild = RestService.For<IProductNotesChildApi>(client);
-			ProductTiers = RestService.For<IProductTiersApi>(client);
-			ProductTiersChild = RestService.For<IProductTiersChildApi>(client);
-			ProductVendors = RestService.For<IProductVendorsApi>(client);
-			ProductVendorsChild = RestService.For<IProductVendorsChildApi>(client);
-			Products = RestService.For<IProductsApi>(client);
-			ProjectAttachments = RestService.For<IProjectAttachmentsApi>(client);
-			ProjectAttachmentsChild = RestService.For<IProjectAttachmentsChildApi>(client);
-			ProjectCharges = RestService.For<IProjectChargesApi>(client);
-			ProjectChargesChild = RestService.For<IProjectChargesChildApi>(client);
-			ProjectNotes = RestService.For<IProjectNotesApi>(client);
-			ProjectNotesChild = RestService.For<IProjectNotesChildApi>(client);
-			Projects = RestService.For<IProjectsApi>(client);
-			PurchaseApprovals = RestService.For<IPurchaseApprovalsApi>(client);
-			PurchaseOrderItemReceiving = RestService.For<IPurchaseOrderItemReceivingApi>(client);
-			PurchaseOrderItemReceivingChild = RestService.For<IPurchaseOrderItemReceivingChildApi>(client);
-			PurchaseOrderItems = RestService.For<IPurchaseOrderItemsApi>(client);
-			PurchaseOrderItemsChild = RestService.For<IPurchaseOrderItemsChildApi>(client);
-			PurchaseOrders = RestService.For<IPurchaseOrdersApi>(client);
-			QuoteItems = RestService.For<IQuoteItemsApi>(client);
-			QuoteItemsChild = RestService.For<IQuoteItemsChildApi>(client);
-			QuoteLocations = RestService.For<IQuoteLocationsApi>(client);
-			QuoteTemplates = RestService.For<IQuoteTemplatesApi>(client);
-			Quotes = RestService.For<IQuotesApi>(client);
-			ResourceRoleDepartments = RestService.For<IResourceRoleDepartmentsApi>(client);
-			ResourceRoleDepartmentsChild = RestService.For<IResourceRoleDepartmentsChildApi>(client);
-			ResourceRoleQueues = RestService.For<IResourceRoleQueuesApi>(client);
-			ResourceRoleQueuesChild = RestService.For<IResourceRoleQueuesChildApi>(client);
-			ResourceRoles = RestService.For<IResourceRolesApi>(client);
-			ResourceRolesChild = RestService.For<IResourceRolesChildApi>(client);
-			ResourceServiceDeskRoles = RestService.For<IResourceServiceDeskRolesApi>(client);
-			ResourceServiceDeskRolesChild = RestService.For<IResourceServiceDeskRolesChildApi>(client);
-			ResourceSkills = RestService.For<IResourceSkillsApi>(client);
-			ResourceSkillsChild = RestService.For<IResourceSkillsChildApi>(client);
-			Resources = RestService.For<IResourcesApi>(client);
-			Roles = RestService.For<IRolesApi>(client);
-			SalesOrders = RestService.For<ISalesOrdersApi>(client);
-			SalesOrdersChild = RestService.For<ISalesOrdersChildApi>(client);
-			ServiceBundleServices = RestService.For<IServiceBundleServicesApi>(client);
-			ServiceBundleServicesChild = RestService.For<IServiceBundleServicesChildApi>(client);
-			ServiceBundles = RestService.For<IServiceBundlesApi>(client);
-			ServiceCallTaskResources = RestService.For<IServiceCallTaskResourcesApi>(client);
-			ServiceCallTaskResourcesChild = RestService.For<IServiceCallTaskResourcesChildApi>(client);
-			ServiceCallTasks = RestService.For<IServiceCallTasksApi>(client);
-			ServiceCallTasksChild = RestService.For<IServiceCallTasksChildApi>(client);
-			ServiceCallTicketResources = RestService.For<IServiceCallTicketResourcesApi>(client);
-			ServiceCallTicketResourcesChild = RestService.For<IServiceCallTicketResourcesChildApi>(client);
-			ServiceCallTickets = RestService.For<IServiceCallTicketsApi>(client);
-			ServiceCallTicketsChild = RestService.For<IServiceCallTicketsChildApi>(client);
-			ServiceCalls = RestService.For<IServiceCallsApi>(client);
-			ServiceLevelAgreementResults = RestService.For<IServiceLevelAgreementResultsApi>(client);
-			ServiceLevelAgreementResultsChild = RestService.For<IServiceLevelAgreementResultsChildApi>(client);
-			Services = RestService.For<IServicesApi>(client);
-			ShippingTypes = RestService.For<IShippingTypesApi>(client);
-			Skills = RestService.For<ISkillsApi>(client);
-			SubscriptionPeriods = RestService.For<ISubscriptionPeriodsApi>(client);
-			SubscriptionPeriodsChild = RestService.For<ISubscriptionPeriodsChildApi>(client);
-			Subscriptions = RestService.For<ISubscriptionsApi>(client);
-			SurveyResults = RestService.For<ISurveyResultsApi>(client);
-			Surveys = RestService.For<ISurveysApi>(client);
-			TaskAttachments = RestService.For<ITaskAttachmentsApi>(client);
-			TaskAttachmentsChild = RestService.For<ITaskAttachmentsChildApi>(client);
-			TaskNotes = RestService.For<ITaskNotesApi>(client);
-			TaskNotesChild = RestService.For<ITaskNotesChildApi>(client);
-			TaskPredecessors = RestService.For<ITaskPredecessorsApi>(client);
-			TaskPredecessorsChild = RestService.For<ITaskPredecessorsChildApi>(client);
-			TaskSecondaryResources = RestService.For<ITaskSecondaryResourcesApi>(client);
-			TaskSecondaryResourcesChild = RestService.For<ITaskSecondaryResourcesChildApi>(client);
-			Tasks = RestService.For<ITasksApi>(client);
-			TasksChild = RestService.For<ITasksChildApi>(client);
-			TaxCategories = RestService.For<ITaxCategoriesApi>(client);
-			TaxRegions = RestService.For<ITaxRegionsApi>(client);
-			Taxes = RestService.For<ITaxesApi>(client);
-			ThresholdApiIntegration = RestService.For<IThresholdApiIntegrationApi>(client);
-			TicketAdditionalConfigurationItems = RestService.For<ITicketAdditionalConfigurationItemsApi>(client);
-			TicketAdditionalConfigurationItemsChild = RestService.For<ITicketAdditionalConfigurationItemsChildApi>(client);
-			TicketAdditionalContacts = RestService.For<ITicketAdditionalContactsApi>(client);
-			TicketAdditionalContactsChild = RestService.For<ITicketAdditionalContactsChildApi>(client);
-			TicketAttachments = RestService.For<ITicketAttachmentsApi>(client);
-			TicketAttachmentsChild = RestService.For<ITicketAttachmentsChildApi>(client);
-			TicketCategories = RestService.For<ITicketCategoriesApi>(client);
-			TicketCategoryFieldDefaults = RestService.For<ITicketCategoryFieldDefaultsApi>(client);
-			TicketCategoryFieldDefaultsChild = RestService.For<ITicketCategoryFieldDefaultsChildApi>(client);
-			TicketChangeRequestApprovals = RestService.For<ITicketChangeRequestApprovalsApi>(client);
-			TicketChangeRequestApprovalsChild = RestService.For<ITicketChangeRequestApprovalsChildApi>(client);
-			TicketCharges = RestService.For<ITicketChargesApi>(client);
-			TicketChargesChild = RestService.For<ITicketChargesChildApi>(client);
-			TicketChecklistItems = RestService.For<ITicketChecklistItemsApi>(client);
-			TicketChecklistItemsChild = RestService.For<ITicketChecklistItemsChildApi>(client);
-			TicketChecklistLibraries = RestService.For<ITicketChecklistLibrariesApi>(client);
-			TicketChecklistLibrariesChild = RestService.For<ITicketChecklistLibrariesChildApi>(client);
-			TicketHistory = RestService.For<ITicketHistoryApi>(client);
-			TicketNotes = RestService.For<ITicketNotesApi>(client);
-			TicketNotesChild = RestService.For<ITicketNotesChildApi>(client);
-			TicketRmaCredits = RestService.For<ITicketRmaCreditsApi>(client);
-			TicketRmaCreditsChild = RestService.For<ITicketRmaCreditsChildApi>(client);
-			TicketSecondaryResources = RestService.For<ITicketSecondaryResourcesApi>(client);
-			TicketSecondaryResourcesChild = RestService.For<ITicketSecondaryResourcesChildApi>(client);
-			Tickets = RestService.For<ITicketsApi>(client);
-			TimeEntries = RestService.For<ITimeEntriesApi>(client);
-			UserDefinedFieldDefinitions = RestService.For<IUserDefinedFieldDefinitionsApi>(client);
-			UserDefinedFieldListItems = RestService.For<IUserDefinedFieldListItemsApi>(client);
-			UserDefinedFieldListItemsChild = RestService.For<IUserDefinedFieldListItemsChildApi>(client);
-			WebhookEventErrorLogs = RestService.For<IWebhookEventErrorLogsApi>(client);
-			WorkTypeModifiers = RestService.For<IWorkTypeModifiersApi>(client);
-			ZoneInformationApiIntegration = RestService.For<IZoneInformationApiIntegrationApi>(client);
+			_client = client;
+			ActionTypes = RefitFor(ActionTypes!);
+			AdditionalInvoiceFieldValues = RefitFor(AdditionalInvoiceFieldValues!);
+			ApiVersions = RefitFor(ApiVersions!);
+			Appointments = RefitFor(Appointments!);
+			AttachmentInfo = RefitFor(AttachmentInfo!);
+			BillingCodes = RefitFor(BillingCodes!);
+			BillingItemApprovalLevels = RefitFor(BillingItemApprovalLevels!);
+			BillingItems = RefitFor(BillingItems!);
+			ChangeOrderCharges = RefitFor(ChangeOrderCharges!);
+			ChangeRequestLinks = RefitFor(ChangeRequestLinks!);
+			ChecklistLibraries = RefitFor(ChecklistLibraries!);
+			ChecklistLibraryChecklistItems = RefitFor(ChecklistLibraryChecklistItems!);
+			ChecklistLibraryChecklistItemsChild = RefitFor(ChecklistLibraryChecklistItemsChild!);
+			ClassificationIcons = RefitFor(ClassificationIcons!);
+			ClientPortalUsers = RefitFor(ClientPortalUsers!);
+			ComanagedAssociations = RefitFor(ComanagedAssociations!);
+			Companies = RefitFor(Companies!);
+			CompanyAlerts = RefitFor(CompanyAlerts!);
+			CompanyAlertsChild = RefitFor(CompanyAlertsChild!);
+			CompanyAttachments = RefitFor(CompanyAttachments!);
+			CompanyAttachmentsChild = RefitFor(CompanyAttachmentsChild!);
+			CompanyContactsChild = RefitFor(CompanyContactsChild!);
+			CompanyLocations = RefitFor(CompanyLocations!);
+			CompanyLocationsChild = RefitFor(CompanyLocationsChild!);
+			CompanyNotes = RefitFor(CompanyNotes!);
+			CompanyNotesChild = RefitFor(CompanyNotesChild!);
+			CompanySiteConfigurations = RefitFor(CompanySiteConfigurations!);
+			CompanySiteConfigurationsChild = RefitFor(CompanySiteConfigurationsChild!);
+			CompanyTeams = RefitFor(CompanyTeams!);
+			CompanyTeamsChild = RefitFor(CompanyTeamsChild!);
+			CompanyToDos = RefitFor(CompanyToDos!);
+			CompanyToDosChild = RefitFor(CompanyToDosChild!);
+			CompanyWebhookExcludedResources = RefitFor(CompanyWebhookExcludedResources!);
+			CompanyWebhookExcludedResourcesChild = RefitFor(CompanyWebhookExcludedResourcesChild!);
+			CompanyWebhookFields = RefitFor(CompanyWebhookFields!);
+			CompanyWebhookFieldsChild = RefitFor(CompanyWebhookFieldsChild!);
+			CompanyWebhookUdfFields = RefitFor(CompanyWebhookUdfFields!);
+			CompanyWebhookUdfFieldsChild = RefitFor(CompanyWebhookUdfFieldsChild!);
+			CompanyWebhooks = RefitFor(CompanyWebhooks!);
+			ConfigurationItemBillingProductAssociations = RefitFor(ConfigurationItemBillingProductAssociations!);
+			ConfigurationItemBillingProductAssociationsChild = RefitFor(ConfigurationItemBillingProductAssociationsChild!);
+			ConfigurationItemCategories = RefitFor(ConfigurationItemCategories!);
+			ConfigurationItemCategoryUdfAssociations = RefitFor(ConfigurationItemCategoryUdfAssociations!);
+			ConfigurationItemCategoryUdfAssociationsChild = RefitFor(ConfigurationItemCategoryUdfAssociationsChild!);
+			ConfigurationItemExts = RefitFor(ConfigurationItemExts!);
+			ConfigurationItemNotes = RefitFor(ConfigurationItemNotes!);
+			ConfigurationItemNotesChild = RefitFor(ConfigurationItemNotesChild!);
+			ConfigurationItemTypes = RefitFor(ConfigurationItemTypes!);
+			ConfigurationItems = RefitFor(ConfigurationItems!);
+			ContactBillingProductAssociations = RefitFor(ContactBillingProductAssociations!);
+			ContactBillingProductAssociationsChild = RefitFor(ContactBillingProductAssociationsChild!);
+			ContactGroupContacts = RefitFor(ContactGroupContacts!);
+			ContactGroupContactsChild = RefitFor(ContactGroupContactsChild!);
+			ContactGroups = RefitFor(ContactGroups!);
+			ContactWebhookExcludedResources = RefitFor(ContactWebhookExcludedResources!);
+			ContactWebhookExcludedResourcesChild = RefitFor(ContactWebhookExcludedResourcesChild!);
+			ContactWebhookFields = RefitFor(ContactWebhookFields!);
+			ContactWebhookFieldsChild = RefitFor(ContactWebhookFieldsChild!);
+			ContactWebhookUdfFields = RefitFor(ContactWebhookUdfFields!);
+			ContactWebhookUdfFieldsChild = RefitFor(ContactWebhookUdfFieldsChild!);
+			ContactWebhooks = RefitFor(ContactWebhooks!);
+			Contacts = RefitFor(Contacts!);
+			ContractBillingRules = RefitFor(ContractBillingRules!);
+			ContractBillingRulesChild = RefitFor(ContractBillingRulesChild!);
+			ContractBlockHourFactors = RefitFor(ContractBlockHourFactors!);
+			ContractBlockHourFactorsChild = RefitFor(ContractBlockHourFactorsChild!);
+			ContractBlocks = RefitFor(ContractBlocks!);
+			ContractBlocksChild = RefitFor(ContractBlocksChild!);
+			ContractCharges = RefitFor(ContractCharges!);
+			ContractChargesChild = RefitFor(ContractChargesChild!);
+			ContractExclusionBillingCodes = RefitFor(ContractExclusionBillingCodes!);
+			ContractExclusionBillingCodesChild = RefitFor(ContractExclusionBillingCodesChild!);
+			ContractExclusionRoles = RefitFor(ContractExclusionRoles!);
+			ContractExclusionRolesChild = RefitFor(ContractExclusionRolesChild!);
+			ContractExclusionSetExcludedRoles = RefitFor(ContractExclusionSetExcludedRoles!);
+			ContractExclusionSetExcludedRolesChild = RefitFor(ContractExclusionSetExcludedRolesChild!);
+			ContractExclusionSetExcludedWorkTypes = RefitFor(ContractExclusionSetExcludedWorkTypes!);
+			ContractExclusionSetExcludedWorkTypesChild = RefitFor(ContractExclusionSetExcludedWorkTypesChild!);
+			ContractExclusionSets = RefitFor(ContractExclusionSets!);
+			ContractMilestones = RefitFor(ContractMilestones!);
+			ContractMilestonesChild = RefitFor(ContractMilestonesChild!);
+			ContractNotes = RefitFor(ContractNotes!);
+			ContractNotesChild = RefitFor(ContractNotesChild!);
+			ContractRates = RefitFor(ContractRates!);
+			ContractRatesChild = RefitFor(ContractRatesChild!);
+			ContractRetainers = RefitFor(ContractRetainers!);
+			ContractRetainersChild = RefitFor(ContractRetainersChild!);
+			ContractRoleCosts = RefitFor(ContractRoleCosts!);
+			ContractRoleCostsChild = RefitFor(ContractRoleCostsChild!);
+			ContractServiceAdjustments = RefitFor(ContractServiceAdjustments!);
+			ContractServiceAdjustmentsChild = RefitFor(ContractServiceAdjustmentsChild!);
+			ContractServiceBundleAdjustments = RefitFor(ContractServiceBundleAdjustments!);
+			ContractServiceBundleAdjustmentsChild = RefitFor(ContractServiceBundleAdjustmentsChild!);
+			ContractServiceBundleUnits = RefitFor(ContractServiceBundleUnits!);
+			ContractServiceBundleUnitsChild = RefitFor(ContractServiceBundleUnitsChild!);
+			ContractServiceBundles = RefitFor(ContractServiceBundles!);
+			ContractServiceBundlesChild = RefitFor(ContractServiceBundlesChild!);
+			ContractServiceUnits = RefitFor(ContractServiceUnits!);
+			ContractServiceUnitsChild = RefitFor(ContractServiceUnitsChild!);
+			ContractServices = RefitFor(ContractServices!);
+			ContractServicesChild = RefitFor(ContractServicesChild!);
+			ContractTicketPurchases = RefitFor(ContractTicketPurchases!);
+			ContractTicketPurchasesChild = RefitFor(ContractTicketPurchasesChild!);
+			Contracts = RefitFor(Contracts!);
+			Countries = RefitFor(Countries!);
+			Currencies = RefitFor(Currencies!);
+			Departments = RefitFor(Departments!);
+			ExpenseItems = RefitFor(ExpenseItems!);
+			ExpenseItemsChild = RefitFor(ExpenseItemsChild!);
+			ExpenseReports = RefitFor(ExpenseReports!);
+			HolidaySets = RefitFor(HolidaySets!);
+			Holidays = RefitFor(Holidays!);
+			HolidaysChild = RefitFor(HolidaysChild!);
+			InternalLocationWithBusinessHours = RefitFor(InternalLocationWithBusinessHours!);
+			InternalLocations = RefitFor(InternalLocations!);
+			InventoryItemSerialNumbers = RefitFor(InventoryItemSerialNumbers!);
+			InventoryItemSerialNumbersChild = RefitFor(InventoryItemSerialNumbersChild!);
+			InventoryItems = RefitFor(InventoryItems!);
+			InventoryLocations = RefitFor(InventoryLocations!);
+			InventoryTransfers = RefitFor(InventoryTransfers!);
+			InvoiceTemplates = RefitFor(InvoiceTemplates!);
+			Invoices = RefitFor(Invoices!);
+			MetadataApiIntegration = RefitFor(MetadataApiIntegration!);
+			NotificationHistory = RefitFor(NotificationHistory!);
+			Opportunities = RefitFor(Opportunities!);
+			OpportunityAttachments = RefitFor(OpportunityAttachments!);
+			OpportunityAttachmentsChild = RefitFor(OpportunityAttachmentsChild!);
+			OrganizationalLevel1 = RefitFor(OrganizationalLevel1!);
+			OrganizationalLevel2 = RefitFor(OrganizationalLevel2!);
+			OrganizationalLevelAssociation = RefitFor(OrganizationalLevelAssociation!);
+			OrganizationalResources = RefitFor(OrganizationalResources!);
+			OrganizationalResourcesChild = RefitFor(OrganizationalResourcesChild!);
+			PaymentTerms = RefitFor(PaymentTerms!);
+			Phases = RefitFor(Phases!);
+			PhasesChild = RefitFor(PhasesChild!);
+			PriceListMaterialCodes = RefitFor(PriceListMaterialCodes!);
+			PriceListProductTiers = RefitFor(PriceListProductTiers!);
+			PriceListProducts = RefitFor(PriceListProducts!);
+			PriceListRoles = RefitFor(PriceListRoles!);
+			PriceListServiceBundles = RefitFor(PriceListServiceBundles!);
+			PriceListServices = RefitFor(PriceListServices!);
+			PriceListWorkTypeModifiers = RefitFor(PriceListWorkTypeModifiers!);
+			ProductNotes = RefitFor(ProductNotes!);
+			ProductNotesChild = RefitFor(ProductNotesChild!);
+			ProductTiers = RefitFor(ProductTiers!);
+			ProductTiersChild = RefitFor(ProductTiersChild!);
+			ProductVendors = RefitFor(ProductVendors!);
+			ProductVendorsChild = RefitFor(ProductVendorsChild!);
+			Products = RefitFor(Products!);
+			ProjectAttachments = RefitFor(ProjectAttachments!);
+			ProjectAttachmentsChild = RefitFor(ProjectAttachmentsChild!);
+			ProjectCharges = RefitFor(ProjectCharges!);
+			ProjectChargesChild = RefitFor(ProjectChargesChild!);
+			ProjectNotes = RefitFor(ProjectNotes!);
+			ProjectNotesChild = RefitFor(ProjectNotesChild!);
+			Projects = RefitFor(Projects!);
+			PurchaseApprovals = RefitFor(PurchaseApprovals!);
+			PurchaseOrderItemReceiving = RefitFor(PurchaseOrderItemReceiving!);
+			PurchaseOrderItemReceivingChild = RefitFor(PurchaseOrderItemReceivingChild!);
+			PurchaseOrderItems = RefitFor(PurchaseOrderItems!);
+			PurchaseOrderItemsChild = RefitFor(PurchaseOrderItemsChild!);
+			PurchaseOrders = RefitFor(PurchaseOrders!);
+			QuoteItems = RefitFor(QuoteItems!);
+			QuoteItemsChild = RefitFor(QuoteItemsChild!);
+			QuoteLocations = RefitFor(QuoteLocations!);
+			QuoteTemplates = RefitFor(QuoteTemplates!);
+			Quotes = RefitFor(Quotes!);
+			ResourceRoleDepartments = RefitFor(ResourceRoleDepartments!);
+			ResourceRoleDepartmentsChild = RefitFor(ResourceRoleDepartmentsChild!);
+			ResourceRoleQueues = RefitFor(ResourceRoleQueues!);
+			ResourceRoleQueuesChild = RefitFor(ResourceRoleQueuesChild!);
+			ResourceRoles = RefitFor(ResourceRoles!);
+			ResourceRolesChild = RefitFor(ResourceRolesChild!);
+			ResourceServiceDeskRoles = RefitFor(ResourceServiceDeskRoles!);
+			ResourceServiceDeskRolesChild = RefitFor(ResourceServiceDeskRolesChild!);
+			ResourceSkills = RefitFor(ResourceSkills!);
+			ResourceSkillsChild = RefitFor(ResourceSkillsChild!);
+			Resources = RefitFor(Resources!);
+			Roles = RefitFor(Roles!);
+			SalesOrders = RefitFor(SalesOrders!);
+			SalesOrdersChild = RefitFor(SalesOrdersChild!);
+			ServiceBundleServices = RefitFor(ServiceBundleServices!);
+			ServiceBundleServicesChild = RefitFor(ServiceBundleServicesChild!);
+			ServiceBundles = RefitFor(ServiceBundles!);
+			ServiceCallTaskResources = RefitFor(ServiceCallTaskResources!);
+			ServiceCallTaskResourcesChild = RefitFor(ServiceCallTaskResourcesChild!);
+			ServiceCallTasks = RefitFor(ServiceCallTasks!);
+			ServiceCallTasksChild = RefitFor(ServiceCallTasksChild!);
+			ServiceCallTicketResources = RefitFor(ServiceCallTicketResources!);
+			ServiceCallTicketResourcesChild = RefitFor(ServiceCallTicketResourcesChild!);
+			ServiceCallTickets = RefitFor(ServiceCallTickets!);
+			ServiceCallTicketsChild = RefitFor(ServiceCallTicketsChild!);
+			ServiceCalls = RefitFor(ServiceCalls!);
+			ServiceLevelAgreementResults = RefitFor(ServiceLevelAgreementResults!);
+			ServiceLevelAgreementResultsChild = RefitFor(ServiceLevelAgreementResultsChild!);
+			Services = RefitFor(Services!);
+			ShippingTypes = RefitFor(ShippingTypes!);
+			Skills = RefitFor(Skills!);
+			SubscriptionPeriods = RefitFor(SubscriptionPeriods!);
+			SubscriptionPeriodsChild = RefitFor(SubscriptionPeriodsChild!);
+			Subscriptions = RefitFor(Subscriptions!);
+			SurveyResults = RefitFor(SurveyResults!);
+			Surveys = RefitFor(Surveys!);
+			TaskAttachments = RefitFor(TaskAttachments!);
+			TaskAttachmentsChild = RefitFor(TaskAttachmentsChild!);
+			TaskNotes = RefitFor(TaskNotes!);
+			TaskNotesChild = RefitFor(TaskNotesChild!);
+			TaskPredecessors = RefitFor(TaskPredecessors!);
+			TaskPredecessorsChild = RefitFor(TaskPredecessorsChild!);
+			TaskSecondaryResources = RefitFor(TaskSecondaryResources!);
+			TaskSecondaryResourcesChild = RefitFor(TaskSecondaryResourcesChild!);
+			Tasks = RefitFor(Tasks!);
+			TasksChild = RefitFor(TasksChild!);
+			TaxCategories = RefitFor(TaxCategories!);
+			TaxRegions = RefitFor(TaxRegions!);
+			Taxes = RefitFor(Taxes!);
+			ThresholdApiIntegration = RefitFor(ThresholdApiIntegration!);
+			TicketAdditionalConfigurationItems = RefitFor(TicketAdditionalConfigurationItems!);
+			TicketAdditionalConfigurationItemsChild = RefitFor(TicketAdditionalConfigurationItemsChild!);
+			TicketAdditionalContacts = RefitFor(TicketAdditionalContacts!);
+			TicketAdditionalContactsChild = RefitFor(TicketAdditionalContactsChild!);
+			TicketAttachments = RefitFor(TicketAttachments!);
+			TicketAttachmentsChild = RefitFor(TicketAttachmentsChild!);
+			TicketCategories = RefitFor(TicketCategories!);
+			TicketCategoryFieldDefaults = RefitFor(TicketCategoryFieldDefaults!);
+			TicketCategoryFieldDefaultsChild = RefitFor(TicketCategoryFieldDefaultsChild!);
+			TicketChangeRequestApprovals = RefitFor(TicketChangeRequestApprovals!);
+			TicketChangeRequestApprovalsChild = RefitFor(TicketChangeRequestApprovalsChild!);
+			TicketCharges = RefitFor(TicketCharges!);
+			TicketChargesChild = RefitFor(TicketChargesChild!);
+			TicketChecklistItems = RefitFor(TicketChecklistItems!);
+			TicketChecklistItemsChild = RefitFor(TicketChecklistItemsChild!);
+			TicketChecklistLibraries = RefitFor(TicketChecklistLibraries!);
+			TicketChecklistLibrariesChild = RefitFor(TicketChecklistLibrariesChild!);
+			TicketHistory = RefitFor(TicketHistory!);
+			TicketNotes = RefitFor(TicketNotes!);
+			TicketNotesChild = RefitFor(TicketNotesChild!);
+			TicketRmaCredits = RefitFor(TicketRmaCredits!);
+			TicketRmaCreditsChild = RefitFor(TicketRmaCreditsChild!);
+			TicketSecondaryResources = RefitFor(TicketSecondaryResources!);
+			TicketSecondaryResourcesChild = RefitFor(TicketSecondaryResourcesChild!);
+			Tickets = RefitFor(Tickets!);
+			TimeEntries = RefitFor(TimeEntries!);
+			UserDefinedFieldDefinitions = RefitFor(UserDefinedFieldDefinitions!);
+			UserDefinedFieldListItems = RefitFor(UserDefinedFieldListItems!);
+			UserDefinedFieldListItemsChild = RefitFor(UserDefinedFieldListItemsChild!);
+			WebhookEventErrorLogs = RefitFor(WebhookEventErrorLogs!);
+			WorkTypeModifiers = RefitFor(WorkTypeModifiers!);
+			ZoneInformationApiIntegration = RefitFor(ZoneInformationApiIntegration!);
 		}
 
-		/// <inheritdoc />
-		public IActionTypesApi ActionTypes { get; }
+		private T RefitFor<T>(T _)
+			=> RestService.For<T>(_client);
+
+		private readonly HttpClient _client;
 
 		/// <inheritdoc />
-		public IAdditionalInvoiceFieldValuesApi AdditionalInvoiceFieldValues { get; }
+		public IActionTypes ActionTypes { get; }
+
+		/// <inheritdoc />
+		public IAdditionalInvoiceFieldValues AdditionalInvoiceFieldValues { get; }
 
 		/// <inheritdoc />
 		public IApiVersions ApiVersions { get; }
 
 		/// <inheritdoc />
-		public IAppointmentsApi Appointments { get; }
+		public IAppointments Appointments { get; }
 
 		/// <inheritdoc />
-		public IAttachmentInfoApi AttachmentInfo { get; }
+		public IAttachmentInfo AttachmentInfo { get; }
 
 		/// <inheritdoc />
-		public IBillingCodesApi BillingCodes { get; }
+		public IBillingCodes BillingCodes { get; }
 
 		/// <inheritdoc />
-		public IBillingItemApprovalLevelsApi BillingItemApprovalLevels { get; }
+		public IBillingItemApprovalLevels BillingItemApprovalLevels { get; }
 
 		/// <inheritdoc />
-		public IBillingItemsApi BillingItems { get; }
+		public IBillingItems BillingItems { get; }
 
 		/// <inheritdoc />
-		public IChangeOrderChargesApi ChangeOrderCharges { get; }
+		public IChangeOrderCharges ChangeOrderCharges { get; }
 
 		/// <inheritdoc />
-		public IChangeRequestLinksApi ChangeRequestLinks { get; }
+		public IChangeRequestLinks ChangeRequestLinks { get; }
 
 		/// <inheritdoc />
-		public IChecklistLibrariesApi ChecklistLibraries { get; }
+		public IChecklistLibraries ChecklistLibraries { get; }
 
 		/// <inheritdoc />
-		public IChecklistLibraryChecklistItemsApi ChecklistLibraryChecklistItems { get; }
+		public IChecklistLibraryChecklistItems ChecklistLibraryChecklistItems { get; }
 
 		/// <inheritdoc />
-		public IChecklistLibraryChecklistItemsChildApi ChecklistLibraryChecklistItemsChild { get; }
+		public IChecklistLibraryChecklistItemsChild ChecklistLibraryChecklistItemsChild { get; }
 
 		/// <inheritdoc />
-		public IClassificationIconsApi ClassificationIcons { get; }
+		public IClassificationIcons ClassificationIcons { get; }
 
 		/// <inheritdoc />
-		public IClientPortalUsersApi ClientPortalUsers { get; }
+		public IClientPortalUsers ClientPortalUsers { get; }
 
 		/// <inheritdoc />
-		public IComanagedAssociationsApi ComanagedAssociations { get; }
+		public IComanagedAssociations ComanagedAssociations { get; }
 
 		/// <inheritdoc />
-		public ICompaniesApi Companies { get; }
+		public ICompanies Companies { get; }
 
 		/// <inheritdoc />
-		public ICompanyAlertsApi CompanyAlerts { get; }
+		public ICompanyAlerts CompanyAlerts { get; }
 
 		/// <inheritdoc />
-		public ICompanyAlertsChildApi CompanyAlertsChild { get; }
+		public ICompanyAlertsChild CompanyAlertsChild { get; }
 
 		/// <inheritdoc />
-		public ICompanyAttachmentsApi CompanyAttachments { get; }
+		public ICompanyAttachments CompanyAttachments { get; }
 
 		/// <inheritdoc />
-		public ICompanyAttachmentsChildApi CompanyAttachmentsChild { get; }
+		public ICompanyAttachmentsChild CompanyAttachmentsChild { get; }
 
 		/// <inheritdoc />
-		public ICompanyContactsChildApi CompanyContactsChild { get; }
+		public ICompanyContactsChild CompanyContactsChild { get; }
 
 		/// <inheritdoc />
-		public ICompanyLocationsApi CompanyLocations { get; }
+		public ICompanyLocations CompanyLocations { get; }
 
 		/// <inheritdoc />
-		public ICompanyLocationsChildApi CompanyLocationsChild { get; }
+		public ICompanyLocationsChild CompanyLocationsChild { get; }
 
 		/// <inheritdoc />
-		public ICompanyNotesApi CompanyNotes { get; }
+		public ICompanyNotes CompanyNotes { get; }
 
 		/// <inheritdoc />
-		public ICompanyNotesChildApi CompanyNotesChild { get; }
+		public ICompanyNotesChild CompanyNotesChild { get; }
 
 		/// <inheritdoc />
-		public ICompanySiteConfigurationsApi CompanySiteConfigurations { get; }
+		public ICompanySiteConfigurations CompanySiteConfigurations { get; }
 
 		/// <inheritdoc />
-		public ICompanySiteConfigurationsChildApi CompanySiteConfigurationsChild { get; }
+		public ICompanySiteConfigurationsChild CompanySiteConfigurationsChild { get; }
 
 		/// <inheritdoc />
-		public ICompanyTeamsApi CompanyTeams { get; }
+		public ICompanyTeams CompanyTeams { get; }
 
 		/// <inheritdoc />
-		public ICompanyTeamsChildApi CompanyTeamsChild { get; }
+		public ICompanyTeamsChild CompanyTeamsChild { get; }
 
 		/// <inheritdoc />
-		public ICompanyToDosApi CompanyToDos { get; }
+		public ICompanyToDos CompanyToDos { get; }
 
 		/// <inheritdoc />
-		public ICompanyToDosChildApi CompanyToDosChild { get; }
+		public ICompanyToDosChild CompanyToDosChild { get; }
 
 		/// <inheritdoc />
-		public ICompanyWebhookExcludedResourcesApi CompanyWebhookExcludedResources { get; }
+		public ICompanyWebhookExcludedResources CompanyWebhookExcludedResources { get; }
 
 		/// <inheritdoc />
-		public ICompanyWebhookExcludedResourcesChildApi CompanyWebhookExcludedResourcesChild { get; }
+		public ICompanyWebhookExcludedResourcesChild CompanyWebhookExcludedResourcesChild { get; }
 
 		/// <inheritdoc />
-		public ICompanyWebhookFieldsApi CompanyWebhookFields { get; }
+		public ICompanyWebhookFields CompanyWebhookFields { get; }
 
 		/// <inheritdoc />
-		public ICompanyWebhookFieldsChildApi CompanyWebhookFieldsChild { get; }
+		public ICompanyWebhookFieldsChild CompanyWebhookFieldsChild { get; }
 
 		/// <inheritdoc />
-		public ICompanyWebhookUdfFieldsApi CompanyWebhookUdfFields { get; }
+		public ICompanyWebhookUdfFields CompanyWebhookUdfFields { get; }
 
 		/// <inheritdoc />
-		public ICompanyWebhookUdfFieldsChildApi CompanyWebhookUdfFieldsChild { get; }
+		public ICompanyWebhookUdfFieldsChild CompanyWebhookUdfFieldsChild { get; }
 
 		/// <inheritdoc />
-		public ICompanyWebhooksApi CompanyWebhooks { get; }
+		public ICompanyWebhooks CompanyWebhooks { get; }
 
 		/// <inheritdoc />
-		public IConfigurationItemBillingProductAssociationsApi ConfigurationItemBillingProductAssociations { get; }
+		public IConfigurationItemBillingProductAssociations ConfigurationItemBillingProductAssociations { get; }
 
 		/// <inheritdoc />
-		public IConfigurationItemBillingProductAssociationsChildApi ConfigurationItemBillingProductAssociationsChild { get; }
+		public IConfigurationItemBillingProductAssociationsChild ConfigurationItemBillingProductAssociationsChild { get; }
 
 		/// <inheritdoc />
-		public IConfigurationItemCategoriesApi ConfigurationItemCategories { get; }
+		public IConfigurationItemCategories ConfigurationItemCategories { get; }
 
 		/// <inheritdoc />
-		public IConfigurationItemCategoryUdfAssociationsApi ConfigurationItemCategoryUdfAssociations { get; }
+		public IConfigurationItemCategoryUdfAssociations ConfigurationItemCategoryUdfAssociations { get; }
 
 		/// <inheritdoc />
-		public IConfigurationItemCategoryUdfAssociationsChildApi ConfigurationItemCategoryUdfAssociationsChild { get; }
+		public IConfigurationItemCategoryUdfAssociationsChild ConfigurationItemCategoryUdfAssociationsChild { get; }
 
 		/// <inheritdoc />
-		public IConfigurationItemExtsApi ConfigurationItemExts { get; }
+		public IConfigurationItemExts ConfigurationItemExts { get; }
 
 		/// <inheritdoc />
-		public IConfigurationItemNotesApi ConfigurationItemNotes { get; }
+		public IConfigurationItemNotes ConfigurationItemNotes { get; }
 
 		/// <inheritdoc />
-		public IConfigurationItemNotesChildApi ConfigurationItemNotesChild { get; }
+		public IConfigurationItemNotesChild ConfigurationItemNotesChild { get; }
 
 		/// <inheritdoc />
-		public IConfigurationItemTypesApi ConfigurationItemTypes { get; }
+		public IConfigurationItemTypes ConfigurationItemTypes { get; }
 
 		/// <inheritdoc />
-		public IConfigurationItemsApi ConfigurationItems { get; }
+		public IConfigurationItems ConfigurationItems { get; }
 
 		/// <inheritdoc />
-		public IContactBillingProductAssociationsApi ContactBillingProductAssociations { get; }
+		public IContactBillingProductAssociations ContactBillingProductAssociations { get; }
 
 		/// <inheritdoc />
-		public IContactBillingProductAssociationsChildApi ContactBillingProductAssociationsChild { get; }
+		public IContactBillingProductAssociationsChild ContactBillingProductAssociationsChild { get; }
 
 		/// <inheritdoc />
-		public IContactGroupContactsApi ContactGroupContacts { get; }
+		public IContactGroupContacts ContactGroupContacts { get; }
 
 		/// <inheritdoc />
-		public IContactGroupContactsChildApi ContactGroupContactsChild { get; }
+		public IContactGroupContactsChild ContactGroupContactsChild { get; }
 
 		/// <inheritdoc />
-		public IContactGroupsApi ContactGroups { get; }
+		public IContactGroups ContactGroups { get; }
 
 		/// <inheritdoc />
-		public IContactWebhookExcludedResourcesApi ContactWebhookExcludedResources { get; }
+		public IContactWebhookExcludedResources ContactWebhookExcludedResources { get; }
 
 		/// <inheritdoc />
-		public IContactWebhookExcludedResourcesChildApi ContactWebhookExcludedResourcesChild { get; }
+		public IContactWebhookExcludedResourcesChild ContactWebhookExcludedResourcesChild { get; }
 
 		/// <inheritdoc />
-		public IContactWebhookFieldsApi ContactWebhookFields { get; }
+		public IContactWebhookFields ContactWebhookFields { get; }
 
 		/// <inheritdoc />
-		public IContactWebhookFieldsChildApi ContactWebhookFieldsChild { get; }
+		public IContactWebhookFieldsChild ContactWebhookFieldsChild { get; }
 
 		/// <inheritdoc />
-		public IContactWebhookUdfFieldsApi ContactWebhookUdfFields { get; }
+		public IContactWebhookUdfFields ContactWebhookUdfFields { get; }
 
 		/// <inheritdoc />
-		public IContactWebhookUdfFieldsChildApi ContactWebhookUdfFieldsChild { get; }
+		public IContactWebhookUdfFieldsChild ContactWebhookUdfFieldsChild { get; }
 
 		/// <inheritdoc />
-		public IContactWebhooksApi ContactWebhooks { get; }
+		public IContactWebhooks ContactWebhooks { get; }
 
 		/// <inheritdoc />
-		public IContactsApi Contacts { get; }
+		public IContacts Contacts { get; }
 
 		/// <inheritdoc />
-		public IContractBillingRulesApi ContractBillingRules { get; }
+		public IContractBillingRules ContractBillingRules { get; }
 
 		/// <inheritdoc />
-		public IContractBillingRulesChildApi ContractBillingRulesChild { get; }
+		public IContractBillingRulesChild ContractBillingRulesChild { get; }
 
 		/// <inheritdoc />
-		public IContractBlockHourFactorsApi ContractBlockHourFactors { get; }
+		public IContractBlockHourFactors ContractBlockHourFactors { get; }
 
 		/// <inheritdoc />
-		public IContractBlockHourFactorsChildApi ContractBlockHourFactorsChild { get; }
+		public IContractBlockHourFactorsChild ContractBlockHourFactorsChild { get; }
 
 		/// <inheritdoc />
-		public IContractBlocksApi ContractBlocks { get; }
+		public IContractBlocks ContractBlocks { get; }
 
 		/// <inheritdoc />
-		public IContractBlocksChildApi ContractBlocksChild { get; }
+		public IContractBlocksChild ContractBlocksChild { get; }
 
 		/// <inheritdoc />
-		public IContractChargesApi ContractCharges { get; }
+		public IContractCharges ContractCharges { get; }
 
 		/// <inheritdoc />
-		public IContractChargesChildApi ContractChargesChild { get; }
+		public IContractChargesChild ContractChargesChild { get; }
 
 		/// <inheritdoc />
-		public IContractExclusionBillingCodesApi ContractExclusionBillingCodes { get; }
+		public IContractExclusionBillingCodes ContractExclusionBillingCodes { get; }
 
 		/// <inheritdoc />
-		public IContractExclusionBillingCodesChildApi ContractExclusionBillingCodesChild { get; }
+		public IContractExclusionBillingCodesChild ContractExclusionBillingCodesChild { get; }
 
 		/// <inheritdoc />
-		public IContractExclusionRolesApi ContractExclusionRoles { get; }
+		public IContractExclusionRoles ContractExclusionRoles { get; }
 
 		/// <inheritdoc />
-		public IContractExclusionRolesChildApi ContractExclusionRolesChild { get; }
+		public IContractExclusionRolesChild ContractExclusionRolesChild { get; }
 
 		/// <inheritdoc />
-		public IContractExclusionSetExcludedRolesApi ContractExclusionSetExcludedRoles { get; }
+		public IContractExclusionSetExcludedRoles ContractExclusionSetExcludedRoles { get; }
 
 		/// <inheritdoc />
-		public IContractExclusionSetExcludedRolesChildApi ContractExclusionSetExcludedRolesChild { get; }
+		public IContractExclusionSetExcludedRolesChild ContractExclusionSetExcludedRolesChild { get; }
 
 		/// <inheritdoc />
-		public IContractExclusionSetExcludedWorkTypesApi ContractExclusionSetExcludedWorkTypes { get; }
+		public IContractExclusionSetExcludedWorkTypes ContractExclusionSetExcludedWorkTypes { get; }
 
 		/// <inheritdoc />
-		public IContractExclusionSetExcludedWorkTypesChildApi ContractExclusionSetExcludedWorkTypesChild { get; }
+		public IContractExclusionSetExcludedWorkTypesChild ContractExclusionSetExcludedWorkTypesChild { get; }
 
 		/// <inheritdoc />
-		public IContractExclusionSetsApi ContractExclusionSets { get; }
+		public IContractExclusionSets ContractExclusionSets { get; }
 
 		/// <inheritdoc />
-		public IContractMilestonesApi ContractMilestones { get; }
+		public IContractMilestones ContractMilestones { get; }
 
 		/// <inheritdoc />
-		public IContractMilestonesChildApi ContractMilestonesChild { get; }
+		public IContractMilestonesChild ContractMilestonesChild { get; }
 
 		/// <inheritdoc />
-		public IContractNotesApi ContractNotes { get; }
+		public IContractNotes ContractNotes { get; }
 
 		/// <inheritdoc />
-		public IContractNotesChildApi ContractNotesChild { get; }
+		public IContractNotesChild ContractNotesChild { get; }
 
 		/// <inheritdoc />
-		public IContractRatesApi ContractRates { get; }
+		public IContractRates ContractRates { get; }
 
 		/// <inheritdoc />
-		public IContractRatesChildApi ContractRatesChild { get; }
+		public IContractRatesChild ContractRatesChild { get; }
 
 		/// <inheritdoc />
-		public IContractRetainersApi ContractRetainers { get; }
+		public IContractRetainers ContractRetainers { get; }
 
 		/// <inheritdoc />
-		public IContractRetainersChildApi ContractRetainersChild { get; }
+		public IContractRetainersChild ContractRetainersChild { get; }
 
 		/// <inheritdoc />
-		public IContractRoleCostsApi ContractRoleCosts { get; }
+		public IContractRoleCosts ContractRoleCosts { get; }
 
 		/// <inheritdoc />
-		public IContractRoleCostsChildApi ContractRoleCostsChild { get; }
+		public IContractRoleCostsChild ContractRoleCostsChild { get; }
 
 		/// <inheritdoc />
-		public IContractServiceAdjustmentsApi ContractServiceAdjustments { get; }
+		public IContractServiceAdjustments ContractServiceAdjustments { get; }
 
 		/// <inheritdoc />
-		public IContractServiceAdjustmentsChildApi ContractServiceAdjustmentsChild { get; }
+		public IContractServiceAdjustmentsChild ContractServiceAdjustmentsChild { get; }
 
 		/// <inheritdoc />
-		public IContractServiceBundleAdjustmentsApi ContractServiceBundleAdjustments { get; }
+		public IContractServiceBundleAdjustments ContractServiceBundleAdjustments { get; }
 
 		/// <inheritdoc />
-		public IContractServiceBundleAdjustmentsChildApi ContractServiceBundleAdjustmentsChild { get; }
+		public IContractServiceBundleAdjustmentsChild ContractServiceBundleAdjustmentsChild { get; }
 
 		/// <inheritdoc />
-		public IContractServiceBundleUnitsApi ContractServiceBundleUnits { get; }
+		public IContractServiceBundleUnits ContractServiceBundleUnits { get; }
 
 		/// <inheritdoc />
-		public IContractServiceBundleUnitsChildApi ContractServiceBundleUnitsChild { get; }
+		public IContractServiceBundleUnitsChild ContractServiceBundleUnitsChild { get; }
 
 		/// <inheritdoc />
-		public IContractServiceBundlesApi ContractServiceBundles { get; }
+		public IContractServiceBundles ContractServiceBundles { get; }
 
 		/// <inheritdoc />
-		public IContractServiceBundlesChildApi ContractServiceBundlesChild { get; }
+		public IContractServiceBundlesChild ContractServiceBundlesChild { get; }
 
 		/// <inheritdoc />
-		public IContractServiceUnitsApi ContractServiceUnits { get; }
+		public IContractServiceUnits ContractServiceUnits { get; }
 
 		/// <inheritdoc />
-		public IContractServiceUnitsChildApi ContractServiceUnitsChild { get; }
+		public IContractServiceUnitsChild ContractServiceUnitsChild { get; }
 
 		/// <inheritdoc />
-		public IContractServicesApi ContractServices { get; }
+		public IContractServices ContractServices { get; }
 
 		/// <inheritdoc />
-		public IContractServicesChildApi ContractServicesChild { get; }
+		public IContractServicesChild ContractServicesChild { get; }
 
 		/// <inheritdoc />
-		public IContractTicketPurchasesApi ContractTicketPurchases { get; }
+		public IContractTicketPurchases ContractTicketPurchases { get; }
 
 		/// <inheritdoc />
-		public IContractTicketPurchasesChildApi ContractTicketPurchasesChild { get; }
+		public IContractTicketPurchasesChild ContractTicketPurchasesChild { get; }
 
 		/// <inheritdoc />
-		public IContractsApi Contracts { get; }
+		public IContracts Contracts { get; }
 
 		/// <inheritdoc />
-		public ICountriesApi Countries { get; }
+		public ICountries Countries { get; }
 
 		/// <inheritdoc />
-		public ICurrenciesApi Currencies { get; }
+		public ICurrencies Currencies { get; }
 
 		/// <inheritdoc />
-		public IDepartmentsApi Departments { get; }
+		public IDepartments Departments { get; }
 
 		/// <inheritdoc />
-		public IExpenseItemsApi ExpenseItems { get; }
+		public IExpenseItems ExpenseItems { get; }
 
 		/// <inheritdoc />
-		public IExpenseItemsChildApi ExpenseItemsChild { get; }
+		public IExpenseItemsChild ExpenseItemsChild { get; }
 
 		/// <inheritdoc />
-		public IExpenseReportsApi ExpenseReports { get; }
+		public IExpenseReports ExpenseReports { get; }
 
 		/// <inheritdoc />
-		public IHolidaySetsApi HolidaySets { get; }
+		public IHolidaySets HolidaySets { get; }
 
 		/// <inheritdoc />
-		public IHolidaysApi Holidays { get; }
+		public IHolidays Holidays { get; }
 
 		/// <inheritdoc />
-		public IHolidaysChildApi HolidaysChild { get; }
+		public IHolidaysChild HolidaysChild { get; }
 
 		/// <inheritdoc />
-		public IInternalLocationWithBusinessHoursApi InternalLocationWithBusinessHours { get; }
+		public IInternalLocationWithBusinessHours InternalLocationWithBusinessHours { get; }
 
 		/// <inheritdoc />
-		public IInternalLocationsApi InternalLocations { get; }
+		public IInternalLocations InternalLocations { get; }
 
 		/// <inheritdoc />
-		public IInventoryItemSerialNumbersApi InventoryItemSerialNumbers { get; }
+		public IInventoryItemSerialNumbers InventoryItemSerialNumbers { get; }
 
 		/// <inheritdoc />
-		public IInventoryItemSerialNumbersChildApi InventoryItemSerialNumbersChild { get; }
+		public IInventoryItemSerialNumbersChild InventoryItemSerialNumbersChild { get; }
 
 		/// <inheritdoc />
-		public IInventoryItemsApi InventoryItems { get; }
+		public IInventoryItems InventoryItems { get; }
 
 		/// <inheritdoc />
-		public IInventoryLocationsApi InventoryLocations { get; }
+		public IInventoryLocations InventoryLocations { get; }
 
 		/// <inheritdoc />
-		public IInventoryTransfersApi InventoryTransfers { get; }
+		public IInventoryTransfers InventoryTransfers { get; }
 
 		/// <inheritdoc />
-		public IInvoiceTemplatesApi InvoiceTemplates { get; }
+		public IInvoiceTemplates InvoiceTemplates { get; }
 
 		/// <inheritdoc />
-		public IInvoicesApi Invoices { get; }
+		public IInvoices Invoices { get; }
 
 		/// <inheritdoc />
-		public IMetadataApiIntegrationApi MetadataApiIntegration { get; }
+		public IMetadataApiIntegration MetadataApiIntegration { get; }
 
 		/// <inheritdoc />
-		public INotificationHistoryApi NotificationHistory { get; }
+		public INotificationHistory NotificationHistory { get; }
 
 		/// <inheritdoc />
-		public IOpportunitiesApi Opportunities { get; }
+		public IOpportunities Opportunities { get; }
 
 		/// <inheritdoc />
-		public IOpportunityAttachmentsApi OpportunityAttachments { get; }
+		public IOpportunityAttachments OpportunityAttachments { get; }
 
 		/// <inheritdoc />
-		public IOpportunityAttachmentsChildApi OpportunityAttachmentsChild { get; }
+		public IOpportunityAttachmentsChild OpportunityAttachmentsChild { get; }
 
 		/// <inheritdoc />
-		public IOrganizationalLevel1Api OrganizationalLevel1 { get; }
+		public IOrganizationalLevel1 OrganizationalLevel1 { get; }
 
 		/// <inheritdoc />
-		public IOrganizationalLevel2Api OrganizationalLevel2 { get; }
+		public IOrganizationalLevel2 OrganizationalLevel2 { get; }
 
 		/// <inheritdoc />
-		public IOrganizationalLevelAssociationApi OrganizationalLevelAssociation { get; }
+		public IOrganizationalLevelAssociation OrganizationalLevelAssociation { get; }
 
 		/// <inheritdoc />
-		public IOrganizationalResourcesApi OrganizationalResources { get; }
+		public IOrganizationalResources OrganizationalResources { get; }
 
 		/// <inheritdoc />
-		public IOrganizationalResourcesChildApi OrganizationalResourcesChild { get; }
+		public IOrganizationalResourcesChild OrganizationalResourcesChild { get; }
 
 		/// <inheritdoc />
-		public IPaymentTermsApi PaymentTerms { get; }
+		public IPaymentTerms PaymentTerms { get; }
 
 		/// <inheritdoc />
-		public IPhasesApi Phases { get; }
+		public IPhases Phases { get; }
 
 		/// <inheritdoc />
-		public IPhasesChildApi PhasesChild { get; }
+		public IPhasesChild PhasesChild { get; }
 
 		/// <inheritdoc />
-		public IPriceListMaterialCodesApi PriceListMaterialCodes { get; }
+		public IPriceListMaterialCodes PriceListMaterialCodes { get; }
 
 		/// <inheritdoc />
-		public IPriceListProductTiersApi PriceListProductTiers { get; }
+		public IPriceListProductTiers PriceListProductTiers { get; }
 
 		/// <inheritdoc />
-		public IPriceListProductsApi PriceListProducts { get; }
+		public IPriceListProducts PriceListProducts { get; }
 
 		/// <inheritdoc />
-		public IPriceListRolesApi PriceListRoles { get; }
+		public IPriceListRoles PriceListRoles { get; }
 
 		/// <inheritdoc />
-		public IPriceListServiceBundlesApi PriceListServiceBundles { get; }
+		public IPriceListServiceBundles PriceListServiceBundles { get; }
 
 		/// <inheritdoc />
-		public IPriceListServicesApi PriceListServices { get; }
+		public IPriceListServices PriceListServices { get; }
 
 		/// <inheritdoc />
-		public IPriceListWorkTypeModifiersApi PriceListWorkTypeModifiers { get; }
+		public IPriceListWorkTypeModifiers PriceListWorkTypeModifiers { get; }
 
 		/// <inheritdoc />
-		public IProductNotesApi ProductNotes { get; }
+		public IProductNotes ProductNotes { get; }
 
 		/// <inheritdoc />
-		public IProductNotesChildApi ProductNotesChild { get; }
+		public IProductNotesChild ProductNotesChild { get; }
 
 		/// <inheritdoc />
-		public IProductTiersApi ProductTiers { get; }
+		public IProductTiers ProductTiers { get; }
 
 		/// <inheritdoc />
-		public IProductTiersChildApi ProductTiersChild { get; }
+		public IProductTiersChild ProductTiersChild { get; }
 
 		/// <inheritdoc />
-		public IProductVendorsApi ProductVendors { get; }
+		public IProductVendors ProductVendors { get; }
 
 		/// <inheritdoc />
-		public IProductVendorsChildApi ProductVendorsChild { get; }
+		public IProductVendorsChild ProductVendorsChild { get; }
 
 		/// <inheritdoc />
-		public IProductsApi Products { get; }
+		public IProducts Products { get; }
 
 		/// <inheritdoc />
-		public IProjectAttachmentsApi ProjectAttachments { get; }
+		public IProjectAttachments ProjectAttachments { get; }
 
 		/// <inheritdoc />
-		public IProjectAttachmentsChildApi ProjectAttachmentsChild { get; }
+		public IProjectAttachmentsChild ProjectAttachmentsChild { get; }
 
 		/// <inheritdoc />
-		public IProjectChargesApi ProjectCharges { get; }
+		public IProjectCharges ProjectCharges { get; }
 
 		/// <inheritdoc />
-		public IProjectChargesChildApi ProjectChargesChild { get; }
+		public IProjectChargesChild ProjectChargesChild { get; }
 
 		/// <inheritdoc />
-		public IProjectNotesApi ProjectNotes { get; }
+		public IProjectNotes ProjectNotes { get; }
 
 		/// <inheritdoc />
-		public IProjectNotesChildApi ProjectNotesChild { get; }
+		public IProjectNotesChild ProjectNotesChild { get; }
 
 		/// <inheritdoc />
-		public IProjectsApi Projects { get; }
+		public IProjects Projects { get; }
 
 		/// <inheritdoc />
-		public IPurchaseApprovalsApi PurchaseApprovals { get; }
+		public IPurchaseApprovals PurchaseApprovals { get; }
 
 		/// <inheritdoc />
-		public IPurchaseOrderItemReceivingApi PurchaseOrderItemReceiving { get; }
+		public IPurchaseOrderItemReceiving PurchaseOrderItemReceiving { get; }
 
 		/// <inheritdoc />
-		public IPurchaseOrderItemReceivingChildApi PurchaseOrderItemReceivingChild { get; }
+		public IPurchaseOrderItemReceivingChild PurchaseOrderItemReceivingChild { get; }
 
 		/// <inheritdoc />
-		public IPurchaseOrderItemsApi PurchaseOrderItems { get; }
+		public IPurchaseOrderItems PurchaseOrderItems { get; }
 
 		/// <inheritdoc />
-		public IPurchaseOrderItemsChildApi PurchaseOrderItemsChild { get; }
+		public IPurchaseOrderItemsChild PurchaseOrderItemsChild { get; }
 
 		/// <inheritdoc />
-		public IPurchaseOrdersApi PurchaseOrders { get; }
+		public IPurchaseOrders PurchaseOrders { get; }
 
 		/// <inheritdoc />
-		public IQuoteItemsApi QuoteItems { get; }
+		public IQuoteItems QuoteItems { get; }
 
 		/// <inheritdoc />
-		public IQuoteItemsChildApi QuoteItemsChild { get; }
+		public IQuoteItemsChild QuoteItemsChild { get; }
 
 		/// <inheritdoc />
-		public IQuoteLocationsApi QuoteLocations { get; }
+		public IQuoteLocations QuoteLocations { get; }
 
 		/// <inheritdoc />
-		public IQuoteTemplatesApi QuoteTemplates { get; }
+		public IQuoteTemplates QuoteTemplates { get; }
 
 		/// <inheritdoc />
-		public IQuotesApi Quotes { get; }
+		public IQuotes Quotes { get; }
 
 		/// <inheritdoc />
-		public IResourceRoleDepartmentsApi ResourceRoleDepartments { get; }
+		public IResourceRoleDepartments ResourceRoleDepartments { get; }
 
 		/// <inheritdoc />
-		public IResourceRoleDepartmentsChildApi ResourceRoleDepartmentsChild { get; }
+		public IResourceRoleDepartmentsChild ResourceRoleDepartmentsChild { get; }
 
 		/// <inheritdoc />
-		public IResourceRoleQueuesApi ResourceRoleQueues { get; }
+		public IResourceRoleQueues ResourceRoleQueues { get; }
 
 		/// <inheritdoc />
-		public IResourceRoleQueuesChildApi ResourceRoleQueuesChild { get; }
+		public IResourceRoleQueuesChild ResourceRoleQueuesChild { get; }
 
 		/// <inheritdoc />
-		public IResourceRolesApi ResourceRoles { get; }
+		public IResourceRoles ResourceRoles { get; }
 
 		/// <inheritdoc />
-		public IResourceRolesChildApi ResourceRolesChild { get; }
+		public IResourceRolesChild ResourceRolesChild { get; }
 
 		/// <inheritdoc />
-		public IResourceServiceDeskRolesApi ResourceServiceDeskRoles { get; }
+		public IResourceServiceDeskRoles ResourceServiceDeskRoles { get; }
 
 		/// <inheritdoc />
-		public IResourceServiceDeskRolesChildApi ResourceServiceDeskRolesChild { get; }
+		public IResourceServiceDeskRolesChild ResourceServiceDeskRolesChild { get; }
 
 		/// <inheritdoc />
-		public IResourceSkillsApi ResourceSkills { get; }
+		public IResourceSkills ResourceSkills { get; }
 
 		/// <inheritdoc />
-		public IResourceSkillsChildApi ResourceSkillsChild { get; }
+		public IResourceSkillsChild ResourceSkillsChild { get; }
 
 		/// <inheritdoc />
-		public IResourcesApi Resources { get; }
+		public IResources Resources { get; }
 
 		/// <inheritdoc />
-		public IRolesApi Roles { get; }
+		public IRoles Roles { get; }
 
 		/// <inheritdoc />
-		public ISalesOrdersApi SalesOrders { get; }
+		public ISalesOrders SalesOrders { get; }
 
 		/// <inheritdoc />
-		public ISalesOrdersChildApi SalesOrdersChild { get; }
+		public ISalesOrdersChild SalesOrdersChild { get; }
 
 		/// <inheritdoc />
-		public IServiceBundleServicesApi ServiceBundleServices { get; }
+		public IServiceBundleServices ServiceBundleServices { get; }
 
 		/// <inheritdoc />
-		public IServiceBundleServicesChildApi ServiceBundleServicesChild { get; }
+		public IServiceBundleServicesChild ServiceBundleServicesChild { get; }
 
 		/// <inheritdoc />
-		public IServiceBundlesApi ServiceBundles { get; }
+		public IServiceBundles ServiceBundles { get; }
 
 		/// <inheritdoc />
-		public IServiceCallTaskResourcesApi ServiceCallTaskResources { get; }
+		public IServiceCallTaskResources ServiceCallTaskResources { get; }
 
 		/// <inheritdoc />
-		public IServiceCallTaskResourcesChildApi ServiceCallTaskResourcesChild { get; }
+		public IServiceCallTaskResourcesChild ServiceCallTaskResourcesChild { get; }
 
 		/// <inheritdoc />
-		public IServiceCallTasksApi ServiceCallTasks { get; }
+		public IServiceCallTasks ServiceCallTasks { get; }
 
 		/// <inheritdoc />
-		public IServiceCallTasksChildApi ServiceCallTasksChild { get; }
+		public IServiceCallTasksChild ServiceCallTasksChild { get; }
 
 		/// <inheritdoc />
-		public IServiceCallTicketResourcesApi ServiceCallTicketResources { get; }
+		public IServiceCallTicketResources ServiceCallTicketResources { get; }
 
 		/// <inheritdoc />
-		public IServiceCallTicketResourcesChildApi ServiceCallTicketResourcesChild { get; }
+		public IServiceCallTicketResourcesChild ServiceCallTicketResourcesChild { get; }
 
 		/// <inheritdoc />
-		public IServiceCallTicketsApi ServiceCallTickets { get; }
+		public IServiceCallTickets ServiceCallTickets { get; }
 
 		/// <inheritdoc />
-		public IServiceCallTicketsChildApi ServiceCallTicketsChild { get; }
+		public IServiceCallTicketsChild ServiceCallTicketsChild { get; }
 
 		/// <inheritdoc />
-		public IServiceCallsApi ServiceCalls { get; }
+		public IServiceCalls ServiceCalls { get; }
 
 		/// <inheritdoc />
-		public IServiceLevelAgreementResultsApi ServiceLevelAgreementResults { get; }
+		public IServiceLevelAgreementResults ServiceLevelAgreementResults { get; }
 
 		/// <inheritdoc />
-		public IServiceLevelAgreementResultsChildApi ServiceLevelAgreementResultsChild { get; }
+		public IServiceLevelAgreementResultsChild ServiceLevelAgreementResultsChild { get; }
 
 		/// <inheritdoc />
-		public IServicesApi Services { get; }
+		public IServices Services { get; }
 
 		/// <inheritdoc />
-		public IShippingTypesApi ShippingTypes { get; }
+		public IShippingTypes ShippingTypes { get; }
 
 		/// <inheritdoc />
-		public ISkillsApi Skills { get; }
+		public ISkills Skills { get; }
 
 		/// <inheritdoc />
-		public ISubscriptionPeriodsApi SubscriptionPeriods { get; }
+		public ISubscriptionPeriods SubscriptionPeriods { get; }
 
 		/// <inheritdoc />
-		public ISubscriptionPeriodsChildApi SubscriptionPeriodsChild { get; }
+		public ISubscriptionPeriodsChild SubscriptionPeriodsChild { get; }
 
 		/// <inheritdoc />
-		public ISubscriptionsApi Subscriptions { get; }
+		public ISubscriptions Subscriptions { get; }
 
 		/// <inheritdoc />
-		public ISurveyResultsApi SurveyResults { get; }
+		public ISurveyResults SurveyResults { get; }
 
 		/// <inheritdoc />
-		public ISurveysApi Surveys { get; }
+		public ISurveys Surveys { get; }
 
 		/// <inheritdoc />
-		public ITaskAttachmentsApi TaskAttachments { get; }
+		public ITaskAttachments TaskAttachments { get; }
 
 		/// <inheritdoc />
-		public ITaskAttachmentsChildApi TaskAttachmentsChild { get; }
+		public ITaskAttachmentsChild TaskAttachmentsChild { get; }
 
 		/// <inheritdoc />
-		public ITaskNotesApi TaskNotes { get; }
+		public ITaskNotes TaskNotes { get; }
 
 		/// <inheritdoc />
-		public ITaskNotesChildApi TaskNotesChild { get; }
+		public ITaskNotesChild TaskNotesChild { get; }
 
 		/// <inheritdoc />
-		public ITaskPredecessorsApi TaskPredecessors { get; }
+		public ITaskPredecessors TaskPredecessors { get; }
 
 		/// <inheritdoc />
-		public ITaskPredecessorsChildApi TaskPredecessorsChild { get; }
+		public ITaskPredecessorsChild TaskPredecessorsChild { get; }
 
 		/// <inheritdoc />
-		public ITaskSecondaryResourcesApi TaskSecondaryResources { get; }
+		public ITaskSecondaryResources TaskSecondaryResources { get; }
 
 		/// <inheritdoc />
-		public ITaskSecondaryResourcesChildApi TaskSecondaryResourcesChild { get; }
+		public ITaskSecondaryResourcesChild TaskSecondaryResourcesChild { get; }
 
 		/// <inheritdoc />
-		public ITasksApi Tasks { get; }
+		public ITasks Tasks { get; }
 
 		/// <inheritdoc />
-		public ITasksChildApi TasksChild { get; }
+		public ITasksChild TasksChild { get; }
 
 		/// <inheritdoc />
-		public ITaxCategoriesApi TaxCategories { get; }
+		public ITaxCategories TaxCategories { get; }
 
 		/// <inheritdoc />
-		public ITaxRegionsApi TaxRegions { get; }
+		public ITaxRegions TaxRegions { get; }
 
 		/// <inheritdoc />
-		public ITaxesApi Taxes { get; }
+		public ITaxes Taxes { get; }
 
 		/// <inheritdoc />
-		public IThresholdApiIntegrationApi ThresholdApiIntegration { get; }
+		public IThresholdApiIntegration ThresholdApiIntegration { get; }
 
 		/// <inheritdoc />
-		public ITicketAdditionalConfigurationItemsApi TicketAdditionalConfigurationItems { get; }
+		public ITicketAdditionalConfigurationItems TicketAdditionalConfigurationItems { get; }
 
 		/// <inheritdoc />
-		public ITicketAdditionalConfigurationItemsChildApi TicketAdditionalConfigurationItemsChild { get; }
+		public ITicketAdditionalConfigurationItemsChild TicketAdditionalConfigurationItemsChild { get; }
 
 		/// <inheritdoc />
-		public ITicketAdditionalContactsApi TicketAdditionalContacts { get; }
+		public ITicketAdditionalContacts TicketAdditionalContacts { get; }
 
 		/// <inheritdoc />
-		public ITicketAdditionalContactsChildApi TicketAdditionalContactsChild { get; }
+		public ITicketAdditionalContactsChild TicketAdditionalContactsChild { get; }
 
 		/// <inheritdoc />
-		public ITicketAttachmentsApi TicketAttachments { get; }
+		public ITicketAttachments TicketAttachments { get; }
 
 		/// <inheritdoc />
-		public ITicketAttachmentsChildApi TicketAttachmentsChild { get; }
+		public ITicketAttachmentsChild TicketAttachmentsChild { get; }
 
 		/// <inheritdoc />
-		public ITicketCategoriesApi TicketCategories { get; }
+		public ITicketCategories TicketCategories { get; }
 
 		/// <inheritdoc />
-		public ITicketCategoryFieldDefaultsApi TicketCategoryFieldDefaults { get; }
+		public ITicketCategoryFieldDefaults TicketCategoryFieldDefaults { get; }
 
 		/// <inheritdoc />
-		public ITicketCategoryFieldDefaultsChildApi TicketCategoryFieldDefaultsChild { get; }
+		public ITicketCategoryFieldDefaultsChild TicketCategoryFieldDefaultsChild { get; }
 
 		/// <inheritdoc />
-		public ITicketChangeRequestApprovalsApi TicketChangeRequestApprovals { get; }
+		public ITicketChangeRequestApprovals TicketChangeRequestApprovals { get; }
 
 		/// <inheritdoc />
-		public ITicketChangeRequestApprovalsChildApi TicketChangeRequestApprovalsChild { get; }
+		public ITicketChangeRequestApprovalsChild TicketChangeRequestApprovalsChild { get; }
 
 		/// <inheritdoc />
-		public ITicketChargesApi TicketCharges { get; }
+		public ITicketCharges TicketCharges { get; }
 
 		/// <inheritdoc />
-		public ITicketChargesChildApi TicketChargesChild { get; }
+		public ITicketChargesChild TicketChargesChild { get; }
 
 		/// <inheritdoc />
-		public ITicketChecklistItemsApi TicketChecklistItems { get; }
+		public ITicketChecklistItems TicketChecklistItems { get; }
 
 		/// <inheritdoc />
-		public ITicketChecklistItemsChildApi TicketChecklistItemsChild { get; }
+		public ITicketChecklistItemsChild TicketChecklistItemsChild { get; }
 
 		/// <inheritdoc />
-		public ITicketChecklistLibrariesApi TicketChecklistLibraries { get; }
+		public ITicketChecklistLibraries TicketChecklistLibraries { get; }
 
 		/// <inheritdoc />
-		public ITicketChecklistLibrariesChildApi TicketChecklistLibrariesChild { get; }
+		public ITicketChecklistLibrariesChild TicketChecklistLibrariesChild { get; }
 
 		/// <inheritdoc />
-		public ITicketHistoryApi TicketHistory { get; }
+		public ITicketHistory TicketHistory { get; }
 
 		/// <inheritdoc />
-		public ITicketNotesApi TicketNotes { get; }
+		public ITicketNotes TicketNotes { get; }
 
 		/// <inheritdoc />
-		public ITicketNotesChildApi TicketNotesChild { get; }
+		public ITicketNotesChild TicketNotesChild { get; }
 
 		/// <inheritdoc />
-		public ITicketRmaCreditsApi TicketRmaCredits { get; }
+		public ITicketRmaCredits TicketRmaCredits { get; }
 
 		/// <inheritdoc />
-		public ITicketRmaCreditsChildApi TicketRmaCreditsChild { get; }
+		public ITicketRmaCreditsChild TicketRmaCreditsChild { get; }
 
 		/// <inheritdoc />
-		public ITicketSecondaryResourcesApi TicketSecondaryResources { get; }
+		public ITicketSecondaryResources TicketSecondaryResources { get; }
 
 		/// <inheritdoc />
-		public ITicketSecondaryResourcesChildApi TicketSecondaryResourcesChild { get; }
+		public ITicketSecondaryResourcesChild TicketSecondaryResourcesChild { get; }
 
 		/// <inheritdoc />
-		public ITicketsApi Tickets { get; }
+		public ITickets Tickets { get; }
 
 		/// <inheritdoc />
-		public ITimeEntriesApi TimeEntries { get; }
+		public ITimeEntries TimeEntries { get; }
 
 		/// <inheritdoc />
-		public IUserDefinedFieldDefinitionsApi UserDefinedFieldDefinitions { get; }
+		public IUserDefinedFieldDefinitions UserDefinedFieldDefinitions { get; }
 
 		/// <inheritdoc />
-		public IUserDefinedFieldListItemsApi UserDefinedFieldListItems { get; }
+		public IUserDefinedFieldListItems UserDefinedFieldListItems { get; }
 
 		/// <inheritdoc />
-		public IUserDefinedFieldListItemsChildApi UserDefinedFieldListItemsChild { get; }
+		public IUserDefinedFieldListItemsChild UserDefinedFieldListItemsChild { get; }
 
 		/// <inheritdoc />
-		public IWebhookEventErrorLogsApi WebhookEventErrorLogs { get; }
+		public IWebhookEventErrorLogs WebhookEventErrorLogs { get; }
 
 		/// <inheritdoc />
-		public IWorkTypeModifiersApi WorkTypeModifiers { get; }
+		public IWorkTypeModifiers WorkTypeModifiers { get; }
 
 		/// <inheritdoc />
-		public IZoneInformationApiIntegrationApi ZoneInformationApiIntegration { get; }
+		public IZoneInformationApiIntegration ZoneInformationApiIntegration { get; }
 	}
 }

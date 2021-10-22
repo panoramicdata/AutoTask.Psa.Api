@@ -7,7 +7,7 @@ namespace AutoTask.Psa.Api.Interfaces
 	/// <summary>
 	/// Represents a collection of functions to interact with the API endpoints
 	/// </summary>
-	public interface IContactWebhooksApi
+	public interface IContactWebhooks
 	{
 		/// <summary>
 		///
