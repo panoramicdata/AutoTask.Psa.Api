@@ -35,6 +35,15 @@ namespace AutoTask.Psa.Api.Interfaces
 		Task<QueryActionResult<TicketModel>> QueryAsync([Body] QueryModel queryModel);
 
 		/// <summary>
+		/// Performs a query using a search JSON filter
+		/// </summary>
+		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+		/// <param name="search">JSON filter</param>
+		/// <returns>QueryActionResult of TicketModel</returns>
+		[Get("/V1.0/Tickets/query")]
+		Task<QueryActionResult<TicketModel>> QueryAsync(string search);
+
+		/// <summary>
 		///
 		/// </summary>
 		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
