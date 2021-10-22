@@ -9,7 +9,7 @@ namespace AutoTask.Psa.Api
 	/// <summary>
 	/// API client is mainly responsible for making the HTTP call to the API backend.
 	/// </summary>
-	public class AutoTaskClient
+	public class AutoTaskClient : IDisposable
 	{
 		/// <summary>
 		/// Constructor
@@ -23,6 +23,7 @@ namespace AutoTask.Psa.Api
 				BaseAddress = new Uri($"https://webservices{options.ServerId}.autotask.net/atservicesrest")
 			})
 		{
+			_shouldDisposeHttpClient = true;
 		}
 
 		public AutoTaskClient(HttpClient client)
@@ -283,6 +284,8 @@ namespace AutoTask.Psa.Api
 			=> RestService.For<T>(_client);
 
 		private readonly HttpClient _client;
+		private readonly bool _shouldDisposeHttpClient;
+		private bool _isDisposed;
 
 		/// <inheritdoc />
 		public IActionTypes ActionTypes { get; }
@@ -1030,5 +1033,28 @@ namespace AutoTask.Psa.Api
 
 		/// <inheritdoc />
 		public IZoneInformationApiIntegration ZoneInformationApiIntegration { get; }
+
+		protected virtual void Dispose(bool disposing)
+		{
+			if (!_isDisposed)
+			{
+				if (disposing)
+				{
+					if (_shouldDisposeHttpClient)
+					{
+						_client.Dispose();
+					}
+				}
+
+				_isDisposed = true;
+			}
+		}
+
+		public void Dispose()
+		{
+			// Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+			Dispose(disposing: true);
+			GC.SuppressFinalize(this);
+		}
 	}
 }
