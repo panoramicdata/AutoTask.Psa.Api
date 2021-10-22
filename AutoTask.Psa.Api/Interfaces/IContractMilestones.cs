@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ContractMilestoneModel</returns>
 		[Get("/V1.0/ContractMilestones/query")]
-		Task<ContractMilestoneModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ContractMilestoneModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

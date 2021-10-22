@@ -83,7 +83,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of WorkTypeModifierModel</returns>
 		[Get("/V1.0/WorkTypeModifiers/query")]
-		Task<WorkTypeModifierModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<WorkTypeModifierModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

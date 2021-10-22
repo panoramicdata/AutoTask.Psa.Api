@@ -84,7 +84,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ComanagedAssociationModel</returns>
 		[Get("/V1.0/ComanagedAssociations/query")]
-		Task<ComanagedAssociationModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ComanagedAssociationModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

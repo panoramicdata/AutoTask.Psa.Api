@@ -83,7 +83,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of CountryModel</returns>
 		[Get("/V1.0/Countries/query")]
-		Task<CountryModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<CountryModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

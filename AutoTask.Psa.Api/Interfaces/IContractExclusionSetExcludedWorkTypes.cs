@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ContractExclusionSetExcludedWorkTypeModel</returns>
 		[Get("/V1.0/ContractExclusionSetExcludedWorkTypes/query")]
-		Task<ContractExclusionSetExcludedWorkTypeModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ContractExclusionSetExcludedWorkTypeModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

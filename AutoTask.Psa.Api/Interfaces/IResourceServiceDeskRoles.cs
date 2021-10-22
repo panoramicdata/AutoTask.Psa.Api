@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ResourceServiceDeskRoleModel</returns>
 		[Get("/V1.0/ResourceServiceDeskRoles/query")]
-		Task<ResourceServiceDeskRoleModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ResourceServiceDeskRoleModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

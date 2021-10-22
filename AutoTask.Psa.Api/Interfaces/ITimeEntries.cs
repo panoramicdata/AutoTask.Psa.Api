@@ -100,7 +100,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of TimeEntryModel</returns>
 		[Get("/V1.0/TimeEntries/query")]
-		Task<TimeEntryModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<TimeEntryModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

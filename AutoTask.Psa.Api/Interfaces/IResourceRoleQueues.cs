@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ResourceRoleQueueModel</returns>
 		[Get("/V1.0/ResourceRoleQueues/query")]
-		Task<ResourceRoleQueueModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ResourceRoleQueueModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

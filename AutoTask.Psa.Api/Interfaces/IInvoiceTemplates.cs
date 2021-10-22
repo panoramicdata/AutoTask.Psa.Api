@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of InvoiceTemplateModel</returns>
 		[Get("/V1.0/InvoiceTemplates/query")]
-		Task<InvoiceTemplateModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<InvoiceTemplateModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

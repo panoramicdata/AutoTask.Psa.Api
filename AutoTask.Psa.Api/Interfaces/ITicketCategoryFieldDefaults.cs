@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of TicketCategoryFieldDefaultsModel</returns>
 		[Get("/V1.0/TicketCategoryFieldDefaults/query")]
-		Task<TicketCategoryFieldDefaultsModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<TicketCategoryFieldDefaultsModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

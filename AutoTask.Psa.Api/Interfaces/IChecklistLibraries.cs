@@ -100,7 +100,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ChecklistLibraryModel</returns>
 		[Get("/V1.0/ChecklistLibraries/query")]
-		Task<ChecklistLibraryModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ChecklistLibraryModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

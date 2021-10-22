@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ContactModel</returns>
 		[Get("/V1.0/Contacts/query")]
-		Task<ContactModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ContactModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

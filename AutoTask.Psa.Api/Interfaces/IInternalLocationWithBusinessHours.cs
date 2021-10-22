@@ -91,7 +91,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of InternalLocationWithBusinessHoursModel</returns>
 		[Get("/V1.0/InternalLocationWithBusinessHours/query")]
-		Task<InternalLocationWithBusinessHoursModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<InternalLocationWithBusinessHoursModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

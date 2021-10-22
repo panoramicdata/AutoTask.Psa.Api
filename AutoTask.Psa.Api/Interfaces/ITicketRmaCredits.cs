@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of TicketRmaCreditModel</returns>
 		[Get("/V1.0/TicketRmaCredits/query")]
-		Task<TicketRmaCreditModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<TicketRmaCreditModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

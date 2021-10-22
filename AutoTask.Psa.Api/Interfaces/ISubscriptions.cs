@@ -100,7 +100,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of SubscriptionModel</returns>
 		[Get("/V1.0/Subscriptions/query")]
-		Task<SubscriptionModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<SubscriptionModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

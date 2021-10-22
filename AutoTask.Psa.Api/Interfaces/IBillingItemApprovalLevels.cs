@@ -75,7 +75,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of BillingItemApprovalLevelModel</returns>
 		[Get("/V1.0/BillingItemApprovalLevels/query")]
-		Task<BillingItemApprovalLevelModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<BillingItemApprovalLevelModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

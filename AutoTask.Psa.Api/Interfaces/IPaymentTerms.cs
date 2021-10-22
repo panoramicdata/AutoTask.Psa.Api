@@ -91,7 +91,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of PaymentTermModel</returns>
 		[Get("/V1.0/PaymentTerms/query")]
-		Task<PaymentTermModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<PaymentTermModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

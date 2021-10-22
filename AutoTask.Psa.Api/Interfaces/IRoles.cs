@@ -91,7 +91,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of RoleModel</returns>
 		[Get("/V1.0/Roles/query")]
-		Task<RoleModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<RoleModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

@@ -83,7 +83,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of SalesOrderModel</returns>
 		[Get("/V1.0/SalesOrders/query")]
-		Task<SalesOrderModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<SalesOrderModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

@@ -59,7 +59,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ProjectAttachmentModel</returns>
 		[Get("/V1.0/ProjectAttachments/query")]
-		Task<ProjectAttachmentModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ProjectAttachmentModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

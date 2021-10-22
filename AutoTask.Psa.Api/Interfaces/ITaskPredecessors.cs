@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of TaskPredecessorModel</returns>
 		[Get("/V1.0/TaskPredecessors/query")]
-		Task<TaskPredecessorModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<TaskPredecessorModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

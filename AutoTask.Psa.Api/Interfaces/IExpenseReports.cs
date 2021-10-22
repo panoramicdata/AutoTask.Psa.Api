@@ -91,7 +91,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ExpenseReportModel</returns>
 		[Get("/V1.0/ExpenseReports/query")]
-		Task<ExpenseReportModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ExpenseReportModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

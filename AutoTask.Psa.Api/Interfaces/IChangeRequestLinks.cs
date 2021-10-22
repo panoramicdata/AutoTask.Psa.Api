@@ -84,7 +84,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ChangeRequestLinkModel</returns>
 		[Get("/V1.0/ChangeRequestLinks/query")]
-		Task<ChangeRequestLinkModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ChangeRequestLinkModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

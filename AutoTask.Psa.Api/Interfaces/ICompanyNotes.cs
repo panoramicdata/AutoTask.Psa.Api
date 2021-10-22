@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of CompanyNoteModel</returns>
 		[Get("/V1.0/CompanyNotes/query")]
-		Task<CompanyNoteModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<CompanyNoteModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

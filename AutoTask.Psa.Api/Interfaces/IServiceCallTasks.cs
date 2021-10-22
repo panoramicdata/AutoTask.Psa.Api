@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ServiceCallTaskModel</returns>
 		[Get("/V1.0/ServiceCallTasks/query")]
-		Task<ServiceCallTaskModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ServiceCallTaskModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

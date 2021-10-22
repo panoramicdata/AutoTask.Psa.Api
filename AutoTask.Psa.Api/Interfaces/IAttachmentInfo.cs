@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of AttachmentInfoModel</returns>
 		[Get("/V1.0/AttachmentInfo/query")]
-		Task<AttachmentInfoModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<AttachmentInfoModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

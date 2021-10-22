@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ContactWebhookFieldModel</returns>
 		[Get("/V1.0/ContactWebhookFields/query")]
-		Task<ContactWebhookFieldModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ContactWebhookFieldModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

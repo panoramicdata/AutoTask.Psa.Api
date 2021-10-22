@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of InventoryItemSerialNumberModel</returns>
 		[Get("/V1.0/InventoryItemSerialNumbers/query")]
-		Task<InventoryItemSerialNumberModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<InventoryItemSerialNumberModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

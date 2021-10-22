@@ -103,7 +103,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of AppointmentModel</returns>
 		[Get("/V1.0/Appointments/query")]
-		Task<AppointmentModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<AppointmentModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

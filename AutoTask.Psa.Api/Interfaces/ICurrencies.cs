@@ -83,7 +83,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of CurrencyModel</returns>
 		[Get("/V1.0/Currencies/query")]
-		Task<CurrencyModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<CurrencyModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

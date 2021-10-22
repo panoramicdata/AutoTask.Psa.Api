@@ -91,7 +91,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ConfigurationItemModel</returns>
 		[Get("/V1.0/ConfigurationItems/query")]
-		Task<ConfigurationItemModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ConfigurationItemModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

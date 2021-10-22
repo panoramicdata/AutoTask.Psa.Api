@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of TicketAdditionalContactModel</returns>
 		[Get("/V1.0/TicketAdditionalContacts/query")]
-		Task<TicketAdditionalContactModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<TicketAdditionalContactModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

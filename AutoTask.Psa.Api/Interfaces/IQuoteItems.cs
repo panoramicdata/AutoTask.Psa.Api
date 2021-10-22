@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of QuoteItemModel</returns>
 		[Get("/V1.0/QuoteItems/query")]
-		Task<QuoteItemModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<QuoteItemModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

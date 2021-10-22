@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ContactBillingProductAssociationModel</returns>
 		[Get("/V1.0/ContactBillingProductAssociations/query")]
-		Task<ContactBillingProductAssociationModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ContactBillingProductAssociationModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

@@ -91,7 +91,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of InventoryLocationModel</returns>
 		[Get("/V1.0/InventoryLocations/query")]
-		Task<InventoryLocationModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<InventoryLocationModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

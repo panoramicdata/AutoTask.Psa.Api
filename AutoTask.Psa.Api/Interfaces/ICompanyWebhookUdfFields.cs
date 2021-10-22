@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of CompanyWebhookUdfFieldModel</returns>
 		[Get("/V1.0/CompanyWebhookUdfFields/query")]
-		Task<CompanyWebhookUdfFieldModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<CompanyWebhookUdfFieldModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

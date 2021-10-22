@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of SkillModel</returns>
 		[Get("/V1.0/Skills/query")]
-		Task<SkillModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<SkillModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

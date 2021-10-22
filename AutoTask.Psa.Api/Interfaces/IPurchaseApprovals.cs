@@ -83,7 +83,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of PurchaseApprovalModel</returns>
 		[Get("/V1.0/PurchaseApprovals/query")]
-		Task<PurchaseApprovalModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<PurchaseApprovalModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

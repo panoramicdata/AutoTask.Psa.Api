@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ContractExclusionSetExcludedRoleModel</returns>
 		[Get("/V1.0/ContractExclusionSetExcludedRoles/query")]
-		Task<ContractExclusionSetExcludedRoleModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ContractExclusionSetExcludedRoleModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

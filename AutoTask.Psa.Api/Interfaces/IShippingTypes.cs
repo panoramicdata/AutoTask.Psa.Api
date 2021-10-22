@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ShippingTypeModel</returns>
 		[Get("/V1.0/ShippingTypes/query")]
-		Task<ShippingTypeModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ShippingTypeModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

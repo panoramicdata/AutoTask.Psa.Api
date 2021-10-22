@@ -83,7 +83,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of PriceListWorkTypeModifierModel</returns>
 		[Get("/V1.0/PriceListWorkTypeModifiers/query")]
-		Task<PriceListWorkTypeModifierModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<PriceListWorkTypeModifierModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

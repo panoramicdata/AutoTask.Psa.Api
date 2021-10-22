@@ -91,7 +91,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of TaxRegionModel</returns>
 		[Get("/V1.0/TaxRegions/query")]
-		Task<TaxRegionModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<TaxRegionModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

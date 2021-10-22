@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of SurveyModel</returns>
 		[Get("/V1.0/Surveys/query")]
-		Task<SurveyModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<SurveyModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

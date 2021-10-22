@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of HolidayModel</returns>
 		[Get("/V1.0/Holidays/query")]
-		Task<HolidayModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<HolidayModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

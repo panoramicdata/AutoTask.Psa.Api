@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ClassificationIconModel</returns>
 		[Get("/V1.0/ClassificationIcons/query")]
-		Task<ClassificationIconModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ClassificationIconModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

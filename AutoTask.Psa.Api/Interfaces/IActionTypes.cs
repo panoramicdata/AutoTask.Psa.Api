@@ -103,7 +103,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ActionTypeModel</returns>
 		[Get("/V1.0/ActionTypes/query")]
-		Task<ActionTypeModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ActionTypeModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		/// String count

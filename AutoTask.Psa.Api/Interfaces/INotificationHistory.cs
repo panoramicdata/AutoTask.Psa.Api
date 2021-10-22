@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of NotificationHistoryModel</returns>
 		[Get("/V1.0/NotificationHistory/query")]
-		Task<NotificationHistoryModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<NotificationHistoryModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

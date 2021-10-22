@@ -91,7 +91,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of UserDefinedFieldDefinitionModel</returns>
 		[Get("/V1.0/UserDefinedFieldDefinitions/query")]
-		Task<UserDefinedFieldDefinitionModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<UserDefinedFieldDefinitionModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

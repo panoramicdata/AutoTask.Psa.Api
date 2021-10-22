@@ -91,7 +91,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of OrganizationalLevelAssociationModel</returns>
 		[Get("/V1.0/OrganizationalLevelAssociations/query")]
-		Task<OrganizationalLevelAssociationModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<OrganizationalLevelAssociationModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

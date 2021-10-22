@@ -59,7 +59,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of OpportunityAttachmentModel</returns>
 		[Get("/V1.0/OpportunityAttachments/query")]
-		Task<OpportunityAttachmentModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<OpportunityAttachmentModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

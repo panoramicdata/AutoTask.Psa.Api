@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of PhaseModel</returns>
 		[Get("/V1.0/Phases/query")]
-		Task<PhaseModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<PhaseModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

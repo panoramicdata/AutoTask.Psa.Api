@@ -83,7 +83,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of PriceListMaterialCodeModel</returns>
 		[Get("/V1.0/PriceListMaterialCodes/query")]
-		Task<PriceListMaterialCodeModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<PriceListMaterialCodeModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

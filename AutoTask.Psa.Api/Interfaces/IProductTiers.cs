@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ProductTierModel</returns>
 		[Get("/V1.0/ProductTiers/query")]
-		Task<ProductTierModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ProductTierModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

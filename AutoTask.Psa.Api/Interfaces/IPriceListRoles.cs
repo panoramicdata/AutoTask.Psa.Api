@@ -83,7 +83,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of PriceListRoleModel</returns>
 		[Get("/V1.0/PriceListRoles/query")]
-		Task<PriceListRoleModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<PriceListRoleModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

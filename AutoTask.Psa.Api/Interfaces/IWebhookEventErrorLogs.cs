@@ -76,7 +76,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of WebhookEventErrorLogModel</returns>
 		[Get("/V1.0/WebhookEventErrorLogs/query")]
-		Task<WebhookEventErrorLogModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<WebhookEventErrorLogModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

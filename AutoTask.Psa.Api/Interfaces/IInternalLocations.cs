@@ -67,7 +67,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of InternalLocationModel</returns>
 		[Get("/V1.0/InternalLocations/query")]
-		Task<InternalLocationModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<InternalLocationModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

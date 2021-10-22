@@ -75,7 +75,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of InventoryTransferModel</returns>
 		[Get("/V1.0/InventoryTransfers/query")]
-		Task<InventoryTransferModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<InventoryTransferModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

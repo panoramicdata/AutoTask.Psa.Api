@@ -100,7 +100,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ChangeOrderChargeModel</returns>
 		[Get("/V1.0/ChangeOrderCharges/query")]
-		Task<ChangeOrderChargeModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ChangeOrderChargeModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///

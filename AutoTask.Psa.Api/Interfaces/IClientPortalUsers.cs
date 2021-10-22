@@ -91,7 +91,7 @@ namespace AutoTask.Psa.Api.Interfaces
 		/// <param name="search"></param>
 		/// <returns>Task of ClientPortalUserModel</returns>
 		[Get("/V1.0/ClientPortalUsers/query")]
-		Task<ClientPortalUserModel> StringQueryAsync([AliasAs("search")] string search);
+		Task<QueryActionResult<ClientPortalUserModel>> QueryAsync([AliasAs("search")] string search);
 
 		/// <summary>
 		///
