@@ -1,18 +1,14 @@
-using System.Collections.Generic;
-using System.Runtime.Serialization;
+namespace AutoTask.Psa.Api.Data;
 
-namespace AutoTask.Psa.Api.Data
+/// <summary>
+/// UserDefinedFieldInformationResultModel
+/// </summary>
+[DataContract]
+public partial class UserDefinedFieldInformationResultModel
 {
 	/// <summary>
-	/// UserDefinedFieldInformationResultModel
+	/// Gets or Sets Fields
 	/// </summary>
-	[DataContract]
-	public partial class UserDefinedFieldInformationResultModel
-	{
-		/// <summary>
-		/// Gets or Sets Fields
-		/// </summary>
-		[DataMember(Name = "Fields")]
-		public List<Field> Fields { get; set; } = new();
-	}
+	[DataMember(Name = "Fields")]
+	public List<Field> Fields { get; set; } = new();
 }

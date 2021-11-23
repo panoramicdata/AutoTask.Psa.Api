@@ -1,0 +1,13 @@
+﻿global using AutoTask.Psa.Api.Data;
+global using AutoTask.Psa.Api.Interfaces;
+global using Microsoft.Extensions.Logging;
+global using Newtonsoft.Json;
+global using Newtonsoft.Json.Converters;
+global using Refit;
+global using System;
+global using System.Collections.Generic;
+global using System.ComponentModel.DataAnnotations;
+global using System.Net.Http;
+global using System.Runtime.Serialization;
+global using System.Threading;
+global using System.Threading.Tasks;

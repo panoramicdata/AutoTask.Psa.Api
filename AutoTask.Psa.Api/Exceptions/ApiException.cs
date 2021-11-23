@@ -1,8 +1,5 @@
-using System;
+namespace AutoTask.Psa.Api.Exceptions;
 
-namespace AutoTask.Psa.Api.Exceptions
+public class ApiException : Exception
 {
-	public class ApiException : Exception
-	{
-	}
 }
