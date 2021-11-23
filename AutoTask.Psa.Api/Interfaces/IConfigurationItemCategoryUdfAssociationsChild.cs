@@ -1,20 +1,18 @@
 namespace AutoTask.Psa.Api.Interfaces;
 
-namespace AutoTask.Psa.Api.Interfaces
+/// <summary>
+/// Represents a collection of functions to interact with the API endpoints
+/// </summary>
+public interface IConfigurationItemCategoryUdfAssociationsChild
 {
 	/// <summary>
-	/// Represents a collection of functions to interact with the API endpoints
+	///
 	/// </summary>
-	public interface IConfigurationItemCategoryUdfAssociationsChild
-	{
-		/// <summary>
-		///
-		/// </summary>
-		/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-		/// <param name="parentId"></param>
-		/// <returns>Task of ConfigurationItemCategoryUdfAssociationModel</returns>
-		[Post("/V1.0/ConfigurationItemCategories/{parentId}/UdfAssociations")]
-		Task<ConfigurationItemCategoryUdfAssociationModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] ConfigurationItemCategoryUdfAssociationModel entity);
+	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <param name="parentId"></param>
+	/// <returns>Task of ConfigurationItemCategoryUdfAssociationModel</returns>
+	[Post("/V1.0/ConfigurationItemCategories/{parentId}/UdfAssociations")]
+	Task<ConfigurationItemCategoryUdfAssociationModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] ConfigurationItemCategoryUdfAssociationModel entity);
 
 	/// <summary>
 	///
