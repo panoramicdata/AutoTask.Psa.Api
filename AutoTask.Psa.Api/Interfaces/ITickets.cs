@@ -62,7 +62,7 @@ public interface ITickets
 	/// <param name="id"></param>
 	/// <returns>Task of TicketModel</returns>
 	[Get("/V1.0/Tickets/{id}")]
-	Task<TicketModel> GetAsync([AliasAs("id")] long id);
+	Task<GetResult<TicketModel>> GetAsync([AliasAs("id")] long id);
 
 	/// <summary>
 	///
