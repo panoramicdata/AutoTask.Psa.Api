@@ -1,4 +1,6 @@
-﻿namespace AutoTask.Psa.Api.Test;
+﻿using System.Threading.Tasks;
+
+namespace AutoTask.Psa.Api.Test;
 
 public class TicketTests : TestBase
 {
@@ -9,7 +11,7 @@ public class TicketTests : TestBase
 	}
 
 	[Fact]
-	public async void QueryAsync_WithString_Succeeds()
+	public async Task QueryAsync_WithString_Succeeds()
 	{
 		var response = await AutoTaskClient
 			.Tickets
