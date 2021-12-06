@@ -12,7 +12,7 @@ public interface ITicketNotesChild
 	/// <param name="parentId"></param>
 	/// <returns>Task of TicketNoteModel</returns>
 	[Post("/V1.0/Tickets/{parentId}/Notes")]
-	Task<TicketNoteModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] TicketNoteModel entity);
+	Task<OperationResultModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] TicketNoteModel entity);
 
 	/// <summary>
 	///
@@ -21,7 +21,7 @@ public interface ITicketNotesChild
 	/// <param name="parentId"></param>
 	/// <returns>Task of TicketNoteModel</returns>
 	[Patch("/V1.0/Tickets/{parentId}/Notes")]
-	Task<TicketNoteModel> PatchAsync([AliasAs("parentId")] long? parentId, [Body] TicketNoteModel entity);
+	Task<OperationResultModel> PatchAsync([AliasAs("parentId")] long? parentId, [Body] TicketNoteModel entity);
 
 	/// <summary>
 	///
@@ -30,7 +30,7 @@ public interface ITicketNotesChild
 	/// <param name="parentId"></param>
 	/// <returns>Task of TicketNoteModel</returns>
 	[Get("/V1.0/Tickets/{parentId}/Notes")]
-	Task<TicketNoteModel> QueryAsync([AliasAs("parentId")] long? parentId);
+	Task<GetResult<TicketNoteModel>> QueryAsync([AliasAs("parentId")] long? parentId);
 
 	/// <summary>
 	///
