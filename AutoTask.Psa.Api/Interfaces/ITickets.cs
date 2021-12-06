@@ -11,7 +11,7 @@ public interface ITickets
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of TicketModel</returns>
 	[Post("/V1.0/Tickets")]
-	Task<TicketModel> CreateAsync([Body] TicketModel entity);
+	Task<OperationResultModel> CreateAsync([Body] TicketModel entity);
 
 	/// <summary>
 	///
@@ -19,7 +19,7 @@ public interface ITickets
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of TicketModel</returns>
 	[Patch("/V1.0/Tickets")]
-	Task<TicketModel> PatchAsync([Body] TicketModel entity);
+	Task<OperationResultModel> PatchAsync([Body] TicketModel entity);
 
 	/// <summary>
 	///
@@ -78,7 +78,7 @@ public interface ITickets
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of TicketModel</returns>
 	[Put("/V1.0/Tickets")]
-	Task<TicketModel> UpdateAsync([Body] TicketModel entity);
+	Task<OperationResultModel> UpdateAsync([Body] TicketModel entity);
 
 	/// <summary>
 	///
