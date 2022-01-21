@@ -1,3 +1,5 @@
+using System.Threading.Tasks;
+
 namespace AutoTask.Psa.Api.Test;
 
 public class TaskTests : TestBase
@@ -10,7 +12,7 @@ public class TaskTests : TestBase
 	}
 
 	[Fact]
-	public async void QueryAsync_Succeeds()
+	public async Task QueryAsync_Succeeds()
 	{
 		var queryModel = new QueryModel
 		{

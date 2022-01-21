@@ -10,5 +10,5 @@ public partial class OperationResultModel
 	/// Gets or Sets ItemId
 	/// </summary>
 	[DataMember(Name = "ItemId")]
-	public object? ItemId { get; set; }
+	public long? ItemId { get; set; }
 }

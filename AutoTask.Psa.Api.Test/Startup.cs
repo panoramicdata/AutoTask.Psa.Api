@@ -1,5 +1,6 @@
 namespace AutoTask.Psa.Api.Test;
 
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "CA1822:Mark members as static", Justification = "Accessed by convention")]
 public class Startup
 {
 	public void ConfigureHost(IHostBuilder hostBuilder)

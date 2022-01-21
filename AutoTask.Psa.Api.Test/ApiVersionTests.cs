@@ -1,3 +1,5 @@
+using System.Threading.Tasks;
+
 namespace AutoTask.Psa.Api.Test;
 
 public class ApiVersionTests : TestBase
@@ -10,7 +12,7 @@ public class ApiVersionTests : TestBase
 	}
 
 	[Fact]
-	public async void GetAsync_Succeeds()
+	public async Task GetAsync_Succeeds()
 	{
 		var apiVersionResponseModel = await AutoTaskClient
 			.ApiVersions
