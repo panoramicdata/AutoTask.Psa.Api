@@ -1,3 +1,5 @@
+using Newtonsoft.Json.Linq;
+
 namespace AutoTask.Psa.Api;
 
 /// <summary>
@@ -14,7 +16,7 @@ public class AutoTaskClient : IDisposable
 		ILogger logger)
 		: this(new HttpClient(new AuthenticatedHttpClientHandler(options, logger))
 		{
-			BaseAddress = new Uri($"https://webservices{options.ServerId}.autotask.net/atservicesrest")
+			BaseAddress = new Uri($"https://webservices{options.ServerId}.autotask.net/atservicesrest/")
 		})
 	{
 		_shouldDisposeHttpClient = true;
@@ -22,7 +24,22 @@ public class AutoTaskClient : IDisposable
 
 	public AutoTaskClient(HttpClient client)
 	{
-		_client = client;
+		_httpClient = client;
+		_refitSettings = new RefitSettings
+		{
+			//ContentSerializer = new NewtonsoftJsonContentSerializer(
+			//	new JsonSerializerSettings
+			//	{
+			//		// By default nulls should not be rendered out, this will allow the receiving API to apply any defaults.
+			//		// Use [JsonProperty(NullValueHandling = NullValueHandling.Include)] to send
+			//		// nulls for specific properties, e.g. disassociating port schedule ids from a port
+			//		NullValueHandling = NullValueHandling.Ignore,
+			//	#if DEBUG
+			//		MissingMemberHandling = MissingMemberHandling.Error,
+			//	#endif
+			//		Converters = new List<JsonConverter> { new StringEnumConverter() }
+			//	})
+		};
 		ActionTypes = RefitFor(ActionTypes!);
 		AdditionalInvoiceFieldValues = RefitFor(AdditionalInvoiceFieldValues!);
 		ApiVersions = RefitFor(ApiVersions!);
@@ -275,9 +292,10 @@ public class AutoTaskClient : IDisposable
 	}
 
 	private T RefitFor<T>(T _)
-		=> RestService.For<T>(_client);
+		=> RestService.For<T>(_httpClient, _refitSettings);
 
-	private readonly HttpClient _client;
+	private readonly HttpClient _httpClient;
+	private readonly RefitSettings _refitSettings;
 	private readonly bool _shouldDisposeHttpClient;
 	private bool _isDisposed;
 
@@ -1028,6 +1046,21 @@ public class AutoTaskClient : IDisposable
 	/// <inheritdoc />
 	public IZoneInformationApiIntegration ZoneInformationApiIntegration { get; }
 
+	public async Task<JObject?> GetJObjectAsync(string subUrl, CancellationToken cancellationToken)
+	{
+		var httpRequestMessage = new HttpRequestMessage(HttpMethod.Get, subUrl);
+		var httpResponseMessage = await _httpClient.SendAsync(httpRequestMessage, cancellationToken);
+		if (httpResponseMessage.IsSuccessStatusCode)
+		{
+			var json = await httpResponseMessage
+				.Content
+				.ReadAsStringAsync();
+			return json == null ? null : JsonConvert.DeserializeObject<JObject>(json);
+		}
+
+		throw await ApiException.Create(httpRequestMessage, HttpMethod.Get, httpResponseMessage, _refitSettings);
+	}
+
 	protected virtual void Dispose(bool disposing)
 	{
 		if (!_isDisposed)
@@ -1036,7 +1069,7 @@ public class AutoTaskClient : IDisposable
 			{
 				if (_shouldDisposeHttpClient)
 				{
-					_client.Dispose();
+					_httpClient.Dispose();
 				}
 			}
 

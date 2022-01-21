@@ -5,7 +5,7 @@
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
-		<Copyright>Panoramic Data Limited 2021</Copyright>
+		<Copyright>Panoramic Data Limited 2021-2022</Copyright>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<ApplicationIcon>Icon.ico</ApplicationIcon>
 		<Description>Datto Autotask PSA REST API</Description>
@@ -19,13 +19,13 @@
 		<Company>Panoramic Data Limited</Company>
 		<Authors>Panoramic Data Limited</Authors>
 		<PackageReleaseNotes>
-			Initial REST API release
+			Added GetJObjectAsync(string subUrl, CancellationToken cancellationToken)
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
-		<PackageReference Include="Nerdbank.GitVersioning" Version="3.4.240">
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+		<PackageReference Include="Nerdbank.GitVersioning" Version="3.4.255">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
