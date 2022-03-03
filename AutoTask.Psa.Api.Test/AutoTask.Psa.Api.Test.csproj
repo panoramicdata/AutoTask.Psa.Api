@@ -2,8 +2,12 @@
 
   <PropertyGroup>
 	<TargetFramework>net6.0</TargetFramework>
-	<LangVersion>latest</LangVersion>
-	<Nullable>enable</Nullable>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <LangVersion>latest</LangVersion>
+	  <Nullable>enable</Nullable>
+	  <EnableNETAnalyzers>true</EnableNETAnalyzers>
+	  <AnalysisLevel>latest-recommended</AnalysisLevel>
+	  <NeutralLanguage>en</NeutralLanguage>
 	<IsPackable>false</IsPackable>
 
 	<ApplicationIcon>Icon.ico</ApplicationIcon>

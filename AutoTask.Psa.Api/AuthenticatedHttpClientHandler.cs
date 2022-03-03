@@ -43,13 +43,22 @@ public class AuthenticatedHttpClientHandler : HttpClientHandler
 
 		// Get a GUID to uniquely identify the request
 		var guid = Guid.NewGuid();
-		_logger.LogDebug($"{guid}:{request.Method}:{request.RequestUri}\nHeaders:{request.Headers}\nBody:{(request.Content is null ? null : await request.Content.ReadAsStringAsync().ConfigureAwait(false))}");
+		_logger.LogDebug("{Guid}:{RequestMethod}:{RequestUri}\nHeaders:{Headers}\nBody:{Body}",
+			guid.ToString(),
+			request.Method,
+			request.RequestUri,
+			request.Headers,
+			request.Content is null ? null : await request.Content.ReadAsStringAsync().ConfigureAwait(false)
+			);
 
 		var response = await base
 			.SendAsync(request, cancellationToken)
 			.ConfigureAwait(false);
 
-		_logger.LogDebug($"{guid}:{response.StatusCode}:{await response.Content.ReadAsStringAsync().ConfigureAwait(false)}");
+		_logger.LogDebug("{Guid}:{ResponseStatusCode}:{Body}",
+			guid.ToString(),
+			response.StatusCode,
+			request.Content is null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false));
 
 		return response;
 	}

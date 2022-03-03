@@ -3,8 +3,12 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<AnalysisLevel>latest-recommended</AnalysisLevel>
+		<NeutralLanguage>en</NeutralLanguage>
 		<Copyright>Panoramic Data Limited 2021-2022</Copyright>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<ApplicationIcon>Icon.ico</ApplicationIcon>
