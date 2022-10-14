@@ -1078,7 +1078,7 @@ public class AutoTaskClient : IDisposable
 	/// <param name="cancellationToken"></param>
 	/// <exception cref="FormatException"></exception>
 	public Task<List<JObject>> GetAllAsync(string subUrl, string body, CancellationToken cancellationToken)
-		=> GetAllInternalAsync(HttpMethod.Get, subUrl, body, cancellationToken);
+		=> GetAllInternalAsync(HttpMethod.Post, subUrl, body, cancellationToken);
 
 	/// <summary>
 	/// Perform a query using HTTP POST and return all the results.
