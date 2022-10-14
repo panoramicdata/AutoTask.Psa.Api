@@ -1,4 +1,5 @@
 using Newtonsoft.Json.Linq;
+using System.Text;
 
 namespace AutoTask.Psa.Api;
 
@@ -1059,6 +1060,94 @@ public class AutoTaskClient : IDisposable
 		}
 
 		throw await ApiException.Create(httpRequestMessage, HttpMethod.Get, httpResponseMessage, _refitSettings);
+	}
+
+	/// <summary>
+	/// Performs a GET request to the specified URL.
+	/// </summary>
+	/// <param name="subUrl"></param>
+	/// <param name="cancellationToken"></param>
+	/// <exception cref="FormatException"></exception>
+	public async Task<List<JObject>> GetAllAsync(string subUrl, CancellationToken cancellationToken)
+	{
+		var list = new List<JObject>();
+		while (true)
+		{
+			var httpRequestMessage = new HttpRequestMessage(HttpMethod.Get, subUrl);
+			var httpResponseMessage = await _httpClient.SendAsync(httpRequestMessage, cancellationToken);
+			if (httpResponseMessage.IsSuccessStatusCode)
+			{
+				var json = await httpResponseMessage
+					.Content
+					.ReadAsStringAsync();
+				var jObject = json == null ? null : JsonConvert.DeserializeObject<JObject>(json);
+
+				list.AddRange(jObject?["items"]?.ToObject<List<JObject>>() ?? throw new FormatException("Cannot deserialize items."));
+
+				var nextPageUrl = jObject?["pageDetails"]?["nextPageUrl"];
+
+				// Do we have another page?
+				if (nextPageUrl == null)
+				{
+					// No
+					return list;
+				}
+				// Yes
+
+				// Get the next page
+				subUrl = nextPageUrl.ToString();
+			}
+			else
+			{
+				throw await ApiException.Create(httpRequestMessage, HttpMethod.Get, httpResponseMessage, _refitSettings);
+			}
+		}
+	}
+
+	/// <summary>
+	/// Perform a query using HTTP POST and return all the results.
+	/// </summary>
+	/// <param name="subUrl"></param>
+	/// <param name="body"></param>
+	/// <param name="cancellationToken"></param>
+	/// <exception cref="FormatException"></exception>
+	public async Task<List<JObject>> GetAllAsync(string subUrl, string body, CancellationToken cancellationToken)
+	{
+		var list = new List<JObject>();
+		while (true)
+		{
+			var httpRequestMessage = new HttpRequestMessage(HttpMethod.Post, subUrl)
+			{
+				Content = new StringContent(body, Encoding.UTF8, "application/json")
+			};
+			var httpResponseMessage = await _httpClient.SendAsync(httpRequestMessage, cancellationToken);
+			if (httpResponseMessage.IsSuccessStatusCode)
+			{
+				var json = await httpResponseMessage
+					.Content
+					.ReadAsStringAsync();
+				var jObject = json == null ? null : JsonConvert.DeserializeObject<JObject>(json);
+
+				list.AddRange(jObject?["items"]?.ToObject<List<JObject>>() ?? throw new FormatException("Cannot deserialize items."));
+
+				var nextPageUrl = jObject?["pageDetails"]?["nextPageUrl"];
+
+				// Do we have another page?
+				if (nextPageUrl == null)
+				{
+					// No
+					return list;
+				}
+				// Yes
+
+				// Get the next page
+				subUrl = nextPageUrl.ToString();
+			}
+			else
+			{
+				throw await ApiException.Create(httpRequestMessage, HttpMethod.Get, httpResponseMessage, _refitSettings);
+			}
+		}
 	}
 
 	protected virtual void Dispose(bool disposing)

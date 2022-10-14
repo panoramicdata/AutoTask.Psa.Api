@@ -23,7 +23,8 @@
 		<Company>Panoramic Data Limited</Company>
 		<Authors>Panoramic Data Limited</Authors>
 		<PackageReleaseNotes>
-			Added GetJObjectAsync(string subUrl, CancellationToken cancellationToken)
+			Added GetAllAsync(string subUrl, CancellationToken cancellationToken) for paged GET requests
+			Added GetAllAsync(string subUrl, string body, CancellationToken cancellationToken) for paged POST requests
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
