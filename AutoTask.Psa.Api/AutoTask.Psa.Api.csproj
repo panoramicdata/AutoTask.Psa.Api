@@ -25,6 +25,7 @@
 		<PackageReleaseNotes>
 			Added GetAllAsync(string subUrl, CancellationToken cancellationToken) for paged GET requests
 			Added GetAllAsync(string subUrl, string body, CancellationToken cancellationToken) for paged POST requests
+			Added Delete support
 		</PackageReleaseNotes>
 	</PropertyGroup>
 

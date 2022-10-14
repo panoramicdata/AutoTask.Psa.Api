@@ -1138,7 +1138,7 @@ public class AutoTaskClient : IDisposable
 	/// <param name="subUrl"></param>
 	/// <param name="cancellationToken"></param>
 	/// <exception cref="FormatException"></exception>
-	private async Task DeleteAsync(
+	public async Task DeleteAsync(
 		string subUrl,
 		CancellationToken cancellationToken)
 	{
