@@ -27,6 +27,8 @@
 			Added GetAllAsync(string subUrl, string body, CancellationToken cancellationToken) for paged POST requests
 			Added Delete support
 		</PackageReleaseNotes>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
 
 	<ItemGroup>
