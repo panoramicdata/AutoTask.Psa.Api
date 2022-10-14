@@ -1114,7 +1114,7 @@ public class AutoTaskClient : IDisposable
 				var nextPageUrl = jObject?["pageDetails"]?["nextPageUrl"];
 
 				// Do we have another page?
-				if (nextPageUrl == null)
+				if (string.IsNullOrWhiteSpace(nextPageUrl))
 				{
 					// No
 					return list;
