@@ -1097,7 +1097,7 @@ public class AutoTaskClient : IDisposable
 		while (true)
 		{
 			var httpRequestMessage = new HttpRequestMessage(httpMethod, subUrl);
-			if(body is not null)
+			if (body is not null)
 			{
 				httpRequestMessage.Content = new StringContent(body, Encoding.UTF8, "application/json");
 			};
