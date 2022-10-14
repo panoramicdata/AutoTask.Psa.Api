@@ -1111,7 +1111,7 @@ public class AutoTaskClient : IDisposable
 
 				list.AddRange(jObject?["items"]?.ToObject<List<JObject>>() ?? throw new FormatException("Cannot deserialize items."));
 
-				var nextPageUrl = jObject?["pageDetails"]?["nextPageUrl"];
+				var nextPageUrl = jObject?["pageDetails"]?["nextPageUrl"]?.ToString();
 
 				// Do we have another page?
 				if (string.IsNullOrWhiteSpace(nextPageUrl))
@@ -1122,12 +1122,31 @@ public class AutoTaskClient : IDisposable
 				// Yes
 
 				// Get the next page
-				subUrl = nextPageUrl.ToString();
+				subUrl = nextPageUrl;
 			}
 			else
 			{
 				throw await ApiException.Create(httpRequestMessage, HttpMethod.Get, httpResponseMessage, _refitSettings);
 			}
+		}
+	}
+
+
+	/// <summary>
+	/// Perform a query using HTTP POST and return all the results.
+	/// </summary>
+	/// <param name="subUrl"></param>
+	/// <param name="cancellationToken"></param>
+	/// <exception cref="FormatException"></exception>
+	private async Task DeleteAsync(
+		string subUrl,
+		CancellationToken cancellationToken)
+	{
+		var httpRequestMessage = new HttpRequestMessage(HttpMethod.Delete, subUrl);
+		var httpResponseMessage = await _httpClient.SendAsync(httpRequestMessage, cancellationToken);
+		if (!httpResponseMessage.IsSuccessStatusCode)
+		{
+			throw await ApiException.Create(httpRequestMessage, HttpMethod.Get, httpResponseMessage, _refitSettings);
 		}
 	}
 
