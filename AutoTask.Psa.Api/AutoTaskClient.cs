@@ -1100,7 +1100,7 @@ public class AutoTaskClient : IDisposable
 			if (body is not null)
 			{
 				httpRequestMessage.Content = new StringContent(body, Encoding.UTF8, "application/json");
-			};
+			}
 			var httpResponseMessage = await _httpClient.SendAsync(httpRequestMessage, cancellationToken);
 			if (httpResponseMessage.IsSuccessStatusCode)
 			{

@@ -531,13 +531,6 @@ public class Expression
 	public NodeTypeEnum? NodeType { get; set; }
 
 	/// <summary>
-	/// Initializes a new instance of the <see cref="Expression" /> class.
-	/// </summary>
-	public Expression()
-	{
-	}
-
-	/// <summary>
 	/// Gets or Sets Type
 	/// </summary>
 	[DataMember(Name = "Type")]

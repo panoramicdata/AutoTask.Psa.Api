@@ -13,13 +13,6 @@ public class ParameterExpression
 	public NodeTypeEnum? NodeType { get; set; }
 
 	/// <summary>
-	/// Initializes a new instance of the <see cref="ParameterExpression" /> class.
-	/// </summary>
-	public ParameterExpression()
-	{
-	}
-
-	/// <summary>
 	/// Gets or Sets Type
 	/// </summary>
 	[DataMember(Name = "Type")]

@@ -13,13 +13,6 @@ public class ExpressionFunc
 	public NodeTypeEnum? NodeType { get; set; }
 
 	/// <summary>
-	/// Initializes a new instance of the <see cref="ExpressionFunc" /> class.
-	/// </summary>
-	public ExpressionFunc()
-	{
-	}
-
-	/// <summary>
 	/// Gets or Sets Type
 	/// </summary>
 	[DataMember(Name = "Type")]
