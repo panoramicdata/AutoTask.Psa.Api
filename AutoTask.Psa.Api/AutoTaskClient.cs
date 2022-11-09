@@ -1131,7 +1131,6 @@ public class AutoTaskClient : IDisposable
 		}
 	}
 
-
 	/// <summary>
 	/// Perform a query using HTTP POST and return all the results.
 	/// </summary>
