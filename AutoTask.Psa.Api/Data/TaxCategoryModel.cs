@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// TaxCategoryModel
 /// </summary>
 [DataContract]
-public partial class TaxCategoryModel
+public class TaxCategoryModel
 {
 	/// <summary>
 	/// Gets or Sets Id

@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// TicketChangeRequestApprovalModel
 /// </summary>
 [DataContract]
-public partial class TicketChangeRequestApprovalModel
+public class TicketChangeRequestApprovalModel
 {
 	/// <summary>
 	/// Gets or Sets Id

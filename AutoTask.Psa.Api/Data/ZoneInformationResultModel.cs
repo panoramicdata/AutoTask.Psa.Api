@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ZoneInformationResultModel
 /// </summary>
 [DataContract]
-public partial class ZoneInformationResultModel
+public class ZoneInformationResultModel
 {
 	/// <summary>
 	/// Gets or Sets ZoneName

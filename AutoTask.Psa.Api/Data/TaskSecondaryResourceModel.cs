@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// TaskSecondaryResourceModel
 /// </summary>
 [DataContract]
-public partial class TaskSecondaryResourceModel
+public class TaskSecondaryResourceModel
 {
 	/// <summary>
 	/// Gets or Sets Id

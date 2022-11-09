@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ConfigurationItemExtModel
 /// </summary>
 [DataContract]
-public partial class ConfigurationItemExtModel
+public class ConfigurationItemExtModel
 {
 	/// <summary>
 	/// Gets or Sets Id

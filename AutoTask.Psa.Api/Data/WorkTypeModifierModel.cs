@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// WorkTypeModifierModel
 /// </summary>
 [DataContract]
-public partial class WorkTypeModifierModel
+public class WorkTypeModifierModel
 {
 	/// <summary>
 	/// Gets or Sets Id

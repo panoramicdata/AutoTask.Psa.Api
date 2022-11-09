@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// TimeEntryModel
 /// </summary>
 [DataContract]
-public partial class TimeEntryModel
+public class TimeEntryModel
 {
 	/// <summary>
 	/// Gets or Sets Id

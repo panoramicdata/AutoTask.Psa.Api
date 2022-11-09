@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// CompanyAlertModel
 /// </summary>
 [DataContract]
-public partial class CompanyAlertModel
+public class CompanyAlertModel
 {
 	/// <summary>
 	/// Gets or Sets Id

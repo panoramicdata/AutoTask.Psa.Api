@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// PurchaseOrderItemModel
 /// </summary>
 [DataContract]
-public partial class PurchaseOrderItemModel
+public class PurchaseOrderItemModel
 {
 	/// <summary>
 	/// Gets or Sets Id

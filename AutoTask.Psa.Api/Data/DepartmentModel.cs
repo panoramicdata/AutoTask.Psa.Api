@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// DepartmentModel
 /// </summary>
 [DataContract]
-public partial class DepartmentModel
+public class DepartmentModel
 {
 	/// <summary>
 	/// Gets or Sets Id

@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// CollectionItem
 /// </summary>
 [DataContract]
-public partial class CollectionItem
+public class CollectionItem
 {
 	/// <summary>
 	/// Gets or Sets IntegerValue

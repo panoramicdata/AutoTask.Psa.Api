@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ConfigurationItemCategoryModel
 /// </summary>
 [DataContract]
-public partial class ConfigurationItemCategoryModel
+public class ConfigurationItemCategoryModel
 {
 	/// <summary>
 	/// Gets or Sets Id

@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// Filter
 /// </summary>
 [DataContract]
-public partial class Filter
+public class Filter
 {
 	/// <summary>
 	/// Gets or Sets Op

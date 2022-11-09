@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// WebhookEventErrorLogModel
 /// </summary>
 [DataContract]
-public partial class WebhookEventErrorLogModel
+public class WebhookEventErrorLogModel
 {
 	/// <summary>
 	/// Gets or Sets Id

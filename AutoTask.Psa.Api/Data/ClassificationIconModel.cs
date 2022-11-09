@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ClassificationIconModel
 /// </summary>
 [DataContract]
-public partial class ClassificationIconModel
+public class ClassificationIconModel
 {
 	/// <summary>
 	/// Gets or Sets Id

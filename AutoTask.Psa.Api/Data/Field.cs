@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// Field
 /// </summary>
 [DataContract]
-public partial class Field
+public class Field
 {
 	/// <summary>
 	/// Gets or Sets Name

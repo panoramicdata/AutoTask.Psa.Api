@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// Expression
 /// </summary>
 [DataContract]
-public partial class Expression
+public class Expression
 {
 	/// <summary>
 	/// Gets or Sets NodeType
@@ -533,7 +533,6 @@ public partial class Expression
 	/// <summary>
 	/// Initializes a new instance of the <see cref="Expression" /> class.
 	/// </summary>
-	[JsonConstructor]
 	public Expression()
 	{
 	}

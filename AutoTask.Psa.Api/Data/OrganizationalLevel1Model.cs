@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// OrganizationalLevel1Model
 /// </summary>
 [DataContract]
-public partial class OrganizationalLevel1Model
+public class OrganizationalLevel1Model
 {
 	/// <summary>
 	/// Gets or Sets Id

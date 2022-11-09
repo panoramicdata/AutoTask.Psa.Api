@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// InternalLocationWithBusinessHoursModel
 /// </summary>
 [DataContract]
-public partial class InternalLocationWithBusinessHoursModel
+public class InternalLocationWithBusinessHoursModel
 {
 	/// <summary>
 	/// Gets or Sets Id

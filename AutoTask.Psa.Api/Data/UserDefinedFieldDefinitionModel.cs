@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// UserDefinedFieldDefinitionModel
 /// </summary>
 [DataContract]
-public partial class UserDefinedFieldDefinitionModel
+public class UserDefinedFieldDefinitionModel
 {
 	/// <summary>
 	/// Gets or Sets Id

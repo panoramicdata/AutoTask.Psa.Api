@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ServiceLevelAgreementResultsModel
 /// </summary>
 [DataContract]
-public partial class ServiceLevelAgreementResultsModel
+public class ServiceLevelAgreementResultsModel
 {
 	/// <summary>
 	/// Gets or Sets Id

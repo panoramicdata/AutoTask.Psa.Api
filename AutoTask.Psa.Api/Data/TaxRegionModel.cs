@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// TaxRegionModel
 /// </summary>
 [DataContract]
-public partial class TaxRegionModel
+public class TaxRegionModel
 {
 	/// <summary>
 	/// Gets or Sets Id

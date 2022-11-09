@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// InventoryItemModel
 /// </summary>
 [DataContract]
-public partial class InventoryItemModel
+public class InventoryItemModel
 {
 	/// <summary>
 	/// Gets or Sets Id

@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ExpressionFuncAccountAlertInt64
 /// </summary>
 [DataContract]
-public partial class ExpressionFunc
+public class ExpressionFunc
 {
 	/// <summary>
 	/// Gets or Sets NodeType
@@ -15,7 +15,6 @@ public partial class ExpressionFunc
 	/// <summary>
 	/// Initializes a new instance of the <see cref="ExpressionFunc" /> class.
 	/// </summary>
-	[JsonConstructor]
 	public ExpressionFunc()
 	{
 	}

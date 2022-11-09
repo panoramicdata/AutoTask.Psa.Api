@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// QueryModel
 /// </summary>
 [DataContract]
-public partial class QueryModel
+public class QueryModel
 {
 	/// <summary>
 	/// Gets or Sets MaxRecords

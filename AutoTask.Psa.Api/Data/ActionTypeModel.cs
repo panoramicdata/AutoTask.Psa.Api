@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ActionTypeModel
 /// </summary>
 [DataContract]
-public partial class ActionTypeModel
+public class ActionTypeModel
 {
 	/// <summary>
 	/// Gets or Sets Id

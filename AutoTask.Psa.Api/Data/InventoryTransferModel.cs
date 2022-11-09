@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// InventoryTransferModel
 /// </summary>
 [DataContract]
-public partial class InventoryTransferModel
+public class InventoryTransferModel
 {
 	/// <summary>
 	/// Gets or Sets Id

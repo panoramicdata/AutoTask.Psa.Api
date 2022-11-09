@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ContractBlockHourFactorModel
 /// </summary>
 [DataContract]
-public partial class ContractBlockHourFactorModel
+public class ContractBlockHourFactorModel
 {
 	/// <summary>
 	/// Gets or Sets Id

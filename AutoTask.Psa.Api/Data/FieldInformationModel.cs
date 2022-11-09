@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// FieldInformationModel
 /// </summary>
 [DataContract]
-public partial class FieldInformationModel
+public class FieldInformationModel
 {
 	/// <summary>
 	/// Gets or Sets Name

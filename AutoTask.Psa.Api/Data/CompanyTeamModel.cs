@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// CompanyTeamModel
 /// </summary>
 [DataContract]
-public partial class CompanyTeamModel
+public class CompanyTeamModel
 {
 	/// <summary>
 	/// Gets or Sets Id

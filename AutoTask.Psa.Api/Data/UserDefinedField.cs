@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// UserDefinedField
 /// </summary>
 [DataContract]
-public partial class UserDefinedField
+public class UserDefinedField
 {
 	/// <summary>
 	/// Gets or Sets Name

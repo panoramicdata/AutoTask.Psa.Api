@@ -4,5 +4,5 @@ namespace AutoTask.Psa.Api.Data;
 /// ModelObject
 /// </summary>
 [DataContract]
-public partial class ModelObject
+public class ModelObject
 { }

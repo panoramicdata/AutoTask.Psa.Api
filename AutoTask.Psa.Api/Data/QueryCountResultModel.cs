@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// QueryCountResultModel
 /// </summary>
 [DataContract]
-public partial class QueryCountResultModel
+public class QueryCountResultModel
 {
 	/// <summary>
 	/// Gets or Sets QueryCount

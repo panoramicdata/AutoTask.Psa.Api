@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// CurrencyModel
 /// </summary>
 [DataContract]
-public partial class CurrencyModel
+public class CurrencyModel
 {
 	/// <summary>
 	/// Gets or Sets Id

@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ContractBillingRuleModel
 /// </summary>
 [DataContract]
-public partial class ContractBillingRuleModel
+public class ContractBillingRuleModel
 {
 	/// <summary>
 	/// Gets or Sets Id

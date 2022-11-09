@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ShippingTypeModel
 /// </summary>
 [DataContract]
-public partial class ShippingTypeModel
+public class ShippingTypeModel
 {
 	/// <summary>
 	/// Gets or Sets Id

@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ResourceServiceDeskRoleModel
 /// </summary>
 [DataContract]
-public partial class ResourceServiceDeskRoleModel
+public class ResourceServiceDeskRoleModel
 {
 	/// <summary>
 	/// Gets or Sets Id

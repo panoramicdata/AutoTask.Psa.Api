@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ContractTicketPurchaseModel
 /// </summary>
 [DataContract]
-public partial class ContractTicketPurchaseModel
+public class ContractTicketPurchaseModel
 {
 	/// <summary>
 	/// Gets or Sets Id

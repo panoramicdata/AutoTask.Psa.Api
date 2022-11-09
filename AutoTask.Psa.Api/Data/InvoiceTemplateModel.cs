@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// InvoiceTemplateModel
 /// </summary>
 [DataContract]
-public partial class InvoiceTemplateModel
+public class InvoiceTemplateModel
 {
 	/// <summary>
 	/// Gets or Sets Id

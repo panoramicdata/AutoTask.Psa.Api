@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// UserDefinedFieldListItemModel
 /// </summary>
 [DataContract]
-public partial class UserDefinedFieldListItemModel
+public class UserDefinedFieldListItemModel
 {
 	/// <summary>
 	/// Gets or Sets Id

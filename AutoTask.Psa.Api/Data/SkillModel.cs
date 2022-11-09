@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// SkillModel
 /// </summary>
 [DataContract]
-public partial class SkillModel
+public class SkillModel
 {
 	/// <summary>
 	/// Gets or Sets Id

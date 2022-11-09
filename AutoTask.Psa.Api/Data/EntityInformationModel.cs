@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// EntityInformationModel
 /// </summary>
 [DataContract]
-public partial class EntityInformationModel
+public class EntityInformationModel
 {
 	/// <summary>
 	/// Gets or Sets Name

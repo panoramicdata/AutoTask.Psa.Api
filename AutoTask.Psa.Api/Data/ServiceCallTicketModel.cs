@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ServiceCallTicketModel
 /// </summary>
 [DataContract]
-public partial class ServiceCallTicketModel
+public class ServiceCallTicketModel
 {
 	/// <summary>
 	/// Gets or Sets Id

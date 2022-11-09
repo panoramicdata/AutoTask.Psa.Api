@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// SubscriptionModel
 /// </summary>
 [DataContract]
-public partial class SubscriptionModel
+public class SubscriptionModel
 {
 	/// <summary>
 	/// Gets or Sets Id

@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ChangeRequestLinkModel
 /// </summary>
 [DataContract]
-public partial class ChangeRequestLinkModel
+public class ChangeRequestLinkModel
 {
 	/// <summary>
 	/// Gets or Sets Id

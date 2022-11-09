@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ConfigurationItemBillingProductAssociationModel
 /// </summary>
 [DataContract]
-public partial class ConfigurationItemBillingProductAssociationModel
+public class ConfigurationItemBillingProductAssociationModel
 {
 	/// <summary>
 	/// Gets or Sets Id

@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// PaymentTermModel
 /// </summary>
 [DataContract]
-public partial class PaymentTermModel
+public class PaymentTermModel
 {
 	/// <summary>
 	/// Gets or Sets Id

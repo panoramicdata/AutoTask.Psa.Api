@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// NotificationHistoryModel
 /// </summary>
 [DataContract]
-public partial class NotificationHistoryModel
+public class NotificationHistoryModel
 {
 	/// <summary>
 	/// Gets or Sets Id

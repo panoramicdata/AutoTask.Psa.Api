@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ClientPortalUserModel
 /// </summary>
 [DataContract]
-public partial class ClientPortalUserModel
+public class ClientPortalUserModel
 {
 	/// <summary>
 	/// Gets or Sets Id

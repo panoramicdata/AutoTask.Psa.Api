@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// HolidaySetModel
 /// </summary>
 [DataContract]
-public partial class HolidaySetModel
+public class HolidaySetModel
 {
 	/// <summary>
 	/// Gets or Sets Id

@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ContractServiceBundleAdjustmentModel
 /// </summary>
 [DataContract]
-public partial class ContractServiceBundleAdjustmentModel
+public class ContractServiceBundleAdjustmentModel
 {
 	/// <summary>
 	/// Gets or Sets Id

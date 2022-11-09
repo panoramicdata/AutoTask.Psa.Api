@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// CompanyWebhookModel
 /// </summary>
 [DataContract]
-public partial class CompanyWebhookModel
+public class CompanyWebhookModel
 {
 	/// <summary>
 	/// Gets or Sets Id

@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ChangeOrderChargeModel
 /// </summary>
 [DataContract]
-public partial class ChangeOrderChargeModel
+public class ChangeOrderChargeModel
 {
 	/// <summary>
 	/// Gets or Sets Id

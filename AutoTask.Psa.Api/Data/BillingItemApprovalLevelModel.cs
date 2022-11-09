@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// BillingItemApprovalLevelModel
 /// </summary>
 [DataContract]
-public partial class BillingItemApprovalLevelModel
+public class BillingItemApprovalLevelModel
 {
 	/// <summary>
 	/// Gets or Sets Id

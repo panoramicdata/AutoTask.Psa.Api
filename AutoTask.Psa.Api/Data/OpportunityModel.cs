@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// OpportunityModel
 /// </summary>
 [DataContract]
-public partial class OpportunityModel
+public class OpportunityModel
 {
 	/// <summary>
 	/// Gets or Sets Id

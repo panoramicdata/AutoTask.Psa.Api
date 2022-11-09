@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// TicketAdditionalContactModel
 /// </summary>
 [DataContract]
-public partial class TicketAdditionalContactModel
+public class TicketAdditionalContactModel
 {
 	/// <summary>
 	/// Gets or Sets Id

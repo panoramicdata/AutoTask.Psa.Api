@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// GlobalEntityInformationResultModel
 /// </summary>
 [DataContract]
-public partial class GlobalEntityInformationResultModel
+public class GlobalEntityInformationResultModel
 {
 	/// <summary>
 	/// Gets or Sets EntityDescriptions

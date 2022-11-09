@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ResourceRoleQueueModel
 /// </summary>
 [DataContract]
-public partial class ResourceRoleQueueModel
+public class ResourceRoleQueueModel
 {
 	/// <summary>
 	/// Gets or Sets Id

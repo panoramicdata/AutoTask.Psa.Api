@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ComanagedAssociationModel
 /// </summary>
 [DataContract]
-public partial class ComanagedAssociationModel
+public class ComanagedAssociationModel
 {
 	/// <summary>
 	/// Gets or Sets Id

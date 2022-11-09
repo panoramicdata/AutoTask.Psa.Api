@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ResourceSkillModel
 /// </summary>
 [DataContract]
-public partial class ResourceSkillModel
+public class ResourceSkillModel
 {
 	/// <summary>
 	/// Gets or Sets Id

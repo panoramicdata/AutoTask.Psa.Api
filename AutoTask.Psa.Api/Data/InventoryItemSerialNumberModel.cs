@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// InventoryItemSerialNumberModel
 /// </summary>
 [DataContract]
-public partial class InventoryItemSerialNumberModel
+public class InventoryItemSerialNumberModel
 {
 	/// <summary>
 	/// Gets or Sets Id

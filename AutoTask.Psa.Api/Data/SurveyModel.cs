@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// SurveyModel
 /// </summary>
 [DataContract]
-public partial class SurveyModel
+public class SurveyModel
 {
 	/// <summary>
 	/// Gets or Sets Id

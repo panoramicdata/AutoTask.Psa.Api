@@ -4,5 +4,5 @@ namespace AutoTask.Psa.Api.Data;
 /// CountActionResult
 /// </summary>
 [DataContract]
-public partial class CountActionResult
+public class CountActionResult
 { }

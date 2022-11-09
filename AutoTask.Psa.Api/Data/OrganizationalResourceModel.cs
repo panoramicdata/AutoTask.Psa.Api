@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// OrganizationalResourceModel
 /// </summary>
 [DataContract]
-public partial class OrganizationalResourceModel
+public class OrganizationalResourceModel
 {
 	/// <summary>
 	/// Gets or Sets Id

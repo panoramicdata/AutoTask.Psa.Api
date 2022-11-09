@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// TicketCategoryFieldDefaultsModel
 /// </summary>
 [DataContract]
-public partial class TicketCategoryFieldDefaultsModel
+public class TicketCategoryFieldDefaultsModel
 {
 	/// <summary>
 	/// Gets or Sets Id

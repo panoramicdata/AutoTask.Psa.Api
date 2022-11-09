@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// OperationResultModel
 /// </summary>
 [DataContract]
-public partial class OperationResultModel
+public class OperationResultModel
 {
 	/// <summary>
 	/// Gets or Sets ItemId

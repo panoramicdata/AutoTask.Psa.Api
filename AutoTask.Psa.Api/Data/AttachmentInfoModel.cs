@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// AttachmentInfoModel
 /// </summary>
 [DataContract]
-public partial class AttachmentInfoModel
+public class AttachmentInfoModel
 {
 	/// <summary>
 	/// Gets or Sets Id

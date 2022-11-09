@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ContractExclusionBillingCodeModel
 /// </summary>
 [DataContract]
-public partial class ContractExclusionBillingCodeModel
+public class ContractExclusionBillingCodeModel
 {
 	/// <summary>
 	/// Gets or Sets Id

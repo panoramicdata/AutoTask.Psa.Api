@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// PickListValue
 /// </summary>
 [DataContract]
-public partial class PickListValue
+public class PickListValue
 {
 	/// <summary>
 	/// Gets or Sets Value

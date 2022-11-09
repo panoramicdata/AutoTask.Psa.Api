@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// QuoteLocationModel
 /// </summary>
 [DataContract]
-public partial class QuoteLocationModel
+public class QuoteLocationModel
 {
 	/// <summary>
 	/// Gets or Sets Id

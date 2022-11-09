@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ServiceBundleModel
 /// </summary>
 [DataContract]
-public partial class ServiceBundleModel
+public class ServiceBundleModel
 {
 	/// <summary>
 	/// Gets or Sets Id

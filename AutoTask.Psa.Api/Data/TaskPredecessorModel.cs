@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// TaskPredecessorModel
 /// </summary>
 [DataContract]
-public partial class TaskPredecessorModel
+public class TaskPredecessorModel
 {
 	/// <summary>
 	/// Gets or Sets Id

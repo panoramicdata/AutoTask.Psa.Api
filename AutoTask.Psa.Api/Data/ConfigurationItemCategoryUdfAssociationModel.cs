@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ConfigurationItemCategoryUdfAssociationModel
 /// </summary>
 [DataContract]
-public partial class ConfigurationItemCategoryUdfAssociationModel
+public class ConfigurationItemCategoryUdfAssociationModel
 {
 	/// <summary>
 	/// Gets or Sets Id

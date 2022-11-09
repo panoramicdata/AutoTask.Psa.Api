@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// TicketHistoryModel
 /// </summary>
 [DataContract]
-public partial class TicketHistoryModel
+public class TicketHistoryModel
 {
 	/// <summary>
 	/// Gets or Sets Id

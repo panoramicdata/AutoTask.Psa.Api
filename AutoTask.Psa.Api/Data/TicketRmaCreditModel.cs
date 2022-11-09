@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// TicketRmaCreditModel
 /// </summary>
 [DataContract]
-public partial class TicketRmaCreditModel
+public class TicketRmaCreditModel
 {
 	/// <summary>
 	/// Gets or Sets Id

@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ValueItem
 /// </summary>
 [DataContract]
-public partial class ValueItem
+public class ValueItem
 {
 	/// <summary>
 	/// Gets or Sets ElementList

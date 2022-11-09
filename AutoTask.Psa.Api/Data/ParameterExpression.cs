@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ParameterExpression
 /// </summary>
 [DataContract]
-public partial class ParameterExpression
+public class ParameterExpression
 {
 	/// <summary>
 	/// Gets or Sets NodeType
@@ -15,7 +15,6 @@ public partial class ParameterExpression
 	/// <summary>
 	/// Initializes a new instance of the <see cref="ParameterExpression" /> class.
 	/// </summary>
-	[JsonConstructor]
 	public ParameterExpression()
 	{
 	}

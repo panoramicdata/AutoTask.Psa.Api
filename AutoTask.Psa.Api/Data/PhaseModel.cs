@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// PhaseModel
 /// </summary>
 [DataContract]
-public partial class PhaseModel
+public class PhaseModel
 {
 	/// <summary>
 	/// Gets or Sets Id

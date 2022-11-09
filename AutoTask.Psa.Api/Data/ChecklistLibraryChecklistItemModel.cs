@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ChecklistLibraryChecklistItemModel
 /// </summary>
 [DataContract]
-public partial class ChecklistLibraryChecklistItemModel
+public class ChecklistLibraryChecklistItemModel
 {
 	/// <summary>
 	/// Gets or Sets Id

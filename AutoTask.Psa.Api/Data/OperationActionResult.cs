@@ -4,5 +4,5 @@ namespace AutoTask.Psa.Api.Data;
 /// OperationActionResult
 /// </summary>
 [DataContract]
-public partial class OperationActionResult
+public class OperationActionResult
 { }

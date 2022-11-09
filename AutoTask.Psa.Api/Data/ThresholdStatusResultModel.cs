@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ThresholdStatusResultModel
 /// </summary>
 [DataContract]
-public partial class ThresholdStatusResultModel
+public class ThresholdStatusResultModel
 {
 	/// <summary>
 	/// Gets or Sets ExternalRequestThreshold

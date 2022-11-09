@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// AppointmentModel
 /// </summary>
 [DataContract]
-public partial class AppointmentModel
+public class AppointmentModel
 {
 	/// <summary>
 	/// Gets or Sets Id

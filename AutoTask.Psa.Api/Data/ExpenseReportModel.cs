@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ExpenseReportModel
 /// </summary>
 [DataContract]
-public partial class ExpenseReportModel
+public class ExpenseReportModel
 {
 	/// <summary>
 	/// Gets or Sets Id

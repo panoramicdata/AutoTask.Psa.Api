@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// CountryModel
 /// </summary>
 [DataContract]
-public partial class CountryModel
+public class CountryModel
 {
 	/// <summary>
 	/// Gets or Sets Id

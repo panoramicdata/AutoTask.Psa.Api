@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ApiVersionResultModel
 /// </summary>
 [DataContract]
-public partial class ApiVersionsResultModel
+public class ApiVersionsResultModel
 {
 	/// <summary>
 	/// Gets or Sets ApiVersions

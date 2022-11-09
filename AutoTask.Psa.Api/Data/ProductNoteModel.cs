@@ -4,7 +4,7 @@ namespace AutoTask.Psa.Api.Data;
 /// ProductNoteModel
 /// </summary>
 [DataContract]
-public partial class ProductNoteModel
+public class ProductNoteModel
 {
 	/// <summary>
 	/// Gets or Sets Id
