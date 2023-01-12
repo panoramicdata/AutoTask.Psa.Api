@@ -18,3 +18,8 @@ using System.Diagnostics.CodeAnalysis;
 	Scope = "type",
 	Target = "~T:AutoTask.Psa.Api.Data.Expression.NodeTypeEnum")
 ]
+[assembly: SuppressMessage("Design",
+	"RCS1075:Avoid empty catch clause that catches System.Exception.",
+	Justification = "Appropriate to catch any exception when it is unknown what loggers are in use",
+	Scope = "member",
+	Target = "~M:AutoTask.Psa.Api.AuthenticatedHttpClientHandler.LogApiException(Refit.ApiException)")]

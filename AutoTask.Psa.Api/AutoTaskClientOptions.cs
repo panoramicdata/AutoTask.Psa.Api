@@ -10,6 +10,8 @@ public class AutoTaskClientOptions
 
 	public string? IntegrationCode { get; set; }
 
+	public bool LogExceptionContent { get; set; }
+
 	public void Validate()
 	{
 		if (ServerId is null)

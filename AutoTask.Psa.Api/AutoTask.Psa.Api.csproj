@@ -23,9 +23,8 @@
 		<Company>Panoramic Data Limited</Company>
 		<Authors>Panoramic Data Limited</Authors>
 		<PackageReleaseNotes>
-			Added GetAllAsync(string subUrl, CancellationToken cancellationToken) for paged GET requests
-			Added GetAllAsync(string subUrl, string body, CancellationToken cancellationToken) for paged POST requests
-			Added Delete support
+			Added support for logging of response content when an exception occurs. To avoid potential
+			security concerns, this must be enabled through the client options LogExceptionContent property
 		</PackageReleaseNotes>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>

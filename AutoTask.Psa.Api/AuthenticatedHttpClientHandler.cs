@@ -32,10 +32,6 @@ public class AuthenticatedHttpClientHandler : HttpClientHandler
 		{
 			request.Headers.Add("Secret", _options.Password);
 		}
-		//if (!request.Headers.TryGetValues("Content-Type", out _))
-		//{
-		//	request.Headers.Add("Content-Type", "application/json");
-		//}
 		if (!request.Headers.TryGetValues("UserAgent", out _))
 		{
 			request.Headers.Add("UserAgent", "AutoTask.Psa.Api.AutoTaskClient");
@@ -51,9 +47,18 @@ public class AuthenticatedHttpClientHandler : HttpClientHandler
 			request.Content is null ? null : await request.Content.ReadAsStringAsync().ConfigureAwait(false)
 			);
 
-		var response = await base
-			.SendAsync(request, cancellationToken)
-			.ConfigureAwait(false);
+		HttpResponseMessage response;
+		try
+		{
+			response = await base
+				.SendAsync(request, cancellationToken)
+				.ConfigureAwait(false);
+		}
+		catch (ApiException ex)
+		{
+			LogApiException(ex);
+			throw;
+		}
 
 		_logger.LogDebug("{Guid}:{ResponseStatusCode}:{Body}",
 			guid.ToString(),
@@ -61,5 +66,29 @@ public class AuthenticatedHttpClientHandler : HttpClientHandler
 			request.Content is null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false));
 
 		return response;
+	}
+
+	/// <summary>
+	/// Log details of an ApiException (as enabled in options)
+	/// </summary>
+	/// <param name="ex">The exception whose details are to be logged</param>
+	private void LogApiException(ApiException ex)
+	{
+		if (ex.Content is null)
+		{
+			return;
+		}
+
+		try
+		{
+			if (_options.LogExceptionContent)
+			{
+				_logger.LogError(ex, "Error from Refit; response content is: {Content}", ex.Content);
+			}
+		}
+		catch (Exception)
+		{
+			// Nothing we can do about a logging exception; suppress it!
+		}
 	}
 }
