@@ -28,18 +28,6 @@ public class AutoTaskClient : IDisposable
 		_httpClient = client;
 		_refitSettings = new RefitSettings
 		{
-			//ContentSerializer = new NewtonsoftJsonContentSerializer(
-			//	new JsonSerializerSettings
-			//	{
-			//		// By default nulls should not be rendered out, this will allow the receiving API to apply any defaults.
-			//		// Use [JsonProperty(NullValueHandling = NullValueHandling.Include)] to send
-			//		// nulls for specific properties, e.g. disassociating port schedule ids from a port
-			//		NullValueHandling = NullValueHandling.Ignore,
-			//	#if DEBUG
-			//		MissingMemberHandling = MissingMemberHandling.Error,
-			//	#endif
-			//		Converters = new List<JsonConverter> { new StringEnumConverter() }
-			//	})
 		};
 		ActionTypes = RefitFor(ActionTypes!);
 		AdditionalInvoiceFieldValues = RefitFor(AdditionalInvoiceFieldValues!);
@@ -292,8 +280,11 @@ public class AutoTaskClient : IDisposable
 		ZoneInformationApiIntegration = RefitFor(ZoneInformationApiIntegration!);
 	}
 
-	private T RefitFor<T>(T _)
-		=> RestService.For<T>(_httpClient, _refitSettings);
+	private T RefitFor<T>(T _parameter)
+	{
+		_ = _parameter;
+		return RestService.For<T>(_httpClient, _refitSettings);
+	}
 
 	private readonly HttpClient _httpClient;
 	private readonly RefitSettings _refitSettings;
