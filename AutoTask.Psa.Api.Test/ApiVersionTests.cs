@@ -2,15 +2,11 @@ using System.Threading.Tasks;
 
 namespace AutoTask.Psa.Api.Test;
 
-public class ApiVersionTests : TestBase
+public class ApiVersionTests(
+	ITestOutputHelper testOutputHelper,
+	IOptions<AppSettings> options
+		) : TestBase(testOutputHelper, options)
 {
-	public ApiVersionTests(
-		ITestOutputHelper testOutputHelper,
-		IOptions<AppSettings> options
-		) : base(testOutputHelper, options)
-	{
-	}
-
 	[Fact]
 	public async Task GetAsync_Succeeds()
 	{

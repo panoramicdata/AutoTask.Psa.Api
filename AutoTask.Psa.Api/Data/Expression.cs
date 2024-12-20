@@ -12,7 +12,6 @@ public class Expression
 	[JsonConverter(typeof(StringEnumConverter))]
 	public enum NodeTypeEnum
 	{
-
 		/// <summary>
 		/// Enum NUMBER_0 for 0
 		/// </summary>

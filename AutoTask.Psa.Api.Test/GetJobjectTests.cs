@@ -1,13 +1,9 @@
 ﻿namespace AutoTask.Psa.Api.Test;
 
-public class GetJObjectTests : TestBase
+public class GetJObjectTests(
+	ITestOutputHelper testOutputHelper,
+	IOptions<AppSettings> options) : TestBase(testOutputHelper, options)
 {
-	public GetJObjectTests(
-		ITestOutputHelper testOutputHelper,
-		IOptions<AppSettings> options) : base(testOutputHelper, options)
-	{
-	}
-
 	[Fact]
 	public async Task QueryAsync_WithString_Succeeds()
 	{

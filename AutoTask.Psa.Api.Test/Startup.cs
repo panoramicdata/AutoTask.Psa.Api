@@ -1,9 +1,8 @@
 namespace AutoTask.Psa.Api.Test;
 
-[System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "CA1822:Mark members as static", Justification = "Accessed by convention")]
-public class Startup
+public static class Startup
 {
-	public void ConfigureHost(IHostBuilder hostBuilder)
+	public static void ConfigureHost(IHostBuilder hostBuilder)
 	{
 		var a = Directory.GetCurrentDirectory();
 		var fileInfo = new FileInfo(Path.Combine(a, "../../../appsettings.json"));
@@ -11,7 +10,7 @@ public class Startup
 			.ConfigureHostConfiguration(builder => builder.AddJsonFile(fileInfo.FullName));
 	}
 
-	public void ConfigureServices(
+	public static void ConfigureServices(
 		IServiceCollection services,
 		HostBuilderContext context)
 	{
