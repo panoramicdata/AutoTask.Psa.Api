@@ -73,4 +73,18 @@ public interface ITicketCharges
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/TicketCharges/query/count")]
 	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
+
+	/// <summary>
+	/// Deleting a ticket charge requires:
+	/// - The parent ticket ID
+	/// - The ticket charge ID
+	/// </summary>
+	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <param name="t"></param>
+	/// <returns>Task of QueryCountResultModel</returns>
+	[Delete("/V1.0/Tickets/{ticketId}/Charges/{ticketChargeId}")]
+	Task DeleteAsync(
+		[AliasAs("ticketId")] long ticketId,
+		[AliasAs("ticketChargeId")] long ticketChargeId
+	);
 }

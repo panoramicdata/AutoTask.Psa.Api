@@ -1,11 +1,9 @@
-using System.Threading.Tasks;
-
 namespace AutoTask.Psa.Api.Test;
 
 public class ApiVersionTests(
 	ITestOutputHelper testOutputHelper,
-	IOptions<AppSettings> options
-		) : TestBase(testOutputHelper, options)
+	Fixture fixture
+		) : TestBase(testOutputHelper, fixture)
 {
 	[Fact]
 	public async Task GetAsync_Succeeds()

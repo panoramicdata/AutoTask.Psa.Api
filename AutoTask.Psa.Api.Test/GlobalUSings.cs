@@ -1,10 +1,8 @@
 ﻿global using AutoTask.Psa.Api.Data;
 global using AutoTask.Psa.Api.Test.Config;
-global using Divergic.Logging.Xunit;
 global using FluentAssertions;
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
-global using Microsoft.Extensions.Hosting;
 global using Microsoft.Extensions.Logging;
 global using Microsoft.Extensions.Options;
 global using System.Collections.Generic;

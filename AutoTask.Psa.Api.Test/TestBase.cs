@@ -1,17 +1,30 @@
+using Xunit.Microsoft.DependencyInjection.Abstracts;
+
 namespace AutoTask.Psa.Api.Test;
 
-public class TestBase
+[CollectionDefinition("Dependency Injection")]
+public class TestBase : TestBed<Fixture>
 {
-	public ICacheLogger<TestBase> Log { get; }
-
 	public AutoTaskClient AutoTaskClient { get; }
+	public ILogger Log { get; }
 
 	public TestBase(
 		ITestOutputHelper testOutputHelper,
-		IOptions<AppSettings> options)
+		Fixture fixture) : base(testOutputHelper, fixture)
 	{
-		Log = testOutputHelper.BuildLoggerFor<TestBase>(LogLevel.Debug);
+		ArgumentNullException.ThrowIfNull(testOutputHelper);
+		ArgumentNullException.ThrowIfNull(fixture);
+
+		// Logger
+		var loggerFactory = fixture
+			.GetService<ILoggerFactory>(testOutputHelper)
+			?? throw new InvalidOperationException("LoggerFactory is null");
+		Log = loggerFactory.CreateLogger(GetType());
+
+		var options = fixture.GetService<IOptions<AppSettings>>(testOutputHelper)
+			?? throw new InvalidOperationException("Missing options");
 		var optionsValue = options.Value;
+
 		AutoTaskClient = new AutoTaskClient(new AutoTaskClientOptions
 		{
 			ServerId = optionsValue.ServerId,

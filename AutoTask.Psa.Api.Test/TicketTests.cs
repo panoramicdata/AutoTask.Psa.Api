@@ -2,7 +2,7 @@
 
 public class TicketTests(
 	ITestOutputHelper testOutputHelper,
-	IOptions<AppSettings> options) : TestBase(testOutputHelper, options)
+	Fixture fixture) : TestBase(testOutputHelper, fixture)
 {
 	[Fact]
 	public async Task QueryAsync_WithString_Succeeds()

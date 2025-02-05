@@ -2,8 +2,8 @@ namespace AutoTask.Psa.Api.Test;
 
 public class TaskTests(
 	ITestOutputHelper testOutputHelper,
-	IOptions<AppSettings> options
-		) : TestBase(testOutputHelper, options)
+	Fixture fixture
+	) : TestBase(testOutputHelper, fixture)
 {
 	[Fact]
 	public async Task QueryAsync_Succeeds()
