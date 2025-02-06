@@ -24,30 +24,30 @@ public class DuplicateDeletionTests(
 				.QueryAsync(new QueryModel
 				{
 					Filter = [
+						//new Filter
+						//{
+						//	Field = "TicketID",
+						//	Op = "eq",
+						//	Value = "935869"
+						//},
 						new Filter
-					{
-						Field = "TicketID",
-						Op = "eq",
-						Value = "935869"
-					},
+						{
+							Field = "Description",
+							Op = "BeginsWith",
+							Value = "Certify:"
+						},
 						new Filter
-					{
-						Field = "Description",
-						Op = "BeginsWith",
-						Value = "Certify:"
-					},
-					new Filter
-					{
-						Field = "CreateDate",
-						Op = "gte",
-						Value = startDateString
-					},
-					new Filter
-					{
-						Field = "CreateDate",
-						Op = "lt",
-						Value = endDateString
-					},
+						{
+							Field = "CreateDate",
+							Op = "gte",
+							Value = startDateString
+						},
+						new Filter
+						{
+							Field = "CreateDate",
+							Op = "lt",
+							Value = endDateString
+						},
 					],
 					MaxRecords = 500
 					//IncludeFields = ["id", "description"]

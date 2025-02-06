@@ -10,5 +10,12 @@ using System.Diagnostics.CodeAnalysis;
 	"CA1707:Identifiers should not contain underscores",
 	Justification = "OK for unit tests",
 	Scope = "namespaceanddescendants",
-	Target = "~N:AutoTask.Psa.Api.Test")
-]
+	Target = "~N:AutoTask.Psa.Api.Test"
+)]
+[assembly: SuppressMessage(
+	"Performance",
+	"CA1848:Use the LoggerMessage delegates",
+	Justification = "Performance gain not worth the added complexity",
+	Scope = "namespaceanddescendants",
+	Target = "~N:AutoTask.Psa.Api.Test"
+)]
