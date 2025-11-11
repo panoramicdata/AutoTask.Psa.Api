@@ -10,5 +10,5 @@ public class ApiVersionsResultModel
 	/// Gets or Sets ApiVersions
 	/// </summary>
 	[DataMember(Name = "ApiVersions")]
-	public List<string> ApiVersions { get; set; } = new();
+	public List<string> ApiVersions { get; set; } = [];
 }

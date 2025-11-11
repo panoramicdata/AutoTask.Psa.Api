@@ -10,5 +10,5 @@ public class UserDefinedFieldInformationResultModel
 	/// Gets or Sets Fields
 	/// </summary>
 	[DataMember(Name = "Fields")]
-	public List<Field> Fields { get; set; } = new();
+	public List<Field> Fields { get; set; } = [];
 }

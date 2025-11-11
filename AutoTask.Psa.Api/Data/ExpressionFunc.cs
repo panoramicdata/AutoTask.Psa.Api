@@ -22,7 +22,7 @@ public class ExpressionFunc
 	/// Gets or Sets Parameters
 	/// </summary>
 	[DataMember(Name = "Parameters")]
-	public List<ParameterExpression> Parameters { get; set; } = new();
+	public List<ParameterExpression> Parameters { get; set; } = [];
 
 	/// <summary>
 	/// Gets or Sets Name

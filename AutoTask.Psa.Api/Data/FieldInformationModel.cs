@@ -64,7 +64,7 @@ public class FieldInformationModel
 	/// Gets or Sets PicklistValues
 	/// </summary>
 	[DataMember(Name = "PicklistValues")]
-	public List<PickListValue> PicklistValues { get; set; } = new();
+	public List<PickListValue> PicklistValues { get; set; } = [];
 
 	/// <summary>
 	/// Gets or Sets PicklistParentValueField

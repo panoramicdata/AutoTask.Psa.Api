@@ -10,7 +10,7 @@ public class ValueItem
 	/// Gets or Sets ElementList
 	/// </summary>
 	[DataMember(Name = "ElementList")]
-	public List<CollectionItem> ElementList { get; set; } = new();
+	public List<CollectionItem> ElementList { get; set; } = [];
 
 	/// <summary>
 	/// Gets or Sets BoolValue

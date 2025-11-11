@@ -10,5 +10,5 @@ public class FieldInformationResultModel
 	/// Gets or Sets Fields
 	/// </summary>
 	[DataMember(Name = "Fields")]
-	public List<FieldInformationModel> Fields { get; set; } = new();
+	public List<FieldInformationModel> Fields { get; set; } = [];
 }

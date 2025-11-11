@@ -10,5 +10,5 @@ public class GlobalEntityInformationResultModel
 	/// Gets or Sets EntityDescriptions
 	/// </summary>
 	[DataMember(Name = "EntityDescriptions")]
-	public List<EntityInformationResultModel> EntityDescriptions { get; set; } = new();
+	public List<EntityInformationResultModel> EntityDescriptions { get; set; } = [];
 }

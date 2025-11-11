@@ -58,5 +58,5 @@ public class SubscriptionPeriodModel
 	/// Gets or Sets UserDefinedFields
 	/// </summary>
 	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = new();
+	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }
