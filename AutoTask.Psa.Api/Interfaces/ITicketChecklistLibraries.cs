@@ -11,7 +11,7 @@ public interface ITicketChecklistLibraries
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of TicketChecklistLibraryModel</returns>
 	[Post("/V1.0/TicketChecklistLibraries")]
-	Task<TicketChecklistLibraryModel> CreateAsync([Body] TicketChecklistLibraryModel entity);
+	Task<TicketChecklistLibraryModel> CreateAsync([Body] TicketChecklistLibraryModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -19,7 +19,7 @@ public interface ITicketChecklistLibraries
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/TicketChecklistLibraries/entityInformation")]
-	Task<EntityInformationResultModel> GetEntityInfoAsync();
+	Task<EntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -27,7 +27,7 @@ public interface ITicketChecklistLibraries
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/TicketChecklistLibraries/entityInformation/fields")]
-	Task<FieldInformationResultModel> GetFieldInfoAsync();
+	Task<FieldInformationResultModel> GetFieldInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -35,5 +35,5 @@ public interface ITicketChecklistLibraries
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/TicketChecklistLibraries/entityInformation/userDefinedFields")]
-	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync();
+	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
 }

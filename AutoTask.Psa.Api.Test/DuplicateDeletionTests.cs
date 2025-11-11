@@ -24,40 +24,35 @@ public class DuplicateDeletionTests(
 				.QueryAsync(new QueryModel
 				{
 					Filter = [
-						//new Filter
-						//{
-						//	Field = "TicketID",
-						//	Op = "eq",
-						//	Value = "935869"
-						//},
 						new Filter
-						{
-							Field = "Description",
-							Op = "BeginsWith",
-							Value = "Certify:"
-						},
+					{
+						Field = "TicketID",
+						Op = "eq",
+						Value = "935869"
+					},
 						new Filter
-						{
-							Field = "CreateDate",
-							Op = "gte",
-							Value = startDateString
-						},
-						new Filter
-						{
-							Field = "CreateDate",
-							Op = "lt",
-							Value = endDateString
-						},
+					{
+						Field = "Description",
+						Op = "BeginsWith",
+						Value = "Certify:"
+					},
+					new Filter
+					{
+						Field = "CreateDate",
+						Op = "gte",
+						Value = startDateString
+					},
+					new Filter
+					{
+						Field = "CreateDate",
+						Op = "lt",
+						Value = endDateString
+					},
 					],
 					MaxRecords = 500
 					//IncludeFields = ["id", "description"]
 				}
 			);
-
-			if (response.PageDetails.Count == 500)
-			{
-				var a = 1;
-			}
 
 			response.Should().NotBeNull(because: "a valid request should return a response object");
 

@@ -11,7 +11,7 @@ public interface IInternalLocationWithBusinessHours
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of InternalLocationWithBusinessHoursModel</returns>
 	[Post("/V1.0/InternalLocationWithBusinessHours")]
-	Task<InternalLocationWithBusinessHoursModel> CreateAsync([Body] InternalLocationWithBusinessHoursModel entity);
+	Task<InternalLocationWithBusinessHoursModel> CreateAsync([Body] InternalLocationWithBusinessHoursModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -19,25 +19,23 @@ public interface IInternalLocationWithBusinessHours
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of InternalLocationWithBusinessHoursModel</returns>
 	[Patch("/V1.0/InternalLocationWithBusinessHours")]
-	Task<InternalLocationWithBusinessHoursModel> PatchAsync([Body] InternalLocationWithBusinessHoursModel entity);
+	Task<InternalLocationWithBusinessHoursModel> PatchAsync([Body] InternalLocationWithBusinessHoursModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of InternalLocationWithBusinessHoursModel</returns>
 	[Post("/V1.0/InternalLocationWithBusinessHours/query")]
-	Task<QueryActionResult<InternalLocationWithBusinessHoursModel>> QueryAsync([Body] QueryModel queryModel);
+	Task<QueryActionResult<InternalLocationWithBusinessHoursModel>> QueryAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/InternalLocationWithBusinessHours/query/count")]
-	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
+	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -45,7 +43,7 @@ public interface IInternalLocationWithBusinessHours
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/InternalLocationWithBusinessHours/entityInformation")]
-	Task<EntityInformationResultModel> GetEntityInfoAsync();
+	Task<EntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -53,16 +51,15 @@ public interface IInternalLocationWithBusinessHours
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/InternalLocationWithBusinessHours/entityInformation/fields")]
-	Task<FieldInformationResultModel> GetFieldInfoAsync();
+	Task<FieldInformationResultModel> GetFieldInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of InternalLocationWithBusinessHoursModel</returns>
 	[Get("/V1.0/InternalLocationWithBusinessHours/{id}")]
-	Task<InternalLocationWithBusinessHoursModel> GetAsync([AliasAs("id")] long id);
+	Task<InternalLocationWithBusinessHoursModel> GetAsync([AliasAs("id")] long id, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -70,7 +67,7 @@ public interface IInternalLocationWithBusinessHours
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/InternalLocationWithBusinessHours/entityInformation/userDefinedFields")]
-	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync();
+	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -78,23 +75,21 @@ public interface IInternalLocationWithBusinessHours
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of InternalLocationWithBusinessHoursModel</returns>
 	[Put("/V1.0/InternalLocationWithBusinessHours")]
-	Task<InternalLocationWithBusinessHoursModel> UpdateAsync([Body] InternalLocationWithBusinessHoursModel entity);
+	Task<InternalLocationWithBusinessHoursModel> UpdateAsync([Body] InternalLocationWithBusinessHoursModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of InternalLocationWithBusinessHoursModel</returns>
 	[Get("/V1.0/InternalLocationWithBusinessHours/query")]
-	Task<QueryActionResult<InternalLocationWithBusinessHoursModel>> QueryAsync([AliasAs("search")] string search);
+	Task<QueryActionResult<InternalLocationWithBusinessHoursModel>> QueryAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/InternalLocationWithBusinessHours/query/count")]
-	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
+	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 }

@@ -17,7 +17,6 @@ public interface ITimeEntries
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of OperationResultModel</returns>
 	[Delete("/V1.0/TimeEntries/{id}")]
 	Task<OperationResultModel> DeleteAsync([AliasAs("id")] long id);
@@ -34,7 +33,6 @@ public interface ITimeEntries
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of TimeEntryModel</returns>
 	[Post("/V1.0/TimeEntries/query")]
 	Task<QueryActionResult<TimeEntryModel>> QueryAsync([Body] QueryModel queryModel);
@@ -43,7 +41,6 @@ public interface ITimeEntries
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/TimeEntries/query/count")]
 	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
@@ -68,7 +65,6 @@ public interface ITimeEntries
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of TimeEntryModel</returns>
 	[Get("/V1.0/TimeEntries/{id}")]
 	Task<TimeEntryModel> GetAsync([AliasAs("id")] long id);
@@ -93,7 +89,6 @@ public interface ITimeEntries
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of TimeEntryModel</returns>
 	[Get("/V1.0/TimeEntries/query")]
 	Task<QueryActionResult<TimeEntryModel>> QueryAsync([AliasAs("search")] string search);
@@ -102,7 +97,6 @@ public interface ITimeEntries
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/TimeEntries/query/count")]
 	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);

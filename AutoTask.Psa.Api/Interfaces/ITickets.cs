@@ -25,7 +25,6 @@ public interface ITickets
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of TicketModel</returns>
 	[Post("/V1.0/Tickets/query")]
 	Task<QueryActionResult<TicketModel>> QueryAsync([Body] QueryModel queryModel);
@@ -34,7 +33,6 @@ public interface ITickets
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/Tickets/query/count")]
 	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
@@ -59,7 +57,6 @@ public interface ITickets
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of TicketModel</returns>
 	[Get("/V1.0/Tickets/{id}")]
 	Task<GetResult<TicketModel>> GetAsync([AliasAs("id")] long id);
@@ -84,7 +81,6 @@ public interface ITickets
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of TicketModel</returns>
 	[Get("/V1.0/Tickets/query")]
 	Task<QueryActionResult<TicketModel>> QueryAsync([AliasAs("search")] string search);
@@ -93,7 +89,6 @@ public interface ITickets
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/Tickets/query/count")]
 	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);

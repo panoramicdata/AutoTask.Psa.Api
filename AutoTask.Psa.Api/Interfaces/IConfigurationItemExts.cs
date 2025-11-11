@@ -11,7 +11,7 @@ public interface IConfigurationItemExts
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ConfigurationItemExtModel</returns>
 	[Post("/V1.0/ConfigurationItemExts")]
-	Task<ConfigurationItemExtModel> CreateAsync([Body] ConfigurationItemExtModel entity);
+	Task<ConfigurationItemExtModel> CreateAsync([Body] ConfigurationItemExtModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -19,7 +19,7 @@ public interface IConfigurationItemExts
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ConfigurationItemExtModel</returns>
 	[Patch("/V1.0/ConfigurationItemExts")]
-	Task<ConfigurationItemExtModel> PatchAsync([Body] ConfigurationItemExtModel entity);
+	Task<ConfigurationItemExtModel> PatchAsync([Body] ConfigurationItemExtModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -27,7 +27,7 @@ public interface IConfigurationItemExts
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/ConfigurationItemExts/entityInformation")]
-	Task<EntityInformationResultModel> GetEntityInfoAsync();
+	Task<EntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -35,7 +35,7 @@ public interface IConfigurationItemExts
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/ConfigurationItemExts/entityInformation/fields")]
-	Task<FieldInformationResultModel> GetFieldInfoAsync();
+	Task<FieldInformationResultModel> GetFieldInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -43,7 +43,7 @@ public interface IConfigurationItemExts
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/ConfigurationItemExts/entityInformation/userDefinedFields")]
-	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync();
+	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -51,5 +51,5 @@ public interface IConfigurationItemExts
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ConfigurationItemExtModel</returns>
 	[Put("/V1.0/ConfigurationItemExts")]
-	Task<ConfigurationItemExtModel> UpdateAsync([Body] ConfigurationItemExtModel entity);
+	Task<ConfigurationItemExtModel> UpdateAsync([Body] ConfigurationItemExtModel entity, CancellationToken cancellationToken);
 }

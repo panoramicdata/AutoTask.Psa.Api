@@ -9,17 +9,14 @@ public interface ICompanyLocationsChild
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="parentId"></param>
 	/// <returns>Task of CompanyLocationModel</returns>
 	[Post("/V1.0/Companies/{parentId}/Locations")]
-	Task<CompanyLocationModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] CompanyLocationModel entity);
+	Task<CompanyLocationModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] CompanyLocationModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="parentId"></param>
-	/// <param name="id"></param>
 	/// <returns>Task of OperationResultModel</returns>
 	[Delete("/V1.0/Companies/{parentId}/Locations/{id}")]
 	Task<OperationResultModel> DeleteAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
@@ -28,16 +25,14 @@ public interface ICompanyLocationsChild
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="parentId"></param>
 	/// <returns>Task of CompanyLocationModel</returns>
 	[Patch("/V1.0/Companies/{parentId}/Locations")]
-	Task<CompanyLocationModel> PatchAsync([AliasAs("parentId")] long? parentId, [Body] CompanyLocationModel entity);
+	Task<CompanyLocationModel> PatchAsync([AliasAs("parentId")] long? parentId, [Body] CompanyLocationModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="parentId"></param>
 	/// <returns>Task of CompanyLocationModel</returns>
 	[Get("/V1.0/Companies/{parentId}/Locations")]
 	Task<CompanyLocationModel> QueryAsync([AliasAs("parentId")] long? parentId);
@@ -46,26 +41,22 @@ public interface ICompanyLocationsChild
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="parentId"></param>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/Companies/{parentId}/Locations/entityInformation")]
-	Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId);
+	Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="parentId"></param>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/Companies/{parentId}/Locations/entityInformation/fields")]
-	Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId);
+	Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="parentId"></param>
-	/// <param name="id"></param>
 	/// <returns>Task of CompanyLocationModel</returns>
 	[Get("/V1.0/Companies/{parentId}/Locations/{id}")]
 	Task<CompanyLocationModel> GetAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
@@ -74,17 +65,15 @@ public interface ICompanyLocationsChild
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="parentId"></param>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/Companies/{parentId}/Locations/entityInformation/userDefinedFields")]
-	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId);
+	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="parentId"></param>
 	/// <returns>Task of CompanyLocationModel</returns>
 	[Put("/V1.0/Companies/{parentId}/Locations")]
-	Task<CompanyLocationModel> UpdateAsync([AliasAs("parentId")] long? parentId, [Body] CompanyLocationModel entity);
+	Task<CompanyLocationModel> UpdateAsync([AliasAs("parentId")] long? parentId, [Body] CompanyLocationModel entity, CancellationToken cancellationToken);
 }

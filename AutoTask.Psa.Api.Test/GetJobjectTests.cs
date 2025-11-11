@@ -8,7 +8,7 @@ public class GetJObjectTests(
 	public async Task QueryAsync_WithString_Succeeds()
 	{
 		var response = await AutoTaskClient
-			.GetJObjectAsync("V1.0/Products/entityInformation", CancellationToken.None);
+			.GetJObjectAsync("V1.0/Products/entityInformation", CancellationToken);
 
 		response.Should().NotBeNull(because: "a valid request should return a response object");
 	}

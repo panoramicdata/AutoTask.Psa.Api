@@ -9,7 +9,6 @@ public interface ITicketCharges
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of TicketChargeModel</returns>
 	[Post("/V1.0/TicketCharges/query")]
 	Task<QueryActionResult<TicketChargeModel>> QueryAsync([Body] QueryModel queryModel);
@@ -18,7 +17,6 @@ public interface ITicketCharges
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/TicketCharges/query/count")]
 	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
@@ -43,7 +41,6 @@ public interface ITicketCharges
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of TicketChargeModel</returns>
 	[Get("/V1.0/TicketCharges/{id}")]
 	Task<TicketChargeModel> GetAsync([AliasAs("id")] long id);
@@ -60,7 +57,6 @@ public interface ITicketCharges
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of TicketChargeModel</returns>
 	[Get("/V1.0/TicketCharges/query")]
 	Task<QueryActionResult<TicketChargeModel>> QueryAsync([AliasAs("search")] string search);
@@ -69,7 +65,6 @@ public interface ITicketCharges
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/TicketCharges/query/count")]
 	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
@@ -80,7 +75,6 @@ public interface ITicketCharges
 	/// - The ticket charge ID
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="t"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Delete("/V1.0/Tickets/{ticketId}/Charges/{ticketChargeId}")]
 	Task DeleteAsync(

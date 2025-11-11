@@ -25,7 +25,6 @@ public interface IProjects
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of ProjectModel</returns>
 	[Post("/V1.0/Projects/query")]
 	Task<QueryActionResult<ProjectModel>> QueryAsync([Body] QueryModel queryModel);
@@ -34,7 +33,6 @@ public interface IProjects
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/Projects/query/count")]
 	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
@@ -59,7 +57,6 @@ public interface IProjects
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of ProjectModel</returns>
 	[Get("/V1.0/Projects/{id}")]
 	Task<ProjectModel> GetAsync([AliasAs("id")] long id);
@@ -84,7 +81,6 @@ public interface IProjects
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of ProjectModel</returns>
 	[Get("/V1.0/Projects/query")]
 	Task<QueryActionResult<ProjectModel>> QueryAsync([AliasAs("search")] string search);
@@ -93,7 +89,6 @@ public interface IProjects
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/Projects/query/count")]
 	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);

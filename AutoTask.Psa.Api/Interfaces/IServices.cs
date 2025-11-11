@@ -11,7 +11,7 @@ public interface IServices
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ServiceModel</returns>
 	[Post("/V1.0/Services")]
-	Task<ServiceModel> CreateAsync([Body] ServiceModel entity);
+	Task<ServiceModel> CreateAsync([Body] ServiceModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -19,25 +19,23 @@ public interface IServices
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ServiceModel</returns>
 	[Patch("/V1.0/Services")]
-	Task<ServiceModel> PatchAsync([Body] ServiceModel entity);
+	Task<ServiceModel> PatchAsync([Body] ServiceModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of ServiceModel</returns>
 	[Post("/V1.0/Services/query")]
-	Task<QueryActionResult<ServiceModel>> QueryAsync([Body] QueryModel queryModel);
+	Task<QueryActionResult<ServiceModel>> QueryAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/Services/query/count")]
-	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
+	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -45,7 +43,7 @@ public interface IServices
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/Services/entityInformation")]
-	Task<EntityInformationResultModel> GetEntityInfoAsync();
+	Task<EntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -53,16 +51,15 @@ public interface IServices
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/Services/entityInformation/fields")]
-	Task<FieldInformationResultModel> GetFieldInfoAsync();
+	Task<FieldInformationResultModel> GetFieldInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of ServiceModel</returns>
 	[Get("/V1.0/Services/{id}")]
-	Task<ServiceModel> GetAsync([AliasAs("id")] long id);
+	Task<ServiceModel> GetAsync([AliasAs("id")] long id, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -70,7 +67,7 @@ public interface IServices
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/Services/entityInformation/userDefinedFields")]
-	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync();
+	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -78,23 +75,21 @@ public interface IServices
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ServiceModel</returns>
 	[Put("/V1.0/Services")]
-	Task<ServiceModel> UpdateAsync([Body] ServiceModel entity);
+	Task<ServiceModel> UpdateAsync([Body] ServiceModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of ServiceModel</returns>
 	[Get("/V1.0/Services/query")]
-	Task<QueryActionResult<ServiceModel>> QueryAsync([AliasAs("search")] string search);
+	Task<QueryActionResult<ServiceModel>> QueryAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/Services/query/count")]
-	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
+	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 }

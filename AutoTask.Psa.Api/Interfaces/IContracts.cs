@@ -25,7 +25,6 @@ public interface IContracts
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of ContractModel</returns>
 	[Post("/V1.0/Contracts/query")]
 	Task<QueryActionResult<ContractModel>> QueryAsync([Body] QueryModel queryModel);
@@ -34,7 +33,6 @@ public interface IContracts
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/Contracts/query/count")]
 	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
@@ -59,7 +57,6 @@ public interface IContracts
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of ContractModel</returns>
 	[Get("/V1.0/Contracts/{id}")]
 	Task<ContractModel> GetAsync([AliasAs("id")] long id);
@@ -84,7 +81,6 @@ public interface IContracts
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of ContractModel</returns>
 	[Get("/V1.0/Contracts/query")]
 	Task<QueryActionResult<ContractModel>> QueryAsync([AliasAs("search")] string search);
@@ -93,7 +89,6 @@ public interface IContracts
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/Contracts/query/count")]
 	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);

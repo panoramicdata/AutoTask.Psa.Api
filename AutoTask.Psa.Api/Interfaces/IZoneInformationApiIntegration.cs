@@ -9,8 +9,7 @@ public interface IZoneInformationApiIntegration
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="user"></param>
 	/// <returns>Task of ZoneInformationResultModel</returns>
 	[Get("/V1.0/ZoneInformation")]
-	Task<ZoneInformationResultModel> ZoneInformationApiIntegrationQueryZoneInformation([AliasAs("user")] string user);
+	Task<ZoneInformationResultModel> ZoneInformationApiIntegrationQueryZoneInformation([AliasAs("user")] string user, CancellationToken cancellationToken);
 }

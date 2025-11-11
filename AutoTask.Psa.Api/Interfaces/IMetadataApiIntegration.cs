@@ -11,5 +11,5 @@ public interface IMetadataApiIntegration
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of GlobalEntityInformationResultModel</returns>
 	[Get("/V1.0/EntityInformation")]
-	Task<GlobalEntityInformationResultModel> GetEntityInfoAsync();
+	Task<GlobalEntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
 }

@@ -44,7 +44,7 @@ public class AuthenticatedHttpClientHandler : HttpClientHandler
 			request.Method,
 			request.RequestUri,
 			request.Headers,
-			request.Content is null ? null : await request.Content.ReadAsStringAsync().ConfigureAwait(false)
+			request.Content is null ? null : await request.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false)
 			);
 
 		HttpResponseMessage response;
@@ -63,7 +63,7 @@ public class AuthenticatedHttpClientHandler : HttpClientHandler
 		_logger.LogDebug("{Guid}:{ResponseStatusCode}:{Body}",
 			guid.ToString(),
 			response.StatusCode,
-			request.Content is null ? null : await response.Content.ReadAsStringAsync().ConfigureAwait(false));
+			request.Content is null ? null : await response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false));
 
 		return response;
 	}

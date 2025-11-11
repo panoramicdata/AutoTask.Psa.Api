@@ -23,3 +23,10 @@ using System.Diagnostics.CodeAnalysis;
 	Justification = "Appropriate to catch any exception when it is unknown what loggers are in use",
 	Scope = "member",
 	Target = "~M:AutoTask.Psa.Api.AuthenticatedHttpClientHandler.LogApiException(Refit.ApiException)")]
+[assembly: SuppressMessage(
+	"Naming",
+	"CA1707:Identifiers should not contain underscores",
+	Justification = "Particular item",
+	Scope = "type",
+	Target = "~T:AutoTask.Psa.Api.Data.NodeTypeEnum"
+)]

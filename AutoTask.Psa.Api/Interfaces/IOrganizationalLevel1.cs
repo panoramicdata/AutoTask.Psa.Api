@@ -11,7 +11,7 @@ public interface IOrganizationalLevel1
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of OrganizationalLevel1Model</returns>
 	[Post("/V1.0/OrganizationalLevel1s")]
-	Task<OrganizationalLevel1Model> CreateAsync([Body] OrganizationalLevel1Model entity);
+	Task<OrganizationalLevel1Model> CreateAsync([Body] OrganizationalLevel1Model entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -19,25 +19,23 @@ public interface IOrganizationalLevel1
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of OrganizationalLevel1Model</returns>
 	[Patch("/V1.0/OrganizationalLevel1s")]
-	Task<OrganizationalLevel1Model> PatchAsync([Body] OrganizationalLevel1Model entity);
+	Task<OrganizationalLevel1Model> PatchAsync([Body] OrganizationalLevel1Model entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of OrganizationalLevel1Model</returns>
 	[Post("/V1.0/OrganizationalLevel1s/query")]
-	Task<QueryActionResult<OrganizationalLevel1Model>> QueryAsync([Body] QueryModel queryModel);
+	Task<QueryActionResult<OrganizationalLevel1Model>> QueryAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/OrganizationalLevel1s/query/count")]
-	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
+	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -45,7 +43,7 @@ public interface IOrganizationalLevel1
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/OrganizationalLevel1s/entityInformation")]
-	Task<EntityInformationResultModel> GetEntityInfoAsync();
+	Task<EntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -53,16 +51,15 @@ public interface IOrganizationalLevel1
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/OrganizationalLevel1s/entityInformation/fields")]
-	Task<FieldInformationResultModel> GetFieldInfoAsync();
+	Task<FieldInformationResultModel> GetFieldInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of OrganizationalLevel1Model</returns>
 	[Get("/V1.0/OrganizationalLevel1s/{id}")]
-	Task<OrganizationalLevel1Model> GetAsync([AliasAs("id")] long id);
+	Task<OrganizationalLevel1Model> GetAsync([AliasAs("id")] long id, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -70,7 +67,7 @@ public interface IOrganizationalLevel1
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/OrganizationalLevel1s/entityInformation/userDefinedFields")]
-	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync();
+	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -78,23 +75,21 @@ public interface IOrganizationalLevel1
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of OrganizationalLevel1Model</returns>
 	[Put("/V1.0/OrganizationalLevel1s")]
-	Task<OrganizationalLevel1Model> UpdateAsync([Body] OrganizationalLevel1Model entity);
+	Task<OrganizationalLevel1Model> UpdateAsync([Body] OrganizationalLevel1Model entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of OrganizationalLevel1Model</returns>
 	[Get("/V1.0/OrganizationalLevel1s/query")]
-	Task<QueryActionResult<OrganizationalLevel1Model>> QueryAsync([AliasAs("search")] string search);
+	Task<QueryActionResult<OrganizationalLevel1Model>> QueryAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/OrganizationalLevel1s/query/count")]
-	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
+	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 }

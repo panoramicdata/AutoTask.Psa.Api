@@ -18,7 +18,7 @@ public class Fixture : TestBedFixture
 
 		services
 			.AddScoped<CancellationTokenSource>()
-			.Configure<AppSettings>(_configuration.GetSection("AppSettings")); ;
+			.Configure<AppSettings>(_configuration.GetSection("AppSettings"));
 	}
 
 	protected override ValueTask DisposeAsyncCore()

@@ -9,7 +9,7 @@ public class ParameterExpression
 	/// <summary>
 	/// Gets or Sets NodeType
 	/// </summary>
-	[DataMember(Name = "NodeType")]
+	[DataMember(Name = "NodeTypeEnum")]
 	public NodeTypeEnum? NodeType { get; set; }
 
 	/// <summary>

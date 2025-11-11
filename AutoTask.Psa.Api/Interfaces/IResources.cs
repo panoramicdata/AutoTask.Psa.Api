@@ -17,7 +17,6 @@ public interface IResources
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of ResourceModel</returns>
 	[Post("/V1.0/Resources/query")]
 	Task<QueryActionResult<ResourceModel>> QueryAsync([Body] QueryModel queryModel);
@@ -26,7 +25,6 @@ public interface IResources
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/Resources/query/count")]
 	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
@@ -51,7 +49,6 @@ public interface IResources
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of ResourceModel</returns>
 	[Get("/V1.0/Resources/{id}")]
 	Task<ResourceModel> GetAsync([AliasAs("id")] long id);
@@ -76,7 +73,6 @@ public interface IResources
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of ResourceModel</returns>
 	[Get("/V1.0/Resources/query")]
 	Task<QueryActionResult<ResourceModel>> QueryAsync([AliasAs("search")] string search);
@@ -85,7 +81,6 @@ public interface IResources
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/Resources/query/count")]
 	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);

@@ -11,25 +11,23 @@ public interface ITicketCategories
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of TicketCategoryModel</returns>
 	[Patch("/V1.0/TicketCategories")]
-	Task<TicketCategoryModel> PatchAsync([Body] TicketCategoryModel entity);
+	Task<TicketCategoryModel> PatchAsync([Body] TicketCategoryModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of TicketCategoryModel</returns>
 	[Post("/V1.0/TicketCategories/query")]
-	Task<QueryActionResult<TicketCategoryModel>> QueryAsync([Body] QueryModel queryModel);
+	Task<QueryActionResult<TicketCategoryModel>> QueryAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/TicketCategories/query/count")]
-	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
+	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -37,7 +35,7 @@ public interface ITicketCategories
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/TicketCategories/entityInformation")]
-	Task<EntityInformationResultModel> GetEntityInfoAsync();
+	Task<EntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -45,16 +43,15 @@ public interface ITicketCategories
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/TicketCategories/entityInformation/fields")]
-	Task<FieldInformationResultModel> GetFieldInfoAsync();
+	Task<FieldInformationResultModel> GetFieldInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of TicketCategoryModel</returns>
 	[Get("/V1.0/TicketCategories/{id}")]
-	Task<TicketCategoryModel> GetAsync([AliasAs("id")] long id);
+	Task<TicketCategoryModel> GetAsync([AliasAs("id")] long id, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -62,7 +59,7 @@ public interface ITicketCategories
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/TicketCategories/entityInformation/userDefinedFields")]
-	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync();
+	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -70,23 +67,21 @@ public interface ITicketCategories
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of TicketCategoryModel</returns>
 	[Put("/V1.0/TicketCategories")]
-	Task<TicketCategoryModel> UpdateAsync([Body] TicketCategoryModel entity);
+	Task<TicketCategoryModel> UpdateAsync([Body] TicketCategoryModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of TicketCategoryModel</returns>
 	[Get("/V1.0/TicketCategories/query")]
-	Task<QueryActionResult<TicketCategoryModel>> QueryAsync([AliasAs("search")] string search);
+	Task<QueryActionResult<TicketCategoryModel>> QueryAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/TicketCategories/query/count")]
-	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
+	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 }

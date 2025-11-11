@@ -11,7 +11,7 @@ public interface IUserDefinedFieldDefinitions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldDefinitionModel</returns>
 	[Post("/V1.0/UserDefinedFieldDefinitions")]
-	Task<UserDefinedFieldDefinitionModel> CreateAsync([Body] UserDefinedFieldDefinitionModel entity);
+	Task<UserDefinedFieldDefinitionModel> CreateAsync([Body] UserDefinedFieldDefinitionModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -19,25 +19,23 @@ public interface IUserDefinedFieldDefinitions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldDefinitionModel</returns>
 	[Patch("/V1.0/UserDefinedFieldDefinitions")]
-	Task<UserDefinedFieldDefinitionModel> PatchAsync([Body] UserDefinedFieldDefinitionModel entity);
+	Task<UserDefinedFieldDefinitionModel> PatchAsync([Body] UserDefinedFieldDefinitionModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of UserDefinedFieldDefinitionModel</returns>
 	[Post("/V1.0/UserDefinedFieldDefinitions/query")]
-	Task<QueryActionResult<UserDefinedFieldDefinitionModel>> QueryAsync([Body] QueryModel queryModel);
+	Task<QueryActionResult<UserDefinedFieldDefinitionModel>> QueryAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/UserDefinedFieldDefinitions/query/count")]
-	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
+	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -45,7 +43,7 @@ public interface IUserDefinedFieldDefinitions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/UserDefinedFieldDefinitions/entityInformation")]
-	Task<EntityInformationResultModel> GetEntityInfoAsync();
+	Task<EntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -53,16 +51,15 @@ public interface IUserDefinedFieldDefinitions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/UserDefinedFieldDefinitions/entityInformation/fields")]
-	Task<FieldInformationResultModel> GetFieldInfoAsync();
+	Task<FieldInformationResultModel> GetFieldInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of UserDefinedFieldDefinitionModel</returns>
 	[Get("/V1.0/UserDefinedFieldDefinitions/{id}")]
-	Task<UserDefinedFieldDefinitionModel> GetAsync([AliasAs("id")] long id);
+	Task<UserDefinedFieldDefinitionModel> GetAsync([AliasAs("id")] long id, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -70,7 +67,7 @@ public interface IUserDefinedFieldDefinitions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/UserDefinedFieldDefinitions/entityInformation/userDefinedFields")]
-	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync();
+	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -78,23 +75,21 @@ public interface IUserDefinedFieldDefinitions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldDefinitionModel</returns>
 	[Put("/V1.0/UserDefinedFieldDefinitions")]
-	Task<UserDefinedFieldDefinitionModel> UpdateAsync([Body] UserDefinedFieldDefinitionModel entity);
+	Task<UserDefinedFieldDefinitionModel> UpdateAsync([Body] UserDefinedFieldDefinitionModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of UserDefinedFieldDefinitionModel</returns>
 	[Get("/V1.0/UserDefinedFieldDefinitions/query")]
-	Task<QueryActionResult<UserDefinedFieldDefinitionModel>> QueryAsync([AliasAs("search")] string search);
+	Task<QueryActionResult<UserDefinedFieldDefinitionModel>> QueryAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/UserDefinedFieldDefinitions/query/count")]
-	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
+	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 }

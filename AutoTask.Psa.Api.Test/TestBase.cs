@@ -6,7 +6,10 @@ namespace AutoTask.Psa.Api.Test;
 public class TestBase : TestBed<Fixture>
 {
 	public AutoTaskClient AutoTaskClient { get; }
+
 	public ILogger Log { get; }
+
+	protected static CancellationToken CancellationToken => TestContext.Current.CancellationToken;
 
 	public TestBase(
 		ITestOutputHelper testOutputHelper,

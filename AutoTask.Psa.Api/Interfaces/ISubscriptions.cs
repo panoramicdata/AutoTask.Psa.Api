@@ -11,16 +11,15 @@ public interface ISubscriptions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of SubscriptionModel</returns>
 	[Post("/V1.0/Subscriptions")]
-	Task<SubscriptionModel> CreateAsync([Body] SubscriptionModel entity);
+	Task<SubscriptionModel> CreateAsync([Body] SubscriptionModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of OperationResultModel</returns>
 	[Delete("/V1.0/Subscriptions/{id}")]
-	Task<OperationResultModel> DeleteAsync([AliasAs("id")] long id);
+	Task<OperationResultModel> DeleteAsync([AliasAs("id")] long id, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -28,25 +27,23 @@ public interface ISubscriptions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of SubscriptionModel</returns>
 	[Patch("/V1.0/Subscriptions")]
-	Task<SubscriptionModel> PatchAsync([Body] SubscriptionModel entity);
+	Task<SubscriptionModel> PatchAsync([Body] SubscriptionModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of SubscriptionModel</returns>
 	[Post("/V1.0/Subscriptions/query")]
-	Task<QueryActionResult<SubscriptionModel>> QueryAsync([Body] QueryModel queryModel);
+	Task<QueryActionResult<SubscriptionModel>> QueryAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/Subscriptions/query/count")]
-	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
+	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -54,7 +51,7 @@ public interface ISubscriptions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/Subscriptions/entityInformation")]
-	Task<EntityInformationResultModel> GetEntityInfoAsync();
+	Task<EntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -62,16 +59,15 @@ public interface ISubscriptions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/Subscriptions/entityInformation/fields")]
-	Task<FieldInformationResultModel> GetFieldInfoAsync();
+	Task<FieldInformationResultModel> GetFieldInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of SubscriptionModel</returns>
 	[Get("/V1.0/Subscriptions/{id}")]
-	Task<SubscriptionModel> GetAsync([AliasAs("id")] long id);
+	Task<SubscriptionModel> GetAsync([AliasAs("id")] long id, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -79,7 +75,7 @@ public interface ISubscriptions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/Subscriptions/entityInformation/userDefinedFields")]
-	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync();
+	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -87,23 +83,21 @@ public interface ISubscriptions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of SubscriptionModel</returns>
 	[Put("/V1.0/Subscriptions")]
-	Task<SubscriptionModel> UpdateAsync([Body] SubscriptionModel entity);
+	Task<SubscriptionModel> UpdateAsync([Body] SubscriptionModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of SubscriptionModel</returns>
 	[Get("/V1.0/Subscriptions/query")]
-	Task<QueryActionResult<SubscriptionModel>> QueryAsync([AliasAs("search")] string search);
+	Task<QueryActionResult<SubscriptionModel>> QueryAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/Subscriptions/query/count")]
-	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
+	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 }

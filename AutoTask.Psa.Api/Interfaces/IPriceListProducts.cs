@@ -11,25 +11,23 @@ public interface IPriceListProducts
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of PriceListProductModel</returns>
 	[Patch("/V1.0/PriceListProducts")]
-	Task<PriceListProductModel> PatchAsync([Body] PriceListProductModel entity);
+	Task<PriceListProductModel> PatchAsync([Body] PriceListProductModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of PriceListProductModel</returns>
 	[Post("/V1.0/PriceListProducts/query")]
-	Task<QueryActionResult<PriceListProductModel>> QueryAsync([Body] QueryModel queryModel);
+	Task<QueryActionResult<PriceListProductModel>> QueryAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/PriceListProducts/query/count")]
-	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
+	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -37,7 +35,7 @@ public interface IPriceListProducts
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/PriceListProducts/entityInformation")]
-	Task<EntityInformationResultModel> GetEntityInfoAsync();
+	Task<EntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -45,16 +43,15 @@ public interface IPriceListProducts
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/PriceListProducts/entityInformation/fields")]
-	Task<FieldInformationResultModel> GetFieldInfoAsync();
+	Task<FieldInformationResultModel> GetFieldInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of PriceListProductModel</returns>
 	[Get("/V1.0/PriceListProducts/{id}")]
-	Task<PriceListProductModel> GetAsync([AliasAs("id")] long id);
+	Task<PriceListProductModel> GetAsync([AliasAs("id")] long id, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -62,7 +59,7 @@ public interface IPriceListProducts
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/PriceListProducts/entityInformation/userDefinedFields")]
-	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync();
+	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -70,23 +67,21 @@ public interface IPriceListProducts
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of PriceListProductModel</returns>
 	[Put("/V1.0/PriceListProducts")]
-	Task<PriceListProductModel> UpdateAsync([Body] PriceListProductModel entity);
+	Task<PriceListProductModel> UpdateAsync([Body] PriceListProductModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of PriceListProductModel</returns>
 	[Get("/V1.0/PriceListProducts/query")]
-	Task<QueryActionResult<PriceListProductModel>> QueryAsync([AliasAs("search")] string search);
+	Task<QueryActionResult<PriceListProductModel>> QueryAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/PriceListProducts/query/count")]
-	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
+	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 }

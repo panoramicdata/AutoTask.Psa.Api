@@ -11,7 +11,7 @@ public interface ITaxRegions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of TaxRegionModel</returns>
 	[Post("/V1.0/TaxRegions")]
-	Task<TaxRegionModel> CreateAsync([Body] TaxRegionModel entity);
+	Task<TaxRegionModel> CreateAsync([Body] TaxRegionModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -19,25 +19,23 @@ public interface ITaxRegions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of TaxRegionModel</returns>
 	[Patch("/V1.0/TaxRegions")]
-	Task<TaxRegionModel> PatchAsync([Body] TaxRegionModel entity);
+	Task<TaxRegionModel> PatchAsync([Body] TaxRegionModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of TaxRegionModel</returns>
 	[Post("/V1.0/TaxRegions/query")]
-	Task<QueryActionResult<TaxRegionModel>> QueryAsync([Body] QueryModel queryModel);
+	Task<QueryActionResult<TaxRegionModel>> QueryAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="queryModel"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/TaxRegions/query/count")]
-	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
+	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -45,7 +43,7 @@ public interface ITaxRegions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/TaxRegions/entityInformation")]
-	Task<EntityInformationResultModel> GetEntityInfoAsync();
+	Task<EntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -53,16 +51,15 @@ public interface ITaxRegions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/TaxRegions/entityInformation/fields")]
-	Task<FieldInformationResultModel> GetFieldInfoAsync();
+	Task<FieldInformationResultModel> GetFieldInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="id"></param>
 	/// <returns>Task of TaxRegionModel</returns>
 	[Get("/V1.0/TaxRegions/{id}")]
-	Task<TaxRegionModel> GetAsync([AliasAs("id")] long id);
+	Task<TaxRegionModel> GetAsync([AliasAs("id")] long id, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -70,7 +67,7 @@ public interface ITaxRegions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/TaxRegions/entityInformation/userDefinedFields")]
-	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync();
+	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
 
 	/// <summary>
 	///
@@ -78,23 +75,21 @@ public interface ITaxRegions
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of TaxRegionModel</returns>
 	[Put("/V1.0/TaxRegions")]
-	Task<TaxRegionModel> UpdateAsync([Body] TaxRegionModel entity);
+	Task<TaxRegionModel> UpdateAsync([Body] TaxRegionModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of TaxRegionModel</returns>
 	[Get("/V1.0/TaxRegions/query")]
-	Task<QueryActionResult<TaxRegionModel>> QueryAsync([AliasAs("search")] string search);
+	Task<QueryActionResult<TaxRegionModel>> QueryAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="search"></param>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/TaxRegions/query/count")]
-	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
+	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
 }

@@ -9,35 +9,31 @@ public interface ITicketChecklistLibrariesChild
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="parentId"></param>
 	/// <returns>Task of TicketChecklistLibraryModel</returns>
 	[Post("/V1.0/Tickets/{parentId}/ChecklistLibraries")]
-	Task<TicketChecklistLibraryModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] TicketChecklistLibraryModel entity);
+	Task<TicketChecklistLibraryModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] TicketChecklistLibraryModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="parentId"></param>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/Tickets/{parentId}/ChecklistLibraries/entityInformation")]
-	Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId);
+	Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="parentId"></param>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/Tickets/{parentId}/ChecklistLibraries/entityInformation/fields")]
-	Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId);
+	Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
 	/// </summary>
 	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
-	/// <param name="parentId"></param>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/Tickets/{parentId}/ChecklistLibraries/entityInformation/userDefinedFields")]
-	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId);
+	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
 }

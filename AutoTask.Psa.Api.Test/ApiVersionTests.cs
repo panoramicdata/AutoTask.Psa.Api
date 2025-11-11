@@ -10,8 +10,7 @@ public class ApiVersionTests(
 	{
 		var apiVersionResponseModel = await AutoTaskClient
 			.ApiVersions
-			.GetAsync(CancellationToken.None)
-			.ConfigureAwait(false);
+			.GetAsync(CancellationToken);
 
 		apiVersionResponseModel.Should().NotBeNull(because: "a valid request should return a response object");
 		apiVersionResponseModel.ApiVersions.Should().NotBeEmpty(because: "there should be at least one API version in any system");

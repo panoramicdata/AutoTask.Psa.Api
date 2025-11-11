@@ -11,7 +11,6 @@ public class AutoTaskClient : IDisposable
 	/// <summary>
 	/// Constructor
 	/// </summary>
-	/// <param name="options"></param>
 	public AutoTaskClient(
 		AutoTaskClientOptions options,
 		ILogger logger)
@@ -1055,7 +1054,7 @@ public class AutoTaskClient : IDisposable
 		{
 			var json = await httpResponseMessage
 				.Content
-				.ReadAsStringAsync();
+				.ReadAsStringAsync(cancellationToken);
 			return json == null ? null : JsonConvert.DeserializeObject<JObject>(json);
 		}
 
@@ -1065,8 +1064,6 @@ public class AutoTaskClient : IDisposable
 	/// <summary>
 	/// Performs a GET request to the specified URL.
 	/// </summary>
-	/// <param name="subUrl"></param>
-	/// <param name="cancellationToken"></param>
 	/// <exception cref="FormatException"></exception>
 	public Task<List<JObject>> GetAllAsync(string subUrl, CancellationToken cancellationToken)
 		=> GetAllInternalAsync(HttpMethod.Get, subUrl, null, cancellationToken);
@@ -1074,8 +1071,6 @@ public class AutoTaskClient : IDisposable
 	/// <summary>
 	/// Performs a GET request to the specified URL.
 	/// </summary>
-	/// <param name="subUrl"></param>
-	/// <param name="cancellationToken"></param>
 	/// <exception cref="FormatException"></exception>
 	public Task<List<JObject>> GetAllAsync(string subUrl, string body, CancellationToken cancellationToken)
 		=> GetAllInternalAsync(HttpMethod.Post, subUrl, body, cancellationToken);
@@ -1083,9 +1078,6 @@ public class AutoTaskClient : IDisposable
 	/// <summary>
 	/// Perform a query using HTTP POST and return all the results.
 	/// </summary>
-	/// <param name="subUrl"></param>
-	/// <param name="body"></param>
-	/// <param name="cancellationToken"></param>
 	/// <exception cref="FormatException"></exception>
 	private async Task<List<JObject>> GetAllInternalAsync(
 		HttpMethod httpMethod,
@@ -1106,7 +1098,7 @@ public class AutoTaskClient : IDisposable
 			{
 				var json = await httpResponseMessage
 					.Content
-					.ReadAsStringAsync();
+					.ReadAsStringAsync(cancellationToken);
 				var jObject = json == null ? null : JsonConvert.DeserializeObject<JObject>(json);
 
 				list.AddRange(jObject?["items"]?.ToObject<List<JObject>>() ?? throw new FormatException("Cannot deserialize items."));
@@ -1134,8 +1126,6 @@ public class AutoTaskClient : IDisposable
 	/// <summary>
 	/// Perform a query using HTTP POST and return all the results.
 	/// </summary>
-	/// <param name="subUrl"></param>
-	/// <param name="cancellationToken"></param>
 	/// <exception cref="FormatException"></exception>
 	public async Task DeleteAsync(
 		string subUrl,
