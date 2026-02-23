@@ -1,5 +1,7 @@
 using Newtonsoft.Json.Linq;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace AutoTask.Psa.Api;
 
@@ -27,18 +29,13 @@ public class AutoTaskClient : IDisposable
 		_httpClient = client;
 		_refitSettings = new RefitSettings
 		{
-			//ContentSerializer = new NewtonsoftJsonContentSerializer(
-			//	new JsonSerializerSettings
-			//	{
-			//		// By default nulls should not be rendered out, this will allow the receiving API to apply any defaults.
-			//		// Use [JsonProperty(NullValueHandling = NullValueHandling.Include)] to send
-			//		// nulls for specific properties, e.g. disassociating port schedule ids from a port
-			//		NullValueHandling = NullValueHandling.Ignore,
-			//	#if DEBUG
-			//		MissingMemberHandling = MissingMemberHandling.Error,
-			//	#endif
-			//		Converters = new List<JsonConverter> { new StringEnumConverter() }
-			//	})
+			ContentSerializer = new SystemTextJsonContentSerializer(
+				new JsonSerializerOptions
+				{
+					DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+					PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+					WriteIndented = true,
+				})
 		};
 		ActionTypes = RefitFor(ActionTypes!);
 		AdditionalInvoiceFieldValues = RefitFor(AdditionalInvoiceFieldValues!);
