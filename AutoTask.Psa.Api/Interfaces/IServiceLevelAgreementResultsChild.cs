@@ -8,7 +8,7 @@ public interface IServiceLevelAgreementResultsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ServiceLevelAgreementResultsModel</returns>
 	[Get("/V1.0/ServiceLevelAgreements/{parentId}/Results")]
 	Task<ServiceLevelAgreementResultsModel> QueryAsync([AliasAs("parentId")] long? parentId);
@@ -16,7 +16,7 @@ public interface IServiceLevelAgreementResultsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/ServiceLevelAgreements/{parentId}/Results/entityInformation")]
 	Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -24,7 +24,7 @@ public interface IServiceLevelAgreementResultsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/ServiceLevelAgreements/{parentId}/Results/entityInformation/fields")]
 	Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -32,7 +32,7 @@ public interface IServiceLevelAgreementResultsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ServiceLevelAgreementResultsModel</returns>
 	[Get("/V1.0/ServiceLevelAgreements/{parentId}/Results/{id}")]
 	Task<ServiceLevelAgreementResultsModel> GetAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
@@ -40,7 +40,7 @@ public interface IServiceLevelAgreementResultsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/ServiceLevelAgreements/{parentId}/Results/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);

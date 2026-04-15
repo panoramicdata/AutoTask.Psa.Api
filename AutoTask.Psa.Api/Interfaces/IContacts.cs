@@ -8,7 +8,7 @@ public interface IContacts
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContactModel</returns>
 	[Post("/V1.0/Contacts/query")]
 	Task<QueryActionResult<ContactModel>> QueryAsync([Body] QueryModel queryModel);
@@ -16,7 +16,7 @@ public interface IContacts
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/Contacts/query/count")]
 	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
@@ -24,7 +24,7 @@ public interface IContacts
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/Contacts/entityInformation")]
 	Task<EntityInformationResultModel> GetEntityInfoAsync();
@@ -32,7 +32,7 @@ public interface IContacts
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/Contacts/entityInformation/fields")]
 	Task<FieldInformationResultModel> GetFieldInfoAsync();
@@ -40,7 +40,7 @@ public interface IContacts
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContactModel</returns>
 	[Get("/V1.0/Contacts/{id}")]
 	Task<ContactModel> GetAsync([AliasAs("id")] long id);
@@ -48,7 +48,7 @@ public interface IContacts
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/Contacts/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync();
@@ -56,7 +56,7 @@ public interface IContacts
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContactModel</returns>
 	[Get("/V1.0/Contacts/query")]
 	Task<QueryActionResult<ContactModel>> QueryAsync([AliasAs("search")] string search);
@@ -64,7 +64,7 @@ public interface IContacts
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/Contacts/query/count")]
 	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);

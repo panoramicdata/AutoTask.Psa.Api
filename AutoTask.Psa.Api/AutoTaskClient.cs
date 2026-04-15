@@ -22,6 +22,10 @@ public class AutoTaskClient : IDisposable
 		_shouldDisposeHttpClient = true;
 	}
 
+	/// <summary>
+	/// Initialises a new instance of <see cref="AutoTaskClient"/> using a pre-configured <see cref="HttpClient"/>.
+	/// </summary>
+	/// <param name="client">The HTTP client to use for all API requests.</param>
 	public AutoTaskClient(HttpClient client)
 	{
 		_httpClient = client;
@@ -1046,6 +1050,12 @@ public class AutoTaskClient : IDisposable
 	/// <inheritdoc />
 	public IZoneInformationApiIntegration ZoneInformationApiIntegration { get; }
 
+	/// <summary>
+	/// Performs a GET request and deserialises the response body as a <see cref="JObject"/>.
+	/// </summary>
+	/// <param name="subUrl">The relative URL to request.</param>
+	/// <param name="cancellationToken">A cancellation token to cancel the operation.</param>
+	/// <returns>The deserialised <see cref="JObject"/>, or <see langword="null"/> if the response body is empty.</returns>
 	public async Task<JObject?> GetJObjectAsync(string subUrl, CancellationToken cancellationToken)
 	{
 		var httpRequestMessage = new HttpRequestMessage(HttpMethod.Get, subUrl);
@@ -1139,6 +1149,10 @@ public class AutoTaskClient : IDisposable
 		}
 	}
 
+	/// <summary>
+	/// Releases the resources used by this instance.
+	/// </summary>
+	/// <param name="disposing"><see langword="true"/> to release managed resources.</param>
 	protected virtual void Dispose(bool disposing)
 	{
 		if (!_isDisposed)
@@ -1155,6 +1169,9 @@ public class AutoTaskClient : IDisposable
 		}
 	}
 
+	/// <summary>
+	/// Releases all resources used by this <see cref="AutoTaskClient"/>.
+	/// </summary>
 	public void Dispose()
 	{
 		// Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method

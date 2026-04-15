@@ -8,7 +8,7 @@ public interface IContactBillingProductAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContactBillingProductAssociationModel</returns>
 	[Post("/V1.0/Contacts/{parentId}/BillingProductAssociations")]
 	Task<ContactBillingProductAssociationModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] ContactBillingProductAssociationModel entity, CancellationToken cancellationToken);
@@ -16,7 +16,7 @@ public interface IContactBillingProductAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of OperationResultModel</returns>
 	[Delete("/V1.0/Contacts/{parentId}/BillingProductAssociations/{id}")]
 	Task<OperationResultModel> DeleteAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
@@ -24,7 +24,7 @@ public interface IContactBillingProductAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContactBillingProductAssociationModel</returns>
 	[Patch("/V1.0/Contacts/{parentId}/BillingProductAssociations")]
 	Task<ContactBillingProductAssociationModel> PatchAsync([AliasAs("parentId")] long? parentId, [Body] ContactBillingProductAssociationModel entity, CancellationToken cancellationToken);
@@ -32,7 +32,7 @@ public interface IContactBillingProductAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContactBillingProductAssociationModel</returns>
 	[Get("/V1.0/Contacts/{parentId}/BillingProductAssociations")]
 	Task<ContactBillingProductAssociationModel> QueryAsync([AliasAs("parentId")] long? parentId);
@@ -40,7 +40,7 @@ public interface IContactBillingProductAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/Contacts/{parentId}/BillingProductAssociations/entityInformation")]
 	Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -48,7 +48,7 @@ public interface IContactBillingProductAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/Contacts/{parentId}/BillingProductAssociations/entityInformation/fields")]
 	Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -56,7 +56,7 @@ public interface IContactBillingProductAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContactBillingProductAssociationModel</returns>
 	[Get("/V1.0/Contacts/{parentId}/BillingProductAssociations/{id}")]
 	Task<ContactBillingProductAssociationModel> GetAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
@@ -64,7 +64,7 @@ public interface IContactBillingProductAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/Contacts/{parentId}/BillingProductAssociations/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -72,7 +72,7 @@ public interface IContactBillingProductAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContactBillingProductAssociationModel</returns>
 	[Put("/V1.0/Contacts/{parentId}/BillingProductAssociations")]
 	Task<ContactBillingProductAssociationModel> UpdateAsync([AliasAs("parentId")] long? parentId, [Body] ContactBillingProductAssociationModel entity, CancellationToken cancellationToken);

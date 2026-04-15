@@ -15,3 +15,7 @@ packages
 /LogicMonitor.Api.Test.Old/appsettings.json
 /LogicMonitor.Api.Help/html
 appsettings.json
+[Bb]in/
+[Oo]bj/
+.vs/
+nuget-key.txt

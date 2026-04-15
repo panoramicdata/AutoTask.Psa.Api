@@ -8,7 +8,7 @@ public interface ICompanyWebhookExcludedResourcesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of CompanyWebhookExcludedResourceModel</returns>
 	[Post("/V1.0/CompanyWebhooks/{parentId}/ExcludedResources")]
 	Task<CompanyWebhookExcludedResourceModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] CompanyWebhookExcludedResourceModel entity, CancellationToken cancellationToken);
@@ -16,7 +16,7 @@ public interface ICompanyWebhookExcludedResourcesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of OperationResultModel</returns>
 	[Delete("/V1.0/CompanyWebhooks/{parentId}/ExcludedResources/{id}")]
 	Task<OperationResultModel> DeleteAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
@@ -24,7 +24,7 @@ public interface ICompanyWebhookExcludedResourcesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of CompanyWebhookExcludedResourceModel</returns>
 	[Get("/V1.0/CompanyWebhooks/{parentId}/ExcludedResources")]
 	Task<CompanyWebhookExcludedResourceModel> QueryAsync([AliasAs("parentId")] long? parentId);
@@ -32,7 +32,7 @@ public interface ICompanyWebhookExcludedResourcesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/CompanyWebhooks/{parentId}/ExcludedResources/entityInformation")]
 	Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -40,7 +40,7 @@ public interface ICompanyWebhookExcludedResourcesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/CompanyWebhooks/{parentId}/ExcludedResources/entityInformation/fields")]
 	Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -48,7 +48,7 @@ public interface ICompanyWebhookExcludedResourcesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of CompanyWebhookExcludedResourceModel</returns>
 	[Get("/V1.0/CompanyWebhooks/{parentId}/ExcludedResources/{id}")]
 	Task<CompanyWebhookExcludedResourceModel> GetAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
@@ -56,7 +56,7 @@ public interface ICompanyWebhookExcludedResourcesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/CompanyWebhooks/{parentId}/ExcludedResources/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);

@@ -8,7 +8,7 @@ public interface IConfigurationItemCategoryUdfAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ConfigurationItemCategoryUdfAssociationModel</returns>
 	[Post("/V1.0/ConfigurationItemCategories/{parentId}/UdfAssociations")]
 	Task<ConfigurationItemCategoryUdfAssociationModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] ConfigurationItemCategoryUdfAssociationModel entity, CancellationToken cancellationToken);
@@ -16,7 +16,7 @@ public interface IConfigurationItemCategoryUdfAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of OperationResultModel</returns>
 	[Delete("/V1.0/ConfigurationItemCategories/{parentId}/UdfAssociations/{id}")]
 	Task<OperationResultModel> DeleteAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
@@ -24,7 +24,7 @@ public interface IConfigurationItemCategoryUdfAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ConfigurationItemCategoryUdfAssociationModel</returns>
 	[Patch("/V1.0/ConfigurationItemCategories/{parentId}/UdfAssociations")]
 	Task<ConfigurationItemCategoryUdfAssociationModel> PatchAsync([AliasAs("parentId")] long? parentId, [Body] ConfigurationItemCategoryUdfAssociationModel entity, CancellationToken cancellationToken);
@@ -32,7 +32,7 @@ public interface IConfigurationItemCategoryUdfAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ConfigurationItemCategoryUdfAssociationModel</returns>
 	[Get("/V1.0/ConfigurationItemCategories/{parentId}/UdfAssociations")]
 	Task<ConfigurationItemCategoryUdfAssociationModel> QueryAsync([AliasAs("parentId")] long? parentId);
@@ -40,7 +40,7 @@ public interface IConfigurationItemCategoryUdfAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/ConfigurationItemCategories/{parentId}/UdfAssociations/entityInformation")]
 	Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -48,7 +48,7 @@ public interface IConfigurationItemCategoryUdfAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/ConfigurationItemCategories/{parentId}/UdfAssociations/entityInformation/fields")]
 	Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -56,7 +56,7 @@ public interface IConfigurationItemCategoryUdfAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ConfigurationItemCategoryUdfAssociationModel</returns>
 	[Get("/V1.0/ConfigurationItemCategories/{parentId}/UdfAssociations/{id}")]
 	Task<ConfigurationItemCategoryUdfAssociationModel> GetAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
@@ -64,7 +64,7 @@ public interface IConfigurationItemCategoryUdfAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/ConfigurationItemCategories/{parentId}/UdfAssociations/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -72,7 +72,7 @@ public interface IConfigurationItemCategoryUdfAssociationsChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ConfigurationItemCategoryUdfAssociationModel</returns>
 	[Put("/V1.0/ConfigurationItemCategories/{parentId}/UdfAssociations")]
 	Task<ConfigurationItemCategoryUdfAssociationModel> UpdateAsync([AliasAs("parentId")] long? parentId, [Body] ConfigurationItemCategoryUdfAssociationModel entity, CancellationToken cancellationToken);

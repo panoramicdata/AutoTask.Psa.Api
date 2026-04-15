@@ -1,56 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
-	<PropertyGroup>
-		<TargetFramework>net10.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<LangVersion>latest</LangVersion>
-		<Nullable>enable</Nullable>
-		<EnableNETAnalyzers>true</EnableNETAnalyzers>
-		<AnalysisLevel>latest-recommended</AnalysisLevel>
-		<NeutralLanguage>en</NeutralLanguage>
-		<Copyright>Panoramic Data Limited 2021-2022</Copyright>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<ApplicationIcon>Icon.ico</ApplicationIcon>
-		<Description>Datto Autotask PSA REST API</Description>
-		<PackageProjectUrl>https://github.com/panoramicdata/AutoTask.Psa.Api</PackageProjectUrl>
-		<PackageIcon>Icon.png</PackageIcon>
-		<RepositoryUrl>https://github.com/panoramicdata/AutoTask.Psa.Api</RepositoryUrl>
-		<RepositoryType>git</RepositoryType>
-		<PackageTags>autotask datto psa rest api</PackageTags>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Company>Panoramic Data Limited</Company>
-		<Authors>Panoramic Data Limited</Authors>
-		<PackageReleaseNotes>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Copyright>Panoramic Data Limited 2021-2022</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <Description>Datto Autotask PSA REST API</Description>
+    <PackageProjectUrl>https://github.com/panoramicdata/AutoTask.Psa.Api</PackageProjectUrl>
+    <PackageIcon>Icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/panoramicdata/AutoTask.Psa.Api</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>autotask datto psa rest api</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Company>Panoramic Data Limited</Company>
+    <Authors>Panoramic Data Limited</Authors>
+    <PackageReleaseNotes>
 			Added support for logging of response content when an exception occurs. To avoid potential
 			security concerns, this must be enabled through the client options LogExceptionContent property
 		</PackageReleaseNotes>
-		<IncludeSymbols>true</IncludeSymbols>
-		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-	</PropertyGroup>
-
-	<ItemGroup>
-		<PackageReference Include="AsyncFixer" Version="1.6.0">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
-		<PackageReference Include="Nerdbank.GitVersioning" Version="3.9.50">
-		  <PrivateAssets>all</PrivateAssets>
-		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-		<PackageReference Include="Refit" Version="8.0.0" />
-		<PackageReference Include="Roslynator.Analyzers" Version="4.14.1">
-		  <PrivateAssets>all</PrivateAssets>
-		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<None Remove="Icon.png" />
-		<None Include="Icon.png" Pack="true" PackagePath="" />
-	</ItemGroup>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageId>AutoTask.Psa.Api</PackageId>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <NeutralResourcesLanguage>en</NeutralResourcesLanguage>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AsyncFixer">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="Nerdbank.GitVersioning">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="Refit" />
+    <PackageReference Include="System.ComponentModel.Annotations" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Icon.png" />
+    <None Include="Icon.png" Pack="true" PackagePath="" />
+    <None Include="..\README.md" Pack="true" PackagePath="" Link="README.md" />
+  </ItemGroup>
 </Project>
