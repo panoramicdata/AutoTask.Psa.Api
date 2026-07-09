@@ -8,7 +8,7 @@ public interface IContractRetainersChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContractRetainerModel</returns>
 	[Post("/V1.0/Contracts/{parentId}/Retainers")]
 	Task<ContractRetainerModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] ContractRetainerModel entity, CancellationToken cancellationToken);
@@ -16,7 +16,7 @@ public interface IContractRetainersChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContractRetainerModel</returns>
 	[Patch("/V1.0/Contracts/{parentId}/Retainers")]
 	Task<ContractRetainerModel> PatchAsync([AliasAs("parentId")] long? parentId, [Body] ContractRetainerModel entity, CancellationToken cancellationToken);
@@ -24,7 +24,7 @@ public interface IContractRetainersChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContractRetainerModel</returns>
 	[Get("/V1.0/Contracts/{parentId}/Retainers")]
 	Task<ContractRetainerModel> QueryAsync([AliasAs("parentId")] long? parentId);
@@ -32,7 +32,7 @@ public interface IContractRetainersChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/Contracts/{parentId}/Retainers/entityInformation")]
 	Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -40,7 +40,7 @@ public interface IContractRetainersChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/Contracts/{parentId}/Retainers/entityInformation/fields")]
 	Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -48,7 +48,7 @@ public interface IContractRetainersChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContractRetainerModel</returns>
 	[Get("/V1.0/Contracts/{parentId}/Retainers/{id}")]
 	Task<ContractRetainerModel> GetAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
@@ -56,7 +56,7 @@ public interface IContractRetainersChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/Contracts/{parentId}/Retainers/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -64,7 +64,7 @@ public interface IContractRetainersChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContractRetainerModel</returns>
 	[Put("/V1.0/Contracts/{parentId}/Retainers")]
 	Task<ContractRetainerModel> UpdateAsync([AliasAs("parentId")] long? parentId, [Body] ContractRetainerModel entity, CancellationToken cancellationToken);

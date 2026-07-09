@@ -8,7 +8,7 @@ public interface IContractTicketPurchasesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContractTicketPurchaseModel</returns>
 	[Post("/V1.0/Contracts/{parentId}/TicketPurchases")]
 	Task<ContractTicketPurchaseModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] ContractTicketPurchaseModel entity, CancellationToken cancellationToken);
@@ -16,7 +16,7 @@ public interface IContractTicketPurchasesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContractTicketPurchaseModel</returns>
 	[Patch("/V1.0/Contracts/{parentId}/TicketPurchases")]
 	Task<ContractTicketPurchaseModel> PatchAsync([AliasAs("parentId")] long? parentId, [Body] ContractTicketPurchaseModel entity, CancellationToken cancellationToken);
@@ -24,7 +24,7 @@ public interface IContractTicketPurchasesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContractTicketPurchaseModel</returns>
 	[Get("/V1.0/Contracts/{parentId}/TicketPurchases")]
 	Task<ContractTicketPurchaseModel> QueryAsync([AliasAs("parentId")] long? parentId);
@@ -32,7 +32,7 @@ public interface IContractTicketPurchasesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/Contracts/{parentId}/TicketPurchases/entityInformation")]
 	Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -40,7 +40,7 @@ public interface IContractTicketPurchasesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/Contracts/{parentId}/TicketPurchases/entityInformation/fields")]
 	Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -48,7 +48,7 @@ public interface IContractTicketPurchasesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContractTicketPurchaseModel</returns>
 	[Get("/V1.0/Contracts/{parentId}/TicketPurchases/{id}")]
 	Task<ContractTicketPurchaseModel> GetAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
@@ -56,7 +56,7 @@ public interface IContractTicketPurchasesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/Contracts/{parentId}/TicketPurchases/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -64,7 +64,7 @@ public interface IContractTicketPurchasesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ContractTicketPurchaseModel</returns>
 	[Put("/V1.0/Contracts/{parentId}/TicketPurchases")]
 	Task<ContractTicketPurchaseModel> UpdateAsync([AliasAs("parentId")] long? parentId, [Body] ContractTicketPurchaseModel entity, CancellationToken cancellationToken);

@@ -8,7 +8,7 @@ public interface IServiceCallTaskResourcesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ServiceCallTaskResourceModel</returns>
 	[Post("/V1.0/ServiceCallTasks/{parentId}/Resources")]
 	Task<ServiceCallTaskResourceModel> CreateAsync([AliasAs("parentId")] long? parentId, [Body] ServiceCallTaskResourceModel entity, CancellationToken cancellationToken);
@@ -16,7 +16,7 @@ public interface IServiceCallTaskResourcesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of OperationResultModel</returns>
 	[Delete("/V1.0/ServiceCallTasks/{parentId}/Resources/{id}")]
 	Task<OperationResultModel> DeleteAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
@@ -24,7 +24,7 @@ public interface IServiceCallTaskResourcesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ServiceCallTaskResourceModel</returns>
 	[Get("/V1.0/ServiceCallTasks/{parentId}/Resources")]
 	Task<ServiceCallTaskResourceModel> QueryAsync([AliasAs("parentId")] long? parentId);
@@ -32,7 +32,7 @@ public interface IServiceCallTaskResourcesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/ServiceCallTasks/{parentId}/Resources/entityInformation")]
 	Task<EntityInformationResultModel> GetEntityInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -40,7 +40,7 @@ public interface IServiceCallTaskResourcesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/ServiceCallTasks/{parentId}/Resources/entityInformation/fields")]
 	Task<FieldInformationResultModel> GetFieldInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);
@@ -48,7 +48,7 @@ public interface IServiceCallTaskResourcesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ServiceCallTaskResourceModel</returns>
 	[Get("/V1.0/ServiceCallTasks/{parentId}/Resources/{id}")]
 	Task<ServiceCallTaskResourceModel> GetAsync([AliasAs("parentId")] long? parentId, [AliasAs("id")] long? id);
@@ -56,7 +56,7 @@ public interface IServiceCallTaskResourcesChild
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/ServiceCallTasks/{parentId}/Resources/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync([AliasAs("parentId")] string parentId, CancellationToken cancellationToken);

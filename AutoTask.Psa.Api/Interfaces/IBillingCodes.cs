@@ -8,7 +8,7 @@ public interface IBillingCodes
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of BillingCodeModel</returns>
 	[Post("/V1.0/BillingCodes/query")]
 	Task<QueryActionResult<BillingCodeModel>> QueryAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
@@ -16,7 +16,7 @@ public interface IBillingCodes
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/BillingCodes/query/count")]
 	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
@@ -24,7 +24,7 @@ public interface IBillingCodes
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/BillingCodes/entityInformation")]
 	Task<EntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
@@ -32,7 +32,7 @@ public interface IBillingCodes
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/BillingCodes/entityInformation/fields")]
 	Task<FieldInformationResultModel> GetFieldInfoAsync(CancellationToken cancellationToken);
@@ -40,7 +40,7 @@ public interface IBillingCodes
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of BillingCodeModel</returns>
 	[Get("/V1.0/BillingCodes/{id}")]
 	Task<BillingCodeModel> GetAsync([AliasAs("id")] long id, CancellationToken cancellationToken);
@@ -48,7 +48,7 @@ public interface IBillingCodes
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/BillingCodes/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
@@ -56,7 +56,7 @@ public interface IBillingCodes
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of BillingCodeModel</returns>
 	[Get("/V1.0/BillingCodes/query")]
 	Task<QueryActionResult<BillingCodeModel>> QueryAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
@@ -64,7 +64,7 @@ public interface IBillingCodes
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/BillingCodes/query/count")]
 	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search, CancellationToken cancellationToken);

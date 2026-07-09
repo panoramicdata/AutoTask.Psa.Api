@@ -8,7 +8,7 @@ public interface IProjects
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ProjectModel</returns>
 	[Post("/V1.0/Projects")]
 	Task<ProjectModel> CreateAsync([Body] ProjectModel entity);
@@ -16,7 +16,7 @@ public interface IProjects
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ProjectModel</returns>
 	[Patch("/V1.0/Projects")]
 	Task<ProjectModel> PatchAsync([Body] ProjectModel entity);
@@ -24,7 +24,7 @@ public interface IProjects
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ProjectModel</returns>
 	[Post("/V1.0/Projects/query")]
 	Task<QueryActionResult<ProjectModel>> QueryAsync([Body] QueryModel queryModel);
@@ -32,7 +32,7 @@ public interface IProjects
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/Projects/query/count")]
 	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
@@ -40,7 +40,7 @@ public interface IProjects
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/Projects/entityInformation")]
 	Task<EntityInformationResultModel> GetEntityInfoAsync();
@@ -48,7 +48,7 @@ public interface IProjects
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/Projects/entityInformation/fields")]
 	Task<FieldInformationResultModel> GetFieldInfoAsync();
@@ -56,7 +56,7 @@ public interface IProjects
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ProjectModel</returns>
 	[Get("/V1.0/Projects/{id}")]
 	Task<ProjectModel> GetAsync([AliasAs("id")] long id);
@@ -64,7 +64,7 @@ public interface IProjects
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/Projects/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync();
@@ -72,7 +72,7 @@ public interface IProjects
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ProjectModel</returns>
 	[Put("/V1.0/Projects")]
 	Task<ProjectModel> UpdateAsync([Body] ProjectModel entity);
@@ -80,7 +80,7 @@ public interface IProjects
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ProjectModel</returns>
 	[Get("/V1.0/Projects/query")]
 	Task<QueryActionResult<ProjectModel>> QueryAsync([AliasAs("search")] string search);
@@ -88,7 +88,7 @@ public interface IProjects
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/Projects/query/count")]
 	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);

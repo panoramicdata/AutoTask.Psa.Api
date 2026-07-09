@@ -8,7 +8,7 @@ public interface ISalesOrders
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of SalesOrderModel</returns>
 	[Patch("/V1.0/SalesOrders")]
 	Task<SalesOrderModel> PatchAsync([Body] SalesOrderModel entity, CancellationToken cancellationToken);
@@ -16,7 +16,7 @@ public interface ISalesOrders
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of SalesOrderModel</returns>
 	[Post("/V1.0/SalesOrders/query")]
 	Task<QueryActionResult<SalesOrderModel>> QueryAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
@@ -24,7 +24,7 @@ public interface ISalesOrders
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/SalesOrders/query/count")]
 	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
@@ -32,7 +32,7 @@ public interface ISalesOrders
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/SalesOrders/entityInformation")]
 	Task<EntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
@@ -40,7 +40,7 @@ public interface ISalesOrders
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/SalesOrders/entityInformation/fields")]
 	Task<FieldInformationResultModel> GetFieldInfoAsync(CancellationToken cancellationToken);
@@ -48,7 +48,7 @@ public interface ISalesOrders
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of SalesOrderModel</returns>
 	[Get("/V1.0/SalesOrders/{id}")]
 	Task<SalesOrderModel> GetAsync([AliasAs("id")] long id, CancellationToken cancellationToken);
@@ -56,7 +56,7 @@ public interface ISalesOrders
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/SalesOrders/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
@@ -64,7 +64,7 @@ public interface ISalesOrders
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of SalesOrderModel</returns>
 	[Put("/V1.0/SalesOrders")]
 	Task<SalesOrderModel> UpdateAsync([Body] SalesOrderModel entity, CancellationToken cancellationToken);
@@ -72,7 +72,7 @@ public interface ISalesOrders
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of SalesOrderModel</returns>
 	[Get("/V1.0/SalesOrders/query")]
 	Task<QueryActionResult<SalesOrderModel>> QueryAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
@@ -80,7 +80,7 @@ public interface ISalesOrders
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/SalesOrders/query/count")]
 	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search, CancellationToken cancellationToken);

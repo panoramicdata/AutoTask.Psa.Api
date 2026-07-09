@@ -8,7 +8,7 @@ public interface IThresholdApiIntegration
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ThresholdStatusResultModel</returns>
 	[Get("/V1.0/ThresholdInformation")]
 	Task<ThresholdStatusResultModel> ThresholdApiIntegrationQueryThresholdInformation();

@@ -8,7 +8,7 @@ public interface IExpenseItems
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ExpenseItemModel</returns>
 	[Post("/V1.0/ExpenseItems/query")]
 	Task<QueryActionResult<ExpenseItemModel>> QueryAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
@@ -16,7 +16,7 @@ public interface IExpenseItems
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/ExpenseItems/query/count")]
 	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
@@ -24,7 +24,7 @@ public interface IExpenseItems
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/ExpenseItems/entityInformation")]
 	Task<EntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
@@ -32,7 +32,7 @@ public interface IExpenseItems
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/ExpenseItems/entityInformation/fields")]
 	Task<FieldInformationResultModel> GetFieldInfoAsync(CancellationToken cancellationToken);
@@ -40,7 +40,7 @@ public interface IExpenseItems
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ExpenseItemModel</returns>
 	[Get("/V1.0/ExpenseItems/{id}")]
 	Task<ExpenseItemModel> GetAsync([AliasAs("id")] long id, CancellationToken cancellationToken);
@@ -48,7 +48,7 @@ public interface IExpenseItems
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/ExpenseItems/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
@@ -56,7 +56,7 @@ public interface IExpenseItems
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of ExpenseItemModel</returns>
 	[Get("/V1.0/ExpenseItems/query")]
 	Task<QueryActionResult<ExpenseItemModel>> QueryAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
@@ -64,7 +64,7 @@ public interface IExpenseItems
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/ExpenseItems/query/count")]
 	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search, CancellationToken cancellationToken);

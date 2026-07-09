@@ -18,6 +18,20 @@ using System.Diagnostics.CodeAnalysis;
 	Scope = "type",
 	Target = "~T:AutoTask.Psa.Api.Data.Expression.NodeTypeEnum")
 ]
+[assembly: SuppressMessage(
+	"Naming",
+	"CA1711:Identifiers should not have incorrect suffix",
+	Justification = "Generated enum name retained for API compatibility.",
+	Scope = "type",
+	Target = "~T:AutoTask.Psa.Api.Data.NodeTypeEnum")
+]
+[assembly: SuppressMessage(
+	"Naming",
+	"CA1711:Identifiers should not have incorrect suffix",
+	Justification = "Generated enum name retained for API compatibility.",
+	Scope = "type",
+	Target = "~T:AutoTask.Psa.Api.Data.Expression.NodeTypeEnum")
+]
 [assembly: SuppressMessage("Design",
 	"RCS1075:Avoid empty catch clause that catches System.Exception.",
 	Justification = "Appropriate to catch any exception when it is unknown what loggers are in use",

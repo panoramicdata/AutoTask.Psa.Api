@@ -8,7 +8,7 @@ public interface ITicketHistory
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of TicketHistoryModel</returns>
 	[Post("/V1.0/TicketHistory/query")]
 	Task<QueryActionResult<TicketHistoryModel>> QueryAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
@@ -16,7 +16,7 @@ public interface ITicketHistory
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/TicketHistory/query/count")]
 	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
@@ -24,7 +24,7 @@ public interface ITicketHistory
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/TicketHistory/entityInformation")]
 	Task<EntityInformationResultModel> GetEntityInfoAsync(CancellationToken cancellationToken);
@@ -32,7 +32,7 @@ public interface ITicketHistory
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/TicketHistory/entityInformation/fields")]
 	Task<FieldInformationResultModel> GetFieldInfoAsync(CancellationToken cancellationToken);
@@ -40,7 +40,7 @@ public interface ITicketHistory
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of TicketHistoryModel</returns>
 	[Get("/V1.0/TicketHistory/{id}")]
 	Task<TicketHistoryModel> GetAsync([AliasAs("id")] long id, CancellationToken cancellationToken);
@@ -48,7 +48,7 @@ public interface ITicketHistory
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/TicketHistory/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
@@ -56,7 +56,7 @@ public interface ITicketHistory
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of TicketHistoryModel</returns>
 	[Get("/V1.0/TicketHistory/query")]
 	Task<QueryActionResult<TicketHistoryModel>> QueryAsync([AliasAs("search")] string search, CancellationToken cancellationToken);
@@ -64,7 +64,7 @@ public interface ITicketHistory
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/TicketHistory/query/count")]
 	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search, CancellationToken cancellationToken);

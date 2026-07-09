@@ -76,10 +76,13 @@ public class DuplicateDeletionTests(
 		foreach (var duplicateTicketCharge in duplicateTicketCharges)
 		{
 			index++;
-			Log.LogDebug(
-				"Deleting duplicate ticket charge {Index} of {Count}",
-				index,
-				count);
+			if (Log.IsEnabled(LogLevel.Debug))
+			{
+				Log.LogDebug(
+					"Deleting duplicate ticket charge {Index} of {Count}",
+					index,
+					count);
+			}
 
 			if (!duplicateTicketCharge.TicketID.HasValue)
 			{
@@ -104,7 +107,7 @@ public class DuplicateDeletionTests(
 			}
 			catch (Exception e)
 			{
-				testOutputHelper.WriteLine($"Failed to delete ticket charge {duplicateTicketCharge.Id.Value}: {e.Message}");
+				Log.LogError(e, "Failed to delete ticket charge {TicketChargeId}", duplicateTicketCharge.Id.Value);
 			}
 		}
 	}

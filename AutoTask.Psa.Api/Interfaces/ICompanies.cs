@@ -8,7 +8,7 @@ public interface ICompanies
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of CompanyModel</returns>
 	[Post("/V1.0/Companies")]
 	Task<CompanyModel> CreateAsync([Body] CompanyModel entity);
@@ -16,7 +16,7 @@ public interface ICompanies
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of CompanyModel</returns>
 	[Patch("/V1.0/Companies")]
 	Task<CompanyModel> PatchAsync([Body] CompanyModel entity);
@@ -24,7 +24,7 @@ public interface ICompanies
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of CompanyModel</returns>
 	[Post("/V1.0/Companies/query")]
 	Task<QueryActionResult<CompanyModel>> QueryAsync([Body] QueryModel queryModel);
@@ -32,7 +32,7 @@ public interface ICompanies
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Post("/V1.0/Companies/query/count")]
 	Task<QueryCountResultModel> CountAsync([Body] QueryModel queryModel);
@@ -40,7 +40,7 @@ public interface ICompanies
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of EntityInformationResultModel</returns>
 	[Get("/V1.0/Companies/entityInformation")]
 	Task<EntityInformationResultModel> GetEntityInfoAsync();
@@ -48,7 +48,7 @@ public interface ICompanies
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of FieldInformationResultModel</returns>
 	[Get("/V1.0/Companies/entityInformation/fields")]
 	Task<FieldInformationResultModel> GetFieldInfoAsync();
@@ -56,7 +56,7 @@ public interface ICompanies
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of CompanyModel</returns>
 	[Get("/V1.0/Companies/{id}")]
 	Task<CompanyModel> GetAsync([AliasAs("id")] long id);
@@ -64,7 +64,7 @@ public interface ICompanies
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/Companies/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync();
@@ -72,7 +72,7 @@ public interface ICompanies
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of CompanyModel</returns>
 	[Put("/V1.0/Companies")]
 	Task<CompanyModel> UpdateAsync([Body] CompanyModel entity);
@@ -80,7 +80,7 @@ public interface ICompanies
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of CompanyModel</returns>
 	[Get("/V1.0/Companies/query")]
 	Task<QueryActionResult<CompanyModel>> QueryAsync([AliasAs("search")] string search);
@@ -88,7 +88,7 @@ public interface ICompanies
 	/// <summary>
 	///
 	/// </summary>
-	/// <exception cref="Exceptions.ApiException">Thrown when fails to make API call</exception>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of QueryCountResultModel</returns>
 	[Get("/V1.0/Companies/query/count")]
 	Task<QueryCountResultModel> StringCountAsync([AliasAs("search")] string search);
