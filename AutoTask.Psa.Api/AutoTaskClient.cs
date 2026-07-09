@@ -1,7 +1,7 @@
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Serialization;
 using System.Text;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace AutoTask.Psa.Api;
 
@@ -33,12 +33,12 @@ public class AutoTaskClient : IDisposable
 		_httpClient = client;
 		_refitSettings = new RefitSettings
 		{
-			ContentSerializer = new SystemTextJsonContentSerializer(
-				new JsonSerializerOptions
+			ContentSerializer = new NewtonsoftJsonContentSerializer(
+				new JsonSerializerSettings
 				{
-					DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-					PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-					WriteIndented = true,
+					NullValueHandling = NullValueHandling.Ignore,
+					ContractResolver = new CamelCasePropertyNamesContractResolver(),
+					Formatting = Formatting.Indented,
 				})
 		};
 		ActionTypes = RefitFor(ActionTypes!);

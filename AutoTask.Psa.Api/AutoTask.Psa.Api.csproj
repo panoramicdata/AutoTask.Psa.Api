@@ -43,6 +43,7 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" />
     <PackageReference Include="Refit" />
+    <PackageReference Include="Refit.Newtonsoft.Json" />
     <PackageReference Include="System.ComponentModel.Annotations" />
   </ItemGroup>
   <ItemGroup>
