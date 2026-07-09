@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using System.Collections.Concurrent;
 using System.Text;
 
@@ -29,7 +31,16 @@ public class AutoTaskClient : IDisposable
 	public AutoTaskClient(HttpClient client)
 	{
 		_httpClient = client;
-		_refitSettings = new RefitSettings();
+		_refitSettings = new RefitSettings
+		{
+			ContentSerializer = new NewtonsoftJsonContentSerializer(
+				new JsonSerializerSettings
+				{
+					NullValueHandling = NullValueHandling.Ignore,
+					ContractResolver = new CamelCasePropertyNamesContractResolver(),
+					Formatting = Formatting.Indented,
+				})
+		};
 	}
 
 	/// <summary>
