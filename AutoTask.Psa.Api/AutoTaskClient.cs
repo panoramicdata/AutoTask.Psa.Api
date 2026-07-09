@@ -1,6 +1,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
+using Refit.Newtonsoft.Json;
 using System.Text;
 
 namespace AutoTask.Psa.Api;
