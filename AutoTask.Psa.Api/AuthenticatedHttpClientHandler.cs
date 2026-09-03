@@ -33,36 +33,11 @@ public class AuthenticatedHttpClientHandler : HttpClientHandler
 		HttpRequestMessage request,
 		CancellationToken cancellationToken)
 	{
-		// Set headers
-		if (!request.Headers.TryGetValues("ApiIntegrationCode", out _))
-		{
-			request.Headers.Add("ApiIntegrationCode", _options.IntegrationCode);
-		}
-		if (!request.Headers.TryGetValues("UserName", out _))
-		{
-			request.Headers.Add("UserName", _options.UserName);
-		}
-		if (!request.Headers.TryGetValues("Secret", out _))
-		{
-			request.Headers.Add("Secret", _options.Password);
-		}
-		if (!request.Headers.TryGetValues("UserAgent", out _))
-		{
-			request.Headers.Add("UserAgent", "AutoTask.Psa.Api.AutoTaskClient");
-		}
+		AddAuthenticationHeaders(request);
 
 		// Get a GUID to uniquely identify the request
 		var guid = Guid.NewGuid();
-		if (_logger.IsEnabled(LogLevel.Debug))
-		{
-			_logger.LogDebug("{Guid}:{RequestMethod}:{RequestUri}\nHeaders:{Headers}\nBody:{Body}",
-				guid.ToString(),
-				request.Method,
-				request.RequestUri,
-				request.Headers.ToDebugString(),
-				request.Content is null ? null : await request.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false)
-				);
-		}
+		await LogRequestAsync(guid, request, cancellationToken).ConfigureAwait(false);
 
 		HttpResponseMessage response;
 		try
@@ -77,15 +52,75 @@ public class AuthenticatedHttpClientHandler : HttpClientHandler
 			throw;
 		}
 
-		if (_logger.IsEnabled(LogLevel.Debug))
-		{
-			_logger.LogDebug("{Guid}:{ResponseStatusCode}:{Body}",
-				guid.ToString(),
-				response.StatusCode,
-				request.Content is null ? null : await response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false));
-		}
+		await LogResponseAsync(guid, request, response, cancellationToken).ConfigureAwait(false);
 
 		return response;
+	}
+
+	/// <summary>
+	/// Adds the AutoTask authentication headers to <paramref name="request"/>, leaving any that the
+	/// caller has already set in place.
+	/// </summary>
+	/// <param name="request">The HTTP request message to add headers to.</param>
+	private void AddAuthenticationHeaders(HttpRequestMessage request)
+	{
+		AddHeaderIfAbsent(request, "ApiIntegrationCode", _options.IntegrationCode);
+		AddHeaderIfAbsent(request, "UserName", _options.UserName);
+		AddHeaderIfAbsent(request, "Secret", _options.Password);
+		AddHeaderIfAbsent(request, "UserAgent", "AutoTask.Psa.Api.AutoTaskClient");
+	}
+
+	/// <summary>
+	/// Adds <paramref name="name"/> to <paramref name="request"/> unless it is already present.
+	/// </summary>
+	private static void AddHeaderIfAbsent(HttpRequestMessage request, string name, string? value)
+	{
+		if (!request.Headers.TryGetValues(name, out _))
+		{
+			request.Headers.Add(name, value);
+		}
+	}
+
+	/// <summary>
+	/// Logs an outgoing request at Debug level, with sensitive headers redacted.
+	/// </summary>
+	private async Task LogRequestAsync(
+		Guid guid,
+		HttpRequestMessage request,
+		CancellationToken cancellationToken)
+	{
+		if (!_logger.IsEnabled(LogLevel.Debug))
+		{
+			return;
+		}
+
+		_logger.LogDebug("{Guid}:{RequestMethod}:{RequestUri}\nHeaders:{Headers}\nBody:{Body}",
+			guid.ToString(),
+			request.Method,
+			request.RequestUri,
+			request.Headers.ToDebugString(),
+			request.Content is null ? null : await request.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false)
+			);
+	}
+
+	/// <summary>
+	/// Logs a response at Debug level.
+	/// </summary>
+	private async Task LogResponseAsync(
+		Guid guid,
+		HttpRequestMessage request,
+		HttpResponseMessage response,
+		CancellationToken cancellationToken)
+	{
+		if (!_logger.IsEnabled(LogLevel.Debug))
+		{
+			return;
+		}
+
+		_logger.LogDebug("{Guid}:{ResponseStatusCode}:{Body}",
+			guid.ToString(),
+			response.StatusCode,
+			request.Content is null ? null : await response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false));
 	}
 
 	/// <summary>

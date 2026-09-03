@@ -22,7 +22,7 @@ public class Fixture : TestBedFixture
 	}
 
 	protected override ValueTask DisposeAsyncCore()
-		=> default;
+		=> base.DisposeAsyncCore();
 
 	protected override IEnumerable<TestAppSettings> GetTestAppSettings()
 	{

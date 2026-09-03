@@ -22,6 +22,25 @@
     <Company>Panoramic Data Limited</Company>
     <Authors>Panoramic Data Limited</Authors>
     <PackageReleaseNotes>
+			Breaking change: serialization moved from Newtonsoft.Json to System.Text.Json, and the
+			Newtonsoft.Json package reference is gone.
+
+			Entity serialization is unaffected - Refit was already using its System.Text.Json content
+			serializer, so the Newtonsoft attributes on the models had no effect. Only the raw-JSON
+			helpers on AutoTaskClient change shape:
+
+			- GetJObjectAsync is now GetJsonObjectAsync and returns System.Text.Json.Nodes.JsonObject?
+			  in place of Newtonsoft.Json.Linq.JObject?.
+			- Both GetAllAsync overloads now return List&lt;JsonObject&gt; in place of List&lt;JObject&gt;.
+
+			Callers of those three methods need updating; paging, error and empty-body behaviour is
+			unchanged and is now covered by unit tests. Everything reached through the entity
+			properties (Tickets, Companies and the rest) is source-compatible.
+
+			Also in this release: the entity endpoints are built on first use rather than all 249 of
+			them in the constructor, so constructing an AutoTaskClient is considerably cheaper. Each
+			property still returns the same instance every time it is read.
+
 			Security fix: sensitive HTTP headers are now redacted in diagnostic output.
 
 			Previously AuthenticatedHttpClientHandler passed the request header collection straight to the
@@ -56,7 +75,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Newtonsoft.Json" />
     <PackageReference Include="Refit" />
     <PackageReference Include="System.ComponentModel.Annotations" />
   </ItemGroup>

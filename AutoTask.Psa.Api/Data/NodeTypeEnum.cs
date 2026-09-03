@@ -3,7 +3,6 @@
 /// <summary>
 /// Gets or Sets NodeType
 /// </summary>
-[JsonConverter(typeof(StringEnumConverter))]
 public enum NodeTypeEnum
 {
 	/// <summary>
