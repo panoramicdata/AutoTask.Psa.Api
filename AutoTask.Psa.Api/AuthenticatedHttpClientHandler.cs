@@ -59,7 +59,7 @@ public class AuthenticatedHttpClientHandler : HttpClientHandler
 				guid.ToString(),
 				request.Method,
 				request.RequestUri,
-				request.Headers,
+				request.Headers.ToDebugString(),
 				request.Content is null ? null : await request.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false)
 				);
 		}
