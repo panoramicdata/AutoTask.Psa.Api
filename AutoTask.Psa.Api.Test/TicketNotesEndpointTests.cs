@@ -22,6 +22,8 @@ public class TicketNotesEndpointTests
 			HttpRequestMessage request,
 			CancellationToken cancellationToken)
 		{
+			cancellationToken.ThrowIfCancellationRequested();
+
 			Requests.Add((request.Method, request.RequestUri!.AbsolutePath));
 
 			return Task.FromResult(new HttpResponseMessage(HttpStatusCode.OK)
