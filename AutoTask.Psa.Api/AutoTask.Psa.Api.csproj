@@ -22,6 +22,19 @@
     <Company>Panoramic Data Limited</Company>
     <Authors>Panoramic Data Limited</Authors>
     <PackageReleaseNotes>
+			Fixes GetEntityInfoAsync, which threw for every entity (issue #2). RestUserAccessLevel
+			was declared with no members, so the userAccessForCreate / Delete / Query / Update
+			strings AutoTask returns had nothing to bind to and deserialization failed. It now
+			carries the documented None, All and Restricted levels, reads either the name AutoTask
+			sends or the number it documents, and maps anything unrecognised to Unknown rather than
+			failing the whole response. EntityInformationModel.UserAccessForCreate had a private
+			setter and so was never populated at all; it is now settable like its three siblings.
+
+			TicketNotes gains CreateAsync, PatchAsync and UpdateAsync on the flat collection
+			(issue #1). AutoTask documents the entity as Can Create and Can Update; previously a
+			note could only be written through the child route under a ticket. There is still no
+			delete, which matches the entity's documented capabilities.
+
 			Breaking change: serialization moved from Newtonsoft.Json to System.Text.Json, and the
 			Newtonsoft.Json package reference is gone.
 

@@ -40,7 +40,7 @@ public class EntityInformationModel
 	/// Gets or Sets UserAccessForCreate
 	/// </summary>
 	[DataMember(Name = "UserAccessForCreate")]
-	public RestUserAccessLevel UserAccessForCreate { get; private set; }
+	public RestUserAccessLevel UserAccessForCreate { get; set; }
 
 	/// <summary>
 	/// Gets or Sets UserAccessForDelete

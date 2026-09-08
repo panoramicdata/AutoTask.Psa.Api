@@ -8,5 +8,6 @@ global using System.ComponentModel.DataAnnotations;
 global using System.Net.Http;
 global using System.Runtime.Serialization;
 global using System.Text.Json.Nodes;
+global using System.Text.Json.Serialization;
 global using System.Threading;
 global using System.Threading.Tasks;

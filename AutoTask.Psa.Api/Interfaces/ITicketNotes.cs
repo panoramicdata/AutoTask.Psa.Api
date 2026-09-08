@@ -10,6 +10,22 @@ public interface ITicketNotes
 	/// </summary>
 	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
 	/// <returns>Task of TicketNoteModel</returns>
+	[Post("/V1.0/TicketNotes")]
+	Task<TicketNoteModel> CreateAsync([Body] TicketNoteModel entity, CancellationToken cancellationToken);
+
+	/// <summary>
+	///
+	/// </summary>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
+	/// <returns>Task of TicketNoteModel</returns>
+	[Patch("/V1.0/TicketNotes")]
+	Task<TicketNoteModel> PatchAsync([Body] TicketNoteModel entity, CancellationToken cancellationToken);
+
+	/// <summary>
+	///
+	/// </summary>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
+	/// <returns>Task of TicketNoteModel</returns>
 	[Post("/V1.0/TicketNotes/query")]
 	Task<QueryActionResult<TicketNoteModel>> QueryAsync([Body] QueryModel queryModel, CancellationToken cancellationToken);
 
@@ -52,6 +68,14 @@ public interface ITicketNotes
 	/// <returns>Task of UserDefinedFieldInformationResultModel</returns>
 	[Get("/V1.0/TicketNotes/entityInformation/userDefinedFields")]
 	Task<UserDefinedFieldInformationResultModel> GetUdfInfoAsync(CancellationToken cancellationToken);
+
+	/// <summary>
+	///
+	/// </summary>
+	/// <exception cref="Refit.ApiException">Thrown when fails to make API call</exception>
+	/// <returns>Task of TicketNoteModel</returns>
+	[Put("/V1.0/TicketNotes")]
+	Task<TicketNoteModel> UpdateAsync([Body] TicketNoteModel entity, CancellationToken cancellationToken);
 
 	/// <summary>
 	///
