@@ -22,6 +22,22 @@
     <Company>Panoramic Data Limited</Company>
     <Authors>Panoramic Data Limited</Authors>
     <PackageReleaseNotes>
+			No functional change. This release behaves exactly as 1.1.27 does; every fix described
+			below shipped in that version and is repeated here only as context.
+
+			Internally, fields duplicated across the attachment, charge and webhook entities have
+			been pulled up into abstract base classes - AttachmentModelBase, ChargeModelBase,
+			WebhookModelBase and the webhook child bases. This removed 1469 duplicated lines. Every
+			affected model still exposes exactly the properties it did before, with the same types
+			and the same setter accessibility, so calling code needs no edits. Recompiling
+			dependants is recommended, since the members now live on a base type.
+
+			Known issue: a number of model properties are declared with private setters, which
+			System.Text.Json cannot populate, so they are silently never filled in from a response.
+			ThresholdStatusResultModel is affected in full. See issue #51. That accessibility is
+			unchanged in this release.
+
+			The minimum Microsoft.Extensions.Logging.Abstractions version is now 10.0.12.
 			Fixes GetEntityInfoAsync, which threw for every entity (issue #2). RestUserAccessLevel
 			was declared with no members, so the userAccessForCreate / Delete / Query / Update
 			strings AutoTask returns had nothing to bind to and deserialization failed. It now
