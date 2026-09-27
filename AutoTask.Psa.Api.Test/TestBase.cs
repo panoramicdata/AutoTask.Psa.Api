@@ -2,7 +2,10 @@ using Xunit.Microsoft.DependencyInjection.Abstracts;
 
 namespace AutoTask.Psa.Api.Test;
 
+// Every test deriving from this class calls the live AutoTask API with credentials from user
+// secrets, which CI does not have. CI excludes them with --filter "Category!=Integration".
 [CollectionDefinition("Dependency Injection")]
+[Trait("Category", "Integration")]
 public class TestBase : TestBed<Fixture>
 {
 	public AutoTaskClient AutoTaskClient { get; }
