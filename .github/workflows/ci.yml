@@ -82,7 +82,7 @@ jobs:
       run: >-
         ./AutoTask.Psa.Api.Test/bin/Debug/net10.0/AutoTask.Psa.Api.Test
         --coverage
-        --coverage-settings coverage.config
+        --coverage-settings ${{ github.workspace }}/coverage.config
         --coverage-output-format cobertura
         --coverage-output coverage.cobertura.xml
         --filter "Category!=Integration"
