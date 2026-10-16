@@ -35,4 +35,19 @@ public class TaxCategoryModel
 	/// </summary>
 	[DataMember(Name = "UserDefinedFields")]
 	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
+
+	/// <summary>
+	/// Creates a new <see cref="TaxCategoryModel"/> with the supplied scalar values.
+	/// </summary>
+	public static TaxCategoryModel Create(long? id, string description, bool? isActive, string name, IEnumerable<UserDefinedField>? userDefinedFields = null)
+	{
+		return new TaxCategoryModel
+		{
+			Id = id,
+			Description = description,
+			IsActive = isActive,
+			Name = name,
+			UserDefinedFields = userDefinedFields?.ToList() ?? []
+		};
+	}
 }
