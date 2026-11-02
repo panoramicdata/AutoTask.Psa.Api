@@ -33,6 +33,11 @@ public class AuthenticatedHttpClientHandler : HttpClientHandler
 		HttpRequestMessage request,
 		CancellationToken cancellationToken)
 	{
+		if (_options.IsReadOnly && !IsReadRequest(request))
+		{
+			throw new InvalidOperationException($"{request.Method} {request.RequestUri} is refused because AutoTaskClientOptions.IsReadOnly is set.");
+		}
+
 		AddAuthenticationHeaders(request);
 
 		// Get a GUID to uniquely identify the request
@@ -55,6 +60,28 @@ public class AuthenticatedHttpClientHandler : HttpClientHandler
 		await LogResponseAsync(guid, request, response, cancellationToken).ConfigureAwait(false);
 
 		return response;
+	}
+
+	/// <summary>
+	/// Whether the request cannot modify AutoTask: GET, HEAD, OPTIONS, or the POST used by the query and query/count endpoints.
+	/// </summary>
+	internal static bool IsReadRequest(HttpRequestMessage request)
+	{
+		if (request.Method == HttpMethod.Get || request.Method == HttpMethod.Head || request.Method == HttpMethod.Options)
+		{
+			return true;
+		}
+
+		if (request.Method != HttpMethod.Post)
+		{
+			return false;
+		}
+
+		var uri = request.RequestUri;
+		var path = uri is null ? string.Empty : uri.IsAbsoluteUri ? uri.AbsolutePath : uri.OriginalString.Split('?')[0];
+		path = path.TrimEnd('/');
+		return path.EndsWith("/query", StringComparison.OrdinalIgnoreCase)
+			|| path.EndsWith("/query/count", StringComparison.OrdinalIgnoreCase);
 	}
 
 	/// <summary>
