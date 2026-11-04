@@ -20,6 +20,9 @@ public class AutoTaskClientOptions
 	/// <summary>Gets or sets a value indicating whether exception response content is written to the log.</summary>
 	public bool LogExceptionContent { get; set; }
 
+	/// <summary>Gets or sets whether the client refuses every request that could modify AutoTask, before sending it. Default is false.</summary>
+	public bool IsReadOnly { get; set; }
+
 	/// <summary>
 	/// Validates that all required options are set, throwing a <see cref="ValidationException"/> if any are missing.
 	/// </summary>
