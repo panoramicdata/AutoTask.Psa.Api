@@ -3,6 +3,9 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/grade/AutoTask.Psa.Api)](https://app.codacy.com/gh/panoramicdata/AutoTask.Psa.Api/dashboard)
 
 # AutoTask.Psa.Api
+
+> **Need help with APIs or .NET?** Panoramic Data are experts in APIs and .NET, and we can help with your development. [Contact us](https://www.panoramicdata.com/contact-us) or see our [software services](https://www.panoramicdata.com/services/software).
+
 Datto Autotask PSA REST API
 
 Supports .NET 11.0.
