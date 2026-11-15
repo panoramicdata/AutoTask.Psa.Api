@@ -37,9 +37,15 @@ public class TaxCategoryModel
 	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 
 	/// <summary>
+	/// Creates a new <see cref="TaxCategoryModel"/> with no user defined fields.
+	/// </summary>
+	public static TaxCategoryModel Create(long? id, string description, bool? isActive, string name)
+		=> Create(id, description, isActive, name, null);
+
+	/// <summary>
 	/// Creates a new <see cref="TaxCategoryModel"/> with the supplied scalar values.
 	/// </summary>
-	public static TaxCategoryModel Create(long? id, string description, bool? isActive, string name, IEnumerable<UserDefinedField>? userDefinedFields = null)
+	public static TaxCategoryModel Create(long? id, string description, bool? isActive, string name, IEnumerable<UserDefinedField>? userDefinedFields)
 	{
 		return new TaxCategoryModel
 		{
