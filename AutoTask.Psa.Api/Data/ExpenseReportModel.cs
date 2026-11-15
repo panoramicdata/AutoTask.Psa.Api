@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// ExpenseReportModel
 /// </summary>
 [DataContract]
-public class ExpenseReportModel
+public class ExpenseReportModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets AmountDue
 	/// </summary>
@@ -119,10 +113,4 @@ public class ExpenseReportModel
 	/// </summary>
 	[DataMember(Name = "WeekEnding")]
 	public DateTime? WeekEnding { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

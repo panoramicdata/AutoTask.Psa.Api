@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// InvoiceModel
 /// </summary>
 [DataContract]
-public class InvoiceModel
+public class InvoiceModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets BatchID
 	/// </summary>
@@ -143,10 +137,4 @@ public class InvoiceModel
 	/// </summary>
 	[DataMember(Name = "WebServiceDate")]
 	public DateTime? WebServiceDate { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

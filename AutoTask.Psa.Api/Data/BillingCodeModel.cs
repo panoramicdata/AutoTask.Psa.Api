@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// BillingCodeModel
 /// </summary>
 [DataContract]
-public class BillingCodeModel
+public class BillingCodeModel : DescribedNamedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets AfterHoursWorkType
 	/// </summary>
@@ -31,12 +25,6 @@ public class BillingCodeModel
 	public int? Department { get; set; }
 
 	/// <summary>
-	/// Gets or Sets Description
-	/// </summary>
-	[DataMember(Name = "Description")]
-	public string Description { get; set; } = string.Empty;
-
-	/// <summary>
 	/// Gets or Sets ExternalNumber
 	/// </summary>
 	[DataMember(Name = "ExternalNumber")]
@@ -49,12 +37,6 @@ public class BillingCodeModel
 	public int? GeneralLedgerAccount { get; set; }
 
 	/// <summary>
-	/// Gets or Sets IsActive
-	/// </summary>
-	[DataMember(Name = "IsActive")]
-	public bool? IsActive { get; set; }
-
-	/// <summary>
 	/// Gets or Sets IsExcludedFromNewContracts
 	/// </summary>
 	[DataMember(Name = "IsExcludedFromNewContracts")]
@@ -65,12 +47,6 @@ public class BillingCodeModel
 	/// </summary>
 	[DataMember(Name = "MarkupRate")]
 	public double? MarkupRate { get; set; }
-
-	/// <summary>
-	/// Gets or Sets Name
-	/// </summary>
-	[DataMember(Name = "Name")]
-	public string Name { get; set; } = string.Empty;
 
 	/// <summary>
 	/// Gets or Sets TaxCategoryID
@@ -95,10 +71,4 @@ public class BillingCodeModel
 	/// </summary>
 	[DataMember(Name = "UseType")]
 	public int? UseType { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// PurchaseApprovalModel
 /// </summary>
 [DataContract]
-public class PurchaseApprovalModel
+public class PurchaseApprovalModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets CostType
 	/// </summary>
@@ -29,10 +23,4 @@ public class PurchaseApprovalModel
 	/// </summary>
 	[DataMember(Name = "RejectNote")]
 	public string RejectNote { get; set; } = string.Empty;
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

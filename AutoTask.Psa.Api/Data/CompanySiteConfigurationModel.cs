@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// CompanySiteConfigurationModel
 /// </summary>
 [DataContract]
-public class CompanySiteConfigurationModel
+public class CompanySiteConfigurationModel : ParentedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets CompanyID
 	/// </summary>
@@ -23,16 +17,4 @@ public class CompanySiteConfigurationModel
 	/// </summary>
 	[DataMember(Name = "LocationName")]
 	public string LocationName { get; set; } = string.Empty;
-
-	/// <summary>
-	/// Gets or Sets SoapParentPropertyId
-	/// </summary>
-	[DataMember(Name = "SoapParentPropertyId")]
-	public ExpressionFunc? SoapParentPropertyId { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

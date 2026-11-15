@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// ContractServiceBundleAdjustmentModel
 /// </summary>
 [DataContract]
-public class ContractServiceBundleAdjustmentModel
+public class ContractServiceBundleAdjustmentModel : ParentedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets AdjustedUnitPrice
 	/// </summary>
@@ -59,16 +53,4 @@ public class ContractServiceBundleAdjustmentModel
 	/// </summary>
 	[DataMember(Name = "UnitChange")]
 	public int? UnitChange { get; set; }
-
-	/// <summary>
-	/// Gets or Sets SoapParentPropertyId
-	/// </summary>
-	[DataMember(Name = "SoapParentPropertyId")]
-	public ExpressionFunc? SoapParentPropertyId { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// TicketHistoryModel
 /// </summary>
 [DataContract]
-public class TicketHistoryModel
+public class TicketHistoryModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets Action
 	/// </summary>
@@ -47,10 +41,4 @@ public class TicketHistoryModel
 	/// </summary>
 	[DataMember(Name = "SoapParentPropertyId")]
 	public long? SoapParentPropertyId { get; private set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

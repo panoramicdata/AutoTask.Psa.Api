@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// SubscriptionPeriodModel
 /// </summary>
 [DataContract]
-public class SubscriptionPeriodModel
+public class SubscriptionPeriodModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets PeriodCost
 	/// </summary>
@@ -53,10 +47,4 @@ public class SubscriptionPeriodModel
 	/// </summary>
 	[DataMember(Name = "SoapParentPropertyId")]
 	public long? SoapParentPropertyId { get; private set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

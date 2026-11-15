@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// ConfigurationItemCategoryUdfAssociationModel
 /// </summary>
 [DataContract]
-public class ConfigurationItemCategoryUdfAssociationModel
+public class ConfigurationItemCategoryUdfAssociationModel : ParentedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets ConfigurationItemCategoryID
 	/// </summary>
@@ -29,16 +23,4 @@ public class ConfigurationItemCategoryUdfAssociationModel
 	/// </summary>
 	[DataMember(Name = "UserDefinedFieldDefinitionID")]
 	public int? UserDefinedFieldDefinitionID { get; set; }
-
-	/// <summary>
-	/// Gets or Sets SoapParentPropertyId
-	/// </summary>
-	[DataMember(Name = "SoapParentPropertyId")]
-	public ExpressionFunc? SoapParentPropertyId { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

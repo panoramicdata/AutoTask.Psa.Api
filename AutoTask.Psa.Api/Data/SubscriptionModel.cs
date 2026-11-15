@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// SubscriptionModel
 /// </summary>
 [DataContract]
-public class SubscriptionModel
+public class SubscriptionModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets ConfigurationItemID
 	/// </summary>
@@ -107,10 +101,4 @@ public class SubscriptionModel
 	/// </summary>
 	[DataMember(Name = "VendorID")]
 	public int? VendorID { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

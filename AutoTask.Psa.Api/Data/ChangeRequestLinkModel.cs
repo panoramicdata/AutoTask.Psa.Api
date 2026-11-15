@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// ChangeRequestLinkModel
 /// </summary>
 [DataContract]
-public class ChangeRequestLinkModel
+public class ChangeRequestLinkModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets ChangeRequestTicketID
 	/// </summary>
@@ -23,10 +17,4 @@ public class ChangeRequestLinkModel
 	/// </summary>
 	[DataMember(Name = "ProblemOrIncidentTicketID")]
 	public int? ProblemOrIncidentTicketID { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

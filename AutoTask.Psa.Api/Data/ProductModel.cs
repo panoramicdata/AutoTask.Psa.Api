@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// ProductModel
 /// </summary>
 [DataContract]
-public class ProductModel
+public class ProductModel : DescribedNamedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets BillingType
 	/// </summary>
@@ -29,12 +23,6 @@ public class ProductModel
 	/// </summary>
 	[DataMember(Name = "DefaultVendorID")]
 	public int? DefaultVendorID { get; set; }
-
-	/// <summary>
-	/// Gets or Sets Description
-	/// </summary>
-	[DataMember(Name = "Description")]
-	public string Description { get; set; } = string.Empty;
 
 	/// <summary>
 	/// Gets or Sets DoesNotRequireProcurement
@@ -59,12 +47,6 @@ public class ProductModel
 	/// </summary>
 	[DataMember(Name = "InternalProductID")]
 	public string InternalProductID { get; set; } = string.Empty;
-
-	/// <summary>
-	/// Gets or Sets IsActive
-	/// </summary>
-	[DataMember(Name = "IsActive")]
-	public bool? IsActive { get; set; }
 
 	/// <summary>
 	/// Gets or Sets IsEligibleForRma
@@ -107,12 +89,6 @@ public class ProductModel
 	/// </summary>
 	[DataMember(Name = "MSRP")]
 	public double? MSRP { get; set; }
-
-	/// <summary>
-	/// Gets or Sets Name
-	/// </summary>
-	[DataMember(Name = "Name")]
-	public string Name { get; set; } = string.Empty;
 
 	/// <summary>
 	/// Gets or Sets PeriodType
@@ -161,10 +137,4 @@ public class ProductModel
 	/// </summary>
 	[DataMember(Name = "VendorProductNumber")]
 	public string VendorProductNumber { get; set; } = string.Empty;
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

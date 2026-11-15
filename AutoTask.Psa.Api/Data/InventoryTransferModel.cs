@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// InventoryTransferModel
 /// </summary>
 [DataContract]
-public class InventoryTransferModel
+public class InventoryTransferModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets FromLocationID
 	/// </summary>
@@ -65,10 +59,4 @@ public class InventoryTransferModel
 	/// </summary>
 	[DataMember(Name = "UpdateNote")]
 	public string UpdateNote { get; set; } = string.Empty;
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

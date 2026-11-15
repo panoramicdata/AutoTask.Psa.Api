@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// TimeEntryModel
 /// </summary>
 [DataContract]
-public class TimeEntryModel
+public class TimeEntryModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets BillingApprovalDateTime
 	/// </summary>
@@ -185,10 +179,4 @@ public class TimeEntryModel
 	/// </summary>
 	[DataMember(Name = "TimeEntryType")]
 	public int? TimeEntryType { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// OpportunityModel
 /// </summary>
 [DataContract]
-public class OpportunityModel
+public class OpportunityModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets AdvancedField1
 	/// </summary>
@@ -365,10 +359,4 @@ public class OpportunityModel
 	/// </summary>
 	[DataMember(Name = "YearlyRevenue")]
 	public double? YearlyRevenue { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

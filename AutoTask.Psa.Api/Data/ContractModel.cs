@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// ContractModel
 /// </summary>
 [DataContract]
-public class ContractModel
+public class ContractModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets BillingPreference
 	/// </summary>
@@ -209,10 +203,4 @@ public class ContractModel
 	/// </summary>
 	[DataMember(Name = "TimeReportingRequiresStartAndStopTimes")]
 	public int? TimeReportingRequiresStartAndStopTimes { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// BillingItemApprovalLevelModel
 /// </summary>
 [DataContract]
-public class BillingItemApprovalLevelModel
+public class BillingItemApprovalLevelModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets ApprovalDateTime
 	/// </summary>
@@ -35,10 +29,4 @@ public class BillingItemApprovalLevelModel
 	/// </summary>
 	[DataMember(Name = "TimeEntryID")]
 	public int? TimeEntryID { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// PurchaseOrderModel
 /// </summary>
 [DataContract]
-public class PurchaseOrderModel
+public class PurchaseOrderModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets CancelDateTime
 	/// </summary>
@@ -185,10 +179,4 @@ public class PurchaseOrderModel
 	/// </summary>
 	[DataMember(Name = "VendorInvoiceNumber")]
 	public string VendorInvoiceNumber { get; set; } = string.Empty;
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

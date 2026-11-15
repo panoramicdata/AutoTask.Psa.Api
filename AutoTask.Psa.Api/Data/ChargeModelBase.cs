@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// Fields shared by every charge entity. Each charge type adds the identifiers that tie it to its parent.
 /// </summary>
 [DataContract]
-public abstract class ChargeModelBase
+public abstract class ChargeModelBase : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets BillableAmount
 	/// </summary>
@@ -125,10 +119,4 @@ public abstract class ChargeModelBase
 	/// </summary>
 	[DataMember(Name = "UnitQuantity")]
 	public double? UnitQuantity { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

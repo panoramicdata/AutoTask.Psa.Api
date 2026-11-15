@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// ServiceCallModel
 /// </summary>
 [DataContract]
-public class ServiceCallModel
+public class ServiceCallModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets CancelationNoticeHours
 	/// </summary>
@@ -101,10 +95,4 @@ public class ServiceCallModel
 	/// </summary>
 	[DataMember(Name = "Status")]
 	public int? Status { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }
