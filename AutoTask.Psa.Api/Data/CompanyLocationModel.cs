@@ -4,19 +4,25 @@ namespace AutoTask.Psa.Api.Data;
 /// CompanyLocationModel
 /// </summary>
 [DataContract]
-public class CompanyLocationModel : DescribedNamedEntityModelBase
+public class CompanyLocationModel : AddressModelBase
 {
 	/// <summary>
-	/// Gets or Sets Address1
+	/// Gets or Sets Description
 	/// </summary>
-	[DataMember(Name = "Address1")]
-	public string Address1 { get; set; } = string.Empty;
+	[DataMember(Name = "Description")]
+	public string Description { get; set; } = string.Empty;
 
 	/// <summary>
-	/// Gets or Sets Address2
+	/// Gets or Sets IsActive
 	/// </summary>
-	[DataMember(Name = "Address2")]
-	public string Address2 { get; set; } = string.Empty;
+	[DataMember(Name = "IsActive")]
+	public bool? IsActive { get; set; }
+
+	/// <summary>
+	/// Gets or Sets Name
+	/// </summary>
+	[DataMember(Name = "Name")]
+	public string Name { get; set; } = string.Empty;
 
 	/// <summary>
 	/// Gets or Sets AlternatePhone1
@@ -29,12 +35,6 @@ public class CompanyLocationModel : DescribedNamedEntityModelBase
 	/// </summary>
 	[DataMember(Name = "AlternatePhone2")]
 	public string AlternatePhone2 { get; set; } = string.Empty;
-
-	/// <summary>
-	/// Gets or Sets City
-	/// </summary>
-	[DataMember(Name = "City")]
-	public string City { get; set; } = string.Empty;
 
 	/// <summary>
 	/// Gets or Sets CompanyID
@@ -79,22 +79,10 @@ public class CompanyLocationModel : DescribedNamedEntityModelBase
 	public string Phone { get; set; } = string.Empty;
 
 	/// <summary>
-	/// Gets or Sets PostalCode
-	/// </summary>
-	[DataMember(Name = "PostalCode")]
-	public string PostalCode { get; set; } = string.Empty;
-
-	/// <summary>
 	/// Gets or Sets RoundtripDistance
 	/// </summary>
 	[DataMember(Name = "RoundtripDistance")]
 	public double? RoundtripDistance { get; set; }
-
-	/// <summary>
-	/// Gets or Sets State
-	/// </summary>
-	[DataMember(Name = "State")]
-	public string State { get; set; } = string.Empty;
 
 	/// <summary>
 	/// Gets or Sets TaxRegionID
