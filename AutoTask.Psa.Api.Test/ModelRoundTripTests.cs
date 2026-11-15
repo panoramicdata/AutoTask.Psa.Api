@@ -37,61 +37,49 @@ public class ModelRoundTripTests
 		=> type.GetProperties(BindingFlags.Public | BindingFlags.Instance)
 			.Where(p => p.GetIndexParameters().Length == 0 && p.GetGetMethod() is not null && p.GetSetMethod() is not null);
 
+	private static readonly Dictionary<Type, object> Scalars = new()
+	{
+		[typeof(string)] = "sample",
+		[typeof(bool)] = true,
+		[typeof(DateTime)] = new DateTime(2026, 1, 2, 3, 4, 5, DateTimeKind.Utc),
+		[typeof(byte[])] = new byte[] { 1, 2, 3 }
+	};
+
+	private static object? ScalarSample(Type type)
+		=> Scalars.TryGetValue(type, out var known) ? known
+		: type.IsEnum ? Enum.GetValues(type).GetValue(0)
+		: type.IsPrimitive || type == typeof(decimal) ? Convert.ChangeType(7, type, System.Globalization.CultureInfo.InvariantCulture)
+		: null;
+
+	private static object ListSample(Type listType, int depth)
+	{
+		var list = Activator.CreateInstance(listType)!;
+		var item = depth < MaxDepth ? Sample(listType.GetGenericArguments()[0], depth + 1) : null;
+		if (item is not null)
+		{
+			listType.GetMethod(nameof(List<int>.Add))!.Invoke(list, [item]);
+		}
+
+		return list;
+	}
+
 	private static object? Sample(Type type, int depth)
 	{
 		var underlying = Nullable.GetUnderlyingType(type) ?? type;
 
-		if (underlying == typeof(string))
+		if (ScalarSample(underlying) is { } scalar)
 		{
-			return "sample";
-		}
-
-		if (underlying == typeof(bool))
-		{
-			return true;
-		}
-
-		if (underlying == typeof(DateTime))
-		{
-			return new DateTime(2026, 1, 2, 3, 4, 5, DateTimeKind.Utc);
-		}
-
-		if (underlying.IsEnum)
-		{
-			return Enum.GetValues(underlying).GetValue(0);
-		}
-
-		if (underlying.IsPrimitive || underlying == typeof(decimal))
-		{
-			return Convert.ChangeType(7, underlying, System.Globalization.CultureInfo.InvariantCulture);
-		}
-
-		if (underlying == typeof(byte[]))
-		{
-			return new byte[] { 1, 2, 3 };
+			return scalar;
 		}
 
 		if (underlying.IsGenericType && underlying.GetGenericTypeDefinition() == typeof(List<>))
 		{
-			var list = (System.Collections.IList)Activator.CreateInstance(underlying)!;
-			if (depth < MaxDepth)
-			{
-				var item = Sample(underlying.GetGenericArguments()[0], depth + 1);
-				if (item is not null)
-				{
-					list.Add(item);
-				}
-			}
-
-			return list;
+			return ListSample(underlying, depth);
 		}
 
-		if (underlying.IsClass && !underlying.IsAbstract && underlying.GetConstructor(Type.EmptyTypes) is not null && depth < MaxDepth)
-		{
-			return Populate(underlying, depth + 1);
-		}
-
-		return null;
+		return underlying.IsClass && !underlying.IsAbstract && underlying.GetConstructor(Type.EmptyTypes) is not null && depth < MaxDepth
+			? Populate(underlying, depth + 1)
+			: null;
 	}
 
 	private static object Populate(Type type, int depth)

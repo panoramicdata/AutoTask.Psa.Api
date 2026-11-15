@@ -10,7 +10,7 @@ public class ClientEndpointTests
 	private sealed class NoNetworkHandler : HttpMessageHandler
 	{
 		protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-			=> throw new InvalidOperationException("No request should be sent while building endpoints.");
+			=> cancellationToken.IsCancellationRequested ? Task.FromCanceled<HttpResponseMessage>(cancellationToken) : throw new InvalidOperationException("No request should be sent while building endpoints.");
 	}
 
 	private static PropertyInfo[] EndpointProperties()
