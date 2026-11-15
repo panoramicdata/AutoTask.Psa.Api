@@ -4,31 +4,13 @@ namespace AutoTask.Psa.Api.Data;
 /// InternalLocationWithBusinessHoursModel
 /// </summary>
 [DataContract]
-public class InternalLocationWithBusinessHoursModel : EntityModelBase
+public class InternalLocationWithBusinessHoursModel : AddressModelBase
 {
 	/// <summary>
 	/// Gets or Sets AdditionalAddressInfo
 	/// </summary>
 	[DataMember(Name = "AdditionalAddressInfo")]
 	public string AdditionalAddressInfo { get; set; } = string.Empty;
-
-	/// <summary>
-	/// Gets or Sets Address1
-	/// </summary>
-	[DataMember(Name = "Address1")]
-	public string Address1 { get; set; } = string.Empty;
-
-	/// <summary>
-	/// Gets or Sets Address2
-	/// </summary>
-	[DataMember(Name = "Address2")]
-	public string Address2 { get; set; } = string.Empty;
-
-	/// <summary>
-	/// Gets or Sets City
-	/// </summary>
-	[DataMember(Name = "City")]
-	public string City { get; set; } = string.Empty;
 
 	/// <summary>
 	/// Gets or Sets CountryID
@@ -157,12 +139,6 @@ public class InternalLocationWithBusinessHoursModel : EntityModelBase
 	public string NumberFormat { get; set; } = string.Empty;
 
 	/// <summary>
-	/// Gets or Sets PostalCode
-	/// </summary>
-	[DataMember(Name = "PostalCode")]
-	public string PostalCode { get; set; } = string.Empty;
-
-	/// <summary>
 	/// Gets or Sets SaturdayBusinessHoursEndTime
 	/// </summary>
 	[DataMember(Name = "SaturdayBusinessHoursEndTime")]
@@ -185,12 +161,6 @@ public class InternalLocationWithBusinessHoursModel : EntityModelBase
 	/// </summary>
 	[DataMember(Name = "SaturdayExtendedHoursStartTime")]
 	public DateTime? SaturdayExtendedHoursStartTime { get; set; }
-
-	/// <summary>
-	/// Gets or Sets State
-	/// </summary>
-	[DataMember(Name = "State")]
-	public string State { get; set; } = string.Empty;
 
 	/// <summary>
 	/// Gets or Sets SundayBusinessHoursEndTime
