@@ -51,6 +51,9 @@ public class ModelRoundTripTests
 		: type.IsPrimitive || type == typeof(decimal) ? Convert.ChangeType(7, type, System.Globalization.CultureInfo.InvariantCulture)
 		: null;
 
+	private static bool IsList(Type type)
+		=> type.IsGenericType && type.GetGenericTypeDefinition() == typeof(List<>);
+
 	private static object ListSample(Type listType, int depth)
 	{
 		var list = Activator.CreateInstance(listType)!;
@@ -72,7 +75,7 @@ public class ModelRoundTripTests
 			return scalar;
 		}
 
-		if (underlying.IsGenericType && underlying.GetGenericTypeDefinition() == typeof(List<>))
+		if (IsList(underlying))
 		{
 			return ListSample(underlying, depth);
 		}
