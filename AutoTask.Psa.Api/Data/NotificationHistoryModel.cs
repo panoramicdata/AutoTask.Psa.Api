@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// NotificationHistoryModel
 /// </summary>
 [DataContract]
-public class NotificationHistoryModel
+public class NotificationHistoryModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets CompanyID
 	/// </summary>
@@ -125,10 +119,4 @@ public class NotificationHistoryModel
 	/// </summary>
 	[DataMember(Name = "TimeEntryID")]
 	public long? TimeEntryID { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

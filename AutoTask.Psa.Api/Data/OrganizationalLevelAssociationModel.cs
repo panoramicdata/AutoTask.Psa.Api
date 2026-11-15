@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// OrganizationalLevelAssociationModel
 /// </summary>
 [DataContract]
-public class OrganizationalLevelAssociationModel
+public class OrganizationalLevelAssociationModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets IsActive
 	/// </summary>
@@ -29,10 +23,4 @@ public class OrganizationalLevelAssociationModel
 	/// </summary>
 	[DataMember(Name = "OrganizationalLevel2ID")]
 	public int? OrganizationalLevel2ID { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

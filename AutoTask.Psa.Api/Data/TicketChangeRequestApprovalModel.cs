@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// TicketChangeRequestApprovalModel
 /// </summary>
 [DataContract]
-public class TicketChangeRequestApprovalModel
+public class TicketChangeRequestApprovalModel : ParentedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets ApproveRejectDateTime
 	/// </summary>
@@ -47,16 +41,4 @@ public class TicketChangeRequestApprovalModel
 	/// </summary>
 	[DataMember(Name = "TicketID")]
 	public int? TicketID { get; set; }
-
-	/// <summary>
-	/// Gets or Sets SoapParentPropertyId
-	/// </summary>
-	[DataMember(Name = "SoapParentPropertyId")]
-	public ExpressionFunc? SoapParentPropertyId { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

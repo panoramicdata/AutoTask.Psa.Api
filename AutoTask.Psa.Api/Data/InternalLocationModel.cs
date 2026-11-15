@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// InternalLocationModel
 /// </summary>
 [DataContract]
-public class InternalLocationModel
+public class InternalLocationModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets AdditionalAddressInfo
 	/// </summary>
@@ -77,10 +71,4 @@ public class InternalLocationModel
 	/// </summary>
 	[DataMember(Name = "TimeZone")]
 	public string TimeZone { get; set; } = string.Empty;
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// CompanyAlertModel
 /// </summary>
 [DataContract]
-public class CompanyAlertModel
+public class CompanyAlertModel : ParentedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets AlertText
 	/// </summary>
@@ -29,16 +23,4 @@ public class CompanyAlertModel
 	/// </summary>
 	[DataMember(Name = "CompanyID")]
 	public int? CompanyID { get; set; }
-
-	/// <summary>
-	/// Gets or Sets SoapParentPropertyId
-	/// </summary>
-	[DataMember(Name = "SoapParentPropertyId")]
-	public ExpressionFunc? SoapParentPropertyId { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

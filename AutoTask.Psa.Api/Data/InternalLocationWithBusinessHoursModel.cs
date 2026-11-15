@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// InternalLocationWithBusinessHoursModel
 /// </summary>
 [DataContract]
-public class InternalLocationWithBusinessHoursModel
+public class InternalLocationWithBusinessHoursModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets AdditionalAddressInfo
 	/// </summary>
@@ -305,10 +299,4 @@ public class InternalLocationWithBusinessHoursModel
 	/// </summary>
 	[DataMember(Name = "WednesdayExtendedHoursStartTime")]
 	public DateTime? WednesdayExtendedHoursStartTime { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

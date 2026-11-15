@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// CompanyLocationModel
 /// </summary>
 [DataContract]
-public class CompanyLocationModel
+public class CompanyLocationModel : DescribedNamedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets Address1
 	/// </summary>
@@ -55,22 +49,10 @@ public class CompanyLocationModel
 	public int? CountryID { get; set; }
 
 	/// <summary>
-	/// Gets or Sets Description
-	/// </summary>
-	[DataMember(Name = "Description")]
-	public string Description { get; set; } = string.Empty;
-
-	/// <summary>
 	/// Gets or Sets Fax
 	/// </summary>
 	[DataMember(Name = "Fax")]
 	public string Fax { get; set; } = string.Empty;
-
-	/// <summary>
-	/// Gets or Sets IsActive
-	/// </summary>
-	[DataMember(Name = "IsActive")]
-	public bool? IsActive { get; set; }
 
 	/// <summary>
 	/// Gets or Sets IsPrimary
@@ -89,12 +71,6 @@ public class CompanyLocationModel
 	/// </summary>
 	[DataMember(Name = "OverrideAccountTaxSettings")]
 	public bool? OverrideAccountTaxSettings { get; set; }
-
-	/// <summary>
-	/// Gets or Sets Name
-	/// </summary>
-	[DataMember(Name = "Name")]
-	public string Name { get; set; } = string.Empty;
 
 	/// <summary>
 	/// Gets or Sets Phone
@@ -131,10 +107,4 @@ public class CompanyLocationModel
 	/// </summary>
 	[DataMember(Name = "SoapParentPropertyId")]
 	public ExpressionFunc? SoapParentPropertyId { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

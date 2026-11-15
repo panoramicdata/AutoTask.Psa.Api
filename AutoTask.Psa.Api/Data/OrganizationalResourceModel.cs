@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// OrganizationalResourceModel
 /// </summary>
 [DataContract]
-public class OrganizationalResourceModel
+public class OrganizationalResourceModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets OrganizationalLevelAssociationID
 	/// </summary>
@@ -29,10 +23,4 @@ public class OrganizationalResourceModel
 	/// </summary>
 	[DataMember(Name = "SoapParentPropertyId")]
 	public long? SoapParentPropertyId { get; private set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

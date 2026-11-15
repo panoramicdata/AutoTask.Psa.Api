@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// ResourceModel
 /// </summary>
 [DataContract]
-public class ResourceModel
+public class ResourceModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets AccountingReferenceID
 	/// </summary>
@@ -215,10 +209,4 @@ public class ResourceModel
 	/// </summary>
 	[DataMember(Name = "UserType")]
 	public int? UserType { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

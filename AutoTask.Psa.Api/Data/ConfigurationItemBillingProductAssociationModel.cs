@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// ConfigurationItemBillingProductAssociationModel
 /// </summary>
 [DataContract]
-public class ConfigurationItemBillingProductAssociationModel
+public class ConfigurationItemBillingProductAssociationModel : ParentedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets BillingProductID
 	/// </summary>
@@ -35,16 +29,4 @@ public class ConfigurationItemBillingProductAssociationModel
 	/// </summary>
 	[DataMember(Name = "ExpirationDate")]
 	public DateTime? ExpirationDate { get; set; }
-
-	/// <summary>
-	/// Gets or Sets SoapParentPropertyId
-	/// </summary>
-	[DataMember(Name = "SoapParentPropertyId")]
-	public ExpressionFunc? SoapParentPropertyId { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

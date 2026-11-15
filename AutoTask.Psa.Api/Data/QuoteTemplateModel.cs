@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// QuoteTemplateModel
 /// </summary>
 [DataContract]
-public class QuoteTemplateModel
+public class QuoteTemplateModel : DescribedNamedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets CalculateTaxSeparately
 	/// </summary>
@@ -49,22 +43,10 @@ public class QuoteTemplateModel
 	public int? DateFormat { get; set; }
 
 	/// <summary>
-	/// Gets or Sets Description
-	/// </summary>
-	[DataMember(Name = "Description")]
-	public string Description { get; set; } = string.Empty;
-
-	/// <summary>
 	/// Gets or Sets DisplayTaxCategorySuperscripts
 	/// </summary>
 	[DataMember(Name = "DisplayTaxCategorySuperscripts")]
 	public bool? DisplayTaxCategorySuperscripts { get; set; }
-
-	/// <summary>
-	/// Gets or Sets IsActive
-	/// </summary>
-	[DataMember(Name = "IsActive")]
-	public bool? IsActive { get; set; }
 
 	/// <summary>
 	/// Gets or Sets LastActivityBy
@@ -77,12 +59,6 @@ public class QuoteTemplateModel
 	/// </summary>
 	[DataMember(Name = "LastActivityDate")]
 	public DateTime? LastActivityDate { get; set; }
-
-	/// <summary>
-	/// Gets or Sets Name
-	/// </summary>
-	[DataMember(Name = "Name")]
-	public string Name { get; set; } = string.Empty;
 
 	/// <summary>
 	/// Gets or Sets NumberFormat
@@ -125,10 +101,4 @@ public class QuoteTemplateModel
 	/// </summary>
 	[DataMember(Name = "ShowVerticalGridLines")]
 	public bool? ShowVerticalGridLines { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

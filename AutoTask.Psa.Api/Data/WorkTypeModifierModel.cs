@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// WorkTypeModifierModel
 /// </summary>
 [DataContract]
-public class WorkTypeModifierModel
+public class WorkTypeModifierModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets ModifierType
 	/// </summary>
@@ -23,10 +17,4 @@ public class WorkTypeModifierModel
 	/// </summary>
 	[DataMember(Name = "ModifierValue")]
 	public double? ModifierValue { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

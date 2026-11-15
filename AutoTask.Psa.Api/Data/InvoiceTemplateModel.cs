@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// InvoiceTemplateModel
 /// </summary>
 [DataContract]
-public class InvoiceTemplateModel
+public class InvoiceTemplateModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets CoveredByBlockRetainerContractLabel
 	/// </summary>
@@ -161,10 +155,4 @@ public class InvoiceTemplateModel
 	/// </summary>
 	[DataMember(Name = "TimeFormat")]
 	public int? TimeFormat { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

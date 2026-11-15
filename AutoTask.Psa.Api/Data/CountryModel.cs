@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// CountryModel
 /// </summary>
 [DataContract]
-public class CountryModel
+public class CountryModel : NamedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets AddressFormatID
 	/// </summary>
@@ -37,32 +31,14 @@ public class CountryModel
 	public int? InvoiceTemplateID { get; set; }
 
 	/// <summary>
-	/// Gets or Sets IsActive
-	/// </summary>
-	[DataMember(Name = "IsActive")]
-	public bool? IsActive { get; set; }
-
-	/// <summary>
 	/// Gets or Sets IsDefaultCountry
 	/// </summary>
 	[DataMember(Name = "IsDefaultCountry")]
 	public bool? IsDefaultCountry { get; set; }
 
 	/// <summary>
-	/// Gets or Sets Name
-	/// </summary>
-	[DataMember(Name = "Name")]
-	public string Name { get; set; } = string.Empty;
-
-	/// <summary>
 	/// Gets or Sets QuoteTemplateID
 	/// </summary>
 	[DataMember(Name = "QuoteTemplateID")]
 	public int? QuoteTemplateID { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

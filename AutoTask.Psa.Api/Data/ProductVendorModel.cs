@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// ProductVendorModel
 /// </summary>
 [DataContract]
-public class ProductVendorModel
+public class ProductVendorModel : ParentedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets IsActive
 	/// </summary>
@@ -47,16 +41,4 @@ public class ProductVendorModel
 	/// </summary>
 	[DataMember(Name = "VendorPartNumber")]
 	public string VendorPartNumber { get; set; } = string.Empty;
-
-	/// <summary>
-	/// Gets or Sets SoapParentPropertyId
-	/// </summary>
-	[DataMember(Name = "SoapParentPropertyId")]
-	public ExpressionFunc? SoapParentPropertyId { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

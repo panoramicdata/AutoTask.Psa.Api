@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// ServiceCallTaskResourceModel
 /// </summary>
 [DataContract]
-public class ServiceCallTaskResourceModel
+public class ServiceCallTaskResourceModel : ParentedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets ResourceID
 	/// </summary>
@@ -23,16 +17,4 @@ public class ServiceCallTaskResourceModel
 	/// </summary>
 	[DataMember(Name = "ServiceCallTaskID")]
 	public int? ServiceCallTaskID { get; set; }
-
-	/// <summary>
-	/// Gets or Sets SoapParentPropertyId
-	/// </summary>
-	[DataMember(Name = "SoapParentPropertyId")]
-	public ExpressionFunc? SoapParentPropertyId { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

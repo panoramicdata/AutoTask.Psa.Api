@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// BillingItemModel
 /// </summary>
 [DataContract]
-public class BillingItemModel
+public class BillingItemModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets AccountManagerWhenApprovedID
 	/// </summary>
@@ -275,10 +269,4 @@ public class BillingItemModel
 	/// </summary>
 	[DataMember(Name = "WebServiceDate")]
 	public DateTime? WebServiceDate { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

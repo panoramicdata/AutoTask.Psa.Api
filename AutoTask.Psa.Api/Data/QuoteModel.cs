@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// QuoteModel
 /// </summary>
 [DataContract]
-public class QuoteModel
+public class QuoteModel : DescribedNamedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets ApprovalStatus
 	/// </summary>
@@ -73,12 +67,6 @@ public class QuoteModel
 	public int? CreatorResourceID { get; set; }
 
 	/// <summary>
-	/// Gets or Sets Description
-	/// </summary>
-	[DataMember(Name = "Description")]
-	public string Description { get; set; } = string.Empty;
-
-	/// <summary>
 	/// Gets or Sets EffectiveDate
 	/// </summary>
 	[DataMember(Name = "EffectiveDate")]
@@ -127,12 +115,6 @@ public class QuoteModel
 	public int? ImpersonatorCreatorResourceID { get; set; }
 
 	/// <summary>
-	/// Gets or Sets IsActive
-	/// </summary>
-	[DataMember(Name = "IsActive")]
-	public bool? IsActive { get; set; }
-
-	/// <summary>
 	/// Gets or Sets LastActivityDate
 	/// </summary>
 	[DataMember(Name = "LastActivityDate")]
@@ -143,12 +125,6 @@ public class QuoteModel
 	/// </summary>
 	[DataMember(Name = "LastModifiedBy")]
 	public int? LastModifiedBy { get; set; }
-
-	/// <summary>
-	/// Gets or Sets Name
-	/// </summary>
-	[DataMember(Name = "Name")]
-	public string Name { get; set; } = string.Empty;
 
 	/// <summary>
 	/// Gets or Sets OpportunityID
@@ -233,10 +209,4 @@ public class QuoteModel
 	/// </summary>
 	[DataMember(Name = "TaxRegionID")]
 	public int? TaxRegionID { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

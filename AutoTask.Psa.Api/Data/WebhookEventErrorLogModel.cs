@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// WebhookEventErrorLogModel
 /// </summary>
 [DataContract]
-public class WebhookEventErrorLogModel
+public class WebhookEventErrorLogModel : EntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets AccountWebhookID
 	/// </summary>
@@ -47,10 +41,4 @@ public class WebhookEventErrorLogModel
 	/// </summary>
 	[DataMember(Name = "SequenceNumber")]
 	public int? SequenceNumber { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }

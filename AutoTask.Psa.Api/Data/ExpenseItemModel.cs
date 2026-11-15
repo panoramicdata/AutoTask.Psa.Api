@@ -4,14 +4,8 @@ namespace AutoTask.Psa.Api.Data;
 /// ExpenseItemModel
 /// </summary>
 [DataContract]
-public class ExpenseItemModel
+public class ExpenseItemModel : ParentedEntityModelBase
 {
-	/// <summary>
-	/// Gets or Sets Id
-	/// </summary>
-	[DataMember(Name = "Id")]
-	public long? Id { get; set; }
-
 	/// <summary>
 	/// Gets or Sets CompanyID
 	/// </summary>
@@ -173,16 +167,4 @@ public class ExpenseItemModel
 	/// </summary>
 	[DataMember(Name = "WorkType")]
 	public int? WorkType { get; set; }
-
-	/// <summary>
-	/// Gets or Sets SoapParentPropertyId
-	/// </summary>
-	[DataMember(Name = "SoapParentPropertyId")]
-	public ExpressionFunc? SoapParentPropertyId { get; set; }
-
-	/// <summary>
-	/// Gets or Sets UserDefinedFields
-	/// </summary>
-	[DataMember(Name = "UserDefinedFields")]
-	public List<UserDefinedField> UserDefinedFields { get; set; } = [];
 }
