@@ -104,6 +104,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Refit" />
+    <PackageReference Include="Refit.Reflection" />
   </ItemGroup>
   <ItemGroup>
     <InternalsVisibleTo Include="AutoTask.Psa.Api.Test" />
