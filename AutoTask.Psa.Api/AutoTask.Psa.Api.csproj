@@ -106,6 +106,7 @@
     <PackageReference Include="Refit" />
     <PackageReference Include="Refit.Newtonsoft.Json" />
     <PackageReference Include="Refit.Reflection" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
   </ItemGroup>
   <ItemGroup>
     <InternalsVisibleTo Include="AutoTask.Psa.Api.Test" />
