@@ -24,10 +24,7 @@ public class ModelShapeTests
 			.OrderBy(n => n, StringComparer.Ordinal)];
 
 	/// <summary>
-	/// The 17 properties every attachment entity carries. ParentType and IsTaskAttachment are
-	/// declared with private setters, so System.Text.Json never populates them; that is preserved
-	/// here rather than changed, because fixing it is a behaviour change and not part of this
-	/// refactor.
+	/// The 17 properties every attachment entity carries.
 	/// </summary>
 	private static readonly string[] AttachmentProperties =
 	[

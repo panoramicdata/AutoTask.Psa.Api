@@ -40,5 +40,5 @@ public class TicketHistoryModel : EntityModelBase
 	/// Gets or Sets SoapParentPropertyId
 	/// </summary>
 	[DataMember(Name = "SoapParentPropertyId")]
-	public long? SoapParentPropertyId { get; private set; }
+	public long? SoapParentPropertyId { get; set; }
 }
