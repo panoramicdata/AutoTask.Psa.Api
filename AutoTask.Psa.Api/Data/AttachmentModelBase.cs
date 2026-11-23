@@ -16,13 +16,13 @@ public abstract class AttachmentModelBase : AttachmentCoreModelBase
 	/// Gets or Sets ParentType
 	/// </summary>
 	[DataMember(Name = "ParentType")]
-	public int? ParentType { get; private set; }
+	public int? ParentType { get; set; }
 
 	/// <summary>
 	/// Gets or Sets IsTaskAttachment
 	/// </summary>
 	[DataMember(Name = "IsTaskAttachment")]
-	public bool? IsTaskAttachment { get; private set; }
+	public bool? IsTaskAttachment { get; set; }
 
 	/// <summary>
 	/// Gets or Sets SoapParentPropertyId

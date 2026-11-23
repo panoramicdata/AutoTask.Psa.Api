@@ -11,3 +11,7 @@ Datto Autotask PSA REST API
 Supports .NET 11.0.
 
 [![Nuget](https://img.shields.io/nuget/v/AutoTask.Psa.Api)](https://www.nuget.org/packages/AutoTask.Psa.Api/)
+
+## Breaking changes
+
+- Properties previously declared with private setters (for example all of `ThresholdStatusResultModel`, `IsTaskAttachment` and `ParentType` on attachment models, `ParameterExpression.CanReduce` and `SoapParentPropertyId`) now have public setters and are populated from API responses. Previously they were always null. Code that relied on them being null will now see real values.

@@ -10,17 +10,17 @@ public class ThresholdStatusResultModel
 	/// Gets or Sets ExternalRequestThreshold
 	/// </summary>
 	[DataMember(Name = "ExternalRequestThreshold")]
-	public int? ExternalRequestThreshold { get; private set; }
+	public int? ExternalRequestThreshold { get; set; }
 
 	/// <summary>
 	/// Gets or Sets RequestThresholdTimeframe
 	/// </summary>
 	[DataMember(Name = "RequestThresholdTimeframe")]
-	public int? RequestThresholdTimeframe { get; private set; }
+	public int? RequestThresholdTimeframe { get; set; }
 
 	/// <summary>
 	/// Gets or Sets CurrentTimeframeRequestCount
 	/// </summary>
 	[DataMember(Name = "CurrentTimeframeRequestCount")]
-	public int? CurrentTimeframeRequestCount { get; private set; }
+	public int? CurrentTimeframeRequestCount { get; set; }
 }

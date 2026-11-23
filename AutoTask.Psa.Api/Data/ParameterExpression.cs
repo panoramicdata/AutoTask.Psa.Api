@@ -34,5 +34,5 @@ public class ParameterExpression
 	/// Gets or Sets CanReduce
 	/// </summary>
 	[DataMember(Name = "CanReduce")]
-	public bool? CanReduce { get; private set; }
+	public bool? CanReduce { get; set; }
 }
