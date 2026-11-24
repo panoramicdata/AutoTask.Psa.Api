@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[![Codacy Badge](https://app.codacy.com/project/badge/grade/AutoTask.Psa.Api)](https://app.codacy.com/gh/panoramicdata/AutoTask.Psa.Api/dashboard)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/bc02b800747240f9b2aa3bd579ecc8b6)](https://app.codacy.com/gh/panoramicdata/AutoTask.Psa.Api/dashboard)
 
 # AutoTask.Psa.Api
 
