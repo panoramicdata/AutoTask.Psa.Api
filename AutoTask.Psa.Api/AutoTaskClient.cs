@@ -1,5 +1,6 @@
 using System.Collections.Concurrent;
 using System.Text;
+using System.Text.Json;
 
 namespace AutoTask.Psa.Api;
 
@@ -29,7 +30,14 @@ public class AutoTaskClient : IDisposable
 	public AutoTaskClient(HttpClient client)
 	{
 		_httpClient = client;
-		_refitSettings = new RefitSettings();
+		_refitSettings = new RefitSettings
+		{
+			ContentSerializer = new SystemTextJsonContentSerializer(
+				new JsonSerializerOptions(JsonSerializerDefaults.Web)
+				{
+					DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+				})
+		};
 	}
 
 	/// <summary>
